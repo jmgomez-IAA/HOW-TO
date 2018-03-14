@@ -1,0 +1,222 @@
+Links de interes
+================
+
+Reiniciar cadena USB
+echo -n "0000:08:00.0" | tee /sys/bus/pci/drivers/xhci_hcd/unbind 
+
+udit-d46:/homecho -n "0000:08:00.0" | tee /sys/bus/pci/drivers/xhci_hcd/bind 
+
+http://carbidelabs.com/tutorials/serial-port-prototyping/
+
+socat -d -d pty,link=/dev/ttyUSB0,raw,echo=0,b115200 pty,raw,echo=0,b115200
+
+Option -d -d , selets the debugging level.
+The type is 'pty', pseudo serial port.
+We need a ‘raw port’, one which sends only the exact character.
+
+
+
+Shell_1$ socat /dev/ttyUSB0,raw,echo=0 SYSTEM:'tee input2.bin | socat - "PTY,link=/dev/ttyUSB1,raw,echo=0,waitslave" | tee output2.bin'
+
+Shell_2$ grmon /dev/ttyUSB1
+    
+     GRMON LEON debug monitor v1.1.58 professional version
+
+ Copyright (C) 2004-2011 Aeroflex Gaisler - all rights reserved.
+ For latest updates, go to http://www.gaisler.com/
+ Comments or bug-reports to support@gaisler.com
+
+ using port /dev/ttyUSB1 @ 115200 baud
+
+ Device ID: : 0x198
+ GRLIB build version: 4109
+
+ initialising ..............
+ detected frequency:  25 MHz
+
+ Component                            Vendor
+ LEON3FT SPARC V8 Processor           Gaisler Research
+ AHB Debug UART                       Gaisler Research
+ MIL-STD-1553B Interface              Gaisler Research
+ GRSPW Spacewire Link                 Gaisler Research
+ GRSPW Spacewire Link                 Gaisler Research
+ FT Memory Controller                 Gaisler Research
+ AHB/APB Bridge                       Gaisler Research
+ LEON3 Debug Support Unit             Gaisler Research
+ Generic APB UART                     Gaisler Research
+ Multi-processor Interrupt Ctrl       Gaisler Research
+ Modular Timer Unit                   Gaisler Research
+ General purpose I/O port             Gaisler Research
+ Generic APB UART                     Gaisler Research
+ AHB status register                  Gaisler Research
+
+ Use command 'info sys' to print a detailed report of attached cores
+
+  grlib> wmem 0x40001000 0x12345678
+  grlib> mem 0x40001000
+
+ 40001000  12345678  40000aec  0000009b  00000426    .4Vx@..........&
+ 40001010  00002bd8  00000000  80000a00  40003800    ..+.........@.8.
+ 40001020  40001400  00000000  40007000  00000005    @.......@.p.....
+ 40001030  fffff000  fffff020  fffff040  fffff080    ....... ...@....
+
+
+
+hexdump -C output.txt
+
+00002210  00 00 c0 80 00 02 00 00  00 00 00 c0 80 00 02 04  |................|
+00002220  00 00 00 00 c0 80 00 03  14 ff ff ff ff c0 80 00  |................|
+00002230  03 04 00 00 00 18 c0 80  00 03 18 00 00 00 07 c1  |................|
+00002240  80 00 08 08 00 00 00 00  00 00 00 00 c0 80 00 09  |................|
+00002250  08 00 00 00 03 80 80 00  09 00 80 80 00 09 00 c0  |................|
+00002260  80 00 09 0c 00 00 00 50  c1 80 00 0f 00 00 00 00  |.......P........|
+00002270  00 00 00 00 00 c0 40 00  10 00 12 34 56 78 83 40  |......@....4Vx.@|
+00002280  00 10 00 83 40 00 10 10  83 40 00 10 20 83 40 00  |....@....@.. .@.|
+00002290  10 30                                             |.0|
+
+
+hexdump -C input.txt
+00001ac0  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 ef  |................|
+00001ad0  00 00 00 ef 00 09 80 0f  00 00 00 ef 00 00 00 00  |................|
+00001ae0  00 00 00 00 00 00 00 00  00 00 00 00 12 34 56 78  |.............4Vx|
+00001af0  40 00 0a ec 00 00 00 9b  00 00 04 26 00 00 2b d8  |@..........&..+.|
+00001b00  00 00 00 00 80 00 0a 00  40 00 38 00 40 00 14 00  |........@.8.@...|
+00001b10  00 00 00 00 40 00 70 00  00 00 00 05 ff ff f0 00  |....@.p.........|
+00001b20  ff ff f0 20 ff ff f0 40  ff ff f0 80              |... ...@....|
+
+
+Comando Write: 
+GRLIB_INFO: TX: | 11&LENGTH(6..0)  Addr[31:24]
+0x00002270  00 00 00 00 00 c0 40 00  10 00 12 34 56 78
+
+
+Comando Read:  Lo hace mediante tres comandos.
+0000227E 83 40 00 10 00    >> La respuesta en input.txt >>  
+	 83 40 00 10 10    >> La respuesta en input.txt >>   
+	 83 40 00 10 20    >> La respuesta en input.txt >> 40001400 00000000 40007000  00000005
+	 83 40 00 10 30    >> La respuesta en input.txt >> 0x00001b10 fffff000 fffff030 fffff040 fffff080 
+	 
+	 
+	 
+	 
+Informacion de la tarjeta:
+grlib> info reg
+AHB Debug UART
+ 0x80000704  UART status register            0x00000386
+ 0x80000708  UART control register           0x00000003
+ 0x8000070c  UART scaler register            0x0000001a
+Gaisler MIL-STD-1553B Interface
+ 0x80000d00  IRQ register                    0x00000000
+ 0x80000d04  IRQ enable mask                 0x00000000
+ 0x80000d10  HW config register              0x00000000
+ 0x80000d40  BC status                       0x00000000
+ 0x80000d80  RT status                       0x80000000
+ 0x80000d84  RT config register              0x0000e03e
+ 0x80000d88  RT bus status bits              0x00000000
+ 0x80000d8c  RT status words                 0x00000000
+ 0x80000d90  RT bus synchronize              0x00000000
+ 0x80000d94  RT subaddress table base        0x00000000
+ 0x80000d98  RT mode code control register   0x00000555
+ 0x80000da4  RT time tag register            0x00000000
+ 0x80000dac  RT event log size mask          0xfffffffc
+ 0x80000db0  RT event log position           0x00000000
+ 0x80000db4  RT event log IRQ position       0x00000000
+ 0x80000dc0  BM status                       0x00000000
+GRSPW Spacewire Link
+ 0x80000a00  Control                         0x20000022
+ 0x80000a04  Status/Interrupt-source         0x00600000
+ 0x80000a08  Node address                    0x00000001
+ 0x80000a0c  Clock divisor                   0x00000000
+ 0x80000a10  Destination key                 0x00000000
+ 0x80000a14  Time                            0x00000000
+ 0x80000a18  Timer and Disconnect            0x000130a0
+ 0x80000a20  DMA 0 control/status            0x0000080a
+ 0x80000a24  DMA 0 rx max length             0x00000400
+ 0x80000a28  DMA 0 td table address          0x40006000
+ 0x80000a2c  DMA 0 rd table address          0x40005000
+GRSPW Spacewire Link
+ 0x80000b00  Control                         0x20000022
+ 0x80000b04  Status/Interrupt-source         0x00600000
+ 0x80000b08  Node address                    0x00000001
+ 0x80000b0c  Clock divisor                   0x00000000
+ 0x80000b10  Destination key                 0x00000000
+ 0x80000b14  Time                            0x00000000
+ 0x80000b18  Timer and Disconnect            0x000130a0
+ 0x80000b20  DMA 0 control/status            0x00000803
+ 0x80000b24  DMA 0 rx max length             0x00000400
+ 0x80000b28  DMA 0 td table address          0x40003800
+ 0x80000b2c  DMA 0 rd table address          0x40001c00
+FT Memory Controller
+ 0x80000000  Memory config register 1        0x107bc2ff
+ 0x80000004  Memory config register 2        0x00001460
+ 0x80000008  Memory config register 3        0x08000000
+LEON3 Debug Support Unit
+ 0x90000000  CPU0 control register           0x000000ef
+ 0x90400020  CPU0 trap register              0x000000b0
+ 0x90000024  Debug mask register             0x00000001
+Generic APB UART
+ 0x80000100  UART data register              0x00000000
+ 0x80000104  UART status register            0x00000086
+ 0x80000108  UART control register           0x80000843
+ 0x8000010c  UART scaler register            0x00000050
+Multi-processor Interrupt Ctrl
+ 0x80000200  Interrupt level register        0x00000000
+ 0x80000204  Interrupt pending register      0x00000000
+ 0x80000208  Interrupt force register        0x00000000
+ 0x80000210  Interrupt status register       0x00000000
+ 0x80000240  Interrupt mask register  0      0x00000000
+ 0x80000280  Interrupt force register  0     0x00000000
+Modular Timer Unit
+ 0x80000300  Scaler value register           0x00000018
+ 0x80000304  Scaler reload register          0x00000018
+ 0x80000308  Configuration register          0x00000133
+ 0x80000310  Timer1 value register           0xffffffff
+ 0x80000314  Timer1 reload register          0xffffffff
+ 0x80000318  Timer1 control register         0x00000053
+ 0x80000320  Timer2 value register           0xffffffff
+ 0x80000324  Timer2 reload register          0x000026e8
+ 0x80000328  Timer2 control register         0x00000050
+ 0x80000330  Timer3 value register           0x11e1a300
+ 0x80000334  Timer3 reload register          0x11e1a300
+ 0x80000338  Timer3 control register         0x00000040
+General purpose I/O port
+ 0x80000800  I/O data register               0x000005c2
+ 0x80000804  I/O output register             0x00000000
+ 0x80000808  I/O direction register          0x00000000
+ 0x8000080c  I/O interrupt register          0x00000000
+ 0x80000810  I/O interrupt polarity reg.     0x00000000
+ 0x80000814  I/O interrupt edge register     0x00000000
+ 0x80000818  I/O bypass register             0x00000000
+ 0x80000820  I/O interrupt map register 0    0x00000000
+ 0x80000824  I/O interrupt map register 1    0x00000000
+ 0x80000828  I/O interrupt map register 2    0x00000000
+ 0x8000082c  I/O interrupt map register 3    0x00000000
+ 0x80000830  I/O interrupt map register 4    0x00000000
+ 0x80000834  I/O interrupt map register 5    0x00000000
+ 0x80000838  I/O interrupt map register 6    0x00000000
+ 0x8000083c  I/O interrupt map register 7    0x00000000
+Generic APB UART
+ 0x80000900  UART data register              0x00000000
+ 0x80000904  UART status register            0x00000086
+ 0x80000908  UART control register           0x80000003
+ 0x8000090c  UART scaler register            0x00000050
+AHB status register
+ 0x80000f00  Status register                 0x0000000a
+ 0x80000f04  Failing address register        0x80000f04
+grlib> reg
+
+          INS       LOCALS      OUTS     GLOBALS
+   0:  00000000   00000000   00000000   00000000
+   1:  00000000   00000000   00000000   00000000
+   2:  00000000   00000000   00000000   00000000
+   3:  00000000   00000000   00000000   00000000
+   4:  00000000   00000000   00000000   00000000
+   5:  00000000   00000000   00000000   00000000
+   6:  00000000   00000000   407FFFF0   00000000
+   7:  00000000   00000000   00000000   00000000
+
+ psr: F34000E0   wim: 00000002   tbr: 40000000   y: 00000000
+
+ pc:  40000000  unimp                       
+ npc: 40000004  unimp        
+	 

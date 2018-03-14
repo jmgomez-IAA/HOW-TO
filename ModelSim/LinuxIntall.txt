@@ -1,0 +1,92 @@
+
+
+
+sudo zypper install wine
+ 
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # cp /media/data/Software/Mentor\ modelsim_se_10.2c/crack/MentorKG.exe .
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # ls
+aid                libmtipli.so        libsystemc_gcc45.a  lmdiag                mtilibcom     Tclxml2.6      verror     vsim
+drill              libpng12.so         libtcl8.5.a         lmdown                mti_rmtree    tkdnd          vfs1.4     vsimk
+drill.bat          libpng12.so.0       libtclstub8.5.a     lmgrd                 mtiRPC        Tktable2.10    vgencomp   vsim.prof.syms
+dumplog64          libpng12.so.0.50.0  libtk8.5.a          lmhostid              nlviewST.so   treectrl2.2.9  vhencrypt  wlf2log
+echkpnt.modelsim   libpng.so           libtkstub8.5.a      lmremove              options       triage         visdb      wlf2vcd
+erestart.modelsim  libpng.so.3         libucdb.a           lmreread              qobjcopy      trofs0.4.6     vish       wlfcmp
+external           libpng.so.3.50.0    libucdb.so          lmstat                qverilog      tssi2mti       vlib       wlfman
+gnuplot            libscms_gcc40.a     libucis.a           lmswitchr             rmdb          vcd2wlf        vlm        wlfrecover
+hydra_pmi_proxy    libscms_gcc43.a     libucis.so          lmutil                sccom         vcom           vlog       xml2ucdb
+Img1.3             libscms_gcc45.a     libuinfo.so         lmver                 scgenmod      vcover         vmake
+itcl3.4            libscv_gcc40.a      libvsimnotcl.so     Memchan2.3            ScintillaTk   vcovkill       vmap
+itk3.4             libscv_gcc43.a      libvsim.so          memory_interposer.so  scparse-gcc   vdbg           vmpiexec
+jobspy             libscv_gcc45.a      libwlf.a            MentorKG.exe          sdfcom        vdbgpa         vopt
+libgd.so           libsm.sl            libwlf.so           mgcld                 sm_entity     vdel           voptk
+libgd.so.2         libsystemc_gcc40.a  lmborrow            mgls                  START_SERVER  vdir           vovl
+libgd.so.2.0.0     libsystemc_gcc43.a  lmcksum             mti_copy              Tclexpat2.6   vencrypt       vrun
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # ls Me*
+MentorKG.exe
+
+Memchan2.3:
+libMemchan2.3.a  libMemchanstub2.3.a  .ts
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # chmod +x ./Me
+Memchan2.3/   MentorKG.exe  
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # chmod +x ./MentorKG.exe
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # ./MentorKG.exe -patch . -hn -o license.dat
+bash: ./MentorKG.exe: cannot execute binary file
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # wine ./MentorKG.exe -patch . -hn -o license.dat
+fixme:heap:HeapSetInformation (nil) 1 (nil) 0
+
+Mentor Graphics MGCLD License KeyGen V11.4
+⌐ 2015 by Team EFA (Eda For All).
+
+Scanned : 1 Packages                                                          
+Features: 190 Station, 1215 Composites, 221 Atomic and 137 Extended.
+Used    : 1763 Features
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # sudo chown jmgomez:users license.dat 
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # chmod ./mg
+mgcld  mgls/  
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # chmod ./mg
+mgcld  mgls/  
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # chmod +x ./mgls/lib/mgls_asynch
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # pwd
+/opt/modelsim_se_10-.2c/modeltech/linux_x86_64
+udit76:/opt/modelsim_se_10-.2c/modeltech/linux_x86_64 # 
+
+
+
+En caso de que no funcione:
+
+Установка в Linux с учётом вышеизложенных инструкций и возможных проблем с freetype библиотекой:
+<install_dir> = директория с установленным modelsim, например, /opt/modelsim
+<platform> = директория "linux" либо "linux_x86_64"
+Код:
+cd <install_dir>/modeltech/<platform>
+sudo wine /path/to/MentorKG.exe -patch . -hn -o /path/to/license.dat
+ls -l /path/to/license.dat
+sudo chmod a+x ./mgls/lib/mgls_asynch
+export LM_LICENSE_FILE=/path/to/license.dat
+PATH=$PATH:<install_path>/modeltech/bin
+vsim
+Если программа не запускается со следующей ошибкой, то проблема в "неправильной" системной библиотеке libfreetype.
+Код:
+Error in startup script:
+Initialization problem, exiting.
+    while executing
+"EnvHistory::Reset"
+    (procedure "PropertiesInit" line 3)
+    invoked from within
+"PropertiesInit"
+    invoked from within
+"ncFyP12 -+"
+    (file "/mtitcl/vsim/vsim" line 1)
+** Fatal: Read failure in vlm process (0,0)
+Скачайте и скомпилируйте версию, с которой заведомо работает modelsim:
+Код:
+wget http://download.savannah.gnu.org/releases/freetype/freetype-2.4.12.tar.bz2
+tar xf freetype-2.4.12.tar.bz2
+cd freetype-2.4.12
+./configure
+make
+cp ./objs/.libs/libfreetype.so.6.10.1 /path/to/lib_for_modelsim  # любое подходящее место, например /opt/modelsim/lib
+Теперь можно запустить modelsim командой:
+Код:
+LD_PRELOAD=/path/to/lib_for_modelsim/libfreetype.so.6.10.1 vsim
+Проще, конечно создать скрипт с этой строкой в стандартном пути, например /usr/local/bin/modelsim. 

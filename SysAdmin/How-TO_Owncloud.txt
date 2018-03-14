@@ -1,0 +1,34 @@
+- Juanma: Plato_FW, Plato_Grlib, Plato_SIM712 y Plato_IF
+
+https://trac.ffmpeg.org/wiki/CompilationGuide/Centos
+
+Want faster rsyncs??
+
+If you’re transferring a large amount of files with rsync, you’ll want to pass it some extra arguments.
+
+Check the rsync man page for:
+
+    –size-only because most webdav implementations do not accept setting modification time
+    –no-whole-file to tell rsync its handling a remote filesystem
+    –inplace having rsync replacing files directly, instead of uploading an then replacing
+
+
+rsync --exclude='Resources/Software/' --exclude='Resources/IsoImages/' --ignore-existing -vr /home/share/Workspace/CursoRPI3/ /home/share/oc/Workspace/CursoRPI3/
+
+rsync --exclude='Projects/Proyectos Libero' --exclude='.git/' --ignore-existing -vr /home/share/Workspace/Plato/ /home/share/oc/Workspace/Plato/
+
+rsync --exclude='.git/' --ignore-existing -vr /home/share/Workspace/Ethernet /home/share/oc/Workspace/Ethernet/
+
+
+rsync --exclude='*/History/' --exclude='*/__Previews/' --exclude='.git/' -vr /home/share/Workspace/Altium /home/share/oc/Workspace/Altium/
+
+rsync --exclude='*/History/' --exclude='*/Bin/' --exclude='.git/' -vr /home/share/Workspace/SpaceWire /home/share/oc/Workspace/SpaceWire/
+
+rsync -vr /home/jmgomez/Workspace/Papeleo /home/share/oc/Personal/Papeleo
+
+rsync -vr --exclude='How-TO/Navman S50/NewFirmwareVersion' --exclude='How-TO/Navman S50/Backup/' /home/jmgomez/Workspace/How-TO /home/share/oc/Personal/
+
+
+rsync -uvrn --exclude='How-TO/Navman S50/NewFirmwareVersion' --exclude='How-TO/Navman S50/Backup/' /home/jmgomez/Workspace/How-TO /home/share/oc/Personal/
+
+rsync -vr --exclude='Documentos/mmp6iiii.default/' /home/jmgomez/Workspace/Documentos /home/share/oc/Personal/

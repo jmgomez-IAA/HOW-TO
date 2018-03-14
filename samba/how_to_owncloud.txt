@@ -1,0 +1,19 @@
+ 
+mount -t davfs https://cloud.iaa.csic.es/remote.php/webdav  -o uid=jmgomez,gid=users /media/owncloud/
+
+mount -t davfs http://feynman.iaa.es:31480/alfresco/webdav/  -o uid=jmgomez,gid=users /media/data/proyecto/Plato/remote
+
+
+
+
+fstab
+===========
+https://cloud.iaa.csic.es/remote.php/webdav /media/owncloud/ davfs user,rw,noauto 0 0
+
+chown root:davfs2 owncloud
+
+groupadd --system davfs2
+
+sudo /usr/sbin/usermod -a -G davfs2 jmgomez
+
+

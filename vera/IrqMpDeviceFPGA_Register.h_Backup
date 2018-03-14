@@ -1,0 +1,156 @@
+//============================================================================
+// <Description>     :<Device:Multi-processor Interrupt Controller Unit  (IRQMP)>
+// <File>            :<IrqMpDeviceFPGA_Register.h>
+// <Type>            :<c code>
+// <Author>          :<Juan Manuel Gómez jmgomez@iaa.es>
+// <Creation date>   :<05 October 2012>
+// <History>         :<None>
+//============================================================================
+
+#ifndef MPIRQ_DEVICE_REGISTER_H_
+#define MPIRQ_DEVICE_REGISTER_H_
+
+//============================================================================
+//Include section
+//============================================================================
+
+//============================================================================
+//System include
+
+//============================================================================
+//User include
+#include "../../Util/SinbadBoardConstant.h"
+#include "../../Util/MyDataType.h"
+
+//============================================================================
+//Define section
+//============================================================================
+
+//============================================================================
+//registers
+
+  #define MPIRQ_CORE_INT_LEVEL_REGISTER         (0x00+SINBAD_BOARD_MULTI_PROCESSOR_INTERRUPT_CTRL_BASE_CONFIGURATION_ADDRESS)
+  #define MPIRQ_CORE_INT_PENDING_REGISTER         (0x04+SINBAD_BOARD_MULTI_PROCESSOR_INTERRUPT_CTRL_BASE_CONFIGURATION_ADDRESS)
+  #define MPIRQ_CORE_INT_FORCE_REGISTER          (0x08+SINBAD_BOARD_MULTI_PROCESSOR_INTERRUPT_CTRL_BASE_CONFIGURATION_ADDRESS)
+  #define MPIRQ_CORE_INT_STATUS_REGISTER          (0x0C+SINBAD_BOARD_MULTI_PROCESSOR_INTERRUPT_CTRL_BASE_CONFIGURATION_ADDRESS)
+  #define MPIRQ_CORE_INT_0_MASK_REGISTER          (0x40+SINBAD_BOARD_MULTI_PROCESSOR_INTERRUPT_CTRL_BASE_CONFIGURATION_ADDRESS)
+  #define MPIRQ_CORE_INT_0_FORCE_REGISTER          (0x80+SINBAD_BOARD_MULTI_PROCESSOR_INTERRUPT_CTRL_BASE_CONFIGURATION_ADDRESS)
+
+  //============================================================================
+  //============================================================================
+  //status register
+  typedef struct Mpirq_interrupt_0_force_register  {
+
+    union {
+      MY_UINT32   status;
+      struct {
+        MY_UINT32 extended_interrupt_force_clear_n         :  15;
+        MY_UINT32 reserved_1                     :  01;
+        MY_UINT32 interrupt_force_n                  :  15;
+        MY_UINT32 reserved_2                     :  01;
+      };
+    };
+
+  } Mpirq_interrupt_0_force_register ;
+
+  //============================================================================
+  //status register
+  typedef struct Mpirq_interrupt_0_mask_register  {
+
+    union {
+      MY_UINT32   status;
+      struct {
+        MY_UINT32 extended_interrupt_mask_n            :  16;
+        MY_UINT32 interrupt_mask_n                  :  15;
+        MY_UINT32 reserved_1                     :  01;
+      };
+    };
+
+  } Mpirq_interrupt_0_mask_register ;
+
+  //============================================================================
+  //status register
+  typedef struct Mpirq_interrupt_status_register  {
+
+    union {
+      MY_UINT32   status;
+      struct {
+        MY_UINT32 number_cpus                  :  04;
+        MY_UINT32 broadcast_available                  :  01;
+        MY_UINT32 reserved_1                     :  07;
+        MY_UINT32 extended_irq                     :  04;
+        MY_UINT32 powerdown_status_cpu_n               :  16;
+      };
+    };
+
+  } Mpirq_interrupt_status_register ;
+
+  //============================================================================
+  //status register
+  typedef struct Mpirq_interrupt_force_register  {
+
+    union {
+      MY_UINT32   status;
+      struct {
+        MY_UINT32 reserved_1                     :  16;
+        MY_UINT32 interrupt_force_n               :  15;
+        MY_UINT32 reserved_2                     :  01;
+      };
+    };
+
+  } Mpirq_interrupt_force_register ;
+
+  //============================================================================
+  //status register
+  typedef struct Mpirq_interrupt_pending_register  {
+
+    union {
+      MY_UINT32   status;
+      struct {
+        MY_UINT32 reserved_1                     :  16;
+        MY_UINT32 interrupt_pending_n                  :  15;
+        MY_UINT32 reserved_2                     :  01;
+      };
+    };
+
+  } Mpirq_interrupt_pending_register ;
+
+  //============================================================================
+  //control register
+  typedef struct Mpirq_interrupt_level_register {
+
+    union {
+      MY_UINT32   status;
+      struct {
+        MY_UINT32 reserved_1                     :  16;
+        MY_UINT32 interrupt_level_n                  :  15;
+        MY_UINT32 reserved_2                   :  01;
+      };
+    };
+
+  } Mpirq_interrupt_level_register ;
+
+  //============================================================================
+  //core hregister list
+  typedef struct Mpirq_core_register_list {
+
+    Mpirq_interrupt_level_register       mpirq_interrupt_level_register;
+    Mpirq_interrupt_pending_register   mpirq_interrupt_pending_register;
+    Mpirq_interrupt_force_register       mpirq_interrupt_force_register;
+    Mpirq_interrupt_status_register    mpirq_interrupt_status_register;
+    Mpirq_interrupt_0_mask_register    mpirq_interrupt_0_mask_register;
+    Mpirq_interrupt_0_force_register    mpirq_interrupt_0_force_register;
+
+  } __attribute__((packed)) Mpirq_core_register_list;
+
+//============================================================================
+//============================================================================
+//Exported function section
+//============================================================================
+
+//============================================================================
+#endif /* MPIRQ_DEVICE_REGISTER_H_ */
+
+//============================================================================
+//End of file: IrqMpDeviceFPGA_Register.h
+//============================================================================

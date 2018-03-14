@@ -1,0 +1,11 @@
+export PATH=/opt/rtems-4.10/bin:${PATH}
+export PATH=/opt/sparc-elf-4.4.2/bin:${PATH}
+export PATH=/opt/tsim/:${PATH}
+export PATH=/opt/grmon/:${PATH}
+export PATH=/opt/mkprom/:${PATH}
+
+
+export bsp=/media/data/rtems-4.10/rtems/rtems-NOMAD-work/b-leon/
+export b=${r}/c/src/lib/libbs
+
+

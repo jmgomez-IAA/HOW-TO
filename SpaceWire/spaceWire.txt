@@ -1,0 +1,46 @@
+NOMAD SpaceWire Configuration
+===============================
+
+grlib-ft-fpga-iaa-1.1.0-b4109  <= Lib version.
+
+
+-- Spacewire interface
+  constant CFG_SPW_EN : integer := 1;
+  constant CFG_SPW_NUM : integer := (2);
+  constant CFG_SPW_AHBFIFO : integer := 16;
+  constant CFG_SPW_RXFIFO : integer := 16;
+  constant CFG_SPW_RMAP : integer := 0;
+  constant CFG_SPW_RMAPBUF : integer := 4;
+  constant CFG_SPW_RMAPCRC : integer := 1;
+  constant CFG_SPW_NETLIST : integer := 1;
+  constant CFG_SPW_FT : integer := 1;
+  constant CFG_SPW_GRSPW : integer := 1;
+  constant CFG_SPW_RXUNAL : integer := 0;
+  constant CFG_SPW_DMACHAN : integer := 1;
+  constant CFG_SPW_PORTS : integer := (1);
+  constant CFG_SPW_INPUT : integer := 2;
+  constant CFG_SPW_OUTPUT : integer := 0;
+  constant CFG_SPW_RTSAME : integer := 0;
+
+
+/media/data/proyecto/Nomad_App/RTEMS/spacewire/rtems-spwtest-2boards.c
+
+/opt/rtems-4.10/src/samples/rtems-spwtest-2boards.c
+
+
+rtems-spwtest_2boards_rx: rtems-spwtest-2boards.c
+        $(CC) -g $(CFLAGS) $(CCOPT) -DTASK_RX rtems-spwtest-2boards.c -o $(OUTDIR)rtems-spwtest_2boards_rx
+
+rtems-spwtest_2boards_tx: rtems-spwtest-2boards.c
+        $(CC) -g $(CFLAGS) $(CCOPT) -DTASK_TX rtems-spwtest-2boards.c -o $(OUTDIR)rtems-spwtest_2boards_tx
+
+rtems-spwtest_loopback: rtems-spwtest-2boards.c
+        $(CC) -g $(CFLAGS) $(CCOPT) -DTASK_TX -DTASK_RX rtems-spwtest-2boards.c -o $(OUTDIR)rtems-spwtest_loopback
+
+
+The space_wire_start_link(device) must success, in other case the link may not transmit data.
+
+
+
+
+If the SpaceWire link did not success on the link_start function, it will fail when calls to write and read functions. The IP Core will reach running state but, the driver will block the data transmission.

@@ -1,0 +1,14 @@
+ 
+Para compilar un codigo fuente en Bare:
+
+sparc-elf-gcc  -g -O3 -msoft-float -mv8   -c -o spwBaretest.o spwNULLtest.c
+sparc-elf-gcc  spwBaretest.o -msoft-float -mv8 -lm -o spwBaretest.elf
+
+
+Entrar en GRMon
+my2Grmon -uart /dev/ttyUSB0 -u
+
+load  spwBareteest.elf
+run
+
+

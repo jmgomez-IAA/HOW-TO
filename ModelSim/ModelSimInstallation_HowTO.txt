@@ -1,0 +1,31 @@
+Instalar Modelsim 10.2.c
+=============================
+
+1) Ejecutar ./install.linux	Esto fallara por que la version de Java es distinta.
+2) Movernos al directorio /home/personal/mgc/
+3) Instalar la version de JAVA 1.6.0
+3.a) Forzar la instalacion ya que el que tengamos sera mas actual. 
+		zypper in -f jre-6u45-linux-amd64.rpm 
+3.b) Usar alternatives para cambiar al JAVA de la 1.6.
+		update-alternatives --install "usr/bin/java" "java" "/usr/java/jre1.6.0_45/bin/java" 40
+3.c) crear un enlace del JRE que trae a nuestro JRE local.
+		ln -s path_to_java.16_instalation JRE
+		
+4) Ejecutar /mgc/install.ixl/install
+
+5) Elegir como paquete a instalar el modeltech 10.2c en el directorio donde esta modelsim.
+
+6) Instalar las librerias Xft de 32 bits, 
+		sudo zypper in patterns-openSUSE-32bit (Esta es posible que no sea necesaria)
+		sudo zypper in libXft2-32bit
+
+7) Si sigue habiendo problemas con las librerias crear export LD_LIBRARY_PATH=/usr/lib64/
+6) Crear las variables de entorno.
+
+    
+    export LM_LICENSE_FILE=/opt/Mentor/modelsim10_2c/modeltech/linux_x86_64/license.dat
+    export MGLS_LICENSE_FILE=${LM_LICENSE_FILE}
+
+
+Instalar las licencias de modelsim.
+====================================

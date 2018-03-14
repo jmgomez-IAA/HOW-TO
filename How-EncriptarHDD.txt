@@ -1,0 +1,2 @@
+https://blog.inittab.org/administracion-sistemas/cifrando-discos-particiones-o-ficheros-con-luks/
+

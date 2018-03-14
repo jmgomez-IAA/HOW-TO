@@ -1,0 +1,91 @@
+Trap Handler
+==============
+
+Bibliografia
+============
+http://www.gaisler.com/doc/sparcv8.pdf  
+
+  links 
+-------------
+
+      https://groups.yahoo.com/neo/groups/leon_sparc/conversations/topics/17927
+      https://groups.yahoo.com/neo/groups/leon_sparc/conversations/topics/10393
+
+
+Configuracion
+=============
+
+  Tenemos que decirle a DSU que no se pare en los traps.=> 	Start grmon with -nb to avoid breaking on error traps.
+  A DSU que no se pare en los traps software.=> 	Start grmon with -swnb to avoid breaking on error traps.
+
+Añadir trap empleando el 
+=============
+#define TRAP(_vector, _handler)  \
+   mov   %psr, %l0 ; \
+   sethi %hi(_handler), %l4 ; \
+   jmp   %l4+%lo(_handler); \
+   mov   _vector, %l3
+
+
+Estudio de los compilados.
+==========================
+
+
+No, a simple "hello world" includes all the traps managing.
+
+#include <stdio.h>
+int main()
+{
+printf("Hello world!\n");
+return 0;
+}
+
+$ sparc-elf-gcc -g -O2 -Wl,-M -qsvt trapBare_v1.c -o trapBare_v1 &> trapBare_v1.lst
+$ sparc-elf-objdump -d -S trapBare_v1 > trapBare_v1.dis
+
+Use '-Xlinker -M' during final linking and you will get
+the dependency information.
+
+The -Wl,-M shows the dependencies in the beginning. Search for the
+line where catch_interrupt.o is mentioned and the line before is the
+file that draws it in.
+
+
+ .bss           0x4000def8        0x0 /opt/sparc-elf-4.4.2/bin/../lib/gcc/sparc-elf/4.4.2/../../../../sparc-elf/lib/soft/libleonbare.a(irqtrap_fast.o)
+
+
+
+ SVT mode "mkprom -qsvt".
+
+
+Cambiamos a 
+===================
+
+void default_trap_handler(void)
+{
+  trap_counter ++;
+}
+
+int main(void)
+{
+  svtloleveltrapinstall(0x2a, default_trap_handler); // IDIV0
+
+    [ cause integer division by zero ]
+
+}
+
+the result is:
+
+grlib> break default_trap_handler
+grlib> run
+breakpoint 1 default_trap_handler (0x40025f30)
+grlib> step 100
+40025f30 1b10015d sethi %hi(0x40057400), %o5
+40025f34 c2036234 ld [%o5 + 0x234], %g1
+40025f38 82006001 add %g1, 1, %g1
+40025f3c 81c3e008 retl
+40025f40 c2236234 st %g1, [%o5 + 0x234]
+80808088 ffffbffe unknown opcode: 0xffffbffe
+80808088 ffffffff unknown opcode: 0xffffffff
+80808088 ffffffff unknown opcode: 0xffffffff
+80808088 ffffffff unknown opcode: 0xffffffff

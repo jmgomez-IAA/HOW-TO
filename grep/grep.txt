@@ -1,0 +1,300 @@
+Manejo de GREP
+=======================
+
+grep -A 4 Captura 4 lineas antes de la coincidencia. No usar con -o pierde efecto
+grep -B 4 Captura 4 lineas despues de la coincidencia.No usar con -o pierde efecto
+grep -C 4 Captura 4 lineas antes y despues de la coincidencia.No usar con -o pierde efecto
+grep -C 15 -e '\<.*0x44[e,E]0 4000 .\{130\}06.\{0,1\}6[c,C].*\>' 2014_September_25_Thursday_19h_37m_19s_636ms.csv  > 2014_September_25_Thursday_19h_37m_19s_636ms_part.csv
+
+
+grep -m 1 Captura una sola coincidencia con la expresion.
+
+
+Expresiones regulares:
+
+Este doc va muy bien:
+
+
+
+
+1.3. grep
+
+En este tutorial usaremos la herramienta grep, incluída en cualquier instalación de Debian.
+El nombre grep viene de un comando del editor de textos ed (g/re/p), cuyo significado es g: global (en todo el texto), re: regular expression (buscar la expresión regular), p:print (e imprimirla). Y eso es lo que hace justamente grep.
+
+Opciones de grep:
+grep tiene muchas opciones, para más información consultar el manual:
+man grep
+En este tutorial sólo veremos algunas, que son las que nos servirán para aprender a usar las expresiones regulares:
+
+-G o --basic-regexp : Interpreta el patrón como una expresión regular básica (las que aprenderemos en este tutorial).
+Al ser este el comportamiento por defecto de grep, no se usará.
+-v o --invert-match : Invierte el sentido de búsqueda, es decir, busca todo lo que no coincida con el patrón dado.
+-o o --only-matching : Por defecto grep imprime la línea entera de la coincidencia encontrada, con esta opción imprimiría sólo la coincidencia.
+
+La entrada de texto de grep puede hacerse de dos maneras, dándole el nombre de un fichero, con lo que grep buscaría coincidencias en ese fichero; o introduciendo texto por la entrada estándar (o redirigiendolo).
+Ejemplo:
+grep 'regex' archivo
+Donde regex es el patrón a buscar y archivo el archivo en el que se buscará.
+grep 'regex'
+Ahora se nos abriría un prompt para introducir texto
+echo "regex" | grep 'regex'
+Redirigiendo la salida del comando echo para usarla como entrada de grep.
+
+Para una mejor visualización de las coincidencias encontradas añada, si no lo tiene ya, la siguiente línea a su bashrc o bash_aliases:
+alias grep='grep --color=auto'
+Si no sabe cómo, copie y pegue lo siguiente en su terminal:
+echo 'alias grep="grep --color=auto"' >> ~/.bashrc; source ~/.bashrc
+Los comandos anteriores sólo hace falta introducirlos una vez, con ellos añadirá color a las coincidencias de grep para la presente terminal y todas las que abra posteriormente.
+1.4. Entrecomillando los patrones
+
+Como norma general entrecomillaremos los patrones que le pasemos a grep usando comillas simples, esto es así debido a que bash realiza sustituciones en determinados carácteres que tienen significado especial para él, son los llamados "wildcards".
+
+Apuntes de bash (se los puede saltar si sabe bash):
+Wildcards:
+Estos símbolos en concreto tienen significado especial, y bash los sustituye antes de pasárselo al comando:
+* -> cero o más carácteres (cualquier carácter).
+? -> exactamente un carácter (cualquier carácter).
+[abcde]-> exactamente uno de los carácteres entre los corchetes.
+[a-o] -> exactamente uno de los carácteres en el rango. -> a, e, i, o en este caso
+[!abcde] -> cualquier carácter que no esté entre los corchetes.
+[!a-e] -> cualquier carácter que no esté en el rango.
+{debian,linux} -> alguna de las palabras que están entre las llaves.
+
+Comillas simples vs comillas dobles:
+Las comillas simples, o comillas fuertes, hacen que cualquier símbolo que esté entrecomillado no tenga significado especial, es decir, todo se envía al comando tal cual se ha puesto.
+Las comillas dobles, o comillas débiles, no interpretan las "wildcards", pero sí la expansión de variable, las de comandos y los escapados, es decir, interpreta los símbolos: $ ` \
+Ej:
+rm *  #Borra todo, ya que '*' coincide con todas las cadenas.
+rm *.jpeg #Borra todos los ficheros que acaben en '.jpeg'.
+rm file?.txt #Borra todos los ficheros que empiecen por 'file', tengan un carácter y acaben en '.txt'
+echo '$HOME' #Escribe la palabra '$HOME' en la pantalla (sin las comillas).
+echo "$HOME" #Escribe el nombre de su directorio de usuario, ya que interpreta lo que hay entre comillas.
+rm "mi fichero" #Borra un fichero llamado "mi fichero" (sin las comillas), si existen.
+rm mi fichero #Borra un fichero llamado "mi" y un fichero llamado "fichero", si existen.
+
+No hay que confundir los patrones de sustitución de bash con expresiones regulares.
+
+¿Y las variables?
+Si quiere usar el valor de una variable dentro de una expresión regular hay que encerrarla entre comillas dobles.
+Ejemplo:
+
+variable='hola'
+grep 'regex'"$variable"'regex' archivo
+Ya que la concatenación de cadenas de texto en bash se hace poniéndolas juntas.
+2. Expresiones regulares
+2.1. 'carácter'
+
+La expresión regular más sencilla que se puede crear es la compuesta por un carácter o por un conjunto de carácteres (palabra).
+Ej:
+grep 'hola' archivo # Busca 'hola' en archivo
+grep 'a' archivo # Busca 'a' en archivo
+grep 'bienvenido al tutorial' archivo # Busca 'bienvenido al tutorial' en archivo
+2.2. Barra invertida
+
+En las expresiones regulares, las barras invertidas "\" normalmente quitan el significado especial de algún carácter, aunque algunas veces se lo den, esto puede ser un poco complicado al principio pero se acabará acostumbrando. Como norma general, cualquier carácter con un significado especial que vea en este tutorial estará en la forma en la que tenga el significado especial, para quitarle ese significado no tiene más que quitarle la barra si la tiene o ponérsela si no la tiene.
+Normalmente a los carácteres precedidos por barra invertida y que sin ella tendrían significado especial, se llaman escapados.
+2.3. Punto
+
+El carácter punto "." se sustituye en una expresión regular por cualquier carácter, excepto nueva línea.
+Ejemplos:
+
+echo 'a b' | grep -o '.'
+grep encontrará como coincidencias: "a" y "b"
+
+echo 'a b . ;' | grep -o '.'
+grep encontrará como coincidencias: "a", "b", "." y ";".
+
+echo 'a b . ;' | grep -o '\.'
+grep sólo encontrará como coincidencia: ".", ya que al escapar el patrón ha hecho que este pierda su significado de cualquier carácter, a tener el significado de: el carácter punto.
+
+quien=tu
+echo 'en un'"$quien"' mi' | grep -o '..'
+grep encontrará como coincidencias: "en", "un", "tu" y "mi"
+
+echo ';:a una ala uno' | grep -o '..a'
+grep encontrará como coincidencias: ";:a", "una", "ala", pero no "uno" ya que no coincide con el patrón cualquier palabra de tres carácteres siendo el último la "a"
+Nótese que con palabra nos referimos a cualquier concatenación de carácteres
+
+echo 'vuela miedo fuera' | grep -o '..e.a'
+grep encontrará como coincidencias: "vuela", "fuera", pero no "miedo" ya que aunque cumple la parte del patrón "..e." no cumple lo de acabar en a.
+
+echo 'Este tutorial de grep me gusta mucho' | grep -o '.e'
+Al contrario de lo que se podría esperar no sólo ha encontrado las coincidencias: "de" y "me".
+El resultado es cuando menos extraño, si se ha usado la opción -o como en este ejemplo se obtendrán trozos de palabra, en concreto los trozos que concuerdan con el patrón, sin la opción -o y con el coloreado de grep activado se observará mejor y se podrán inferir las razones.
+Lo que ha ocurrido ha sido porque la expresión regular buscaba patrones que coincidieran con ".e" incluídos los que estuviesen dentro de otras palabras, entonces ¿cómo buscamos únicamente por las palabras que coincidan con ".e"?
+Una posible solución sería añadir espacios a los dos lados del patrón:
+
+echo 'Este tutorial de grep me gusta mucho' | grep -o ' .e '
+Esto solucionaría el problema con esta cadena de texto, pero ¿y si una de las palabras que queremos encontrar con el patrón están al principio o al final de la línea?, en ese caso los espacios serían un problema ya que pueden faltar. La solución está en usar otro de los meta-carácteres de las expresiones regulares: \<\>
+2.4. \<\>
+
+El metacarácter \<\> hace que todos los patrones dentro de él sólo coincidan con palabras enteras, esto es, palabras separadas entre sí por espacios. Para este metacarácter los símbolos de puntuación (.,< etc...) no forman parte de la palabra.
+
+echo 'Este tutorial de grep me gusta mucho' | grep -o '\<..\>'
+grep encontrará como coincidencias: "de" y "me", ya que son las únicas palabras enteras que coinciden con el patrón.
+
+echo 'Ya hemos aprendido algunas cosas' | grep -o '\<....s\>'
+grep encontrará como coincidencias: "hemos" y "cosas"
+
+echo 'Ya hemos aprendido algunas cosas' | grep '\<.a\>'
+grep encontrará como coincidencia: "Ya", sin embargo si no hubiesemos puesto \<\> entonces el patrón habría coincidido también con: " a", "na", "sa". La coincidencia con " a" es debida a que como se explicó antes, el punto es sustituido por cualquier carácter exceptuando nueva línea.
+
+echo '<>' | grep '<..'
+grep encontrará como coincidencia: "<echo '<>' | grep '\<..'
+grep encontrará como coincidencias: "Ya", "he", "ap", "al", "co", esto es, el principio de cada palabra que encaje con el patrón. Por lo tanto \> hará lo contrario. Veamoslo en un ejemplo.
+
+echo '<>' | grep '..\>'
+grep encontrará como coincidencias: "Ya", "os", "do", "as", "as", o lo que es lo mismo el final de las palabras que encajan con el patrón.
+2.5. * (Repitiendo patrones)
+
+Todos los metacarácteres anteriores están muy bien si sabe exáctamente cuántos carácteres tiene la palabra que quiere buscar, pero ¿qué ocurre si no lo sabe?, pues que habrá que usar el metacarácter *, * repetirá el patrón que le precede cero o más veces.
+
+echo '4 44 444 444 4444 44444' | grep '4*'
+grep encontrará como coincidencias todos y cada uno de los números que contengan cuatros.
+
+echo '4 454 4554554 455545554 4555455545554 44444' | grep '4*'
+grep encontrará como coincidencias todos y cada uno de los números que contengan cuatros.
+
+echo '4 454 4554554 455545554 4555455545554 44444' | grep '.*'
+grep encontrará como coincidencias todos, ya que el punto se traduce como cualquier carácter y * (repetido cero o más veces).
+
+echo '.* 44 58.* hhial' | grep '\.\*'
+grep encontrará como coincidencias: ".*" debido a que los carácteres están escapados.
+
+echo '4 454 4554554 455545554 4555455545554 44444' | grep '\<4*\>'
+grep encontrará como coincidencias sólo los números que contengan únicamente cuatros.
+
+Pero hay que tener cuidado con *, ya que como dice la definición "repetirá el patrón que le precede cero o más veces."
+¿Todavía no ve el peligro?, veámoslo con un ejemplo.
+
+echo -e "Línea sin comentario\n#Línea con comentario\nLínea sin comentario" | grep '#*'
+echo -e interpreta "\n" como nueva línea, es decir, sería como escribir la frase hasta "\n" darle al retorno de carro (enter, nueva línea) continuar escribiendo y repetir lo anterior
+Con éste patrón debería encontrar las líneas que tengan algún comentario, ¿o no?. Como podía esperar tras toda la preparación anterior: no, pero lo importante es el por qué; esto ha ocurrido porque como se mencionó anteriormente * repetía el patrón anterior cero o más veces, o lo que es lo mismo, se buscarían todas las líneas tuvieran o no #.
+Para solucionar este problema no habría más que añadir otro # antes del que precede al *:
+
+echo -e "Línea sin comentario\n#Línea con comentario\nLínea sin comentario" | grep '##*'
+esto buscará todas las líneas que tengan uno o más # debido a que el metacarácter sólo se aplica al patrón que le precede, esto es, el segundo #.
+2.6. Rango de carácteres []
+
+Gracias al metacarácter [], se pueden elegir diferentes carácteres a los cuáles aplicarles algún otro patrón de sustitución.
+
+echo '5895 589435 539853 54849' | grep -o '[0123456789]*'
+grep encontraría como coincidencias a todos los conjuntos numéricos, ya que es lo que le hemos indicado con el conjunto de carácteres encerrados entre corchetes.
+
+echo 'hola hhaif aieo uuieo' | grep -o '\<[aeiou]*\>'
+grep encontraría como coincidencias a todos los grupos de vocales: "aieo", "uuieo"
+
+En estos casos también se pueden indicar rangos, por ejemplo, para que coincida con cualquier número se puede
+poner de la siguiente manera: [0-9], nótese que se empieza en cero; para indicar cualquier letra (del abecedario inglés) minúscula se puede hacer [a-z], y mayúsculas: [A-Z], también se pueden combinar: [a-zA-Z] coincidiría con cualquier letra, mayúscula o minúscula.
+
+echo 'hola hhaif AiEo uu66ieo' | grep -o '\<[A-Za-z]*\>'
+grep encontraría como coincidencias todas las palabras que sólo contengan letras alfabéticas (inglesas).
+
+echo 'hola hhAIf AiEo uu66ieo' | grep -o '\<[AIa-z]*\>'
+grep encontraría como coincidencias todas las palabras que sólo contengan letras alfabéticas minúsculas (cualquiera) y las letras mayúsculas A e I.
+
+Al utilizarse el guión para indicar rangos, si queremos usarlo como carácter en el grupo debemos ponerlo al principio o al final, y cualquier metacarácter debe ir escapado.
+
+echo 'hola hh-AIf A-iEo u.u66ieo' | grep '[AIa-z\.-]*'
+grep encontraría como coincidencias todas las palabras o subpalabras que sólo contengan letras alfabéticas minúsculas (cualquiera) y A e I, además de los símbolos "." y "-".
+
+echo 'hola hh-AIf A-iEo u.u66ieo' | grep -o '\<[AIa-z\.-]*\>'
+en este caso, con la idea de que coincida cualquier palabra que contenga el conjunto antes mencionado, se ha usado el metacarácter \<\>, pero el resultado no ha sido el esperado, y su explicación es que el metacarácter anterior sirve para coincidir con palabras que no contengan símbolos de puntuación o guiones.
+
+Cabe destacar que existen conjuntos de carácteres POSIX definidos para añadir portabilidad, son los siguientes:
+
+[:alnum:] Alfanuméricos
+[:alpha:] Carácteres alfabéticos
+[:upper:] Carácteres en mayúscula
+[:lower:] Carácteres en minúscula
+[:digit:] Dígitos
+[:print:] Carácteres imprimibles
+
+hay algunos más, pero estos son los más importantes
+
+Ahora reescribiremos algunos ejemplos anteriores usando estos conjuntos POSIX:
+
+echo '5895 589435 539853 54849' | grep -o '[[:digit:]]*'
+Nótese el uso del doble corchete.
+
+echo 'hola hhaif AiEo uu66ieo' | grep -o '\<[[:alpha:]]*\>'
+grep encontraría como coincidencias todas las palabras que sólo contengan letras alfabéticas (inglesas).
+
+También se puede elegir el complementario de un conjunto, esto es, los carácteres que no están en el conjunto. Esto lo haremos con [^conjunto].
+
+echo 'hola 6g hhaif 5345235 AiEo 66' | grep -o '\<[^[:alpha:]]*\>'
+grep encontrará como coincidencias todas las palabras que no contengan letras alfabéticas (inglesas).
+
+echo 'hola hh-AIf EEE5 A-iEo u.u66ieo' | grep -o '\<[^AIh-z]*\>'
+grep encontrará como coincidencias todas las palabras que no contengan letras A, I, de h a z.
+2.7. Paréntesis \(\)
+
+El metacarácter paréntesis sirve para seleccionar un patrón al que le aplicaremos un metacarácter modificador, por ejemplo *; tiene además un par de carácterísticas bastante interesantes que veremos más adelante.
+
+echo 'holaholaholahola holahola adios' | grep -o '\(hola\)*'
+grep encontraría como coincidencias todas las palabras que contengan repeticiones de la palabra hola
+
+echo 'holahelloholahola holahola adios' | grep -o '\<\(hola\)*\>'
+grep encontraría como coincidencias todas las palabras que contengan únicamente repeticiones de la palabra hola
+
+Una de las características interesantes del paréntesis que se mencionó anteriormente es la de recordar una coincidencia, esto es, el patrón guardará en un registro numérico (del 1 al 9), cada coincidencia que haya coincidido con un patrón que se encuentre entre paréntesis. Siendo \1 la primera coincidencia recordada, \2 la siguiente, y así hasta el \9.
+
+echo '6hola6 5hola4 4adios9 7adios7' | grep -o '\<\([0-9]\)[[:alpha:]]*\1\>'
+grep encontrará como coincidencias cualquier palabra que empiece con un número y acabe con el mismo número y entre los números tenga letras.
+
+echo 'NaN LOL Wow TypeT' | grep -o '\<\([[:upper:]]\)[[:alpha:]]*\1\>'
+grep encontrará como coincidencias cualquier palabra que empiece con una letra mayúscula y acabe con la misma letra y entre las letras mayúsculas tenga letras.
+
+echo '0990 5785 5775 6996 ' | grep -o '\([[:digit:]]\)\([[:digit:]]\)\2\1'
+grep encontrará como coincidencias cualquier número capicúa de cuatro cifras.
+
+La otra característica interesante es la de poder elegir entre dos patrones distintos usando \| entre los dos patrones:
+
+echo 'ftp://asdfasf.com http://asfasdf.com' | grep -o '\(ftp\|http\)://[a-z]*\.com'
+grep encontrará como coincidencias cualquier palabra que empiece con ftp o http y que continúe con un conjunto de letras minúsculas y acabe en .com
+
+echo 'ftp://ulises.hostalia.com/debian http://ftp.es.debian.org/debian/' | grep -o '\(ftp\|http\)://[a-z\.-\/]*'
+grep encontrará como coincidencias cualquier palabra que empiece con ftp o http y que continúe con un conjunto de letras minúsculas, puntos, y guiones.
+
+echo 'Yes No Sí No' | grep -o '\(Sí\|Yes\)'
+grep encontrará como coincidencias: "Sí" y "Yes".
+
+echo '6hola6 9hola9 5jaja4 5haha5' | grep '\(6\|9\)[[:alpha:]]*\1'
+grep encontrará como coincidencias cualquier palabra que empiece con 6 o 9 y que acabe con el mismo número, con letras en medio.
+2.8. Eligiendo el número de repeticiones \{\}
+
+Con los metacarácteres \{\}, poniendo un número o dos entre las llaves se puede elegir el número de veces que queremos que se repita un patrón.
+
+echo '555 555555 555555 5555555 55 5555' | grep -o '\<5\{6\}\>'
+grep encontraría las palabras formadas por exáctamente seis cincos.
+
+echo '555 555555 555555 5555555 55 5555' | grep '\<5\{3,6\}\>'
+grep encontrará las palabras formadas por entre tres y seis cincos.
+
+También las podemos mezclar con otros metacarácteres
+
+echo '555 asd#lha sdf 55hi5 555aASasd55 55 5555' | grep -o '.\{4,11\}'
+grep encontrará como coincidencias cualquier palabra con entre 4 y 11 carácteres, el resultado puede parecer raro, pero la explicación es sencilla: el metacarácter "." significa cualquier carácter, incluido el espacio, y grep tiende a buscar la palabra más grande que se adapte al patrón.
+
+Así que para conseguir el efecto deseado:
+echo '555 asd#lha sdf 55hi5 555aASasd55 55 5555' | grep -o '[[:alnum:]#]\{4,11\}'
+Por si lo estaba pensando, con \<\> y el punto tampoco conseguiría el resultado que se buscaba, ya que el punto seguiría significando cualquier carácter incluido el espacio, compruébelo usted mismo.
+
+echo 'http://www.esdebian.org/que-haces https://encrypted.google.com/' | grep -o 'https\{0,1\}[[:alnum:]:\/_-.]*'
+Como habrá podido comprobar el metacarácter \{\} sólo afecta al elemento más cercano a él, entonces, ¿cómo aplicarselo a un grupo?. Fácil con \(\).
+
+echo 'http://www.esdebian.org/que-haces www.esdebian.org/que-haces' | grep -o '\(http://\)\{0,1\}[[:alnum:]\/_-.]*'
+2.9. ^ $
+
+Los últimos metacarácteres de este tutorial son ^ y $, estos dos metacarácteres sirven para buscar coincidencias al principio y al final de una línea respectivamente.
+
+echo 'hola hola hola' | grep '^hola'
+grep sólo coincidirá con el primer hola, debido a que es el que está al principio de la línea.
+
+echo 'adios adios adios' | grep 'adios$'
+grep sólo coincidirá con el último adios, debido a que es el que está al final de la línea.
+
+echo -e "Este es el final del tutorial,\nesperamos que lo haya disfrutado y haya aprendido mucho sobre las expresiones regulares.\nesDebian" | grep '^[[:alpha:]]*$'
+
+

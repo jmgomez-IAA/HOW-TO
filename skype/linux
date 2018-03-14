@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html class="noTabletState es " data-language="es" lang="es" data-overlay-standalone="true">
+<head>
+		
+
+	<!-- Meta info -->
+	<meta charset="utf-8">
+	<title>Download Skype for Linux, get Skype for Linux</title>
+	<script type="text/javascript">
+	
+		(function() {
+			if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement("style");
+				msViewportStyle.appendChild(
+					document.createTextNode("@-ms-viewport{width:auto!important}")
+				);
+				document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+			}
+		})();	
+	
+		window.ClickTaleSettings = { XHRWrapper: { Enable: true, MaxResponseSize: 1000000} };
+		document.write(unescape("%3Cscript%20src='" +
+		(document.location.protocol == 'https:' ? 'https://clicktalecdn.sslcs.cdngc.net/www/' : 'http://s.clicktale.net/') +
+		"XHRWrapper.js'%20type='text/javascript'%3E%3C/script%3E"));
+		
+		if (typeof SKYPE === 'undefined') {
+			var SKYPE = {};
+		}
+		SKYPE.settings = {};
+		SKYPE.settings.api = {
+			sessionApiUrl: ""
+		}
+
+		SKYPE.settings.l10s = {};
+		SKYPE.settings.l10s.overlay = {
+			closeButton: "",
+			instructions: ""
+		}
+	</script>
+	<meta name="description" content="Download Skype for Linux today and make free calls and internet calls to all your friends and family with Skype. Download Skype today." />
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width,  initial-scale=1"/>
+
+	
+	
+	<!-- Default Assets -->
+	<link rel="stylesheet" href="http://www.skypeassets.com/i/scom/combined/css/common.min.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="http://www.skypeassets.com/i/scom/combined/css/scom.min.css" type="text/css" media="screen"/>
+
+	<!--   
+	 NOTICE:  Third party scripts and code linked to or referenced here are not licensed to you by   
+	 the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use -
+	 http://www.asp.net/ajaxlibrary/CDN.ashx
+	-->
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.7.2.min.js"></script>
+
+	<script type="text/javascript" src="http://www.skypeassets.com/i/scom/combined/js/skype.min.js"></script>
+	
+	
+	<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/mbox.js"></script>
+
+	
+</head>
+<body>
+
+	<!-- ClickTale Top part -->
+	<script type="text/javascript">
+		var WRInitTime=(new Date()).getTime();
+	</script>
+	<!-- ClickTale end of Top part -->
+
+	
+	
+	
+		<div class="mboxDefault">
+	
+	<nav id="scom" class="isNotAuthenticated" data-content-key="authenticationStatus" role="navigation">
+		<ul role="menubar" class="centerWrapper">
+		
+			<li role="presentation" class="skypeLogo singleItem" title="Inicio">
+				<a aria-selected="false" href="/es/" title="Inicio">
+					<span></span>
+				</a>
+			</li>
+			
+			
+			
+			<li role="presentation" class="noDesktop openMenu">
+				<a aria-selected="false" href="#">
+					<span>Menú</span>
+				</a>			
+			</li>
+			<li role="presentation" class="noDesktop closeMenu">
+				<a aria-selected="false" href="#">
+					<span class="icon"></span>
+					<span>Cerrar menú</span>
+				</a>
+			</li>
+			<li class="noDesktop home" role="presentation">
+				<a aria-selected="false" href="/es/">Inicio</a>
+			</li>
+			
+				<li role="presentation" class="mainMenuItem" aria-haspopup="true">
+					<a aria-hidden="true" data-sc="header_what_is_skype" href="/es/what-is-skype/">Descubre</a>
+					 
+						<ul class="sub" role="menu" aria-label="Descubre" aria-expanded="true">
+							
+								<li role="presentation">
+									<a aria-selected="false" data-sc="header_what_is_skype" href="/es/what-is-skype/">¿Qué es Skype?</a>
+								</li>
+							
+								<li role="presentation">
+									<a aria-selected="false" data-sc="header_features" href="/es/features/">Características</a>
+								</li>
+							
+								<li role="presentation">
+									<a aria-selected="false" data-sc="header_business" href="/es/business/">Empresas</a>
+								</li>
+							
+						</ul>
+					
+				</li>
+			
+				<li role="presentation" class="mainMenuItem" aria-haspopup="true">
+					<a aria-hidden="true" data-sc="header_rates" href="/es/rates/">Precios</a>
+					 
+						<ul class="sub" role="menu" aria-label="Precios" aria-expanded="true">
+							
+								<li role="presentation">
+									<a aria-selected="false" data-sc="header_rates" href="/es/rates/">Tarifas</a>
+								</li>
+							
+								<li role="presentation">
+									<a aria-selected="false" data-sc="header_premium" href="/es/premium/">Cuenta Premium</a>
+								</li>
+							
+								<li role="presentation">
+									<a aria-selected="false" data-sc="header_special_offers" href="/es/special-offers/">Ofertas especiales</a>
+								</li>
+							
+								<li role="presentation">
+									<a aria-selected="false" data-sc="header_shop" href="http://www.skype.com/go/shop">Tienda</a>
+								</li>
+							
+						</ul>
+					
+				</li>
+			
+				<li role="presentation" class="active singleItem mainMenuItem" >
+					<a data-sc="header_download_skype" href="/es/download-skype/">Descargas</a>
+					
+				</li>
+			
+				<li role="presentation" class="singleItem mainMenuItem" >
+					<a data-sc="header_support_skype_com" href="https://support.skype.com">Asistencia</a>
+					
+				</li>
+			
+			
+						
+			
+			
+				<li class="account noDesktop singleItem mainMenuItem" role="presentation" >
+					<a aria-selected="false" href="http://www.skype.com/go/myaccount" data-sc="header_profile" data-link-type="profile">Mi cuenta</a>
+				</li>
+				
+				<li class="account notAuthenticated noDesktop singleItem mainMenuItem" role="presentation" tabindex="0">
+					<a aria-selected="false" href="http://www.skype.com/go/myaccount" class="notAuthenticated" data-sc="header_login" data-link-type="login">Inicia sesión</a>
+				</li>
+				
+				
+			
+			
+			
+			
+				<li class="account notAuthenticated noMobile mainMenuItem account singleItem" role="presentation" >
+					<a aria-selected="false" href="http://www.skype.com/go/myaccount" data-sc="header_login" data-link-type="login">Inicia sesión</a>
+				</li>
+				<li class="account notAuthenticated noMobile mainMenuItem singleItem marginRight" role="presentation" >
+					<a aria-selected="false" href="http://www.skype.com/go/joinskype" data-sc="header_join" data-link-type="join">Únete</a>				
+				</li>
+			
+			
+			
+				<li class="account authenticated noMobile mainMenuItem singleItem username" role="presentation" >
+					<a aria-selected="false" href="http://www.skype.com/go/myaccount" data-sc="header_profile" data-link-type="profile" data-content-key="skypename">Mi cuenta</a>
+				</li>
+				<li class="account authenticated noMobile mainMenuItem singleItem marginRight" role="presentation" >
+					<a aria-selected="false" href="http://www.skype.com/go/logout" data-sc="header_logout" data-link-type="logout">Cerrar sesión</a>
+				</li>
+			
+			
+		</ul>
+		<div id="scomNavigationEnd"></div>
+		
+		<script type="text/javascript">
+		
+			var s_el = s_el || {};
+			s_el.mobile_menu = {click: {events: "event36", eVar19: "mobile nav flyout", prop18: D="v19"}};
+			
+			
+			
+				s_el.header_what_is_skype = {click: {events: "event35", eVar19: "header: what_is_skype", prop18: "D=v19"}};
+
+				 
+					
+						s_el.header_what_is_skype = {click: {events: "event35", eVar19: "header: what_is_skype", prop18: "D=v19"}};
+					
+						s_el.header_features = {click: {events: "event35", eVar19: "header: features", prop18: "D=v19"}};
+					
+						s_el.header_business = {click: {events: "event35", eVar19: "header: business", prop18: "D=v19"}};
+									
+				
+
+			
+			
+				s_el.header_rates = {click: {events: "event35", eVar19: "header: rates", prop18: "D=v19"}};
+
+				 
+					
+						s_el.header_rates = {click: {events: "event35", eVar19: "header: rates", prop18: "D=v19"}};
+					
+						s_el.header_premium = {click: {events: "event35", eVar19: "header: premium", prop18: "D=v19"}};
+					
+						s_el.header_special_offers = {click: {events: "event35", eVar19: "header: special_offers", prop18: "D=v19"}};
+					
+						s_el.header_shop = {click: {events: "event35", eVar19: "header: shop", prop18: "D=v19"}};
+									
+				
+
+			
+			
+				s_el.header_download_skype = {click: {events: "event35", eVar19: "header: download_skype", prop18: "D=v19"}};
+
+				
+
+			
+			
+				s_el.header_support_skype_com = {click: {events: "event35", eVar19: "header: support_skype_com", prop18: "D=v19"}};
+
+				
+
+			
+			
+			
+				s_el.header_login = {click: {events: "event35", eVar19: "tray: sign-in", prop18: "D=v19"}};
+				s_el.header_join = {click: {events: "event35", eVar19: "tray: sign-up", prop18: "D=v19"}};
+						
+		
+		</script>
+	</nav>
+	
+		</div><!-- .mboxDefault -->
+		<script type='text/javascript'>mboxCreate('global_navigation', "profile.lang=es");</script>
+	
+
+
+
+
+	<div class="parsys mainParsys"><div class="slimlineHeader section">
+
+<header>
+    <div class="heroCenter slimline">
+        <div class="headline withButton">
+            
+            <a class="backButton" href="/es/download-skype/">
+                <img aria-hidden="true" class="clickable" src="http://www.skypeassets.com/i/common/images/misc/dummy.png" alt="Back">
+                
+                    <span class="noDesktop">Volver a descargas</span>
+                
+            </a>
+            
+            <p role="heading" aria-level="1" class="title-h1 noMobile">Usa la misma cuenta de Skype en todos tus dispositivos...</p>
+            
+				
+				
+					
+				
+			
+        </div>
+    </div>
+</header>
+
+</div>
+</div>
+
+	<div class="section deviceReference">
+	
+
+
+	<div class="wizard">
+		<div data-wizard-page="1"
+			class="wizardPage active">
+			<div class="deviceComponent component"
+				data-sc="overlay_download_qVGczZyQKT">
+				<div class="firstTab">
+					<h1 class="mainTitle noMobile">Skype para Linux</h1>
+					
+
+						
+
+						
+							<div
+								class="mediaGallery component ">
+								<ul class="gallerySlides">
+									
+										<li class="active"
+											data-slidenumber="1">
+											<img class="noMobile" src="http://www.skypeassets.com/content/dam/scom/images/media-gallery/desktop/devices/hero-desktop-linux.png" alt="Skype para Linux"/> 
+												
+												<img class="noDesktop noTablet" src="http://www.skypeassets.com/content/dam/scom/images/media-gallery/mobile/devices/desktop-linux.jpg" alt="Skype para Linux"/>
+											</li>
+									
+								</ul>
+								
+							</div>
+						
+					
+
+					<p class="title-h1 noDesktop noTablet">Skype para Linux</p>
+					<div class="overview">
+						<div class="richText section"><p>Tu mundo se amplía con Skype: comparte un cuento antes de dormir, organiza una reunión o aprende idiomas.</p>
+<p>Estas son solo algunas de las cosas geniales que puedes hacer:</p>
+<ul>
+<li>Llamadas gratis entre usuarios de Skype.</li>
+<li>Llamadas económicas a teléfonos fijos y móviles y SMS a muy buen precio.</li>
+<li>Videollamadas a tus contactos.</li>
+<li>Mensajes instantáneos gratis a tus amigos, familiares y colegas.</li>
+<p>Todo lo que necesitas para comenzar es Skype 4.2 para Linux, una cámara web para videollamadas y un micrófono.</p>
+</ul>
+</div>
+					</div>
+							
+			
+			
+				<div class="action">
+					<div class="osSelector">
+						<form method="get" action="/es/download-skype/skype-for-linux/downloading/">
+							<label for="operationSystem" class="osDropdown skypeGenericDropDown">
+								<span class="distribution" id="pickedOs">Elige tu distribución</span>
+								<span class="pickDown"></span>
+								<select id="operationSystem" class="operationSystem" name="chooseOs" onchange="s.trackAction({events:'event1', products:'download;Skype: Linux'})">
+									<option>Elige tu distribución</option>
+									
+										<option value="ubuntu32">Ubuntu 10.04 32-bit</option>
+									
+										<option value="ubuntu64">Ubuntu 12.04 (multiarch)</option>
+									
+										<option value="debian32">Debian 7.0 (multiarch)</option>
+									
+										<option value="fedora32">Fedora 16 32bit</option>
+									
+										<option value="suse32">OpenSUSE 12.1 32bit</option>
+									
+										<option value="dynamic">Dynamic</option>
+									
+								</select>
+							</label>
+						</form>
+					</div>
+					<script>
+						SKYPE && SKYPE.Download && SKYPE.Download.init();
+					</script>
+				</div>
+			
+		
+					
+						<p class="noMobile noOverlay">
+							<a class="showOverlaySecondTab" href="#">Requisitos del sistema</a>
+						</p>
+					
+					<div class="downloadVideo">
+						<div class="richText section"></div>
+					</div>
+					<p class="needHelp noMobile">
+						¿Necesitas más ayuda? <a href="http://www.skype.com/go/help.faq.linux" title="Asistencia">Visita el sitio de asistencia</a>
+					</p>
+				</div>
+				
+					<div id="secondTabLink" class="noDesktop">
+						<a class="toggleContent noDesktop noTablet" href="#" data-sc="sysreq">Requisitos del sistema</a>
+					</div>
+					<div class="secondTab toggleableContent hidden">
+						<div class="richText section">
+							<h1 class="mainTitle isOverlay noMobile">Skype para Linux</h1>
+							<ul>
+<li>Procesador de 1 GHz o superior.</li>
+<li>256 MB de RAM.</li>
+<li>100 MB de espacio libre en el disco duro.</li>
+<li>Driver de tarjeta de video compatible con Xv.</li>
+<li>Micrófono externo o incorporado para hacer llamadas.</li>
+<li>Conexión a Internet. Lo ideal es banda ancha (no se admite GPRS en conversaciones de voz).</li>
+<li>Qt 4.7 • D-Bus 1.0.0</li>
+<li>libasound2 1.0.18</li>
+<li>PulseAudio 1.0 (opcional)</li>
+<li>BlueZ 4.0.0 (opcional)</li>
+</ul>
+
+						</div>
+					</div>
+				
+				<p class="needHelp noDesktop isOverlay">
+					¿Necesitas más ayuda? <a href="http://www.skype.com/go/help.faq.linux" title="Asistencia" data-sc="help">Visita el sitio de asistencia</a>
+				</p>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+</div>
+<div class="parsys metadataParsys"></div>
+
+	
+	<footer role="contentinfo">
+		<div class="top">
+			<div class="centered">
+				<div class="footerContent">
+					<div class="footerLinks noMobile" role="navigation">
+						<ul>
+							
+								<li>
+									<a data-sc="footer_about" href="/es/about/" title="Acerca de">Acerca de</a>
+								</li>
+							
+								<li>
+									<a data-sc="footer_advertise" href="http://www.skype.com/go/advertise" title="Publicidad">Publicidad</a>
+								</li>
+							
+								<li>
+									<a data-sc="footer_blogs_skype_com" href="http://blogs.skype.com/" title="Blogs">Blogs</a>
+								</li>
+							
+								<li>
+									<a data-sc="footer_legal" href="/es/legal/" title="Aviso legal">Aviso legal</a>
+								</li>
+							
+								<li>
+									<a data-sc="footer_jobs" href="http://www.skype.com/go/jobs" title="Trabajo">Trabajo</a>
+								</li>
+							
+							<li>
+								<a data-sc="sitemapLink" href="/es/site-map/">Mapa del sitio</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footerButtons">
+						
+
+
+	<div class="footerLanguageSelector">
+		<form action="/$&#123;LC&#125;/download-skype/skype-for-linux" method="get">
+		<label class="languagesDropdown">
+			<span class="world"></span>
+			<span id="pickedLanguage" class="language" aria-hidden="true">Español</span>
+			<span class="pickDown"></span>
+			<script type="text/javascript">                                        
+		    var s_langChange = function (el) {
+		        if ((typeof s != 'undefined') && (typeof s.trackAction != 'undefined')) {
+		            s.trackAction({events: "event36",
+		                eVar19: "language selector: " + $('html').attr('data-language') + " > " + $('#userLanguage').val(),
+		                prop18: "D=v19"}, el);
+		            }
+		        return true;
+		        };
+		    </script>
+            <select aria-label="" title="" name="userLanguage" id="userLanguage" class="userLanguage" data-sc="lang_selector">
+				
+				
+				
+				<option aria-label="English" label="English" value="en" lang="en" >English</option>
+				
+				
+				
+				<option aria-label="عربي" label="عربي" value="ar" lang="ar" >عربي</option>
+				
+				
+				
+				<option aria-label="Български" label="Български" value="bg" lang="bg" >Български</option>
+				
+				
+				
+				<option aria-label="Česky" label="Česky" value="cs" lang="cs" >Česky</option>
+				
+				
+				
+				<option aria-label="Dansk" label="Dansk" value="da" lang="da" >Dansk</option>
+				
+				
+				
+				<option aria-label="Deutsch" label="Deutsch" value="de" lang="de" >Deutsch</option>
+				
+				
+				
+				<option aria-label="Ελληνικά" label="Ελληνικά" value="el" lang="el" >Ελληνικά</option>
+				
+				
+				
+				<option aria-label="Español" label="Español" value="es" lang="es" selected="selected">Español</option>
+				
+				
+				
+				<option aria-label="Eesti" label="Eesti" value="et" lang="et" >Eesti</option>
+				
+				
+				
+				<option aria-label="Suomi" label="Suomi" value="fi" lang="fi" >Suomi</option>
+				
+				
+				
+				<option aria-label="Français" label="Français" value="fr" lang="fr" >Français</option>
+				
+				
+				
+				<option aria-label="עברית" label="עברית" value="he" lang="he" >עברית</option>
+				
+				
+				
+				<option aria-label="Magyar" label="Magyar" value="hu" lang="hu" >Magyar</option>
+				
+				
+				
+				<option aria-label="Bahasa Indonesia" label="Bahasa Indonesia" value="id" lang="id" >Bahasa Indonesia</option>
+				
+				
+				
+				<option aria-label="Italiano" label="Italiano" value="it" lang="it" >Italiano</option>
+				
+				
+				
+				<option aria-label="日本語" label="日本語" value="ja" lang="ja" >日本語</option>
+				
+				
+				
+				<option aria-label="한국어" label="한국어" value="ko" lang="ko" >한국어</option>
+				
+				
+				
+				<option aria-label="Nederlands" label="Nederlands" value="nl" lang="nl" >Nederlands</option>
+				
+				
+				
+				<option aria-label="Norsk" label="Norsk" value="no" lang="no" >Norsk</option>
+				
+				
+				
+				<option aria-label="Polski" label="Polski" value="pl" lang="pl" >Polski</option>
+				
+				
+				
+				<option aria-label="Português" label="Português" value="pt" lang="pt" >Português</option>
+				
+				
+				
+				<option aria-label="Português (Brasileiro)" label="Português (Brasileiro)" value="pt-br" lang="pt-br" >Português (Brasileiro)</option>
+				
+				
+				
+				<option aria-label="Română" label="Română" value="ro" lang="ro" >Română</option>
+				
+				
+				
+				<option aria-label="Русский" label="Русский" value="ru" lang="ru" >Русский</option>
+				
+				
+				
+				<option aria-label="Svenska" label="Svenska" value="sv" lang="sv" >Svenska</option>
+				
+				
+				
+				<option aria-label="Türkçe" label="Türkçe" value="tr" lang="tr" >Türkçe</option>
+				
+				
+				
+				<option aria-label="Українська" label="Українська" value="uk" lang="uk" >Українська</option>
+				
+				
+				
+				<option aria-label="中文（简体)" label="中文（简体)" value="zh-Hans" lang="zh-Hans" >中文（简体)</option>
+				
+				
+				
+				<option aria-label="中文 (繁體)" label="中文 (繁體)" value="zh-Hant" lang="zh-Hant" >中文 (繁體)</option>
+				
+			</select>
+		</label> 
+		</form>
+	</div>
+						<div class="footerSocial noMobile">
+							<script>
+								var s_socialMediaLink = function (platform) {
+							        if ((typeof s != 'undefined') && (typeof s.trackAction != 'undefined')) {
+								        s.trackAction({
+								       		events: "event46",
+								       		eVar19: "share: " + platform,
+								    	});
+							        }
+							        return true;
+							    };
+							</script>
+							<a class="skypeOnFacebook" onclick="s_socialMediaLink('facebook')" title="Skype on Facebook" href="http://www.facebook.com/Skype">
+							</a>
+							<a class="skypeOnTwitter" onclick="s_socialMediaLink('twitter')" title="Skype on Twitter" href="https://twitter.com/Skype">
+							</a>
+							<a class="skypeOnYouTube" onclick="s_socialMediaLink('youtube')" title="Skype on YouTube" href="http://www.youtube.com/Skype">
+							</a>
+							<a class="skypeOnPinterest" onclick="s_socialMediaLink('pinterest')" title="Skype on Pinterest" href="http://pinterest.com/Skype/">
+							</a>
+						</div>
+					</div>
+					<div class="footerLinks noDesktop noTablet">
+						<ul>
+							<li>
+								<a data-sc="sitemapLinkMobile" href="/es/site-map/">Mapa del sitio</a>
+							</li>
+						</ul>
+					</div>
+					<hr/>
+					<div class="footerCopyright">
+						<div class="noMobile"><p>© 2013 Skype y/o Microsoft. El nombre &quot;Skype&quot;, las marcas comerciales, los logotipos relacionados y el símbolo &quot;S&quot; son marcas comerciales de Skype o de entidades vinculadas. El uso de este sitio web constituye la aceptación de las <a href="http://www.skype.com/es/legal/tou/">Condiciones de Uso</a> y de la <a href="http://www.skype.com/es/legal/privacy/">Política de Privacidad y de Cookies</a>.<br>
+</p>
+</div>
+						<div class="noTablet noDesktop"><p>© 2013 Skype&nbsp;y/o Microsoft. El uso de este sitio web constituye la aceptación de las <a href="http://www.skype.com/es/legal/tou/">Condiciones de Uso</a> y de la <a href="http://www.skype.com/es/legal/privacy/">Política de Privacidad y de Cookies</a>.<br>
+</p>
+</div>
+					</div>
+					<div class="footerWarning">
+						<div class="noCalls">
+							<span></span>
+						</div>
+						<div class="noMobile"><p><b>No apto para llamadas de emergencia</b><br>
+Skype no reemplaza al servicio telefónico y no puede usarse para realizar llamadas de emergencia<br>
+</p>
+</div>
+						<div class="noDesktop noTablet"><p>No apto para llamadas de emergencia.<br>
+</p>
+</div>
+					</div>
+				</div>
+				<div class="footerSlogan noMobile">
+					
+				</div>
+			</div>
+			<div class="footerImageContainer"></div>
+		</div>
+		<div class="bottom">
+			<div class="centered">
+				
+				<div class="ms-logo"></div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			
+			var s_el = s_el || {};
+		
+			
+			s_el.footer_about = {click: {events: "event35", eVar19: "footer: about", prop18: "D=v19"}};
+			
+			s_el.footer_advertise = {click: {events: "event35", eVar19: "footer: advertise", prop18: "D=v19"}};
+			
+			s_el.footer_blogs_skype_com = {click: {events: "event35", eVar19: "footer: blogs_skype_com", prop18: "D=v19"}};
+			
+			s_el.footer_legal = {click: {events: "event35", eVar19: "footer: legal", prop18: "D=v19"}};
+			
+			s_el.footer_jobs = {click: {events: "event35", eVar19: "footer: jobs", prop18: "D=v19"}};
+			
+			
+			s_el.sitemapLink = {click: {events: "event35", eVar19: "footer: site_map", prop18: "D=v19"}};
+			s_el.sitemapLinkMobile = {click: {events: "event35", eVar19: "footer: site_map", prop18: "D=v19"}};
+			
+		</script>
+		
+	</footer>
+	<script>
+	//<![CDATA[
+		SKYPE && SKYPE.env && SKYPE.env.Loader.ready();
+	//]]>
+	</script>
+
+
+
+	<!-- TRACKING -->
+<script type="text/javascript" src="http://www.skypeassets.com/i/tracking/js/s_code_20121127.js"></script>
+<noscript><img src="http://metrics.skype.com/b/ss/skypeglobalprod/1/H.25--NS/0" height="1" width="1" style="border: 0" alt=""/></noscript>
+<script type="text/javascript">
+
+    /*
+    * Fix iOS5 cache problem with forced reload
+    */
+
+    if((/iphone|ipod|ipad.*os [56]{1}/gi).test(navigator.appVersion)) {
+
+        window.onpageshow = function(evt) {
+
+            if (evt.persisted) {
+                
+                document.body.style.display = "none";
+                location.reload();
+            }
+        };
+    }
+
+    var _t      = {},
+        _obj    = null;
+    _t.pageName = "static/download-skype/skype-for-linux";
+    _t.channel  = "downloads";
+    _t.prop5    = _t.eVar5 = "es";
+    SKYPE.ResponsiveState.init();
+    _t.prop54   =  SKYPE.CurrentResponsiveState;
+    _t.eVar71 = "";
+    _t.prop36   = "";
+    
+    
+    if (typeof s_el != 'undefined'){
+	    if (typeof s_el.trackPageProperties != 'undefined') {
+	    	_obj = $.extend(_obj, _t, s_el.trackPageProperties);
+	    }
+    }
+    
+    if (_obj != null) {
+    	
+    	s.trackPage(_obj);
+    	
+    } else {
+    	
+    	s.trackPage(_t);
+    	
+    }
+    
+    $(function() {
+        $(document).on('click.sc', 'a[data-sc]:not(select)', function(e) {
+            
+            if (typeof s_el[$(this).attr('data-sc')] == 'undefined')
+                return;
+            
+            var tracking_obj = s_el[$(this).attr('data-sc')].click;
+            
+            if (typeof tracking_obj === 'function'){
+                tracking_obj = tracking_obj.call(); 
+            }
+            
+            if (tracking_obj.asPage === true) {
+                s.trackPage(tracking_obj);
+            } else {
+                s.trackAction(tracking_obj);
+            }
+        });
+    });
+</script>
+
+	
+
+	<!-- ClickTale Bottom part -->
+	<script type='text/javascript'>
+		document.write(unescape("%3Cscript%20src='" +
+			(document.location.protocol == 'https:' ?
+			 'https://clicktalecdn.sslcs.cdngc.net/' :
+			 'http://cdn.clicktale.net/') +
+			"www11/ptc/7128d29f-cc1f-4e43-8c9b-2ece44ccb497.js'%20type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<!-- ClickTale end of Bottom part -->
+
+</body>
+</html>

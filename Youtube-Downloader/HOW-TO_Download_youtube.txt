@@ -1,0 +1,26 @@
+
+
+Paso 1: Buscar la lista Spitify y seguirla.
+Paso 2: Convertirla en una lista de youtube.
+
+     	http://www.playlist-converter.net/#/
+
+	Requiere que le des acceso a tu cuenta youtube. Recuerda luego quitarselo:
+		     https://myaccount.google.com/permissions
+		 
+Paso 3: Descargar la lista de youtube.
+
+La mejor herramienta para descar videos a mp3 desde youtube.
+
+https://github.com/rg3/youtube-dl/blob/master/README.md#readme
+
+Install
+========
+
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+
+To Download Video to MP3:
+===========================
+
+youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" <url to playlist>

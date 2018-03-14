@@ -1,0 +1,158 @@
+#!/bin/sh
+
+
+#---------------------------------------------
+#---------------------------------------------
+#Install chain tool and RTEMS 4.10 from GAISLER
+#Run it with root privilegies 
+#---------------------------------------------
+#---------------------------------------------
+#Versions (check it with http://www.gaisler.com/anonftp/)
+ 
+  
+RTEMS_VERSION=rtems-4.10
+
+#download path
+GAISLER_DOWNLOAD_TOOLCHAIN_PATH=http://www.gaisler.com/anonftp/rcc/bin/linux/
+GAISLER_DOWNLOAD_SRC_RTEMS_PATH=http://www.gaisler.com/anonftp/rcc/src/
+GAISLER_DOWNLOAD_BARE_COMPILER_PATH=http://www.gaisler.com/anonftp/bcc/bin/linux/
+GAISLER_DOWNLOAD_RTEMS_DOC_PATH=ftp://ftp.rtems.com/pub/rtems/4.10.1/
+
+#files to download (these name versions can be changed and updated for Gaisler, check for new versions on the previous links)
+GAISLER_TOOL_CHAIN_VERSION_FILE=sparc-rtems-4.10-gcc-4.4.6-1.2.8-linux.tar.bz2
+GAISLER_RTEMS_SAMPLE_FILE=samples-rtems-4.10-1.1.99.16a.tar.bz2
+GAISLER_RTEMS_SRC_VERSION_FILE=rtems-4.10-1.2.8-src.tar.bz2
+GAISLER_RTEMS_DOC_FILE=rtemsdocs-4.10.1.tar.bz2
+#GAISLER_BARE_COMPILER_FILE=sparc-elf-4.4.2-1.0.42.tar.bz2  # Only when you want to use Bare compiler
+
+#Install libraries "libmpfr" if needed (see on yast)
+#yum install libmpfr.so.1        #Fedora as root
+#port install libmpfr.so.1       #MacOS
+#apt-get install libmpfr.so.1    #Debian as root
+#su -c 'yast -i libmpfr.so.1'    #OpenSuse 32 and 64 bits (important!!: this library "libmpfr" must be of 32 bits on /usr/lib/  not  /usr/lib64/)
+                                 #See the additional steps bellow (it should be enough)
+#---------------------------------------------
+#Install libraries if needed
+zypper install libmpfr4-32bit   #OpenSuse 32 and 64 bits
+
+#Additional steps for OpenSuse 64bits (first check the links) 
+ln -s /usr/lib/libmpfr.so.4 /usr/lib/libmpfr.so.1
+ln -s /usr/lib/libgmp.so.10 /usr/lib/libgmp.so.3
+
+#---------------------------------------------
+#mkprom2 compilation
+
+zypper install glibc-devel-static
+
+#Copy/install  to /opt/sparc-elf-4.4.2
+
+#---------------------------------------------
+#Tool verification
+
+#Verify if versions of automake and autoconf matches with the rtems4.10 requirement. If it does not match, intsall it before continuing
+
+automake --version #Required 1.10 or later
+
+autoconf --version #Required 2.62 or later
+
+#---------------------------------------------
+#Download and install the tool chain
+
+#Delete previous installation
+rm -fr $RTEMS_VERSION
+
+#create a tmp directory
+cd /opt
+
+#Download the compiled chain tool from RTEMS 
+wget $GAISLER_DOWNLOAD_TOOLCHAIN_PATH$GAISLER_TOOL_CHAIN_VERSION_FILE
+
+#Uncompress it
+tar  -vxjf $GAISLER_TOOL_CHAIN_VERSION_FILE
+
+#compile and install is not necessary because the binary is included
+#Although, if you're using some program that needs specific drivers(1553, spacewire ...) you'll need to compile 
+#the sources with the option -drvmgr (see bellow).
+#---------------------------------------------
+#Add the tool chain to the path
+#if "/root/.bashrc" does not exist, copy from a regular user
+#update with the RTMES version
+
+vi /root/.bashrc
+PATH=$PATH:/opt/rtems-4.10/bin/
+export PATH
+
+#close the console, open a new one and becoming root
+# paste again environment variables
+
+#---------------------------------------------
+#Download and uncompress the RTEMS (as root)
+
+cd /opt/rtems-4.10/src
+wget $GAISLER_DOWNLOAD_SRC_RTEMS_PATH$GAISLER_RTEMS_SRC_VERSION_FILE
+tar -vxf $GAISLER_RTEMS_SRC_VERSION_FILE
+
+#---------------------------------------------
+#Build RTEMS (as root)
+make clean
+make bootstrap
+make configure-drvmgr
+make compile-drvmgr
+make install-drvmgr
+
+#---------------------------------------------
+#modify linkerscript (to allow to add extra sections to executable: patch)
+#use the linker script supplied at directory "linker_script/linkcmds.base" and overwrite it to
+#/opt/rtems-4.10/sparc-rtems/leon3/lib/
+  
+#---------------------------------------------
+#Compile samples
+cd samples
+make
+
+
+#---------------------------------------------
+#Download and uncompress RTEMS documentation
+
+cd /opt/rtems-4.10/doc
+wget $GAISLER_DOWNLOAD_RTEMS_DOC_PATH$RTEMS_DOC
+tar -xjfv $RTEMS_DOC
+rm $RTEMS_DOC
+
+#---------------------------------------------
+#Download the RTEMS examples from RTEMS web and compile it
+
+mkdir /opt/rtems-4.10/src/samples/rtemsWebSample
+cd /opt/rtems-4.10/src/samples/rtemsWebSample
+wget $GAISLER_DOWNLOAD_RTEMS_PATH$RTEMS_SAMPLE
+tar -xjfv $RTEMS_SAMPLE
+rm $RTEMS_SAMPLE
+
+#Compile the examples
+cd $RTEMS_SAMPLE_DIR
+make
+cd ..
+
+#---------------------------------------------
+#Run "Hello world" using TSIM
+
+cd /opt/rtems-4.10/src/samples/rtemsSamples/hello/hello_world_/-optimize/
+tsim-leon3
+>load hello.ralf
+>go
+
+#The result must be
+#resuming at 0x40000000
+#
+#
+#*** HELLO WORLD TEST ***
+#Hello World
+#*** END OF HELLO WORLD TEST ***
+#
+#Program exited normally.
+
+>quit
+
+#---------------------------------------------
+#End of file
+

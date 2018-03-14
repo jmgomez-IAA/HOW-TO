@@ -1,0 +1,9 @@
+ 
+Esta orden reinicia el subsistema del USB, para cuando deja de aparecer el USB-RS232
+ 
+sudo -i
+
+USB 3.0 subsystem xhci_hcd
+
+echo -n "0000:08:00.0" | tee /sys/bus/pci/drivers/xhci_hcd/unbind
+echo -n "0000:08:00.0" | tee /sys/bus/pci/drivers/xhci_hcd/bind

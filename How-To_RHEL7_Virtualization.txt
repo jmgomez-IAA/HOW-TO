@@ -1,0 +1,45 @@
+
+#Creamos la particion para añadir las imagenes de las maquinas virtuales.
+
+lsblk
+pvcreate /dev/sdb2
+pvdisplay
+vgcreate estepa /dev/sdb2
+vgdisplay
+lvcreate -L 200G -n carraca estepa 
+lvdisplay -m
+mkfs.xfs /dev/estepa/carraca 
+
+#Creamos la primera image
+#KVM_Virtualization_in_RHEL_7_Made_Easy.pdf
+
+Virtual images directory
+/vm-images
+
+SELinux
+----------
+SELinux in Enforcing mode,  non default directory for your VM images must change the security context for that directory.
+
+#install the  policycoreutils-python package (which contains the  semanage SELinux utility):
+ yum -y install policycoreutils-python
+
+
+#Set the security context for the directory and everything under it:
+ semanage fcontext --add -t virt_image_t '/vm-images(/.*)?'
+
+#Verify
+semanage fcontext -l | grep virt_image_t
+
+#Restore security context.
+restorecon -R -v /vm-images
+
+#Verify that the context was changed
+ls -aZ /vm-images
+drwxr-xr-x. root root system_u:object_r:virt_image_t:s0 .
+dr-xr-xr-x. root root system_u:object_r:root_t:s0      ..
+
+#If you are going to export the directory /vm-images as a samba or NFS share, there are #SELinux Booleans that need to be set as well:
+# setsebool -P virt_use_samba 1
+# setsebool -P virt_use_nfs 1
+
+

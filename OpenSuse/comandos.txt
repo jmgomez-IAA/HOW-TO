@@ -1,0 +1,18 @@
+ 
+
+
+Conocer la version de OpenSuse
+jmgomez@udit76:~> cat /etc/SuSE-release
+openSUSE 13.2 (x86_64)
+VERSION = 13.2
+CODENAME = Harlequin
+# /etc/SuSE-release is deprecated and will be removed in the future, use /etc/os-release instead
+
+Kernel instalado
+jmgomez@udit76:~> uname -r
+3.16.6-2-desktop
+jmgomez@udit76:~> 
+
+ Localizar un dispositivo PCI
+jmgomez@udit76:~> /sbin/lspci | grep VGA
+01:00.0 VGA compatible controller: NVIDIA Corporation GF114 [GeForce GTX 560] (rev a1)

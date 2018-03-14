@@ -1,0 +1,2 @@
+http://aresou.net/post/6/compile-install-32-bit-python-on-64-bit-centos
+http://pyq.readthedocs.io/en/pyq-3.8.3/centos32on64.html

@@ -1,0 +1,95 @@
+http://www.edaboard.com/thread263268.html
+
+http://electronics.stackexchange.com/questions/96879/installing-microsemi-actel-libero-on-ubuntu
+
+up vote
+4
+down vote
+	
+
+I have successfully used them on Debian so it can be done, (including Modelsim) with patience and a bit of fiddling. The FlashPro JTAG download cable and SW tool, however, is stubbornly Windows-only, so when it comes to downloading a bitfile, I ended up borrowing a Windows machine.
+
+Reviewing old notes, I see I had to install a few packages (from "testing", in my case)
+
+apt-get -t testing install libmotif4:i386
+apt-get -t testing install lsb-core
+apt-get -t testing install libxtst6:i386
+
+Then there were startup errors:
+
+    Cannot register service: RPC: Authentication error; why = Client credential too weak
+    Wind/U: unable to register OLE to RPC
+
+http://stackoverflow.com/questions/13111910/rpc-authentication-error
+suggested the following command (which worked here but DOES have security implications) to modify these settings
+
+echo 'OPTIONS="-w -i"' | sudo tee /etc/default/rpcbind
+
+Then it transpires that Synplicity is supplied with startup scripts so old they pre-date 3.x kernels! The following scripts are affected...
+
+/opt/actel/Libero_v9.1/Synplify/bin/config/platform_check
+/opt/actel/Libero_v9.1/Synplify/bin/config/platform_set
+
+Modify platform_check line 23 to read:
+
+    2.4.* | 2.6.* | 3.2.* )
+
+(or 3.8 in your case)
+Modify platform_set line 18 to read
+
+              2.* | 3.*)    PLATFORM=linux;
+
+The following script is how I start the tools : it's not the whole story as far as installing them but will give pointers as to what you may need to set up, install or fix.
+
+#!/bin/bash
+# startup script for Libero
+#
+# Run this script as
+# source /path/to/Libero.sh
+# because running it as
+# /path/to/Libero.sh
+# will not export the environment variables...
+# 
+# Edit license path and hostname to suit your system!
+# Note - this assumes the license file is in the same folder as the license demons.
+#
+HOSTNAME=xxxx
+LICENSE_PATH=~/Projects/Actel/Licensing
+LICENSE_DAEMON_PATH=$LICENSE_PATH
+LICENSE_NAME=License2013.dat
+
+# start the license server (in the background)
+# only start it once! If the following is non-blank, 
+# assume a licence server is running.
+TEST= `ps ax |grep lmgrd |grep -v grep`
+
+echo $TEST
+
+if [ "$TEST" == "" ]; then
+   echo "Starting license daemons."
+   $LICENSE_DAEMON_PATH/lmgrd -c $LICENSE_PATH/$LICENSE_NAME &
+else
+   echo "License daemons already running."
+fi
+
+# Setup licensefile path so that Modelsim can find the correct licenses
+export LM_LICENSE_FILE=$LICENSE_PATH/$LICENSE_NAME
+
+# Synplify needs port@hostname to find its license
+export SNPSLMD_LICENSE_FILE=1702@$HOSTNAME
+
+# Setup DISPLAY so that Wind/U windows emulation works
+export DISPLAY=:0
+
+# allow Synplify to find Actel tools
+export ALSDIR=/opt/actel
+
+# on Debian, fix the famous Multilib problem again...
+export LD_LIBRARY_PATH=/usr/lib/i386-linux-gnu
+
+# run this to cleanup the Wind/U registry...
+/opt/actel/Libero_v9.1/Libero/bin/actel_wuclean -R
+
+# and finally start the tools
+/opt/actel/Libero_v9.1/Libero/bin/libero
+

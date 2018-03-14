@@ -1,0 +1,8 @@
+ 
+
+
+zypper ar -f http://download.opensuse.org/repositories/X11:/RemoteDesktop:/x2go/openSUSE_12.3/X11:RemoteDesktop:x2go.repo
+
+zypper in x2goclient
+
+tar -xcvf x2go_config.tar

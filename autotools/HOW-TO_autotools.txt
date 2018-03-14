@@ -1,0 +1,17 @@
+https://autotools.io/index.html
+=====================================
+
+
+
+
+You want a config.site file. Try:
+
+$ mkdir -p ~/local/share
+$ cat << EOF > ~/local/share/config.site
+CPPFLAGS=-I$HOME/local/include
+LDFLAGS=-L$HOME/local/lib
+...
+EOF
+
+Whenever you invoke an autoconf generated configure script with --prefix=$HOME/local, the config.site will be read and all the assignments will be made for you. CPPFLAGS and LDFLAGS should be all you need, but you can make any other desired assignments as well (hence the ... in the sample above). Note that -I flags belong in CPPFLAGS and not in CFLAGS, as -I is intended for the pre-processor and not the compiler.
+

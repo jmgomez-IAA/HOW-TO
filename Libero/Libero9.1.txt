@@ -1,0 +1,70 @@
+
+http://www.edaboard.com/thread263268.html
+
+ 
+As I saw that many of You are having the same problem (You are coming here by doing Google search!) I add this comment telling You that I managed to solve the problem. It was a while ago but if I remember correctly it was a license problem. However, here is a little How-to that I wrote for someone who was asking me how I did:
+
+##############################
+As you can see in the following link:
+http://www.actel.com/products/software/libero/licensing.aspx
+The gold version of the software is free for use (one year license renewal is recuired). You can also see that “ViewDraw Schematic Capture” is not availeble for the Linux version.
+
+######################## Licens:
+1) You need to purchase a free “server-based (Floating) licenses”.
+
+2) Then you have to download the “License Server Daemons” for Linux (found at the end of the page: http://www.actel.com/products/software/libero/licensing.aspx)
+
+To configure the license/server follow: http://www.actel.com/documents/install_ug.pdf, page:16 (OBS! see below (point 7) how to start the Daemon)
+
+######################## Only for Windows version of Libero 9.1:
+
+—–Libero 9.1 installation—–
+3) Install Libero 9.1 using Wine (I used version 1.2.2 Ubuntu 10.10)
+
+—–I don’t know if these steps are needed—-
+4) Start “Actel Licens Utility” from the Wine menu (or from your home directory).
+
+5) Press “Add License File” and choose the license file you downloaded from Actel.
+
+6) Close the utility.
+
+####################### Belew we will start the “License Server Daemon”:
+
+***Change: /usr/local/actel/LinuxLD/License.dat to the place where you have your license file
+***Change: /usr/local/actel/LinuxLD/lmgrd to the path for the daemon (where you extracted the files)
+
+7) > sudo ln -s /lib/ld-linux.so.2 /lib/ld-lsb.so.3  => Sin esto lmgrd dice que el fichero no existe.
+
+8 ) > /usr/local/actel/LinuxLD/lmgrd -c /usr/local/actel/LinuxLD/License.dat
+
+9) > export LM_LICENSE_FILE=”/usr/local/actel/LinuxLD/License.dat”
+
+####################### Finish ###############
+
+Now you can start Libero 9.1 from Wine menu and it will be as fast (or maybe faster) than Libero which is made for Linux!
+
+########################## Only for Linux version of Libero 9.1:
+
+Download Libero 9.1 for Linux
+
+Follow instructions in http://www.actel.com/documents/install_ug.pdf
+
+Install the Open Motif library: libmotif3
+
+Follow points 1,2,7,8 and 9 above
+
+Try to start Libero 9.1 as mensioned in http://www.actel.com/documents/install_ug.pdf
+For me: /usr/local/actel/Libero_v9.1/Libero/bin/libero
+
+I forgot all details but I think I hade a little problem with libmotif3, but I don’t remember. If you tried Linux version of Libero and met a problem you can send me the error maybe I know it.
+#########################
+
+Before you start Libero 9.1, you will need to start the “License Server Daemons” if not already started. I.e. After every computer restart you need to redo point 8 and 9 in order to be able to start Libero 9.1
+
+Now the commands I use every time I start Libero are:
+
+> sudo ln -s /lib/ld-linux.so.2 /lib/ld-lsb.so.3
+> export LM_LICENSE_FILE=”/usr/local/actel/LinuxLD/License.dat”
+> /usr/local/actel/LinuxLD/lmgrd -c /usr/local/actel/LinuxLD/License.dat
+
+Good Luck

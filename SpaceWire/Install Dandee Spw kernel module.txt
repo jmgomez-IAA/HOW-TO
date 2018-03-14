@@ -1,0 +1,19 @@
+Install SpaceWire  kernel module manually
+=========================================
+
+
+* Copy the folder dandee to the folder modules of the new kernel version :
+
+/lib/modules/3.7.10-1.11-desktop/kernel/drivers/pci/pcie/dandee
+
+
+
+* Build the module tree dependencies :
+
+depmod /lib/modules/3.7.10-1.11-desktop/kernel/drivers/pci/pcie/dandee/star_spw_pci.ko 
+
+
+* Install the module:
+
+insmod star_spw_pci.ko
+

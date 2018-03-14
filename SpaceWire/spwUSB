@@ -1,0 +1,33 @@
+
+unzip Conformance Tester Linux 10e18.zip
+
+tar -zvxf spw_usb_install_v2.59.tgz
+
+chmod +x spw_usb_install.sh
+./install.sh
+ 
+nano /opt/spacewire/usb/spw_usb_driver_v2.59/install/driver_src/spacewire_usb_kernel_specific.c 
+Comentar linea 84 kernel specific...
+
+
+
+
+//From dundee
+
+Hi Juanma,
+
+Thanks for the information, it makes a lot more sense now.  We were worried there was a bug in our STAR-System installer, which had migrated over from the USB installer.
+
+For the Conformance Tester, I'd recommend using the latest version of the SpaceWire USB Driver for Linux, which is version 2.63.  This isn't available in a Conformance Tester installer yet.  Do you have an account on our website?  If so I can update it so that you can download updates for the SpaceWire USB Brick and then get access to the latest driver.
+
+If you don't already have an account on our website, you can register to get access to the latest software and firmware updates by going to http://www.star-dundee.com/product-registration, or click the Product Registration link in the Technical Support section of our website.  You will then be asked to enter the details of each of your devices.  After entering this information you will receive an e-mail from one of our support team containing your account information for downloading updates for the devices you registered.
+
+The error you're seeing is because of a change to the Linux kernel from v2.6.27 onwards, which means a great deal of USB functionality is only available to drivers which are licensed using the GPL.  As we do not provide the source for our driver, this means we cannot use the GPL, and as a result our driver won’t work.
+
+It’s possible for you to modify one line of code to tell your kernel that our driver uses the GPL. To make the modification, after performing the installation, open spacewire_usb_kernel_specific.c in <install_dir>/install/driver_src/ and remove the comments at the start of the following line:
+
+MODULE_LICENSE(“GPL”);
+
+This code will be at or near line 244, depending on the driver version you use.  Once this is done, change directory to <install_dir>/install/ and run ./build_driver.sh to rebuild the driver and all test programs.  You will need to be root to modify the file and build the driver.
+
+The v2.63 driver has been successfully tested on 3.x kernels with this modification. I'd recommend upgrading to the latest version, as older versions didn't work with some newer kernels.

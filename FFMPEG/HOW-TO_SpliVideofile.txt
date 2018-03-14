@@ -1,0 +1,4 @@
+where START is starting positing in seconds or in format hh:mm:ss LENGTH is the chunk length in seconds or in format hh:mm:ss
+
+ffmpeg -i ORIGINALFILE.mp4 -acodec copy -vcodec copy -ss START -t LENGTH OUTFILE.mp4
+

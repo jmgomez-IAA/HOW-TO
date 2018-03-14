@@ -1,0 +1,46 @@
+ 
+[REF 1]  : http://stackoverflow.com/questions/4864866/c-c-with-gcc-statically-add-resource-files-to-executable-library
+[REF 2]  : http://stackoverflow.com/questions/4158900/embedding-resources-in-executable-using-gcc/4158997#4158997
+[REF 3]  : http://ubuntuforums.org/archive/index.php/t-1887542.html
+
+sparc-elf-objcopy -B sparc -I binary -O elf32-sparc prom_data.bin prom_data.o
+sparc-elf-gcc -c example.c -o example.o
+
+sparc-elf-gcc -o example.elf example.o prom_data.o
+
+
+
+############### Codigo .c example.c ###############
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+/*
+extern uint8_t prom_data[]    asm("_binary_prom_data_bin_start");
+extern uint8_t prom_data_size[]  asm("_binary_prom_data_bin_size");
+extern uint8_t prom_data_end[]  asm("_binary_prom_data_bin_end");
+*/
+extern char _binary_prom_data_bin_start;
+extern char _binary_prom_data_bin_size;
+
+const char* data = &_binary_prom_data_bin_start;
+const size_t size = (size_t)((void*) & _binary_prom_data_bin_size);
+
+int main(){
+  
+  int i;
+  puts ("Execution of program");
+  
+  printf("FileSize 0x%x\n" , size);
+  
+  for (i= 0; i<size; ++ i){
+    printf("0x%x\n" , data[i]);
+    
+  }
+  
+  return 0;
+ 
+}
+
+################## 

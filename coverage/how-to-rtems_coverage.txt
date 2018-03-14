@@ -1,0 +1,462 @@
+Compilar FlightSoftware para usar gcov
+=======================================
+
+
+
+Emplear GCOV sobre fligthSoftware
+====================================
+http://www.rtems.org/pipermail/rtems-users/2010-September/007460.html
+http://gcc.gnu.org/onlinedocs/gcc/Invoking-Gcov.html
+
+
+CCFLAGS =  -fprofile-arcs -ftest-coverage
+LDFLAGS = -fprofile-arcs -lgcov
+
+gcov  --object-directory <path to the *.gcno/*.gcda files> myfile.cpp 
+lcov  --capture  --directory sparc-rtems4.10 --output-file coverage.info --gcov-tool sparc-rtems4.10-gcov
+genhtml coverage.info --output-directory out
+
+**************************
+# Recuerda que has cambiado el enlace en /usr/bin/gcov que apuntaba a /usr/bin/gcov-4.7 por el que apunta a sparc-rtems4.10-gcov
+
+$ lcov --zerocounters --directory /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/src/
+
+    Deleting all .da files in /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/src/ and subdirectories
+
+$ lcov --capture --initial --directory /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/src/ --output-file /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/coverage/sandbox/coverage.info --gcov-tool sparc-rtems4.10-gcov
+  Capturing coverage data from /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/src/
+  Found gcov version: 4.4.7
+  Scanning /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/src/ for .gcno files ...
+  Found 50 graph files in /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/src/
+
+$ cat config
+	    #
+	    #  COVOAR Template for RTEMS Coverage Analysis Runs
+	    #
+
+	    # This is the format of the trace or coverage files.
+	    format = TSIM
+
+	    # This is the target we are analyzing.
+	    target = sparc-rtems4.10
+
+	    # This is the path to the explanations file.
+	    explanations = /media/data/rtems-4.10/rtems/rtems-NOMAD-work//rtems-testing/rtems-coverage/Explanations.txt
+
+	    # This is the path to the file which lists the symbols we want to analyze.
+	    symbolsFile = /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/src/sfs.syms
+
+	    # This is the name of the output directory.
+	    outputDirectory = sfs-O2PD-20131216-1053
+
+	    # This is the extension on the coverage/trace files.
+	    coverageExtension = ralf.cov
+
+	    # This is the path to file containing *.gcno list
+	    gcnosFile = /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/coverage/sandbox/sfs.gcnos
+
+	    # This is the extension on the executable files.
+	    executableExtension = exe
+
+	    # This is the project name.
+	    projectName = RTEMS 4.10
+
+
+$ covoar -v -C config init.exe
+
+$ lcov --no-checksum --directory /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/src/ --capture --output-file coverage.info --gcov-tool sparc-rtems4.10-gcov
+
+$ genhtml --highlight --legend --output-directory /media/data/rtems-4.10/rtems/rtems-NOMAD-work/flightSoftware/coverage/sfs-O2PD-20131216-1053/  coverage.info
+
+
+****************
+Si falla gcov => No se esta usando la sparc-rtems-gcov
+Processing file: ../../src/Manager/TC/TC_Manager.gcno
+sh: line 1: 12161 Segmentation fault      gcov TC_Manager.c &>>gcov.log
+Processing file: ../../src/Manager/TC/ScienceData/TC_StartOperation.gcno
+sh: line 1: 12164 Segmentation fault      gcov TC_StartOperation.c &>>gcov.log
+Processing file: ../../src/Manager/TC/MemoryManagement/TC_MemoryManagementActivity.gcno
+sh: line 1: 12167 Segmentation fault      gcov TC_MemoryManagementActivity.c &>>gcov.log
+
+
+
+
+CREAR un NUEVO TEST CASE dentro de la estructura de RTEMS
+==========================================================
+http://www.rtems.org/wiki/index.php/RTEMS_Test_Template
+
+
+
+Instalar las herramientas de desarrollo
+============================================
+rtems-4.10-install.sh   # hay estan todos lo pasos. No es script.
+
+
+Descargar rtems-4.10 y herramientas de code coverage from GIT
+======================================================================
+
+git clone git://git.rtems.org/rtems.git rtems-4.10
+cd rtems-4.10
+git branch -r
+#Nos cambiamos a la version 4.10
+git checkout -b rtems410 origin/4.10
+cd rtems/testsuites
+../../rtems-testing/rtems-coverage/remove_managers_not_wanted 
+./bootstrap 	# importante es necesario para crear el .configure
+
+# A quicker way to generate Makescripts only for SPARC, however bootstrap must have been 
+# run previously, otherwise Makefile scripts will be missing.
+#
+#                ./bootstrap --sparc
+#
+
+
+git branch
+cd ..
+git clone git://git.rtems.org/rtems-testing.git rtems-testing
+make -C rtems-testing/sim-scripts
+
+======================================================================
+
+#Set version basedir
+nano ../rtems-testing/VERSIONS 
+
+    # USE FULL PATHS!!!
+    BASEDIR=/media/data/rtems-4.10/rtems/rtems-4.10-work
+
+    RTEMS_VERSION=4.10
+
+======================================================================
+
+#Set version and basedir for coverage
+nano ../rtems-testing/rtems-coverage/VERSIONS-COVERAGE 
+
+    # USE FULL PATHS!!!
+    BASEDIR=/media/data/rtems-4.10/rtems/rtems-4.10-work/
+
+    RTEMS_VERSION=4.10
+
+======================================================================
+
+# Configure r-tems
+./build_bsp sparc leon3  --> Genera el directorio b-leon3 que sera el bsp del leon. 
+
+La alternativa al script build_bsp es:
+      ../rtems-4.10/configure --target=sparc-rtems4.10 --enable-rtemsbsp=leon3   --prefix=/media/data/rtems-4.10/rtems/rtems-4.10-work/bsp-install --enable-cxx  --disable-posix  --disable-tests >c.log
+      gmake all
+
+  Pero manualmente falla en  la compilacion de los tests...
+
+     NDEBUG=1 - Disables asserts. We will probably keep this option.
+    RTEMS_DO_NOT_INLINE_THREAD_ENABLE_DISPATCH=1 - Inlining resulted in branch explosion. Over 200 new test cases will be needed to eliminate this option.
+    RTEMS_DO_NOT_INLINE_CORE_MUTEX_SEIZE=1 - Inlining resulted in very difficult code to analyze. This option should be able to be eliminated.
+    RTEMS_DO_NOT_UNROLL_THREADQ_ENQUEUE_PRIORITY=1 - Unrolling loop resulted in multiple interrupt critical sections. This option should be able to be eliminated. 
+
+
+=========================================================================
+
+#Compilar los test para coverage.
+# http://www.rtems.org/wiki/index.php/RTEMS_Test_Suites
+
+#Los makefiles estan generados en ($BASEDIR)/b-leon3/sparc-rtems4.10/c/leon3/testsuites/sptests
+#Eliminar sp09 de la lista de compilacion del Makefile
+Los errores de compilacion de los test son simples. Corregirlos!!
+make
+
+Covertura para FlightSoftware
+=========================================================================
+Generate symbols of flightsoftware
+==
+
+  Compilar como librerias
+  
+      #Add files from sfs
+        filter_nm sfs/${subd}FlightSoftware.a	     
+
+generateSyms.sh
+
+copy obj files from Eclipse FlightSoftware
+==
+
+==
+#Seleccionar las librerias a las que hacerles el coverage
+en el fichero ../rtems-testing/rtems-coverage/do_coverage
+filter_nm()
+        #Add lib del driver manager
+        filter_nm libblock/${subd}libdrvmgr.a
+        
+        #Add files from sfs
+        filter_nm sfs/${subd}ADC_Driver.o                                                                                                          
+        filter_nm sfs/${subd}ChannelPowerDriver.o                                                                                                  
+        filter_nm sfs/${subd}ChannelSimulation.o                                                                                                     
+        filter_nm sfs/${subd}ChimeraDriver.o                                                                                                         
+        filter_nm sfs/${subd}config_leon3_drvmgr.o                                                                                                     
+        filter_nm sfs/${subd}config.o                                                                                                                  
+        filter_nm sfs/${subd}ContingencyAndRecoveryManager.o                                                                                             
+        filter_nm sfs/${subd}FIFO_Driver.o                                                                                                               
+        filter_nm sfs/${subd}FileManager.o                                                                                                               
+        filter_nm sfs/${subd}file.txt
+        filter_nm sfs/${subd}FlipMirrorManager.o
+        filter_nm sfs/${subd}GPIO_Driver.o
+        filter_nm sfs/${subd}HeaterDriver.o
+        filter_nm sfs/${subd}HeaterManager.o
+        filter_nm sfs/${subd}HK_Manager.o
+        filter_nm sfs/${subd}IO_ModuleConfigurationManager.o
+        filter_nm sfs/${subd}LoggerManager.o
+        filter_nm sfs/${subd}MainManager.o       
+        filter_nm sfs/${subd}MessageBlockingQueue.o
+        filter_nm sfs/${subd}MIL_STD_1553B_Driver.o
+        filter_nm sfs/${subd}MIL_STD_1553B_Manager.o
+        filter_nm sfs/${subd}MissionClockManager.o
+        filter_nm sfs/${subd}MyFile.o
+        filter_nm sfs/${subd}MyQueue.o
+        filter_nm sfs/${subd}ObservationManager.o
+        filter_nm sfs/${subd}Patch.o
+        filter_nm sfs/${subd}PinPullerDriver.o
+        filter_nm sfs/${subd}PowerDriver.o
+        filter_nm sfs/${subd}PowerManager.o
+        filter_nm sfs/${subd}SensorManager.o
+        filter_nm sfs/${subd}SerialPortDriver.o
+        filter_nm sfs/${subd}SimplePacket.o
+        filter_nm sfs/${subd}SO_LNO_CommandGenerator.o
+        filter_nm sfs/${subd}SO_LNO_Manager.o
+        filter_nm sfs/${subd}SpaceWireDriver.o
+        filter_nm sfs/${subd}SpaceWireManager.o
+        filter_nm sfs/${subd}StepperMotorDriver.o
+        filter_nm sfs/${subd}TC_CustomCommand.o
+        filter_nm sfs/${subd}TC_Manager.o
+        filter_nm sfs/${subd}TC_MemoryManagementActivity.o
+        filter_nm sfs/${subd}TC_ReadyToPowerOff.o
+        filter_nm sfs/${subd}TC_SafeMode.o
+        filter_nm sfs/${subd}TC_StartOperation.o
+        filter_nm sfs/${subd}TestPortManager.o
+        filter_nm sfs/${subd}TimerDriver.o
+        filter_nm sfs/${subd}TM_Manager.o
+        filter_nm sfs/${subd}TrapDriver.o
+        filter_nm sfs/${subd}Util.o
+        filter_nm sfs/${subd}UVIS_CommandGenerator.o
+        filter_nm sfs/${subd}UVIS_Manager.o
+        filter_nm sfs/${subd}Version.o
+        filter_nm sfs/${subd}WatchdogManager.o
+        filter_nm sfs/${subd}ZLibCompressionLibrary.o     
+        
+
+==========================================================================
+#execute the coverage
+../rtems-testing/rtems-coverage/do_coverage -B leon3 -A 
+
+#Sin Posix
+../rtems-testing/rtems-coverage/do_coverage -B leon3 -b -P -C -r -R
+
+#Solo ehecuta el coverage con los test b-leon3
+../rtems-testing/rtems-coverage/do_coverage -B leon3 -P -C -r -R
+
+#Solo ejecuta el coverage con los test ya disponibles en leon3-test y optomizacion OS para el bsp b-leon3
+../rtems-testing/rtems-coverage/do_coverage -B leon3 -P -S -r -R
+
+../rtems-testing/rtems-coverage/do_coverage -B leon3 -r -R
+
+/media/data/rtems-4.10/rtems/rtems-4.10-work/rtems-4.10/testsuites/README
+    
+  sptests
+
+       This directory contains the RTEMS Single Processor Test Suite.
+       The tests in this directory provide near complete (98%+) test
+       coverage of the non-multiprocessor code in RTEMS.
+
+
+
+## Cambiar permisos en modo chulo
+#=================================
+       find "$(distdir)" -type d ! -perm -200 -exec chmod u+w {} ';' \
+
+## Borrar achivos de forma chula
+#=================================
+       rm -rf `find . -name "*.ralf"`
+       rm -rf `find . -name "*.exe"`
+
+
+##Change the to the new memory map.
+#=================================
+cd /media/data/rtems-4.10/rtems/rtems-4.10-work/b-leon3/sparc-rtems4.10/leon3/lib
+mv linkcmds linkcmds_seg
+mv linkcmds.base linkcmds.base_seg
+
+cp /opt/rtems-4.10/sparc-rtems/leon3/lib/linkcmds  .
+cp /opt/rtems-4.10/sparcms/leon3/lib/linkcmds.base  .
+
+
+
+0=====================================0
+El Driver Manager de Gaisler
+0=====================================0
+
+=====================================
+configure-drvmgr:
+	-mkdir $(PREFIX)/src/build-drvmgr
+	cd $(PREFIX)/src/build-drvmgr; \
+	$(PREFIX)/src/$(RTEMSDIR)/configure --prefix=$(PREFIX) \
+	--target=sparc-rtems $(EXTRA_CONFIG) --disable-itron --disable-tests --enable-cxx --disable-docs \
+	--enable-rtemsbsp="$(BSPS)" --enable-drvmgr
+
+
+
+
+../rtems-4.10/configure --target=sparc-rtems4.10 --enable-rtemsbsp=leon3 --prefix=/media/data/rtems-4.10/rtems/rtems-NOMAD-work/bsp-install --enable-cxx  --disable-posix  --disable-tests >c.log
+
+
+
+#Compilar con eclipse
+#======================
+
+#Cambiar el comando de compilacion de forma que enganche con la toolchain:
+  Settings;  Tool settings...
+SPARC RTEMS C Compiler
+ en el command: sparc-rtems4.10-gcc
+ en el Directories: /media/data/rtems-4.10/rtems/rtems-NOMAD-work/b-leon3/sparc-rtems4.10/leon3/lib/include
+
+  Settings;  Tool settings...
+SPARC RTEMS C Linker
+ en el command: sparc-rtems4.10-gcc
+
+#Cambiar en Paths and Symbols, Include GNU C, Include directories 
+/opt/rtems-4.10/sparc-rtems4.10/leon3/lib/include por
+/media/data/rtems-4.10/rtems/rtems-NOMAD-work/b-leon3/sparc-rtems4.10/leon3/lib/include
+
+
+
+
+
+
+
+
+
+======================================================================
+Preparar el entorno con las variables 
+
+cd rtems/rtems-4.11-work/
+
+Ejecutar setenv
+
+Generate Leon 3 configure for tarjet sparc and bsp leon3
+
+     ./build_bsp sparc leon3  --> Genera el directorio b-leon3 que sera el bsp del leon.
+  
+  Esto de bajo es lo que hace build_bsp.sh. La diferencia esta en que pone --prefix= a otro 
+directorio xq? y ademas ese directorio despues esta vacio.
+
+      
+    ../rtems/configure --target=sparc-rtems4.10 --prefix=/home/rtems/rtems-4.11-work/b-leon3 --enable-rtemsbsp=leon3 
+						--enable-tests=samples --disable-posix
+      gmake -all (esto falla, es imprescindible?)
+
+      
+Segun quickstart =>  http://www.rtems.org/wiki/index.php/Quick_Start
+      ../rtems/configure --target=sparc-rtems --prefix=/media/data/rtems/tarball  --enable-rtemsbsp=b-sis   --enable-tests=samples --disable-posix
+      make
+
+
+//Tenemos que llamar a RTEMS 
+
+Run Coverage for leon3 bsp, 
+
+primero tenemos que  cambiar los fichero de texto VERSIONS y VERSIONS-COVERAGE para que el $BASEDIR sea correcto
+en el caso de la maquina virtual de rtems esta en  $HOME/rtems-4.11-work 
+
+
+../rtems-testing/rtems-coverage/do_coverage -B leon3 -A 
+  -Skipping clean before building
+  Skipping Updating and building covoar...
+Skipping Updating RTEMS ...
+Skipping Configuring RTEMS ...
+Skipping Building RTEMS ...
+Skipping copying tests...
+Skipping creating gcov reports ...
+Running tests...
+
+========================
+Empieza TSIM pero dice:
+WARNING: Unable to read coverage file fileio.ralf.cov
+WARNING: Unable to read coverage file termios.ralf.cov
+ERROR: DesiredSymbols::createCoverageMap - Attempt to create unified coverage maps for _Thread_queue_Extract_fifo with different sizes (144 != 196)
+
+========================
+
+../rtems-testing/rtems-coverage/do_coverage -B leon3
+
+
+Y Aqui peta, por que no encuentra el tar.bz de los bsps???
+Comprobar el ultimo comando que esta bajo..
+
+?====================================
+
+http://www.rtems.com/wiki/index.php/Virtual_Machines_for_RTEMS_Development 
+http://km-for-socis2012rtems.blogspot.com.es/2012/08/how-to-prepare-environment-to-run.html
+
+
+Follow the instructions on:
+
+http://www.rtems.com/wiki/index.php/RTEMS_Coverage_Analysis
+
+Download:
+
+Rtems utils, a cross-compilation system for both ERC32 and LEON processors. The following components are included:
+    GNU C/C++ compiler version 4.4.6 (RTEMS 4.10.1) , 4.2.4 (RTEMS 4.8.1) or 3.2.3 (RTEMS 4.6.6)
+    Linker, assembler, archiver etc.
+    Newlib standalone C-library
+    RTEMS real-time kernel with network support, version 4.10.1, 4.8.1 and 4.6.5
+    GDB 6.8 cross-debugger
+
+http://www.gaisler.com/index.php/products/operating-systems/rtems
+http://gaisler.com/anonftp/rcc/
+
+
+Add spart/rtems tools to path, 
+PATH=$PATH:/opt/sparc-elf-4.4.2/bin/
+PATH=$PATH:/opt/rtems-4.10/bin/
+PATH=$PATH:/opt/rtems-4.11/bin/
+
+
+INTALL TSIM
+===============
+Copy from GSE
+the tsim shoul be called tsim-leon3
+
+HASP Key
+=========
+
+wget ftp://ftp.cis-app.com/pub/hasp/Sentinel_HASP/Runtime_%28Drivers%29/6.60/Sentinel_LDK_Linux_Run-time_Installer_script.tar.gz
+tar xvzf Sentinel_LDK_Linux_Run-time_Installer_script.tar.gz
+tar xvzf aksusbd-2.2.1-i386.tar.gz 
+
+./dinst .
+
+(Extact from  readme.html)
+* (For x64 distributions) Manually install the 32-bit support libraries (x86 compatibility packages) provided by your Linux distribution. For example: For Debian or Ubuntu, use the command: apt-get install ia32
+* Disconnect your Sentinel HL key (if any) from the computer.
+* Open a terminal window and navigate to the directory containing the downloaded installation file.
+* As root, open a terminal window and enter the command: ./dinst . Note that the final "." in the command is required for the file location.
+* Reconnect the Sentinel HL ke
+
+
+
+Example invocations for covmerge:
+
+./covmerge -v -l 0x40000000 -h 0x40000100 -T sparc-rtems4.10 \
+   -e test_input/hello.exe test_input/hello.cov
+
+./covmerge -v -l 0x40000000 -h 0x40000100 -m merged.cov test_input/*.cov
+
+=============== Sample Build of RTEMS =================
+
+../rtems/configure NDEBUG=1 \
+   RTEMS_DO_NOT_INLINE_THREAD_ENABLE_DISPATCH=1 \
+   RTEMS_DO_NOT_INLINE_CORE_MUTEX_SEIZE=1 \
+  --target=sparc-rtems4.10 --enable-rtemsbsp=erc32 \
+  --enable-maintainer-mode \
+  --disable-itron --enable-tests --disable-tcpip --disable-ada --disable-cxx \
+  --prefix=${HOME}/coverage/install && make -j4 && exit 0
+
+
+The best alternative is to download the Virtual Machine from RTEMS website, (http://wiki.rtems.org/wiki/index.php/Virtual_Machines_for_RTEMS_Development) which includes a prebuild enviroment.
+

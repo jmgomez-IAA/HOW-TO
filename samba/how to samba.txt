@@ -1,0 +1,37 @@
+ 
+/usr/bin/smbclient -L feynman.iaa.es
+Enter jmgomez's password: 
+Domain=[UDIT] OS=[Unix] Server=[Samba 3.6.6]
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        IPC$            IPC       IPC Service (feynman Samba)
+        pierre          Disk      
+        jmgomez         Disk      
+        bea             Disk      
+        agsegura        Disk      
+        RTE             Disk      
+        nomad           Disk      
+        print$          Disk      Printer Drivers
+Domain=[UDIT] OS=[Unix] Server=[Samba 3.6.6]
+
+        Server               Comment
+        ---------            -------
+        FEYNMAN              feynman Samba
+
+        Workgroup            Master
+        ---------            -------
+        UDIT                 JRODRIGO-IAA
+
+
+
+/usr/bin/smbclient \\\\feynman.iaa.es\\nomad myPassWord
+Domain=[UDIT] OS=[Unix] Server=[Samba 3.6.6]
+smb: \> 
+
+Montar el SAMBA => http://www.cyberciti.biz/tips/how-to-mount-remote-windows-partition-windows-share-under-linux.html
+mount -t cifs \\\\feynman.iaa.es\\nomad  -o username=XXXXX,password=XXXX /media/smbNomad/
+mount -t cifs \\\\feynman.iaa.es\\nomad  -o username=XXXX,password=XXXX,uid=jmgomez,gid=users /media/smbNomad/
+mount -t cifs \\\\feynman.iaa.es\\plato  -o username=XXXX,password=XXXX,uid=jmgomez,gid=users /media/smbNomad/
+
+mount -t cifs \\\\feynman.iaa.es\\nomad  -o username=nomad_iaa,password=XXXXXXX,uid=nomad,gid=users /media/feynman/Plato

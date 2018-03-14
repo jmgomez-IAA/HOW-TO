@@ -1,0 +1,13 @@
+grep -B 7 -A 4 -rhw ./EarthPacketSession/ -e "<type>35" > tc_35.txt
+awk '$0 ~ /<hex_dump>/{print $0}' tc_35.txt  | awk 'BEGIN { FS= ">|<"}; {print $3}' > tc_35_sec.txt
+awk -F' ' -v OFS=' 0x00 '  '{for(i=NF+1;i<=64;i++)$i=""}1' tc_35_sec.txt  > tc_35.dat
+awk '$1=$1' FS=" " OFS="," tc_35.dat | awk -F'<' '{$0="MY_UINT08 tc_" i++ "[64] = {"$1"};"}1' > tcList.h
+
+awk -F'<' '{$0="MY_UINT08 tc_" i++ "[64] = {"$1"};"}1' tc_35_sec2.txt > tcList.h
+awk -F',' -v OFS=', 0x00'  '{for(i=NF+1;i<=64;i++)$i=""}1' tc_35_sec.txt  > tc_35.dat
+awk -F'<' '$0="MY_UINT08 xr[64] = {"$1"};"' tc_35.dat > tc_35.dat
+awk  '{$2 = "tc_" i++ $2}1' tc_35.dat > tcList.h
+
+
+
+

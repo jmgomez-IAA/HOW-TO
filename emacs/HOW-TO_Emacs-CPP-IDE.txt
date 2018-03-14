@@ -1,0 +1,128 @@
+Chuletilla EMACS C++ IDE
+=========================
+conf:
+
+Explicacion
+https://askubuntu.com/questions/839852/emacs-c-ide-gnu-global-helm-gtags
+
+yum install ctags-etags
+yum install global
+
+
+ggtags
+ggtags-executable-directory 
+
+Commands:
+
+Moviments
+=========
+C-f	Char. Fordward
+C-b	Char. Backward.
+C-n	Next line
+C-p	Prev. Line
+M-f	Next Word
+M-b	Back. Word
+C-l	Mov Cursor TOP/CENTER/BOTTOM
+C-a	Mov to Start línea actual
+C-e     Mov. end  actual
+M-a                 >> Ir al inicio de un párrafo
+M-e                 >> Ir al Final de un párrafo
+M-<	Inicio Fichero
+M->	Fin Fichero
+C-v	AvPag
+M-v	RePag
+
+Buffers
+=========
+C-x o 	Switch buffer
+C-x 1 	Expand buffer
+C-x C-b	List Buffer
+C-x b	Change Buffer
+C-x s	Save
+
+C-x C-f >> Abrir un fichero en un nuevo buffer
+C-x C-s >> Salvar el fichero con el nombre actual
+C-x C-w >> Salvar con nombre distinto (Save as)
+C-x C-i >> Insertar un archivo en el buffer actual
+C-x C-c >> Salir de emacs (Nota:Siempre pregunta si grabar buffers)
+C-x k   >> Cerrar buffer actual.
+
+Frames
+===========
+C-x 1	>> Ver una sóla ventana.
+C-x 2   >> Divide la ventana actual en dos filas
+C-x 3   >> Divide la ventana actual en dos columnas
+C-x 0   >> (cero) Elimina la ventana actual.
+C-x b   >> Cambiar el buffer de la venana actual. En minibuffer aparece prompt
+C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en 
+           varias ventanas
+
+
+Texto
+======
+C-x C-f Crear fichero
+
+C-s	Search
+
+C-SPC	Mark ON. Marcar subrayar
+C-SPC C-SPC	Mark OFF. Stop Marcar subrayar
+
+M-w	Copy
+C-w	Cut
+C-y	Paste
+C-x u	Undo
+C-_ 	Undo
+
+
+C-d     Borra el siguiente caracter
+M-d     Borra la siguiente palabra
+C-k	Borra fin de linea
+M-k	Borra fin de frase
+
+C-M-\	Indent region.
+
+Repository (MELPA)
+=================
+M-x package-list-packages
+
+Themes
+=========
+M-x customize-themes
+manoj-dark
+
+(load-theme 'manoj-dark)
+
+M-x linum-mod
+
+ggtags
+=======
+M-x ggtags-create-tags
+M-x ggtags-mode
+M-.<tags>	Search For Tag
+C-u M-.		Next Def. of tag
+M-x tags-apropos <RET>
+Tags apropos (regexp): <tag> <RET>
+M-. : ‘find-tag‘; busca un símbolo dado.
+M-* : ‘pop-tag-mark‘; devuelve el cursor al punto de comienzo de búsqueda de símbolos.
+(sin keystroke asociada) : ‘tags-search‘; busca un símbolo.
+(sin keystroke asociada) : ‘tags-query-replace‘; reemplaza un símbolo.
+(sin keystroke asociada) : ‘tags-apropos‘; busca un símbolo o parte de él.
+(sin keystroke asociada) : ‘list-tags‘; lista los símbolos de un fichero.
+M-, ó M-0 M-. : ‘tags-loop-continue‘; se desplaza al siguiente símbolo buscado.
+C-u – M-. ; se desplaza al anterior símbolo buscado.
+C-u M-. ; se desplaza al siguiente símbolo buscado.
+C-x 4 . : ‘find-tag-other-window’; busca un símbolo dado y crea una nueva ventana para ello.
+C-u 5 . : ‘find-tag-other-frame’; busca un símbolo dado y crea un nuevo frame para ello.
+M-/ ; autocompleta mediante dabbrev (teniendo en cuenta los ETAGS).
+M-/ M-/ (o más repeticiones); autocomplea con la segunda, tercera, etc… opción.
+
+SpeedBar
+=========
+M-x sr-speedbar-open  Abrir la barra de navegacion
+M-x sr-speedbar-close Cerrar
+(setq sr-speedbar-skip-other-window-p t) Evita que C-x o Salte a la barra de Speedbar.
+
+Programacion
+=============
+M-x compile	Compila el código.
+

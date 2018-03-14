@@ -1,0 +1,13 @@
+max-directory-depth=8
+max-dirname-length=31
+max-filename-length=31
+max-path-length=100
+max-line-length=100
+max-consecutive-empty-lines=2
+max-file-length=2000
+
+
+
+
+
+
