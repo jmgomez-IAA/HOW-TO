@@ -2,6 +2,7 @@ One puls one Github repository
 ================================
 
 https://github.com/OnePlusOSS
+https://forum.xda-developers.com/showthread.php?t=2754145&page=2
 
 https://appuals.com/build-mediatek-android-kernal-source/
 
