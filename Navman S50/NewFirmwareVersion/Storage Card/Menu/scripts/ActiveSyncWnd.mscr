@@ -1,5 +1,0 @@
-
-
-if (WndExists("`USB Status"))
-	Show("`USB Status")
-endif

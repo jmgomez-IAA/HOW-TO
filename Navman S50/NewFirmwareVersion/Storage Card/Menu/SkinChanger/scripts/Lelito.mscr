@@ -1,5 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Lelito.wav" )
-CallScript( "SkinChanger.mscr","Lelito" )
-
-

@@ -1,4 +1,0 @@
-
-CallScript("RotateApp.mscr",90,SystemPath("ScriptPath")\ "..\Rocket Mania\RocketMania-arm.exe" )
-
-

@@ -1,3 +1,0 @@
-DirApps= IniRead("..\setup.ini", "Dirs","FileViewers")
-CallScript("..\AppInit.mscr",4)
-Run( DirApps\"imageviewer.exe" )

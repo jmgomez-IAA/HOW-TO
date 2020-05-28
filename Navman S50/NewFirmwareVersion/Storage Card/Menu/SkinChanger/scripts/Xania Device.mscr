@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu Xania Device.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Xania Device" )
-
-
-

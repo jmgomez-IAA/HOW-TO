@@ -1,8 +1,0 @@
-CallScript("..\AppInit.mscr",1)
-
-app= IniRead("..\setup.ini", "apps","Traductor")
-Launch= IniRead("..\setup.ini", "sys","Launch")
-
-run(IniRead("..\setup.ini", "Keyboard","Icon") ,"-x:220 -y:248 -xk:240 -yk:125")
-Runwait(Launch,"-d -r:0 -e:/"&app&"/")
-close("keyboard")

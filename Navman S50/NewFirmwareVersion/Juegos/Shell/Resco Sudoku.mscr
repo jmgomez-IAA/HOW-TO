@@ -1,1 +1,0 @@
-CallScript("RotateApp.mscr",90,SystemPath("ScriptPath")\ "..\Resco Sudoku\Sudoku.exe" )

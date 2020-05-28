@@ -1,8 +1,0 @@
-
-Errorlevel ("off")
-CallScript("..\AppInit.mscr",3)
-
-
-#Rotate 90
-RunWait (IniRead("..\setup.ini", "Dirs","Games")\"ChessGenius\ChessGenius.exe")
-#Rotate 0

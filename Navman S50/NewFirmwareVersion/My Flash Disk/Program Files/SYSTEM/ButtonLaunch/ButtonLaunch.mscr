@@ -1,7 +1,0 @@
-app="ButtonLaunch.exe" 
-
-if (ProcExists(app) = FALSE)
-	run(SystemPath("ScriptPath")\app)
-else
-	kill(app)
-endif

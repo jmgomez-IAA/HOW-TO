@@ -1,5 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu Reality.wav" )
-CallScript( "SkinChanger.mscr","Reality" )
-
-

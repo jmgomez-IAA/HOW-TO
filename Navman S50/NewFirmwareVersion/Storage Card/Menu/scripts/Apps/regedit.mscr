@@ -1,4 +1,0 @@
-CallScript("..\AppInit.mscr",1)
-run(IniRead("..\setup.ini", "Keyboard","Icon"),"-x:428 -y:1")
-Runwait( IniRead("..\setup.ini", "Apps","regedit"))
-close("keyboard")

@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu Metal Speed.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Metal Speed" )
-
-
-

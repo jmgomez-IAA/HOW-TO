@@ -1,3 +1,0 @@
-Run("\My Flash Disk\Program Files\Apps\mp3\BlackScreen\BlackScreen.exe")
-RunWait("\My Flash Disk\Program Files\Apps\mp3\NaviPlaye.exe")
-Kill("BlackScreen.exe")

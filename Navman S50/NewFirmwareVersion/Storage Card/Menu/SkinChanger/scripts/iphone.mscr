@@ -1,5 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Iphone.wav" )
-CallScript( "SkinChanger.mscr","iphone" )
-
-

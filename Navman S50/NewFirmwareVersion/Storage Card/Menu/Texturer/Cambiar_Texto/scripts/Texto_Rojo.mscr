@@ -1,4 +1,0 @@
-ErrorLevel("off")
-CallScript( "Change Text.mscr","ini_R.ini" )
-
-

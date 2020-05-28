@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Preferences Settings -->
-<propertybag>
-	<property name="voice scheme locale" value="fr"></property>
-	<property name="language" value="fr-FR"></property>
-  <property name="keyboard qwerty derivative" value="2"></property>
-</propertybag>
-
-

@@ -1,3 +1,0 @@
-Rotate 90
-RunWait ("\Storage Card\Menu\iphone\Reloj\Reloj.exe")
-Rotate 0

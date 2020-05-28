@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Style Tomayax.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Style Tomayax" )
-
-
-

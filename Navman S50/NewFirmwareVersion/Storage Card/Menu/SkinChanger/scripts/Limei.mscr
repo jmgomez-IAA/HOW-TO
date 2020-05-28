@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Limei.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Limei" )
-
-
-

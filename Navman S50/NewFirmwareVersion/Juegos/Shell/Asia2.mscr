@@ -1,4 +1,0 @@
-
-CallScript("RotateApp.mscr",0,SystemPath("ScriptPath")\ "..\Asia2\Asia2.exe" )
-
-

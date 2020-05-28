@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu Rage Speed.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Rage_Speed" )
-
-
-

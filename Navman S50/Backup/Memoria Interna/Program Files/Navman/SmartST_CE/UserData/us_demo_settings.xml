@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Preferences Settings -->
-<propertybag>
-	<property name="route prefer freeway" value="196"></property>
-	<property name="12hr clock format" value="true"></property>
-	<property name="unit system" value="IMPERIAL_FRACTIONAL"></property>
-	<property name="speed limit" value="50"></property>
-	<property name="volume" value="100"></property>
-</propertybag>

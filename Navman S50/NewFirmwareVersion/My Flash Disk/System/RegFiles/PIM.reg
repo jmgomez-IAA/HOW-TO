@@ -1,8 +1,0 @@
-[HKEY_LOCAL_MACHINE\Windows CE Services\Synchronization\Objects\ClStrTecAce]
-"Store"="\\My Flash Disk\\system\\DLL\\clstrta.dll"
-
-[HKEY_LOCAL_MACHINE\Windows CE Services\Synchronization\Objects\CtStrTecAce]
-"Store"="\\My Flash Disk\\system\\DLL\\ctstrta.dll"
-
-[HKEY_LOCAL_MACHINE\Windows CE Services\Synchronization\Objects\TaStrTecAce]
-"Store"="\\My Flash Disk\\system\\DLL\\tastrta.dll"

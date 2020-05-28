@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu MetalCC.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","MetalCC" )
-
-
-

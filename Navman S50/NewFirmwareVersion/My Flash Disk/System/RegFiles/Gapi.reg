@@ -1,7 +1,0 @@
-REGEDIT4
-
-[HKEY_CURRENT_USER\Software\WinCESoft\GAPI for HPCs]
-"CacheEnable"=dword:00000000
-"SetupNewDevice"=dword:00000000
-"DeviceName"="Navman S50, CE 5.0, 480x272"
-"PreferedDevice"=dword:0000029c

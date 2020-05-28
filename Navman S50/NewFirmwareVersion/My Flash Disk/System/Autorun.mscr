@@ -1,9 +1,0 @@
-
- 
-	RunWait("\My Flash Disk\Program Files\system\CreateDatabases.exe")
-
-
-	#Restaura las bases de datos PIM
-	ForEach file in files("\My Flash Disk\system\Pim\*.ced")
-		RunWait("\My Flash Disk\Program Files\system\DatabaseTool.exe", "/l " & file)
-	EndForEach

@@ -1,3 +1,0 @@
-ErrorLevel("off")
-CallScript( "Change Text.mscr","ini_N.ini" )
-

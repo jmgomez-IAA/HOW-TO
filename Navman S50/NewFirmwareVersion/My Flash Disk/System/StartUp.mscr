@@ -1,2 +1,0 @@
-run("\My Flash Disk\Program Files\system\PowerButton.exe")
-run("\My Flash Disk\Program Files\system\SetVolume.exe","-s:10 -w")

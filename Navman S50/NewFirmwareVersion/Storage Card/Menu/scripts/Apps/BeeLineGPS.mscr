@@ -1,7 +1,0 @@
-CallScript("..\AppInit.mscr",1)
-
-Run(IniRead("..\setup.ini", "Keyboard","Icon"),"-x:450 -y:248")
-RunWait(IniRead("..\setup.ini", "Apps","BeeLineGPS"))
-close("keyboard")
-
-

@@ -1,5 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu Vista Aurora.wav" )
-CallScript( "SkinChanger.mscr","Vista_Aurora" )
-
-

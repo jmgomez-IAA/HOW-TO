@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu Wolf Station.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Wolf_Station" )
-
-
-

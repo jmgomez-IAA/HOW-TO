@@ -1,2 +1,0 @@
-CallScript("..\AppInit.mscr",1)
-Run(IniRead("..\setup.ini", "Apps","FoxitReader"))

@@ -1,6 +1,0 @@
-if (ProcExists( "MioBT.exe"))
-Run( "\My Flash Disk\Program Files\miobt\Mostrar_UI.exe" )
-else
-run("\My Flash Disk\Program Files\miobt\ANWDOG.EXE")
-
-endif

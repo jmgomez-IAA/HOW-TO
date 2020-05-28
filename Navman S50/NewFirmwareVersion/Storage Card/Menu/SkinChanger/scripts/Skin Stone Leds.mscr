@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu Skin Stone Leds.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Skin Stone Leds" )
-
-
-

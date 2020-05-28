@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Lasaya.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Lasaya" )
-
-
-

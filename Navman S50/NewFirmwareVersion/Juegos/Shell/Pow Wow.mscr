@@ -1,4 +1,0 @@
-Run("\My Flash Disk\Program Files\system\keyboards\keyboard.exe","-x:2 -y:455 -xk:10 -yk:300")
-CallScript("RotateApp.mscr",90,SystemPath("ScriptPath")\ "..\Pow Wow.exe" )
-
-close("keyboard")

@@ -1,9 +1,0 @@
-REGEDIT4
-
-[HKEY_CURRENT_USER\Software\Microsoft]
-
-[HKEY_CURRENT_USER\Software\Microsoft\eBook]
-"ContentDir"="\\Storage Card\\My Documents"
-
-[HKEY_CURRENT_USER\Software\Microsoft\eBook\eBook]
-@=""

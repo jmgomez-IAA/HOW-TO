@@ -1,4 +1,0 @@
-CallScript("AppInit.mscr",0)
-spath = SystemPath("ScriptPath")
-spath = SubStr(spath, 1, ReverseFind(spath, "\")) 
-Run( spath\ "Exit\MenuExit.exe" )

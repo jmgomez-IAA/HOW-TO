@@ -1,9 +1,0 @@
-CallScript("..\AppInit.mscr",1)
-
-ErrorLevel("off")
-if (RegKeyExists("HKCU","\Software\metrO") = FALSE)
-	RegWriteString("HKCU","Software\metrO\metrO","Language","Spanish")
-endif
-
-Run( IniRead("..\setup.ini", "Apps","Metro"))
-

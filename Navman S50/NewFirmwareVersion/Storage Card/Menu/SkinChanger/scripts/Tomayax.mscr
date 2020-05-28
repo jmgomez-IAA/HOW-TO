@@ -1,5 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu Tomayax.wav" )
-CallScript( "SkinChanger.mscr","Tomayax" )
-
-

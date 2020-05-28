@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Ladrabugas Suzuki Reloaded.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Ladrabugas Suzuki Reloaded" )
-
-
-

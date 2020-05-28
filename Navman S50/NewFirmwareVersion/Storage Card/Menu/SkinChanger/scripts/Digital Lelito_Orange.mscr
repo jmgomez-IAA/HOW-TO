@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Digital Lelito Orange.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Digital Lelito_Orange" )
-
-
-

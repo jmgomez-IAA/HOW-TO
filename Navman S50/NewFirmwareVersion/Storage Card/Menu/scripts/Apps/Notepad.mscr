@@ -1,4 +1,0 @@
-CallScript("..\AppInit.mscr",1)
-Run(IniRead("..\setup.ini", "Keyboard","Icon"),"-x:428 -y:1")
-RunWait(IniRead("..\setup.ini", "Apps","NotePad"))
-close("keyboard")

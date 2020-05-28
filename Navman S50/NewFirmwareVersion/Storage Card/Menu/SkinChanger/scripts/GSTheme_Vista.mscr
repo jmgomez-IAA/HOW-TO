@@ -1,5 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\GSTheme Vista.wav" )
-CallScript( "SkinChanger.mscr","GSTheme_Vista" )
-
-

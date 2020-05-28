@@ -1,2 +1,0 @@
-
-CallScript("RotateApp.mscr",0,SystemPath("ScriptPath")\ "..\cardgamesii\cardgamesii.exe" )

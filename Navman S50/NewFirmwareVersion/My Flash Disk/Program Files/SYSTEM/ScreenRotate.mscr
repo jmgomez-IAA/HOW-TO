@@ -1,5 +1,0 @@
-if (Screen( "landscape" ))
-	rotate 90
-else
-	rotate 0
-endif

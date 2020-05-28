@@ -1,5 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Menu Tema XP.wav" )
-CallScript( "SkinChanger.mscr","Menu_XP" )
-
-

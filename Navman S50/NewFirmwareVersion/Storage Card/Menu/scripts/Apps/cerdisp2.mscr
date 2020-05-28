@@ -1,6 +1,0 @@
-CallScript("..\AppInit.mscr",1)
-If regKeyEqualsString ("HKLM","Drivers\USB\FunctionDrivers","DefaultClientDriver","Mass_Storage_Class")
-	message("Requiere USB en modo ActiveSync")
-	exit
-endif
-Run( IniRead("..\setup.ini", "Sys","cerdisp2"))

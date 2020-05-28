@@ -1,4 +1,0 @@
-
-CallScript("RotateApp.mscr",0,SystemPath("ScriptPath")\ "..\S-Tris 2\S-Tris2.exe" )
-
-

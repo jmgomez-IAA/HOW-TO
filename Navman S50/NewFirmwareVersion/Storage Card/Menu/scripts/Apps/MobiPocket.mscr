@@ -1,5 +1,0 @@
-CallScript("..\AppInit.mscr",1)
-Rotate(90)
-Runwait(IniRead("..\setup.ini", "Apps","MobiPocket"))
-Rotate(0)
-

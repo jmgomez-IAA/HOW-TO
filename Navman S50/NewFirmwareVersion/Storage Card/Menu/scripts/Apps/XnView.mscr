@@ -1,4 +1,0 @@
-CallScript("..\AppInit.mscr",1)
-Run(IniRead("..\setup.ini", "Keyboard","Icon"),"-x:240 -y:248")
-RunWait(IniRead("..\setup.ini", "Apps","XnView"))
-close("keyboard")

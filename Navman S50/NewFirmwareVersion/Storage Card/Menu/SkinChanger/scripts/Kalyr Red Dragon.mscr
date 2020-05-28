@@ -1,6 +1,0 @@
-ErrorLevel("off")
-PlaySound( "\Storage Card\menu\Sounds\Kalyr Red Dragon.wav" )
-CallScript( "SkinChangeWolfCNu.mscr","Kalyr Red Dragon" )
-
-
-

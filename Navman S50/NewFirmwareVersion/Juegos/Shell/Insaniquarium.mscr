@@ -1,2 +1,0 @@
-
-CallScript("RotateApp.mscr",270,SystemPath("ScriptPath")\ "..\Astraware Games\Insaniquarium.EXE" )
