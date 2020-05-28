@@ -1,0 +1,14 @@
+CallScript("..\AppInit.mscr",1)
+ErrorLevel("off")
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","xPosition",0)
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","yPosition",0)
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","ShowBar",0)
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","ShowMuteMe",0)
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","Size",2)
+RegWriteString("HKCU", "Software\Microsoft\eBook","ContentDir","\Storage Card\My Documents")
+
+Rotate 90
+Run(IniRead("..\setup.ini", "Taskbar","BananaPC"))
+RunWait(IniRead("..\setup.ini", "Apps","MsReader"))
+Rotate 0
+close("BananaPC")

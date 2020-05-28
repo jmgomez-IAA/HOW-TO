@@ -1,0 +1,5 @@
+RegWriteDWord("HKLM", "SOFTWARE\Menu", "Exit",0)
+kill("Menu.exe")
+Run("\Storage Card\Menu\SkinChanger\SkinChange.exe")
+
+

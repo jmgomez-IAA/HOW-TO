@@ -1,0 +1,14 @@
+
+	CallScript("..\AppInit.mscr",1)
+
+	app=IniRead("..\setup.ini", "Sys","TaskMgr")
+
+	if (ProcExists( "explorer.exe" ) )
+		Run(app)
+	else
+		Run( "explorer.exe" )
+		WaitFor("Default Ime",2)
+		sleep(1500)
+		RunWait(app)
+		kill("explorer.exe" )
+	endif

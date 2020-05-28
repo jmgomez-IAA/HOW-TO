@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device model="S50">
+  <features>
+    <feature>2C7213E8-315C-46c8-8F22-3812D193A2F1</feature>
+    <feature>9D50D1D8-DE4E-4827-9686-CBB699A037D7</feature>
+    <feature>67B7EB34-2441-4521-8254-D11411DCA5D7</feature>
+    <feature>3EECAAD5-C8D4-4bf3-BBA4-FF2FEA86007D</feature>
+    <feature>5D6B44C2-A96F-47b4-8D95-AABE3F89C7DA</feature>
+    <feature>E18D4443-6F38-450a-90B2-CC3D81C1C7C7</feature>
+    <feature>1E109A24-DCC7-466f-92EB-0DF819FC38B3</feature>
+    <feature>54DBFC45-69D3-4c92-8266-9FD0197855EA</feature>
+    <feature>360C2D16-88D5-48d5-A932-F43D83418B49</feature>
+    <feature>EF801E72-3F8F-4299-8097-101E75F48367</feature>
+  </features>
+</device>
+

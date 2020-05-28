@@ -1,0 +1,4 @@
+CallScript("..\AppInit.mscr",1)
+run(IniRead("..\setup.ini", "Keyboard","Icon"),"-x:258 -y:1")
+runwait( IniRead("..\setup.ini", "Apps","PocketArtist"))
+close("keyboard")

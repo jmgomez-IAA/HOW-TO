@@ -1,0 +1,2 @@
+CallScript("..\AppInit.mscr",2)
+RunWait("\Windows\ctlpnl.exe", "cplmain.cpl,13")

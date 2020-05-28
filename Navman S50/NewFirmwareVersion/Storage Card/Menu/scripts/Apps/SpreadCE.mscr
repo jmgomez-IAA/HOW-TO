@@ -1,0 +1,5 @@
+CallScript("..\AppInit.mscr",1)
+
+run( IniRead("..\setup.ini", "Keyboard","Icon") ,"-x:428 -y:1 ")
+runwait( IniRead("..\setup.ini", "Apps","spreadce"))
+close("keyboard")

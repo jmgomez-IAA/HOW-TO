@@ -1,0 +1,22 @@
+CallScript("..\AppInit.mscr",1)
+
+if (ProcExists( "explorer.exe" ) )
+	IsExplorer=FALSE
+else
+	IsExplorer=TRUE
+	Run( "explorer.exe" )
+	sleep(2)
+endif
+
+RunWait( IniRead("..\setup.ini", "apps","ceAgenda") )
+
+WaitFor("CE Agenda",2)
+
+While(WndExists("CE Agenda"))
+	sleep(10)
+EndWhile
+
+If(IsExplorer)
+	kill("explorer.exe" )
+endif
+

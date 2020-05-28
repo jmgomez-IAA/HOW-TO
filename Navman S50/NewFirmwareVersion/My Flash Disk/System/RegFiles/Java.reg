@@ -1,0 +1,43 @@
+[HKEY_LOCAL_MACHINE\Software\IBM]
+
+[HKEY_LOCAL_MACHINE\Software\IBM\jclMidp20]
+"MajorVersion"=dword:00000005
+"MinorVersion"=dword:00000007
+
+[HKEY_LOCAL_MACHINE\Software\IBM\jclMidp20\en]
+"MajorVersion"=dword:00000005
+"MinorVersion"=dword:00000007
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/vnd.sun.j2me.app-descriptor]
+"Extension"=".jad"
+
+[HKEY_CLASSES_ROOT\.jad]
+@="jadfile"
+
+[HKEY_CLASSES_ROOT\jadfile]
+@="Application Descriptor"
+"EditFlags"=dword:00010000
+
+[HKEY_CLASSES_ROOT\jadfile\shell]
+
+[HKEY_CLASSES_ROOT\jadfile\shell\open]
+
+[HKEY_CLASSES_ROOT\jadfile\shell\open\command]
+@="\"\\My Flash Disk\\Program Files\\Apps\\Java\\bin\\emulator.exe\" \"-Xjam:install=file:%1\" -Xjam:showUI"
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/java-archive]
+"Extension"=".jar"
+
+[HKEY_CLASSES_ROOT\.jar]
+@="jarfile"
+
+[HKEY_CLASSES_ROOT\jarfile]
+@="Java Archive"
+"EditFlags"=dword:00010000
+
+[HKEY_CLASSES_ROOT\jarfile\shell]
+
+[HKEY_CLASSES_ROOT\jarfile\shell\open]
+
+[HKEY_CLASSES_ROOT\jarfile\shell\open\command]
+@="\"\\My Flash Disk\\Program Files\\Apps\\Java\\bin\\emulator.exe\" \"-Xjam:install=file:%1\" -Xjam:showUI"

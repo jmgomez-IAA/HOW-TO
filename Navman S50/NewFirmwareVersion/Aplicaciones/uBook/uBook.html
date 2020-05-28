@@ -1,0 +1,979 @@
+<HTML>
+<HEAD>
+<TITLE>µBook Reader User's Guide</TITLE>
+</HEAD>
+<BODY>
+
+<FONT SIZE=+3><B>µBook Reader<ibar><BR>User's Guide<ibar></B></FONT><BR>
+<DIV ALIGN=LEFT>Version 0.8<BR>
+© GowerPoint.com, 2002-03</A><BR><HR><BR></DIV>
+
+<LI><A HREF="#uBook_what">What is µBook</A>
+<LI><A HREF="#uBook_read">Reading a book</A>
+<LI><A HREF="#uBook_keys">Key Shortcuts</A>
+<LI><A HREF="#uBook_menu">Menus</A>
+<DIR>
+<LI><A HREF="#menu_main">File Menu</A>
+<LI><A HREF="#menu_bookmark">Page Menu</A>
+<LI><A HREF="#menu_content">Content Menu</A>
+<LI><A HREF="#menu_image">Image Zoom/Pan Menu</A>
+<LI><A HREF="#menu_marks">Annotations Menu</A>
+<LI><A HREF="#menu_right">Right mouse button Menu</A>
+</DIR>
+<LI><A HREF="#uBook_browser">Browser and Library</A>
+<DIR>
+<LI><A HREF="#uBook_browser_options">Browser Options</A>
+<LI><A HREF="#uBook_browser_lib_options">Library Options</A>
+<LI><A HREF="#uBook_browser_ulib">Suggested Library Settings</A>
+</DIR>
+<LI><A HREF="#uBook_options">Options</A>
+<LI><A HREF="#uBook_toc">Table of Contents / Annotations Summary</A>
+<LI><A HREF="#uBook_faq">FAQ</A>
+<DIR>
+<LI><A HREF="#uBook_faq_1">Why are some Links not working?</A>
+<LI><A HREF="#uBook_faq_2">It crashes on this one text...</A>
+<LI><A HREF="#uBook_faq_3">What are the PGN and PF1 directories?</A>
+<LI><A HREF="#uBook_faq_4">Why doesn't changing font, font size or colour do anything?</A>
+<LI><A HREF="#uBook_faq_5">Where can I find free e-Books?</A>
+<LI><A HREF="#uBook_faq_6">Why can't I open this PRC or PDB file?</A>
+<LI><A HREF="#uBook_faq_7">How do I make a Skin?</A>
+<LI><A HREF="#uBook_faq_8">How do I create an External Module?</A>
+<LI><A HREF="#uBook_faq_9">What is the Dictionary Format?</A>
+<LI><A HREF="#uBook_faq_10">COPY doesn't work!</A>
+<LI><A HREF="#uBook_faq_11">Why do characters look Fuzzy?</A>
+<LI><A HREF="#uBook_faq_12">Why isn't there RAR compressed files support?</A>
+<LI><A HREF="#uBook_faq_13">Language support?</A>
+</DIR>
+
+<H1 STYLE="page-break-before:always">What is µBook<ibar></H1><A NAME="uBook_what"></A>
+
+<P>µBook (MicroBook, "you"-Book, "uh"-book, you choose) is an HTML / PDB / PRC / RTF / TXT reader
+that displays the data in a book-like format (commonly referred as e-Books).  
+The text is divided into numerated pages like a paper book.  The viewing window 
+can be of any size, which will affect the number of pages.  It remembers 
+the last page read for each book, the last book read and a list of previously read
+books.  Additional Annotations and Bookmarks can 
+be added and reached easily.  The history of book read can 
+be traversed backward or forward (like in a web browser).</P>
+
+<P>µBook offers many <A HREF="#uBook_options">Options</A> for customisation of fonts, colours and skins.  
+The display can be set to Portrait or Landscape mode, the later mostly practical on handheld devices.</P>
+
+<P>µBook offers the possibility to change its appearance using templates called <A HREF="#options_skins">Skins</A>.
+A few simple ones are distributed with µBook, but it is easy to create new skins.
+See also the www.GowerPoint.com web site for some user designed skins.</P>
+
+<P>µBook comes with <A HREF="#uBook_browser">Library</A> manager.  It lets you associate Icons and
+Text Information with any file.  A classic use would be to put the Book Cover as Icon and
+the Author or Version as added text.  Up to 30 pieces of text can be associated with any file. 
+µBook can automatically scan and build Icons for any given Folder.</P>
+
+<P>µBook can also decompress on the fly document in ZIP compressed archive
+files.  Those files are handled the same way as directories in µBook's file Browser
+document.  An <A HREF="#uBook_faq_8">external API</A> allows users/programmers to add and share input modules
+for file types not handled by µBook.</P>
+
+<P>µBook also has a <A HREF="#menu_bookmark_find">text search</A> function and generates an automatic 
+<A HREF="#options_toc_criteria">Table of Contents</A> for each book that is opened.  It looks for keywords like "CHAPTER", "PART" or numerals,
+including roman numerals.  The building <A HREF="#options_toc_criteria">criteria</A> can be customised.</P>
+
+<P>µBook offers different sizes of <A HREF="#uBook_options_fonts">smooth fonts</A> with contrast adjustment to allow
+a nice reading experience on CRTs and LCDs.  JPG, GIF, PNG and BMP pictures in or out of HTML, PRC and RTF documents
+are handled (as well as embedded WMF bitmaps in RTF files).  Images <A HREF="#menu_image">Zooming and Panning</A> is available.
+If there is an image in the same folder as the file being read that seems relevant,
+it will be considered as the <A HREF="#menu_bookmark_cover">"Book Cover"</A> and shown as such.  An <A HREF="#uBook_faq_8">external API</A> for images
+is also available for users/programmers to add their favourite unhandled image file format.</P>
+
+<P>Optionally, If an image is selected, a Slide Show document of all the images
+in the same Folder is displayed, one per page, starting at the page of the
+selected image.  You can move around the Slide Show the same way as a normal book.</P>
+
+<P>If you like reading without having to touch your computer (while driving for example,
+although we deny suggesting this...) µBook offers an <A HREF="#menu_bookmark_as">Auto-Scrolling</A>
+mode where new lines of text are added to the screen at a configurable interval, in fractional seconds or
+based on your words-per-minute reading skill.</P>
+
+<P>Hyperlinks in HTML or PRC are handled as long as the destination remains local (i.e. somewhere inside the
+local computer/network, no security holes here).</P>
+
+<P>µBook comes with a very simple <A HREF="#options_dict">dictionary</A> (based on the Webster 1913, every word
+not in "Of Mice and Men" stripped out...).  Better <A HREF="#uBook_faq_9">dictionaries</A> can easily be built
+or downloaded.</P>
+
+<P>µBook caches pagination files to the local disk to allow quick reopening of books.
+µBook is small and requires little resources.</P>
+
+<H1 STYLE="page-break-before:always">Reading a book<ibar></H1><A NAME="uBook_read"></A>
+
+<P>To open a file you must first access the <A HREF="#menu_main">File menu</A>.
+There you can either go into the 
+<A HREF="#menu_main_recent">Recent Files</A> sub-menu to find the most 
+recently viewed files or select <A HREF="#menu_main_open">Open...</A>
+to bring up a <A HREF="#uBook_browser">Browser document</A> to select a file.</P>
+
+<P>When a document is selected for the first time, you quickly see the first
+page and then you can see the page count increase as µBook pre-paginate
+the book internally.  You can start reading right away, you just can't reach pages
+beyond those already paginated (Note that on fast Computers, Pagination time is sometimes barely 
+noticeable).</P>
+
+<P>When the viewing window is resized, the same process takes place, but the
+document isn't available until the page that was currently read (or close to it)
+is reached.</P>
+
+<P>The viewing area is divided into two sections: text and control.  Text is where the
+book content appears while control is used to move around and to show page numbering.
+The control part is divided into many zones.  There are "signs" for the <A HREF="#menu_main">File menu</A>,
+and for the <A HREF="#menu_bookmark">Page menu</A>.  If the time is
+available in the current skin, clicking on it will open the <A HREF="#menu_skins">quick-skin menu</A>, where you can
+alternate between your favourite skins (i.e. if you have one for night time reading and one
+for day time reading.)</P>
+
+<P>Optionally two arrow signs are used to move <A HREF="#menu_bookmark_back_forward">Backward and Forward</A> 
+in the document history, two other arrow signs are used to move between <A HREF="#menu_bookmark_ann">Annotations</A> and
+two more arrow signs are used to move between Sections in
+the generated <A HREF="#menu_bookmark_toc">Table of Contents</A>.  They are different depending on the skin
+in use.</P>
+
+<P>If the skin in use doesn't have the usual Windows™ border, 
+there will be signs that are hot zones for Maximising or Minimising µBook 
+(Or on Pocket PCs to lower or raise the window to access the Start Menu).
+The page numbering is also a hot point to open
+the <A HREF="#menu_content">Content menu</A>.  
+Note that depending on the current text, the Content Menu might not be available.</P>
+
+<P>The space, on either left or right of the page numbering,
+is a page move zone.  Clicking once on the left will move back one page, and clicking on the right will
+move forward one page. If available, a keyboard can also be used to move around a book.</P>
+
+<P>Another way to move around the text is by using the <A HREF="#menu_bookmark_find">Text search</A> function.</P>
+
+<H1 STYLE="page-break-before:always">Key Shortcuts<ibar></H1><A NAME="uBook_keys"></A>
+
+<P>If a Keyboard is available, the following Key Shortcuts are defined:</P>
+<DIV ALIGN=LEFT>
+<LI><FONT FACE="Courier">F1</FONT><ifield "."><A HREF="#menu_main_help">Help</A>
+<LI><FONT FACE="Courier">F2</FONT><ifield "."><A HREF="#menu_bookmark_ann">Annotations...</A>
+<LI><FONT FACE="Courier">F3 or f / SHIFT+F3 or F</FONT><ifield "."><A HREF="#menu_bookmark_find">Find Next / Previous</A>
+<LI><FONT FACE="Courier">F4</FONT><ifield "."><A HREF="menu_bookmark_toc">Table of Contents...</A>
+<LI><FONT FACE="Courier">F5</FONT><ifield "."><A HREF="#menu_main_open">Open...</A>
+<LI><FONT FACE="Courier">F6</FONT><ifield "."><A HREF="#menu_main_options">Options...</A>
+<LI><FONT FACE="Courier">F9</FONT><ifield "."><A HREF="#menu_disp_black">Toggle Black Background</A>
+<LI><FONT FACE="Courier">F11</FONT><ifield "."><A HREF="#menu_bookmark_min_max">Minimise</A>
+<LI><FONT FACE="Courier">F12</FONT><ifield "."><A HREF="#menu_bookmark_min_max">Maximise</A>
+<LI><FONT FACE="Courier">ESC</FONT><ifield "."><A HREF="#menu_main_exit">Exit</A>
+<LI><FONT FACE="Courier">SPACEBAR, PAGE DOWN, DOWN ARROW or RIGHT ARROW</FONT><ifield ".">Next Page
+<LI><FONT FACE="Courier">BACKSPACE, UP ARROW or LEFT ARROW</FONT><ifield ".">Previous Page
+<LI><FONT FACE="Courier">HOME</FONT><ifield "."><A HREF="#menu_bookmark_pages">First Page</A>
+<LI><FONT FACE="Courier">END</FONT><ifield "."><A HREF="#menu_bookmark_pages">Last Page</A>
+<LI><FONT FACE="Courier">ENTER or a</FONT><ifield "."><A HREF="#menu_bookmark_as">Start Auto-scroll</A>
+<LI><FONT FACE="Courier">[ or { / ] or }</FONT><ifield "."><A HREF="#menu_bookmark_back_forward">Back / Forward</A>
+<LI><FONT FACE="Courier">c / C</FONT><ifield "."><A HREF="#uBook_options_fonts">Forward / Backward in Contrasts</A>
+<LI><FONT FACE="Courier">m / M</FONT><ifield "."><A HREF="#menu_np_mark">Next / Previous Mark</A>
+<LI><FONT FACE="Courier">n / N</FONT><ifield "."><A HREF="#menu_np_sec">Next / Previous Section</A>
+<LI><FONT FACE="Courier">0 - 9</FONT><ifield "."><A HREF="#menu_bookmark_page">Page...</A>
+</DIV>
+
+<BR>
+<P>Additionally, if inside the <A HREF="#uBook_browser">Browser</A>:</P>
+<DIV ALIGN=LEFT>
+<LI><FONT FACE="Courier">s</FONT><ifield "."><A HREF="#uBook_lib_prep">Prepare or Update</A> Current Folder for Librarian
+<LI><FONT FACE="Courier">i</FONT><ifield ".">Toggle through <A HREF="#uBook_lib_mode">Library Modes</A>
+<LI><FONT FACE="Courier">u</FONT><ifield ".">Go up one level
+</DIV>
+
+<BR>
+<P>Alternately, if in <A HREF="#menu_bookmark_as">Auto-Scroll</A> mode:</P>
+<DIV ALIGN=LEFT>
+<LI><FONT FACE="Courier">ENTER or a</FONT><ifield ".">Stop
+<LI><FONT FACE="Courier">p</FONT><ifield ".">Pause or Resume
+<LI><FONT FACE="Courier">,</FONT><ifield ".">Slow Down
+<LI><FONT FACE="Courier">.</FONT><ifield ".">Speed Up
+</DIV>
+
+<H1 STYLE="page-break-before:always">Menus<ibar></H1><A NAME="uBook_menu"></A>
+
+<P>Menus are available by clicking on specific marks on the viewing area.  See 
+the <A HREF="#uBook_read">Reading a book</A> section for more details.  Note
+that depending on the skin used, menu marks can be different in look and position.</P>
+
+<BR>
+
+<A NAME="menu_main"><h2>File Menu</h2></A>
+
+<P>The File menu is available by clicking the file menu mark on the viewing area.</P>
+
+<BR>
+
+<A NAME="menu_main_recent"><h3>Recent Files</h3></A>
+<P>This sub-menu let's you see the most recently viewed books.  Just select one and
+it will be reopened and reset to where you were when it was closed last.  The number of 
+entries can be customised in the Options... General Section.</P>
+
+<BR>
+
+<A NAME="menu_main_open"><h3>Open...</h3></A>
+<P>Brings up the <A HREF="#uBook_browser">Browser Document</A> to select a file to open.</P>
+
+<A NAME="menu_main_options"><h3>Options...</h3></A>
+<P>Brings up the <A HREF="#uBook_options">Options Document</A> that displays the current
+state of options and offers alternative choices for configuration.</P>
+
+<h3>About...</h3>
+<P>Shows µBook title / version / copyright page.</P>
+
+<A NAME="menu_main_help"><h3>Help...</h3></A>
+<P>Shows this document.</P>
+
+<A NAME="menu_main_exit"><h3>Exit</h3></A>
+<P>Exits µBook.</P>
+
+<BR>
+
+<A NAME="menu_bookmark"><h2>Page Menu</h2></A>
+<P>The Page menu is available by clicking the page menu mark on the 
+viewing area.  The menu contains function to simplify moving around the text.</P>
+
+<BR>
+
+<P><B>Note: </B> For Simplicity reason, if the current Skin has direct-click Zones for
+the Menu Item described here, their entry won't be shown in the menu.</P>
+
+<BR>
+
+<A NAME="menu_bookmark_back_forward"><h3>Back or Forward</h3></A>
+<P>µBook keeps a history of the last 64 locations (document and page) when moving around with Hyperlinks, Annotations or Changing Documents.
+By selecting <B>Back</B> you can go back to the most recent one.
+By selecting <B>Forward</B>, if the Back button was previously used and no
+user interaction created new entries in the history, you can go forward in the
+history log.</P>
+
+<A NAME="menu_bookmark_min_max"><h3>Minimise or Maximise</h3></A>
+<P>Let's you Minimise or Maximise µBook's Window. If the window is already Minimised or Maximised, the window can be 
+Restored to its normal size by selecting the reverse function.</P>
+
+<A NAME="menu_bookmark_pages"><h3>First / Last Page</h3></A>
+<P>Let's you move quickly to the first or last page of a document.</P>
+
+<A NAME="menu_bookmark_page"><h3>Page...</h3></A>
+<P>This opens a number entry dialog where you can type in the page number where
+you want to go.  Enter the page number then hit <B>OK</B> or Enter on the Keyboard.</P>
+
+<A NAME="menu_bookmark_find"><h3>Find... / Find Next / Find Previous</h3></A>
+<P>This opens an alphanumeric entry dialog where case insensitive text can be entered.
+Enter what you want to search for, going Backward by selecting the checkbox, then hit <B>OK</B> or Enter on the Keyboard.
+The page will be updated to show the first occurrence of the searched string.  
+The found text is shadowed with the <A HREF="#menu_main_colour">Search Colour</A>.</P>
+<P>Afterward you can select <B>Find Next</B> or <B>Find Previous</B> to go to the next
+occurrence in the text.  When a search is active, the <A HREF="menu_np_mark">Next / Previous Mark</A> zones on 
+the current skins will be displayed in Search Colour and will serve as trigger for
+the Find Next and Find Previous functions.</P>
+
+<A NAME="menu_bookmark_as"><h3>Auto-Scroll</h3></A>
+<P>This item lets you enter the Auto-Scrolling mode, where lines of text are added one by
+one to the screen at a configurable rate.  All Forward / Backward zones
+can be used, while in Auto-Scroll mode, to increase / decrease the scrolling
+speed.  Clicking anywhere on the screen will pause auto-scrolling and bring
+a menu offering the choice to Resume or Stop auto-scrolling.</P>
+
+<BR>
+
+<A NAME="menu_content"><h2>Content Menu</h2></A>
+<P>The Content menu is available by clicking the page numbering  
+on the viewing area.  It contains function to display different
+sections of the text.</P>
+
+<BR>
+
+<P><B>Note: </B> For Simplicity reason, if the current Skin has direct-click Zones for
+the Menu Item described here, their entry won't be shown in the menu.</P>
+
+<BR>
+
+<A NAME="menu_bookmark_cover"><h3>Cover...</h3></A>
+<P>This shows the cover image.  This entry is shown only if a Cover is available (i.e. 
+there must be an image file within the same folder as the current text.  If there's
+more than one, the most appropriate is used, i.e. containing the word "cover", "front", or having the same name as the text file.)</P>
+<P>When the cover is displayed just click on it to access the <A HREF="#menu_image">Image Zoom/Pan menu</A>.</P>
+
+<A NAME="menu_bookmark_toc"><h3>Table of Contents...</h3></A>
+<P>This moves you to the automatically generated <A HREF="#uBook_toc">Table of Contents</A>
+for the current document.  See also <A HREF="#options_toc_criteria">Table of Contents Criteria</A> for Automatic Creation and
+<A HREF="#menu_marks">Annotations Menu</A> for information about manually adding TOC entries.</P>
+
+<A NAME="menu_np_sec"><h3>Previous / Next Section...</h3></A>
+<P>When a Table of Contents is available these functions let you jump to the first page
+of the next or previous entry in the TOC.  The page number of the Previous or
+Next section is also displayed beside the entry in the menu, which is often the only information wanted.</P>
+
+<A NAME="menu_bookmark_ann"><h3>Annotations...</h3></A>
+<P>This opens the <A HREF="#uBook_toc">Annotations Summary</A> document of all the Annotated and Bookmarked text in the current document.
+See the <A HREF="#menu_marks">Annotations Menu</A> for information about creating them.</P>
+
+<A NAME="menu_np_mark"><h3>Previous / Next Mark...</h3></A>
+<P>When Annotations have been created, these functions let you jump to the first page
+of the next or previous entry.  The page number of the Previous or Next section is also displayed beside the entry in the menu.</P>
+
+<BR>
+
+<A NAME="menu_image"><h2>Image Zoom/Pan Menu</h2></A>
+<P>The Image Zoom/Pan menu is available by clicking on any image inside a book
+or on the cover of a book.  It contains function to change the zoom level and or
+focus point on the image.  The parameters set apply to all images inside the current
+document.  If an image is zoomed, a coloured border will appear (in Selection colour).
+It's a quick indicator that some visual information is missing.</P>
+
+<BR>
+
+<h3>Zoom In / Out</h3>
+<P>This allows you to zoom in or out, by 66% for every step.</P>
+
+<h3>Move Left / Right / Top / Bottom</h3>
+<P>This allows you to pan in the appropriate direction, by 10% for every step.</P>
+
+<h3>Ok / Cancel</h3>
+<P>Ok closes the menu, while Cancel resets the zoom level to a full view.</P>
+
+<h3>Close</h3>
+<P>If the current image is a book Cover, this allows you to return to the book Text.
+Back or Forward would move you to another document.</P>
+
+<BR>
+
+<A NAME="menu_marks"><h2>Annotations Menu</h2></A>
+<P>Creating Annotations, Bookmarks or TOC Sections is easy, just <A HREF="#options_selecting">Select</A> a range of characters or Double-Click on
+any word and a menu will open.  From there select the type of marking: </P>
+<BR>
+<DIV ALIGN=LEFT>
+<LI>Bookmark<ifield ".">Bookmark the selection.
+<LI>Highlight<ifield ".">Add solid Highlight Background to the selection.
+<LI>Strike<ifield ".">Strike-through the selection.
+<LI>Note...<ifield ".">Enter/view/edit text associated with the selection.
+<LI>Section<ifield ".">Add the selection as a section in the <A HREF="#uBook_toc">Table of Contents</A>.
+</DIV>
+<BR>
+<P>Alternatively, the selected range of text can be copied to the clipboard
+by selecting <B>Copy</B>, looked-up in the active <A HREF="#options_dict">Dictionary</A>
+by selecting <B>Lookup...</B> or trigger a search by selecting <A HREF="#menu_bookmark_find">Find</A>.</P>
+
+<P>To edit a mark, just click on it and select <B>Delete</B> or another type of marking to change its look.</P>
+
+<P>Cancel removes the selection without doing anything else.</P>
+
+<P>Note that if you want to select text that starts or ends on an hyperlink, you
+should hold the SHIFT key, which will prohibit the system from following the
+hyperlink.</P>
+
+<BR>
+
+<P>See the <A HREF="#menu_content">Content menu</A> and <A HREF="#uBook_toc">Table of Contents / Annotations Summary</A>
+for information on how to review or move between Annotations.</P>
+
+<BR>
+
+<A NAME="menu_right"><h2>Right mouse button Menu</h2></A>
+<P>The right mouse button menu offers quick access to menu items available
+in other menus.  See their definitions in the previous sections.</P>
+
+<BR>
+
+<A NAME="menu_skins"><h2>Quick-Skin Menu</h2></A>
+<P>If the time is available in the current skin, clicking on it will open this menu, where you can
+select your favourite skins. A quick link to the <A HREF="#options_skins">Skins Options</A> is also available.
+The main use for this menu is to alternate between a nighttime and a daytime reading skin.</P>
+
+
+<H1 STYLE="page-break-before:always">Browser and Library<ibar></H1><A NAME="uBook_browser"></A>
+<P>The Browser is the navigator for your collection of e-books.
+It displays the list of Sub-Folders, Compressed Archives, Books and Images in the current Folder.  
+All are displayed as hyperlinks.  
+Directly select the desired file or Folder by clicking on the appropriate link.</P>
+
+<P>For quick access, a Section List with alphabetical index can be displayed at the top of the Browser Document.
+You can Show or Hide any section by clicking on the checkbox in its header.</P>
+
+<P>If the Library is activated, Each Entry (except Folders) can have an associated
+Icon, which is a reduced version of any selected image.  Each entry can also
+display user-defined piece of text (up to 30) like Author, Version, etc...</P>
+
+<P>ZIP files can be opened through the browser, in fact they are considered
+directory-like and can even be nested, i.e. ZIP inside ZIP inside ZIP...</P> 
+
+<P>You can also add the current Folder to a list of (up to 6) favourite Folders.
+They are listed at the beginning of the Folder section.  Use the <FONT IFACE=SYMBOLS>š</FONT> tag to add the Folder to the
+favourites and the <FONT IFACE=SYMBOLS>ý</FONT> link to remove one from the list.</P>
+
+<P>Options affecting the Browser and Library look and behaviour can be found at the bottom of
+the last page.</P>
+
+<P>When in the Browser, the <A HREF="menu_np_mark">Next / Previous Mark</A> zones lets you
+move to the next / previous missing icons in the current directory.</P>
+
+<BR>
+
+<A NAME="uBook_browser_options"></A><H2>Browser Options</H2>
+
+<h3>Font Size</h3>
+<P>Lets you select a different font size for the Browser than the one for normal reading 
+(Set in the <A HREF="#uBook_options">Options Document</A>).
+
+<h3>All or Known Type Files</h3>
+<P>This forces the browser to show All Files or Known Books and Images files.</P>
+
+<h3>Auto-Open or Ignore First Text in a Compressed Folder</h3>
+<P>When active, µBook automatically opens the first text found when a compressed
+folders is selected.</P>
+
+<h3>Show or Hide File Size / Date</h3>
+<P>When active, these options add an extra line below each file to show its
+current size and last modification date.</P>
+
+<h3>Enable or Disable Long File Names Mapping</h3>
+<P>If long file names mapping isn't required, i.e. no files on CD-ROM are accessed, this
+option should be disabled to speed-up µBook's file access.  See Map / Unmap below.</P>
+
+<h3>Map / Unmap Long File Names</h3>
+<P>This function lets you reduce filenames to 64 characters so that book collections can be easily burned onto CD-ROMs.
+Filename larger than 64 characters are reduced to 56 characters plus a hash number.
+A uBook.map file is created in the selected base folder (all sub-folders are done at the same time).  
+The function to undo the mapping is available.  
+The mapped name is invisible to µBook, which will still show the original name (as long as the uBook.map file isn't moved or destroyed).  
+Note that uBook.map can also be renamed uBook.bat and executed to restore files to their original name.</P>
+<P><B>Note</B> that if two map files are in the path, only the closest one to a file will be checked.</P>
+
+<BR>
+
+<A NAME="uBook_browser_lib_options"></A><H2>Library Options</H2>
+<P>Depending on the state of activation of the Current Folder, Options from
+the following set will be available:</P>
+
+<BR>
+
+<h3>Show / Hide Library</h3>
+<P>If Hidden, the Browser doesn't associate or show any Icons or Text alongside entries.
+Once Shown, a Folder must be Prepared for Icons and Text to be visible.  Once prepared,
+Icons are show to the left of a File and defined Text Fields are shown under it.</P>
+
+<A NAME="uBook_lib_prep"><h3>Prepare Current Folder</h3></A>
+<P>Prepare enables the Library for the current folder.  All files will be "scanned"
+and the most appropriate Icon will be digitised and associated with it.  A uBook.ubi
+file is created in the first writable directory found in the current path (i.e.
+if inside a ZIP file, the uBook.ubi file will be created in the folder
+where the ZIP file is). Once Prepared, Icons and Text can be edited.  Before
+preparing, it is suggested that you check the other available options, to
+set your preferences.</P>
+
+<h3>Update / Re-Digitise or Clear Current Folder Icons</h3>
+<P>Update let's you re-scan the current folder to find Icons for newly added files.
+Re-Digitise will recreate the Icons.  It is useful if you have changed the original
+Image file or the Size or Quality of Icons (see below).  Clear lets you disable
+the Library for the current Folder.  Note that clearing will delete all Text Fields associated
+with Files in this folder.</P>
+
+<A NAME="uBook_lib_mode"><h3>Edit Icon / Edit Info / Edit All</h3></A>
+<P>When Editing, available entries will be shown below the file name at the right of the Icon.</P>
+<P>For Icons, they are Link and Image.  Link is the file that will be
+opened if the user click on the Icon and Image is the source Image from which
+the Icon was digitised.  When the Folder is first prepared, Link will be automatically
+filled based on the <B>New Icons Link to File or Image</B> option below.</P>
+<P>For Info, the fields are text associated with the file and (if different) the Info fields defined (see below) are shown with hyperlinks,
+allowing their value to be edited.</P>
+<P>You can always select the <FONT IFACE=SYMBOLS>ý</FONT> to remove or disable a field.</P>
+
+<h3>Show / Hide Sub-Folder Icons</h3>
+<P>If Sub-Folder Icons are shown, under each Folder there will be one or more
+row of Icons, one for each file in the Folder.  These Icons are Shown in the Size
+currently selected for the current Folder.</P>
+<P>The "Save" link will let you save a text list of all the icons missing.  The file is saved in the
+parent directory to the current one, with the name <I>directory</I>_missing_icons.txt.</P> 
+<P>The <A HREF="#menu_np_mark">Previous / Next Mark...</A> can be used
+to move through missing icons and/or sub-folders not "prepared".  
+The later will have a "Prepare" link shown instead of a list of Icons.</P>
+
+<h3>Icons Size and Quality</h3>
+<P>Here you can select the Digitizing or Display size of Icons as well as the
+Digitizing Quality (low quality equals small memory use, and vice-versa) of Icons.
+Once an Icon has been digitise, if the Size here is changed, at display time
+the Icon will be stretched or shrunk accordingly with the new Size.  Re-Digitise
+(see above) can be used to apply the new Size and recreate the Icon so that no
+additional stretching or shrinking is required (dynamic stretching or shrinking
+is slower and can diminish the output quality).</P>
+
+<h3>New Icons Link to File or Image</h3>
+<P>Based on this settings, when a folder is <B>Prepared</B>, new Icons will be
+linked with the Image used or the File it is associated with.</P>
+
+<h3>Info Fields</h3>
+<P>This lets you set a template of Editable Text Fields that can be associated with a File.</P>
+
+<BR>
+
+<A NAME="uBook_browser_ulib"></A><H2>Suggested Library Settings</H2>
+<P>Here's an example on how I have set-up my own Library of e-Books.  First
+using Windows™, I have created the following folder and file hierarchy:</P>
+
+<BR>
+
+<LI>Fiction
+<DIR>
+<LI>Crime
+<DIR>
+<LI>Biggers, Earl Derr<ibar>
+<DIR>
+<LI>Earl Derr Biggers - Behind That Curtain.zip
+<LI>Earl Derr Biggers - Charlie Chan Carries On.zip
+<LI>Earl Derr Biggers - Keeper Of The Keys.zip
+<LI>Earl Derr Biggers - The Agony Column.zip
+<LI>Earl Derr Biggers - The Black Camel.zip
+<LI>Earl Derr Biggers - The Chinese Parrot.zip
+<LI>Earl Derr Biggers - The House Without A Key.zip
+</DIR>
+<LI>Christie, Agatha<ibar>
+<DIR>
+<LI>Agatha Christie - The Mysterious Affair At Styles.zip
+</DIR>
+<LI>Van Dine, S.S<ibar>
+<DIR>
+<LI>S.S. Van Dine - The Benson Murder Case.zip
+<LI>S.S. Van Dine - The Bishop Murder Case.zip
+<LI>S.S. Van Dine - The Canary Murder Case.zip
+<LI>S.S. Van Dine - The Scarab Murder Case.zip
+</DIR>
+</DIR>
+<LI>Science-Fiction
+<DIR>
+<LI>...
+</DIR>
+<LI>Drama
+<DIR>
+<LI>...
+</DIR>
+<LI>...
+</DIR>
+<LI>Non-Fiction
+<DIR>
+<LI>...
+</DIR>
+
+<BR>
+
+<P>By painstakingly searching on the internet I found
+JPG images of cover for these books, which I have then added in
+the zip files.  Then I went in each Author folder and 'Prepared'
+it (as a shortcut, I use 's' on the keyboard).  Note that if
+an image has some keywords like 'cover' or 'front' in its
+name, it will be selected before any other image file.  Once
+this is done, I went back to the category folder, i.e. Crime,
+and selected the Show Sub-Folders Icons option.  Since my Collection
+is a bit bigger than what is shown here, I then changed the
+Icon Size to in the Crime folder to be 32 by 48 instead of
+64 by 96, the default.  No need to re-digitise, because the
+Icons are not Hosted in the Crime Folder, but in the Author
+Sub-Folder.  Now I can see my whole Crime collection at
+once (well on a few pages at least).  Next I am going to
+go back and for each book (using Edit Info) I will add
+Version Information (1.0, 1.1 etc...) based on the Guttenberg
+catalogue.</P>
+
+
+<H1 STYLE="page-break-before:always">Options<ibar></H1><A NAME="uBook_options"></A>
+<P>The Options Document displays the current state of options and offers alternative choices for configuration.
+Select <B>Back</B> in the menu to return to the previously viewed document.</P>
+<P>For quick access, a Table of Contents is displayed at the top of the Options Document.
+You can Show or Hide any section by clicking on the checkbox in its header.</P>
+
+<BR>
+
+<A NAME="uBook_options_fonts"><h3>Font Options</h3></A>
+<P>This shows the options available for µBook's font.</P>
+
+<h3>Smooth or Sharp Fonts</h3>
+<P>Let's you select between Smooth and Sharp fonts.  Smooth fonts appear rounder
+and more blended while Sharp fonts, the normal Windows™ fonts, gives a better contrast 
+with the background.  Note that if a Sharp font cannot be located, a smooth replacement font
+will be used instead.</P>
+
+<h4>Method</h4>
+<P>Let's you select between the Grey, RGB and RGB-X engines.  If RGB or RGB-X (recommended) is selected a few more options will appear.</P>
+
+<h4>RGB Orientation</h4>
+<P>Based on your display, you should set the orientation of the RGB matrix.  Most CRTs
+are Left / Right.  Most LCDs are Left / Right too except some iPaq Pocket PCs which are Up / Down.
+If you use a rotation on the display, you will need to update the RGB orientation relatively.
+In the case of RGB-X, only Left or Right is available, and on
+some iPaq, will require <A HREF="#menu_disp_orient">Landscape</A> reading, so that Left / Right is done on the Up / Down RGB
+matrix.</P>
+
+<h4>RGB Distribution</h4>
+<P>Characters outline can be improved on some display by tweaking these values.  They
+defined how each RGB sub-pixel is combined with its neighbours to create the final
+RGB value.  3, 2 and 1 is the default.  On Some LCDs, 5, 2 and 1 works well too.</P>
+ 
+<h4>Lo / Med / Hi Contrast</h4>
+<P>For Smooth fonts only, this let's you apply a contrast factor.  Depending on
+your colour choices this can help the visual definition of fonts.  The only way
+to find out is to try...</P>
+
+<h3>Default Font</h3>
+<P>Let's you select the default font for text rendering.
+By clicking on the <FONT IFACE=SYMBOLS>š</FONT> or <FONT IFACE=SYMBOLS>ý</FONT> links, new font available on the local machine
+can be digitised to or removed from µBook's list of fonts.</P>
+
+<h3>Default Size</h3>
+<P>Let's you select the default reading font size.  For the current selection, three more options are available:</P>
+
+<h4>Size</h4>
+<P>Let's you select the Height of the font in pixels.  In the case of Sharp and RGB-X, if the source
+font isn't available on the current platform (which is the case on Pocket PCs for
+the basic distribution fonts, Times, Arial and Courier), a smooth replacement font will be used 
+and a warning will be visible below these Options.</P>
+
+<h4>Bolding</h4>
+<P>Let's you increase or decrease (with the little arrows) the extra bolding applied to characters of this size.</P>
+
+<h4>Spacing</h4>
+<P>Let's you increase or decrease (with the little arrows) the extra spacing between characters of this size.</P>
+
+<BR>
+
+<P>The <B>Sample</B> lines gives a preview of what the text looks like with the current options.</P>
+
+<h3>Indent size is nnn Pixels or 1/mmm of Page Width.</h3>
+<P>The Indent size, the space at the left of the first character of
+a Paragraph, can be set here.  Either in fixed Pixel number or
+relative to the page width.  Changing one will affect the other.</P>
+
+<h3>Interline is nnn Pixels or 1/mmm of Line Height.</h3>
+<P>The Interline size, the extra space between rows of characters,
+can be set here.  Either in fixed Pixel number or relative to the current line height.  
+The defaults are 4 pixels or 1/5 of the current line.  Changing one will
+enable it, and reset the other method to its default.</P>
+
+<BR>
+
+<h3>Display Options</h3>
+<P>This shows the options available for µBook's viewing area.</P>
+
+<A NAME="menu_disp_orient"><h3>Portrait Up / Down or Landscape Left / Right</h3></A>
+<P>This let's you change the orientation of the display.  It is mainly useful
+for Handheld devices and the <A HREF="#uBook_options_fonts">RGB-X mode</A>.</P>
+
+<A NAME="menu_disp_black"><h3>Black / Normal Screen Background</h3></A>
+<P>Lets you Blank the remaining space around µBook's window for a less distracting reading.</P>
+
+<h3>Skin / Windows Menus</h3>
+<P>Lets you select between µBook (Skin) or Windows™	menus.  µBook menus are adapted to the display
+orientation while Windows™ are not.</P>
+
+<h3>Show / Hide Annotations</h3>
+<P>This let's you hide Annotations on the page.  If Shown, a list of all Annotations Type is given so 
+that each type can be turned on or off independently.  See <A HREF="#menu_marks">Annotations Menu</A> for
+more information about Annotations.</P>
+
+<BR>
+
+<h3>Colours</h3>
+<P>This shows the options available for µBook's colour customisation.</P>
+
+<A NAME="menu_main_colour"><h3>Background / Text / Link / Separator / Selection / Highlight / Search</h3></A>
+<P>This opens the standard Windows™ colour selection dialog (or a simple manual entry RGB dialog on Palm-Sized PCs)
+where you can select a colour for the desired item.  
+Background and Text are the main page colours.  
+Link is for HTML / PRC Hyperlinks.  
+Separator applies to the shaded colour shown under section header in the Options, Browser and Help documents.
+Highlight and Selection applies to Annotations.
+Search applies to the result of the <A HREF="#menu_bookmark_find">Text search</A> function.</P>
+
+<h3>Reset All to Defaults</h3>
+<P>Restores all colours to what the current skin's manufacturer thought were enjoyable colours.</P>
+
+<BR>
+
+<A NAME="options_skins"><h3>Skins</h3></A>
+
+<P>Here you'll also find the list of available Skins. Just select a skin 
+and it will become the active skin for µBook.  Note that once a skin is selected, some
+skin specific options will be shown underneath, if it has any.</P> 
+<P>See the Space.usk skin for details on how to create your own skins.  Skin
+files (*.usk) can be edited using notepad or wordpad.</P>
+
+<A NAME="options_dict"><h3>Dictionaries</h3></A>
+
+<P>Here you'll also find the list of available Dictionaries. Just select a dictionary 
+and it will become active, i.e. the destination of any <A HREF="#menu_marks">Lookup</A> query.
+You can also access the Table of Contents of the dictionary (if any) by selecting the (<U>Content</U>) link
+besides it.</P>
+
+<BR>
+
+<h3>General Options</h3>
+
+<h3>Run Single or Multiple instances</h3>
+<P>When in Single mode, any invocation of µBook will replace the previous one.  In Multiple mode,
+a second (or subsequent) window will be opened.</P>
+
+<h3>Button N</h3>
+<P>These options allow you to associate a µBook function with one of the Hardware Button
+on a portable unit.</P> 
+
+<h3>Keep Pagination, Annotations and Options for NNN Books</h3>
+<P>To limit the amount of disk space used, µBook keeps information
+for a limited amount of books.  This limit can be set by the user.
+Note that when setting up your Library, it's possible that you will open may
+files, which might mean that Annotations and Options for some older
+file might be destroyed.</P>
+
+<h3>Keep N Books in Recent Files List</h3>
+<P>Lets you select between 1 and 16 to be the number of entries to keep 
+in the <A HREF="#menu_main_recent">Recent Files</A> sub-menu.</P>
+
+<h3>Enable / Disable Slide Show</h3>
+<P>When Enabled, if an image is selected, a Slide Show document of all the images
+in the same Folder is displayed, one per page, starting at the page of the
+selected image.  You can move around the Slide Show the same way as a normal book.
+When Disabled, only the selected image is shown, and no movement except "close" is available.</P>
+
+<h3>Enable / Disable Automatic Cover Display</h3>
+<P>When Enabled, if an cover exists, it will be displayed everytime a book is opened.</P>
+
+<h3>Enable / Disable Repeated Page Turning</h3>
+<P>When enabled, if the mouse button or stylus is held longer on the page move zones, the full window
+becomes a sliding pad where you can move quickly in the book by moving the cursor or stylus left and right
+far or near from the starting point to increase or decrease the moving speed and direction.</P>
+
+<A NAME="options_selecting"><h3>Enable / Disable Drag Selection</h3></A>
+<P>When enabled, the text selection is done in between clicking the mouse button and releasing it.
+The selection is then limited to the current page.  When disabled, the selection is done with
+two mouse clicks, one to select the first character and another one, anywhere
+in the book, to select the end character.</P>
+
+<h3>24 / 12 Hour Display</h3>
+<P>If a clock is visible on the current skin, it will display hours based on the 24h European
+format of the 12h American format.</P>
+
+<BR>
+
+<h3>Auto-Scroll Options</h3>
+
+<h3>Start/Pause Key</h3>
+<P>This Option lets you turn enable or disable the use of the ENTER key, or the
+main Button on most portable units, for Auto-Scrolling.</P>
+
+<h3>Delay between lines</h3>
+<P>This Option lets you chose between two delay methods between auto-scrolled lines: Fixed or Words-per-Minute.
+In Fixed mode you can enter the delay in decimal seconds, while in Words-per-Minute you can enter
+your reading speed.</P>
+
+<BR>
+
+<h3>Book Options</h3>
+
+<P>These Options affect the look of the currently viewed document.
+Once a good set of options are defined, they can be Saved as Default, which means
+that newly opened books will used these options.  Alternatively, the current book
+options can be reset to the saved one by Loading Defaults.  The same process
+can be done for specific File Types, by selecting the second set of Load / Save
+functions (i.e. Save as HTML Defaults / Load HTML Defaults).</P>
+
+<P>Depending on the type of document, Options are:</P>
+
+<h3>Use Default, Plain Text or HTML parser</h3>
+<P>It is possible that some PRC, HTML or other file is really formatted as a Plain Text or HTML file.
+Forcing the use of the Plain Text or HTML parser should make them more readable.</P>
+
+<h3>Ignore Font Names / Sizes / Colours</h3>
+<P>By selecting one of these items, the HTML, PRC or RTF parser will ignore any font name, absolute
+size or colour it finds in the text.  It allows the use of your own choices all through the text.</P>
+
+<h3>Ignore or Use document formatting</h3>
+<P>Some RTF files have formatting commands that make text look less like a book.
+By ignoring those commands, the text might end-up having better margins and justification.</P>
+
+<h3>Ignore or Use Document Line feeds</h3>
+<P>Some TXT or PDB documents are already well formatted for reading.  This option allows
+the turn-off of µBook "intelligent" paragraph detection algorithm.</P>
+
+<h3>Ignore or Use MS-DOS Accented Characters</h3>
+<P>Some MS-DOS formatted text use a different characters set, which causes accented
+characters to show wrongly.  Turn this option on or off if that is the case.</P>
+
+<h3>Ignore or Use *, _ and / as Bold and Italic Markers</h3>
+<P>Some TXT documents uses *, _ and / as escape characters to toggle Bold and Italic
+text on or off.  Turn this option on to recognise and show these styles.</P>
+
+<h3>Ignore or Combine lines starting/ending with lower case</h3>
+<P>Some RTF or TXT files, especially when they come out of an OCR program, often have
+no defined paragraph but are merely a series of lines.  By turning this option on,
+about 60 to 70% of those lines will be combined into paragraphs, improving the
+reading enjoyment with µBook.  Note that the first few pages, which are often
+title pages and table of contents, might look worse but the rest of the text
+should be better.  The only way to find out is to try...</P>
+
+<h3>Ignore or Add Extra Spacing to Italic Text</h3>
+<P>Some HTML files do not have spaces between italic and normal text which
+makes them harder to read.  By enabling this option, an extra space will
+be inserted whenever the style changes from/to italic.</P>
+
+<h3>Keep Intact or Add Extra Space between Paragraphs</h3>
+<P>Some Documents, like Plays, read better if there is an extra space between
+paragraphs.  You can use this option to force that extra space.</P>
+
+<h3>Keep Intact or Justify Centered Paragraphs</h3>
+<P>Some Documents, have faults in them which cause the text to show up
+all centered.  If this is the case, turn on this option.</P>
+
+<h3>Keep Intact / Left Align Justified Paragraphs</h3>
+<P>If you don't like justified paragraphs, you can disable them with this option.
+By using Left Aligned Paragraphs your eyes have to travel less.  On the
+other hand Justified Paragraphs look better.  It's a matter of preferences.</P>
+
+<BR>
+
+<A NAME="options_toc_criteria"><h3>Table of Contents Criteria</h3></A>
+<P>This section allows the customisation of criteria used to generate a book Table of
+Contents.  There are Seven default criteria and a way to add more.  
+Criteria are made of three parameters.  
+A state ON <FONT IFACE=SYMBOLS>¯</FONT> or OFF <FONT IFACE=SYMBOLS>¬</FONT>,
+a matching mode (<U>Starting with</U>, <U>Ending with</U>, <U>Containing</U> or <U>Is</U>) and the matching text.  
+The Seven defaults criteria are slightly different, while the first three can be used to
+match numerals (numeric, roman or textual) the last four can be used to match
+any Bold, Italic, Bold-Italic or Underlined text.</P>
+
+<P>New criteria can be added by clicking on the <FONT IFACE=SYMBOLS>š</FONT> link and they can afterward be removed
+by clicking on the <FONT IFACE=SYMBOLS>ý</FONT> link on their right.</P>
+
+
+<H1 STYLE="page-break-before:always">Table of Contents<ibar><BR>Annotations Summary<ibar></H1><A NAME="uBook_toc"></A>
+<P>There are two ways to invoke this document, through the <A HREF="#menu_bookmark_toc">Table of Contents...</A> menu item
+or the <A HREF="#menu_bookmark_ann">Annotations...</A> menu item.  Each will open the same document but in different sections.
+Note that when first invoked, this document will be opened so that the initial page has information
+(Table of Contents Section or an Annotation) close to the page that was viewed in the source document.</P>
+
+<h3>Table of Contents</h3>
+
+<P>The Table of Contents is first build automatically base on user-defined <A HREF="#options_toc_criteria">Criteria</A>.
+The created table can be augmented by manually selecting text and annotating it as <A HREF="#menu_marks">Section</A>.
+Alternately, from the Table of Contents, items can be removed by selecting the <FONT IFACE=SYMBOLS>ý</FONT> link on their right.</P>
+<P>Each item in the Table is a link to the listed Section in the main document.</P>
+
+<h3>Annotation Summary</h3>
+
+<P>The Annotation section has the same presentation as the Table of Contents, but also offers a filter
+to enable or disable the listing of annotations by type.  There are two ways to export this
+list, either by copying the content of the PGN/uBook_books.ini file (which contains annotations
+for every book) or by selecting the whole section (from the A in Annotations to the - in the last
+underlighted line) and Copying it to the clipboard, then pasting it in your favourite editor.</P>
+
+
+<H1 STYLE="page-break-before:always">FAQ<ibar></H1><A NAME="uBook_faq"></A>
+<P>Here's some answers to common questions we are receiving:</P>
+
+<BR>
+
+<A NAME="uBook_faq_1"><h2>Why are some Links not working?</h2></A>
+<P>The explanation is probably:</P>
+<LI>The link is an external URL (i.e. on the Internet, as opposed to the local machine or network) and that is not allowed / handled by µBook.
+<LI>The link refers to a file or destination that cannot be located by µBook.
+<LI>The link destination is on the current page.
+
+<BR>
+<BR>
+
+<A NAME="uBook_faq_2"><h2>It crashes on this one text...</h2></A>
+<P>It is possible that some text uses some form of HTML or RTF unknown to µBook and
+in some case make it crash.  If it happens it would be appreciated if you
+could send us a bug report with a link or zipped copy of the file (insuring first
+that no copyright is violated by the distribution of such file).  Please
+e-mail report to: <B>info@gowerpoint.com</B></P>
+
+<BR>
+
+<A NAME="uBook_faq_3"><h2>What are the PGN and PF1 directories</h2></A>
+<P>The PGN directory contains pagination files for each opened text.  The
+PF1 directory contains µBook font files.  
+The uBook_books.ini file keeps tracks of
+bookmarks, options and current page for all you books.
+On the Windows™ version of µBook, if the PF2 files are deleted they will be
+regenerated at the beginning of the next run.  On Pocket PC or Handheld PC they <B>SHOULD</B> not 
+be deleted.  Windows™ PF2 files can be copied to Pocket PC or Handheld PC versions.</P>
+
+<BR>
+
+<A NAME="uBook_faq_4"><h2>Why doesn't changing font, font size or colour do anything?</h2></A>
+<P>You are probably viewing an HTML or RTF files that has one or many of these
+settings forced.  To override this go to the <A HREF="#menu_main_options">Options document</A>
+and select to <B>Ignore</B> the item you want overridden.</P>
+
+<BR>
+
+<A NAME="uBook_faq_5"><h2>Where can I find free e-Books?</h2></A>
+<P>Go to the www.GowerPoint.com web site.  There you will find a list of legal sources.</P>
+
+<BR>
+
+<A NAME="uBook_faq_6"><h2>Why can't I open this PRC or PDB file?</h2></A>
+<P>µBook supports only "non-secure", "non-encrypted" PRC or PDB files.</P>
+
+<BR>
+
+<A NAME="uBook_faq_7"><h2>How do I make a Skin?</h2></A>
+<P>All the available instructions are in SKINS/Space.usk which is a readable text file.
+Note that basic programmation skills help, but are not required.</P>
+
+<BR>
+
+<A NAME="uBook_faq_8"><h2>How do I create an External Module?</h2></A>
+<P>Go to the www.GowerPoint.com web site in the Download section and download
+the sample RAR and BMP dll package.  A C compiler is required.</P>
+
+<BR>
+
+<A NAME="uBook_faq_9"><h2>What is the Dictionary Format?</h2></A>
+<P>A dictionary is a zip file (with no subdirectories) containing:</P>
+<LI>a 000.html which is a table of contents (accessible from Options... <FONT IFACE=SYMBOLS>š</FONT> Dictionary <FONT IFACE=SYMBOLS>š</FONT> (Content))
+<LI>a series of XXX-YYY.html files (XXX can be changed to more or less characters)
+The YYY is exclusive, while the XXX is inclusive, so the YYY of a file is the XXX
+of the next one (ex. Agu-Any.html, Any-Aud.html).  Then each definition in the file
+must be enclosed by a &lt;DF&gt; ... &lt;/DF&gt; pair of tags.  That's all.  You can examine
+the "Webster 1913 - Small.zip" file for more details.
+Note that '-' are removed from lookup word and definition word for match-up (only.)
+Note also that last file must have something like "ZZZ" as YYY, so that the YYY is exclusive.
+<LI>How does µBook search?  First the first (composite) word is extracted from the
+selection.  Then based on the first 3 characters (or else, depending on the active dictionary)
+the appropriate file is selected (i.e. if word is Ajar, the Agu-Any.html file is selected).
+Then the file is quickly scanned to find the word or the closest match (i.e. the best
+left substring match possible, or a word just before where the word would be in the dictionary).
+The file is then opened as a document, the appropriate page is selected and the definition
+selected is highlighted (using the "Find..." highlighting.)
+<LI>Why multi-files instead of a big one?  For pagination sake.  Paginating a 4 meg file takes too long.
+
+<A NAME="uBook_faq_10"><h2>COPY doesn't work!</h2></A>
+<P>There seems to be inconsistency between unicode and non-unicode 
+version of PPCs and HPCs.  Open uBook.ini file and locate:</P>
+<P><B>CLIPBOARD_UNICODE=n</B>
+<P>Where if n is 0, change it to 1 or vice-versa.</P>
+
+<A NAME="uBook_faq_11"><h2>Why do characters look Fuzzy?</h2></A>
+<P>The <A HREF="#uBook_options_fonts">RGB-X</A> settings are probably not set according to your <A HREF="#menu_disp_orient">display orientation</A>.</P>
+
+<A NAME="uBook_faq_12"><h2>Why isn't there RAR compressed files support?</h2></A>
+<P>Everything was (almost) fine until RAR 3.0. Although an awesome compression scheme, it is HEAVY on memory
+for extraction (a meg at least!) plus because of some new filtering, the
+byte at a time easily done with the ZIP module couldn't be reproduced with
+RAR, meaning the need to decompress whole files before accessing them.  Not efficient
+for portable unit with not that much speed and memory.  In comparison, the Zip module takes
+less than 64k memory and can go on for megs and megs without ever needing more memory.
+The uBook SDK on the web site has the source code for the RAR 2.6 and below.</P>
+
+<A NAME="uBook_faq_13"><h2>Language support?</h2></A>
+<P>µBook supports Latin-1, Western character sets.  Unicode isn't supported in this release.  There
+are however a few font sets that will allow the mapping of extra characters withinh the Latin-1
+range.  Links for such Cyrilic (Russian) and Polish fonts is available on the web site.</P>
+
+<BR>
+
+
+</BODY>
+</HTML>
+
+

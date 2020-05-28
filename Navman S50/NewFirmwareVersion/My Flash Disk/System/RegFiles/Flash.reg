@@ -1,0 +1,129 @@
+[HKEY_CLASSES_ROOT\TypeLib\{D27CDB6B-AE6D-11cf-96B8-444553540000}\1.0\0]
+"Default"="\\My Flash Disk\\Program Files\\Apps\\Flash\\swflash.dll"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash.1]
+"Default"="ShockwaveFlash Class"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash.1\CLSID]
+"Default"="{D27CDB6E-AE6D-11cf-96B8-444553540000}"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash.3]
+"Default"="ShockwaveFlash Class"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash.3\CLSID]
+"Default"="{D27CDB6E-AE6D-11cf-96B8-444553540000}"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash.4]
+"Default"="ShockwaveFlash Class"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash.4\CLSID]
+"Default"="{D27CDB6E-AE6D-11cf-96B8-444553540000}"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash.5]
+"Default"="ShockwaveFlash Class"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash.5\CLSID]
+"Default"="{D27CDB6E-AE6D-11cf-96B8-444553540000}"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash]
+"Default"="ShockwaveFlash Class"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash\CLSID]
+"Default"="{D27CDB6E-AE6D-11cf-96B8-444553540000}"
+
+[HKEY_CLASSES_ROOT\ShockwaveFlash.ShockwaveFlash\CurVer]
+"Default"="ShockwaveFlash.ShockwaveFlash.1"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}]
+"Default"="ShockwaveFlash Class"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\ProgID]
+"Default"="ShockwaveFlash.ShockwaveFlash.1"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\VersionIndependentProgID]
+"Default"="ShockwaveFlash.ShockwaveFlash"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\Programmable]
+"Default"="NULL"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\InProcServer32]
+"Default"="\\My Flash Disk\\Program Files\\Apps\\Flash\\swflash.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\Control]
+"Default"="NULL"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\ToolboxBitmap32]
+"Default"="\\My Flash Disk\\Program Files\\Apps\\Flash\\swflash.dll, 108"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\MiscStatus]
+"Default"="0"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\MiscStatus\1]
+"Default"="131473"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\TypeLib]
+"Default"="{D27CDB6B-AE6D-11cf-96B8-444553540000}"
+
+[HKEY_CLASSES_ROOT\CLSID\{D27CDB6E-AE6D-11cf-96B8-444553540000}\Version]
+"Default"="1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{1171A62F-05D2-11D1-83FC-00A0C9089C5A}]
+"Default"="FlashProp Class"
+
+[HKEY_CLASSES_ROOT\CLSID\{1171A62F-05D2-11D1-83FC-00A0C9089C5A}\InProcServer32]
+"Default"="\\My Flash Disk\\Program Files\\Apps\\Flash\\swflash.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{1171A62F-05D2-11D1-83FC-00A0C9089C5A}\Programmable]
+"Default"="NULL"
+
+[HKEY_CLASSES_ROOT\FlashProp.FlashProp.1]
+"Default"="FlashProp Class"
+
+[HKEY_CLASSES_ROOT\FlashProp.FlashProp.1\CLSID]
+"Default"="{1171A62F-05D2-11D1-83FC-00A0C9089C5A}"
+
+[HKEY_CLASSES_ROOT\FlashProp.FlashProp\CurVer]
+"Default"="FlashProp.FlashProp.1"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\ActiveX Compatibility\{D27CDB6E-AE6D-11cf-96B8-444553540000}]
+"Compatibility Flags"=dword:00000000
+
+[HKEY_CLASSES_ROOT\.spl]
+"Default"="ShockwaveFlash.ShockwaveFlash"
+"Content Type"="application/futuresplash"
+
+[HKEY_CLASSES_ROOT\.swf]
+"Default"="swffile"
+"Content Type"="application/x-shockwave-flash"
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/futuresplash]
+"Extension"=".spl"
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-shockwave-flash]
+"Extension"=".swf"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]
+"1201"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]
+"1201"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"1201"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0]
+"1201"=dword:00000000
+
+[HKEY_CLASSES_ROOT\swffile]
+"Default"="Shockwave Flash Player 5.0"
+
+[HKEY_CLASSES_ROOT\swffile\DefaultIcon]
+"Default"="\\My Flash Disk\\Program Files\\Apps\\Flash\\swFlash32.exe,-118"
+
+[HKEY_CLASSES_ROOT\swffile\Shell\Open\Command]
+"Default"="\"\\My Flash Disk\\Program Files\\Apps\\Flash\\swFlash32.exe\" %1"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Power]
+"FullCharge"="6169727061726b"

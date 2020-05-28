@@ -1,0 +1,11 @@
+kill("Menu.exe")
+
+spath = SystemPath("ScriptPath")
+spath = SubStr(spath, 1, ReverseFind(spath, "\"))
+spath = SubStr(spath, 1, Length(spath) -1) 
+spath = SubStr(spath, 1, ReverseFind(spath, "\"))
+
+run(spath\"menus.exe")
+
+
+

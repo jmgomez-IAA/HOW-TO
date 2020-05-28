@@ -1,0 +1,6 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\BluaLukso.wav" )
+CallScript( "SkinChangeWolfCNu.mscr","BluaLukso" )
+
+
+

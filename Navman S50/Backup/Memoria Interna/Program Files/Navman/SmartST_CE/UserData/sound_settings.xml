@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Sound System Settings -->
+<sound>
+ 	<mixer>
+		<line dir="out" attenuation="0" size="16384" fragments="2" preload="8192"></line>
+		<line dir="in" type="direct" concurrency="10" bufferSize="8192" buffersPerSet="2"></line>
+		<line dir="in" type="auto" id="0" size="65536" fragments="8" protected="8192" preload="8192" reference="0" promote="true" share="true"></line>
+		<line dir="in" type="auto" id="1" size="65536" fragments="8" protected="8192" preload="8192" reference="-2000" promote="true" share="true"></line>
+ 	</mixer>
+	<volumes>
+		<volume index="0" level="-10000"></volume>
+		<volume index="1" level="-9000"></volume>
+		<volume index="2" level="-8000"></volume>
+		<volume index="3" level="-7000"></volume>
+		<volume index="4" level="-6000"></volume>
+		<volume index="5" level="-5000"></volume>
+		<volume index="6" level="-4000"></volume>
+		<volume index="7" level="-3000"></volume>
+		<volume index="8" level="-2000"></volume>
+		<volume index="9" level="-1000"></volume>
+		<volume index="10" level="0"></volume>
+	</volumes>
+	<tts>
+		<voice name="Lee" language="Australian English" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Karen" language="Australian English" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Daniel" language="British English" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Emily" language="British English" volume="95" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Samantha" language="American English" volume="90" speechRate="40" pitch="50" waitFactor="1"></voice>
+		<voice name="Tom" language="American English" volume="100" speechRate="40" pitch="50" waitFactor="1"></voice>
+		<voice name="Nanna" language="Danish" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Nora" language="Norwegian" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Isabel" language="Spanish" volume="98" speechRate="45" pitch="50" waitFactor="1"></voice>
+		<voice name="Madalena" language="Portuguese" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Agata" language="Polish" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Javier" language="Mexican Spanish" volume="98" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Paulina" language="Mexican Spanish" volume="100" speechRate="55" pitch="50" waitFactor="1"></voice>
+		<voice name="Sebastien" language="French" volume="100" speechRate="40" pitch="50" waitFactor="1"></voice>
+		<voice name="Virginie" language="French" volume="100" speechRate="40" pitch="50" waitFactor="1"></voice>
+		<voice name="Steffi" language="German" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Yannick" language="German" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Julie" language="Canadian French" volume="98" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Felix" language="Canadian French" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Silvia" language="Italian" volume="95" speechRate="45" pitch="50" waitFactor="1"></voice>
+		<voice name="Claire" language="Dutch" volume="95" speechRate="50" pitch="50" waitFactor="1"></voice>
+		<voice name="Ingrid" language="Swedish" volume="100" speechRate="50" pitch="50" waitFactor="1"></voice>
+	</tts>
+</sound>

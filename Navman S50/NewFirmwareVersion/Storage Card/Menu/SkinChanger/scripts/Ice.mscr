@@ -1,0 +1,5 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Ice.wav" )
+CallScript( "SkinChanger.mscr","Ice" )
+
+

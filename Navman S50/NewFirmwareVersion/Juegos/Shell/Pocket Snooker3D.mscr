@@ -1,0 +1,4 @@
+
+CallScript("RotateApp.mscr",90,SystemPath("ScriptPath")\ "..\Pocket Snooker3D\Pocket Snooker3D.exe" )
+
+

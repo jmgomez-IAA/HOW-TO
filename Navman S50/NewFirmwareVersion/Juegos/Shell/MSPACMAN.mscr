@@ -1,0 +1,4 @@
+
+CallScript("RotateApp.mscr",90,SystemPath("ScriptPath")\ "..\Ms. Parkman 2005\MSPACMAN.exe" )
+
+

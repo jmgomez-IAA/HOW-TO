@@ -1,0 +1,21 @@
+
+<skin no=0>
+<bitmap background="equipo6.bmp" buttons="equipo6_button.bmp"/>
+<viewport left=0 top=272 width=480 height=272/>
+<play left=131 top=31 width=56 height=59 pushedleft=131 pushedtop=31/>
+<stop left=198 top=177 width=81 height=32 pushedleft=198 pushedtop=177/>
+<title left=216 top=38 width=184 height=45 colorface=0x000000 colortext=0xFF8000/>
+<next left=374 top=177 width=81 height=32 pushedleft=374 pushedtop=177/>
+<prev left=19 top=177 width=81 height=32 pushedleft=19 pushedtop=177/>
+<playlist left=108 top=177 width=81 height=32 pushedleft=108 pushedtop=177/>
+<open left=286 top=177 width=81 height=32 pushedleft=286 pushedtop=177/>
+<seek left=17 top=132 width=444 height=19/>
+<seek_thumb left=17 top=132 width=57 height=19 pushedleft=17 pushedtop=132/>
+<volume left=153 top=213 width=169 height=19/>
+<volume_thumb left=153 top=213 width=57 height=19 pushedleft=153 pushedtop=213/>
+<repeat left=29 top=67 width=83 height=32 pushedleft=29 pushedtop=67/>
+<mute left=29 top=27 width=83 height=32 pushedleft=29 pushedtop=27/>
+</skin>
+
+
+

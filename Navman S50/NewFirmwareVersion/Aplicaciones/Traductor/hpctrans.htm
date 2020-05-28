@@ -1,0 +1,351 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Htm-Help" Content="hpctrans.htm#hpctrans_help">
+<title>HPC Trans Help</title>
+</head>
+
+<body BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<a name="MAIN_CONTENTS">
+
+<p><br>
+</a></p>
+
+<p><a name="hpctrans_help"></a><b>HPC Translate 1.3</b><br>
+<i><font size="2">Copyright © 1997-2000 PhatWare Corp.<br>
+All rights reserved.</font></i></p>
+
+<p>HPC Translate is an utility that allows the user to translate single words from one
+language to another. It runs on Microsoft Windows-Powered Pocket PCs, Handheld
+PCs and Palm-Size PCs. HPC Translate includes <strong>English</strong> and <strong>Spanish</strong>
+ dictionaries. These dictionaries contain approximately 32,000 words each. HPC Translate
+can translate in both directions, i.e. you may enter a word in the <b>From</b> field and
+tap the &gt;&gt; button. HPC Translate can also translate a selected word in almost any
+Windows CE application, such as Pocket Word, Ink Writer, Palm-Size PC Notetaker, HPC
+Notes, etc. Note: <i>this feature is not supported on Pocket PCs</i>. See <a href="hpctrans.htm#using">Using HPC Translate</a> section for more
+information. </p>
+
+<p>If you are interested in support for other languages, you can purchase additional
+dictionaries for HPC Translate. <strong>German</strong> and <strong>French</strong>
+dictionaries are available now. For more information and to purchase additional
+dictionaries, please visit our web site at <strong>http://www.phatware.com/hpctrans.html</strong>.
+
+<ul>
+  <li><a href="hpctrans.htm#using">Using HPC Translate</a> </li>
+  <li><a href="hpctrans.htm#options">Setting HPC Translate Options</a> </li>
+  <li><a href="hpctrans.htm#non_ascii">Entering non-ASCII Characters</a> </li>
+  <li><a href="hpctrans.htm#register">Register HPC Translate</a><br>
+  </li>
+</ul>
+
+<p><br clear="all">
+<!-- PegHelp --></p>
+
+<hr>
+<!-- ************************Topic Break************************* -->
+
+<p><a name="using"></a></p>
+<b>
+
+<p>Using HPC Translate</b> </p>
+
+<p><u>To translate a selected word:<br>
+</u>(<i><font size="2">not supported on Pocket PCs</font></i>)</p>
+
+<p>You may use HPC Translate to translate a selected word in almost any Windows CE
+application that uses standard edit control, such as Pocket Word, Ink Writer, Palm-Size PC
+Notetaker, HPC Notes, Email Editor, and may others. To do so: 
+
+<ul>
+  <li>Make sure that HPC Translate is running, i.e. HPC Translate icon appears in the task
+    bar. </li>
+  <li>Select the desired word in the editor that you are currently using. </li>
+  <li>Tap the HPC Translate icon in the Windows CE Task Bar. </li>
+  <li>HPC Translate main window will appear and the selected word will be copied into the <b>From</b>
+    field. </li>
+  <li>If the word is found in the dictionary the translation of the word will appear in the <b>To</b>
+    edit box. If the word has more than one translation, all possible translations will appear
+    in the <b>To</b> list box. </li>
+</ul>
+
+<p>After the word is successfully translated, you may replace the original word in the
+document by the translated one simply by taping on <b>Replace</b> button in the toolbar,
+or choosing <b>Edit/Replace</b> menu item, or using <b>Ctrl+R </b>keyboard shortcut.
+Please note, that <b>Replace</b> command may not always be available.</p>
+
+<p><u>To translate a word:</u> 
+
+<ul>
+  <li>Select the desired language from which you want to translate in the <b>From</b>
+    drop-down menu</li>
+  <li>Select the desired language to which you want to translate in the <b>To</b> drop-down
+    menu</li>
+  <li>Enter or paste the desired word into the <b>From</b> edit box</li>
+  <li>Tap the <b>&gt;&gt;</b> button, or use <b>Action/Translate &gt;&gt;</b> menu command, or
+    use<b> Ctrl+T</b> keyboard shortcut.</li>
+</ul>
+
+<p>If the word is found in the dictionary the translation of the word will appear in the <b>To</b>
+edit box. If the word has more than one translation, all possible translations will appear
+in the <b>To</b> list box. You may copy the result of your translation to the clipboard
+using <b>Edit/Copy </b>or <b>Edit/Copy All</b> menu commands.</p>
+
+<p>If the word is not found in the dictionary a message will appear in the <b>Status bar</b>.
+If the word doesn't exist in the dictionary, but you know the translation, you may add it
+to the user-defined dictionary.</p>
+
+<p><u>To add a new translation to the user-defined dictionary:</u> 
+
+<ul>
+  <li>Enter the word in the selected language into <b>From</b> edit box</li>
+  <li>Enter the translation of the word into the <b>To</b> edit box</li>
+  <li>Tap <b>Add</b> button, or use <b>Edit/Add Word</b> menu item, or use <b>Ctrl+W</b>
+    keyboard shortcut.</li>
+</ul>
+
+<p>A new pair of words will be added to the user dictionary <b>ENG_ESP.UDR</b>. This is a
+plain text file that has the following format:</p>
+
+<p>English:Spanish<br>
+word11:word12<br>
+word21:word22<br>
+.............</p>
+
+<p>You may edit this file using any text editor, such as Pocket Word, to add or remove
+user-defined translations.</p>
+<b>
+
+<p>See Also</b><br>
+<a href="hpctrans.htm#options">Setting HPC Translate Options</a><br>
+<a href="hpctrans.htm#non_ascii">Entering non-ASCII Characters</a> <br clear="all">
+<!-- PegHelp --></p>
+
+<hr>
+<!-- ************************Topic Break************************* -->
+
+<p><a name="options"></a></p>
+<b>
+
+<p>Setting HPC Translate Options</b> </p>
+
+<p>To display <b>Options</b> dialog box use <b>Tools/Options</b> or <b>Options</b> button
+in the toolbar or <b>Ctrl+O</b> keyboard shortcut.</p>
+
+<p><u>To modify Translator Options:</u> 
+
+<ul>
+  <li><b>Case Insensitive</b> - check this box if you want to ignore case for words with mixed
+    capitalization.</li>
+  <li><b>Look in User Dictionary</b> - check this box if you want to search for possible
+    translation in the user dictionary if the word was not found in the main dictionary.</li>
+  <li><b>Smart Search</b> - check this box to use Smart Search. This option may be disabled if
+    not supported by the selected dictionary. Smart search uses grammatical rules to find a
+    similar word, if the word doesn't exist in the dictionary. For example, it you enter the
+    word <b><i>tested</i></b> and this word is not in the dictionary, the word <b><i>test</i></b>
+    will be translated instead.</li>
+  <li><b>Use Spell Checker</b> - if word is not found in the dictionary or misspelled, HPC
+    Translate will try to find a similar word in the dictionary. This option may be disabled
+    if not supported by the selected dictionary.</li>
+  <li><b>Disable Automatic Character Conversion</b> - if you have a mobile device with European
+    keyboard you may disable automatic character conversion feature. See
+    <a href="hpctrans.htm#non_ascii">Entering non-ASCII Characters</a>  section
+    for more information. 
+    <b>Note:</b> <i>recommended on
+    Palm-Size PC if you use</i> <b>Jot</b><i> to input characters.</i></li>
+</ul>
+
+<p>To change the Dictionaries Path:</p>
+
+<p>All dictionaries must be located in the same folder. For example, Spanish/English
+dictionaries require five files: 
+
+<ul>
+  <li><b>ENG.TDD</b> - Main English dictionary</li>
+  <li><b>ESP.TDD</b> - Main Spanish dictionary</li>
+  <li><b>ENG_ESP.TDL</b> and <b>ESP_ENG.TDL</b> - Translation tables for English/Spanish
+    translator.</li>
+  <li><b>ENG_ESP.UDR</b> - User-defined dictionary for English/Spanish translator. This file
+    is created automatically by HPC Translate when required.</li>
+</ul>
+
+<p>If you move these files from the default folder, enter a new folder into <b>Dictionaries
+Path</b> edit box. Tap <b>&lt;...&gt;</b> button to use <b>File Open</b> dialog box to
+browse for a specific folder. </p>
+
+<p><b>See Also</b><br>
+<a href="hpctrans.htm#using">Using HPC Translate Options</a><br>
+<a href="hpctrans.htm#non_ascii">Entering non-ASCII Characters</a> <br clear="all">
+<!-- PegHelp --></p>
+
+<hr>
+<!-- ************************Topic Break************************* -->
+
+<p><a name="non_ascii"></a><b>Entering non-ASCII Characters</b></p>
+
+<p>If you have an English keyboard, use the following table to enter non-ASCII characters:</p>
+
+<table border="1" width="90%">
+  <tr>
+    <td width="37%"><b>Character</b></td>
+    <td width="63%"><b>Enter</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ä&quot;</b></td>
+    <td width="63%"><b>&quot;a&quot;, &quot;:&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ë&quot;</b></td>
+    <td width="63%"><b>&quot;e&quot;, &quot;:&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ï&quot;</b></td>
+    <td width="63%"><b>&quot;i&quot;, &quot;:&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ö&quot;</b></td>
+    <td width="63%"><b>&quot;o&quot;, &quot;:&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ÿ&quot;</b></td>
+    <td width="63%"><b>&quot;y&quot;, &quot;:&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ü&quot;</b></td>
+    <td width="63%"><b>&quot;u&quot;, &quot;:&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ã&quot;</b></td>
+    <td width="63%"><b>&quot;a&quot;, &quot;~&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ñ&quot;</b></td>
+    <td width="63%"><b>&quot;n&quot;, &quot;~&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;õ&quot;</b></td>
+    <td width="63%"><b>&quot;o&quot;, &quot;~&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;â&quot;</b></td>
+    <td width="63%"><b>&quot;a&quot;,&quot;^&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ê&quot;</b></td>
+    <td width="63%"><b>&quot;e&quot;,&quot;^&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;î&quot;</b></td>
+    <td width="63%"><b>&quot;i&quot;,&quot;^&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ô&quot;</b></td>
+    <td width="63%"><b>&quot;o&quot;, &quot;^&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;û&quot;</b></td>
+    <td width="63%"><b>&quot;u&quot;,&quot;^&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;à&quot;</b></td>
+    <td width="63%"><b>&quot;a&quot;,&quot;`&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;è&quot;</b></td>
+    <td width="63%"><b>&quot;e&quot;,&quot;`&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ò&quot;</b></td>
+    <td width="63%"><b>&quot;o&quot;,&quot;`&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ù&quot;</b></td>
+    <td width="63%"><b>&quot;u&quot;,&quot;`&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ì&quot;</b></td>
+    <td width="63%"><b>&quot;i&quot;,&quot;`&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;á&quot;</b></td>
+    <td width="63%"><b>&quot;a&quot;,&quot;\&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ó&quot;</b></td>
+    <td width="63%"><b>&quot;o&quot;,&quot;\&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;é&quot;</b></td>
+    <td width="63%"><b>&quot;e&quot;,&quot;\&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ý&quot;</b></td>
+    <td width="63%"><b>&quot;y&quot;,&quot;\&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;í&quot;</b></td>
+    <td width="63%"><b>&quot;i&quot;,&quot;\&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ú&quot;</b></td>
+    <td width="63%"><b>&quot;u&quot;,&quot;\&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ç&quot;</b></td>
+    <td width="63%"><b>&quot;c&quot;,&quot;,&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ø&quot;</b></td>
+    <td width="63%"><b>&quot;o&quot;,&quot;/&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;æ&quot;</b></td>
+    <td width="63%"><b>&quot;a&quot;,&quot;/&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;ð&quot;</b></td>
+    <td width="63%"><b>&quot;d&quot;,&quot;/&quot;</b> or <b>&quot;d&quot;,&quot;-&quot;</b></td>
+  </tr>
+  <tr>
+    <td width="37%"><b>&quot;å&quot;</b></td>
+    <td width="63%"><b>&quot;a&quot;,&quot;.&quot;</b></td>
+  </tr>
+</table>
+
+<p>The same rules apply to upper-case characters.</p>
+
+<p><b>See Also</b><br>
+<a href="hpctrans.htm#using">Using HPC Translate Options</a><br>
+<a href="hpctrans.htm#options">Setting HPC Translate Options</a><br>
+<br clear="all">
+<!-- PegHelp --></p>
+
+<hr>
+<!-- ************************Topic Break************************* -->
+
+<p><a name="register"></a><b>Register HPC Translate</b></p>
+
+<p>To register HPC Translate: 
+
+<menu>
+  <li>Enter the <b>Registration Code (a.k.a. Serial Number)</b> that you received when you
+    purchased the software into the <b>Code</b> field. </li>
+  <li>Tap <b>Register Now</b>. If the registration code is incorrect an error message will
+    appear. </li>
+</menu>
+
+<p><i>You must enter the registration code exactly as it appears in your registration
+confirmation message, including all characters and digits, otherwise it will not be
+recognized</i>. </p>
+
+<p><i>Please </i><b>keep your registration code</b>! <i>You will need it to reinstall the
+program and for future upgrades</i>. </p>
+
+<p>For more information about how to purchase software and receive your Registration Code,
+please visit PhatWare&#146;s web site: <br>
+<b>http://www.phatware.com/howtobuy.html</b> <br>
+or send email to <b>sales@phatware.com</b> <br>
+or send a fax to <b>(650)299-1369</b> </p>
+<!-- PegHelp -->
+</body>
+</html>

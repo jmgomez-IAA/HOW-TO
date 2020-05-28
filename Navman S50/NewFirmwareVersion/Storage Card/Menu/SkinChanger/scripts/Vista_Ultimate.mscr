@@ -1,0 +1,5 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Menu Vista Ultimate.wav" )
+CallScript( "SkinChanger.mscr","Vista_Ultimate" )
+
+

@@ -1,0 +1,3 @@
+Errorlevel ("off")
+CallScript("..\AppInit.mscr",3)
+Run(IniRead("..\setup.ini", "Dirs","Games")\"Rubik.exe")

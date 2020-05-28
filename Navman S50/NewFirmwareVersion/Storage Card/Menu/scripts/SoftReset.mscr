@@ -1,0 +1,2 @@
+CallScript("AppInit.mscr",0)
+Run( IniRead("setup.ini", "sys","SoftReset"))

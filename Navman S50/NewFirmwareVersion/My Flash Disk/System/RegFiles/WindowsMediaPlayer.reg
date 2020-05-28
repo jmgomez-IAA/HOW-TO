@@ -1,0 +1,38 @@
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Player]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Player\Button Map]
+@=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Player\Parameters]
+"SkinDir"="\\My Flash Disk\\Program Files\\Apps\\Windows Media Player\\WMP11-480x272\\"
+"SkinFile"="WMP11-480x272.skn"
+"High Bitrate Play"=dword:00000001
+"Background Quality"=dword:00000002
+"Foreground Quality"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Player\Recent Playlists]
+@=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Player\Version]
+@="1.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Player\Buttons]
+@=dword:00000000
+
+
+
+[HKEY_CLASSES_ROOT\.pmp]
+@="pmpfile"
+
+[HKEY_CLASSES_ROOT\pmpfile]
+@="Windows Media Play List File"
+"EditFlags"=dword:00010000
+
+[HKEY_CLASSES_ROOT\pmpfile\DefaultIcon]
+@="\\My Flash Disk\\Program Files\\Apps\\Windows Media Player\\wmplayer.exe, -2002"
+
+[HKEY_CLASSES_ROOT\pmpfile\Shell\Open\Command]
+@="\"\\My Flash Disk\\Program Files\\Apps\\Windows Media Player\\wmplayer.exe\" \"%1\""

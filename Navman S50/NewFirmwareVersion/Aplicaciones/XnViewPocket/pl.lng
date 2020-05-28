@@ -1,0 +1,534 @@
+Language=Polish by kamillo
+
+[Menu]
+File=Plik
+Go to=Idü do
+Home Folder=Katalog domowy
+Up=W gÛrÍ
+Browse Flash card=Karta pamiÍci
+Add to favorites...=Dodaj do ulubionych...
+New folder...=Nowy katalog...
+Rename folder...=ZmieÒ nazwÍ katalogu...
+Delete folder=UsuÒ katalog...
+Cut=Wytnij
+Copy=Kopiuj
+Paste=Wklej
+Delete=UsuÒ
+Rename...=ZmieÒ nazwÍ...
+Selection=Zaznacz
+All=Wszystko
+None=Odznacz
+Invert=OdwrÛÊ zaznaczenie
+Multiple selection=Wielokrotnie
+About...=O programie...
+Quit=ZakoÒcz
+View=Widok
+Mode=Tryb
+Thumbnails=Miniaturki
+List=Lista
+Details=SzczegÛ≥y
+Strip=Taúma
+Image=Obraz
+Full screen=Pe≥ny ekran
+Slideshow=Pokaz slajdÛw
+Sort by=Sortuj wed≥ug
+Name=Nazwy
+Date=Daty
+Type=Typu
+Size=Rozmiaru
+Image resolution=Rozdzielczoúci
+Ascending=Rosnπco
+Descending=Malejπco
+Zoom up=PowiÍksz
+Zoom down=Zmniejsz
+Original size=Rozmiar oryginalny
+Automatic rotation=Automatyczne obracanie
+Fit to window (all)=Dopasuj do okna (wszystkie)
+Fit to window (large only)=Dopasuj do okna (wiÍksze)
+Tools=NarzÍdzia
+Convert...=Konwertuj...
+Crop...=Przytnij...
+Resize...=ZmieÒ rozmiar...
+Adjust...=Dostosuj...
+Rotate...=ObrÛÊ...
+Sharpen/Smooth...=OstroúÊ/Rozmycie...
+Send by Email...=Wyúlij pocztπ...
+Capture...=PrzechwyÊ...
+Create EXE slideshow...=UtwÛrz pokaz EXE...
+Information...=Informacje...
+Options...=Opcje...
+Batch rename...=Wielokrotna zmiana nazwy...
+Create Album...=UtwÛrz album...
+Cancel=Anuluj
+<Previous=<Wstecz
+Next>=Dalej>
+IPTC edit...=Edytuj dane IPTC...
+Zoom in=PowiÍksz
+Zoom out=Zmniejsz
+Fit to screen=Dopasuj do ekranu
+Misc.=RÛøne
+Send via Infrared...=Wyúlij przez podczerwieÒ...
+Receive via infrared here=Odbierz przez podczerwieÒ
+Show filename (thumbnail)=Pokaø nazwÍ (miniaturki)
+Recursive=Powtarzanie
+Search...=Szukaj...
+Previous page=Poprzednia strona
+Next page=NastÍpna strona
+
+[DlgAbout]
+IDC_TEXT = Dystrybucja
+
+[DlgNewFolder]
+IDC_APPLY = UtwÛrz
+IDC_NF_TFOLDER = Katalog :
+IDC_NF_TNEWFOLDER = Nowy katalog :
+
+[DlgEmail]
+IDC_SEND = Wyúlij
+IDC_EM_TTO = Adresat :
+IDC_EM_TSIZE = WielkoúÊ :
+IDC_EM_TFORMAT = Format :
+IDC_EM_TSERVICES = Us≥uga :
+
+[DlgConvert]
+IDC_CN_JPEG = JPEG
+IDC_CN_GIF = GIF
+IDC_CN_BMP = BMP
+IDC_CN_PNG = PNG
+IDC_QUALITY = JakoúÊ
+IDC_COMPRESSION = Kompresja
+IDC_CN_JPEGTEXT1 = Niska (ma≥y plik)
+IDC_CN_JPEGTEXT2 = Wysoka jakoúÊ
+IDC_CN_TGA = Plik TGA
+
+[DlgCrop]
+IDC_TWIDTH = Szer.
+IDC_THEIGHT = Wys.
+IDC_APPLY = Zastosuj
+
+[DlgFolder]
+IDC_FD_TEXT = Wybierz katalog :
+IDC_FD_TPREFIX = Prefiks :
+IDC_FD_TSUFFIX = Sufiks :
+
+[DlgResize]
+IDC_RZ_TEXT = ZmieÒ na :
+IDC_RZ_WIDTH = Szer.
+IDC_RZ_HEIGHT = Wys.
+IDC_RZ_RATIO = Zachowaj proporcje
+IDC_APPLY = Zastosuj
+IDC_APPLYALL = Zastosuj wszystkim
+IDC_RZ_BOX = Rozmiar uøytkownika
+
+[DlgAdjust]
+IDC_APPLY = Zastosuj
+IDC_APPLYALL = Zastosuj wszystkim
+IDC_AD_TBRIGHTNESS = JasnoúÊ
+IDC_AD_TCONTRAST = Kontrast
+IDC_AD_TGAMMA = Gamma
+
+[DlgPreview]
+IDC_PP_TTYPE = Typ :
+IDC_PP_TDIM = Rozmiar :
+IDC_PP_TDEPTH = Kolory :
+IDC_PP_TDPI = DPI :
+IDC_PP_TPIXELS = Pikseli
+IDC_PP_TIMAGE = Obraz
+IDC_APPLY = Zastosuj
+IDC_APPLYALL = Zastosuj wszystkim
+
+[DlgProp1]
+IDC_PP_TTYPE = Typ :
+IDC_PP_TDIM = Rozmiar :
+IDC_PP_TDEPTH = Kolory :
+IDC_PP_TFOLDER = Katalog :
+IDC_PP_TDATE = Data :
+IDC_PP_TSIZE = WielkoúÊ :
+IDC_PP_TFILENAME = Nazwa :
+IDC_PP_TDPI = DPI :
+IDC_PP_TPIXELS = Pikseli
+IDC_PP_TCOMMENT = Komentarz :
+IDC_PP_FILE = Plik
+IDC_PP_IMAGE = Obraz
+
+[DlgRename]
+IDC_APPLY = Zastosuj
+IDC_REN_TFOLDER = Katalog :
+IDC_REN_TFILENAME = Nazwa pliku :
+IDC_REN_TNEWNAME = Nowa nazwa :
+
+[DlgRotate]
+IDC_RZ_LOSSLESS = Bezstratne przekszta≥cenie JPEG
+IDC_APPLY = Zastosuj
+IDC_APPLYALL = Zastosuj wszystkim
+IDC_ROT_N90 = -90∞ (w lewo)
+IDC_ROT_180 = 180∞
+IDC_ROT_90 = +90∞ (w prawo)
+IDC_ROT_HFLIP = Odbij w poziomie
+IDC_ROT_VFLIP = Odbij w pionie
+
+[DlgCapture]
+IDC_APPLY = PrzechwyÊ
+IDC_DELAY = OpÛünienie w sek.
+
+[DlgOption1]
+IDC_STARTSPLASH = Panel szybkiego dostÍpu przy starcie
+IDC_USEARROW = Przewijanie za pomocπ gÛra/dÛ≥
+IDC_THOMEFOLDER = Katalog startowy
+IDC_TVIEWMODE = Widok
+IDC_TLANGUAGE = JÍzyk
+
+[DlgOption2]
+IDC_HIGHQUALITY = Wysoka jakoúÊ miniaturek
+IDC_TTHUMBSIZE = Rozmiar miniaturek
+IDC_SHOWNAME = Pokazuj nazwy
+IDC_FONTSIZE = Rozmiar czcionki
+IDC_TFONT1 = Przeglπdarka katalogÛw
+IDC_TFONT2 = Nazwy miniaturek
+IDC_OPENINFULLSCREEN = PodwÛjne klikniÍcie miniaturki otwiera pe≥en ekran
+IDC_SHOWEXT = Pokaø rozszerzenia
+
+[DlgOption3]
+IDC_VIEWMOVE = Sterowanie piÛrkiem
+IDC_USESCROLL = Uøyj paska przewijania
+IDC_ROTATELEFT = ObrÛt w lewo (zamiast w prawo)
+IDC_TVIEWBACK = Kolor t≥a
+IDC_SHOWFILENAME = Pokaø nazwÍ pliku na pe≥nym ekranie
+IDC_ANIMATEDGIF = Odtwarzaj animowane pliki GIF
+
+[DlgOption4]
+IDC_TDELAY = OpÛünienie
+IDC_TSECONDS = sekundy
+IDC_TSLIDEBACK = Kolor t≥a
+IDC_USETRANSITION = Uøywaj efektÛw przejúcia
+IDC_LANDSCAPE = Tryb poziomy
+IDC_USESOUNDFILE = Plik audio
+IDC_USELOOP = Odtwarzaj w pÍtli
+
+[DlgOption5]
+IDC_TEXT = Przypisz akcje do przyciskÛw
+IDC_TACTION = Wybierz akcjÍ:
+IDC_RESTORE = PrzywrÛÊ
+
+[DlgOption6]
+IDC_TEXT = Wybierz typy plikÛw do skojarzenia z XnView Pocket
+
+[DlgFavorites]
+IDC_DELETE = UsuÒ
+IDC_MODIFY = Edytuj
+
+[DlgAddFavorites]
+IDCANCEL = Anuluj
+IDC_TFOLDER = Katalog :
+IDC_TLABEL = Etykieta :
+
+[DlgFolder2]
+IDC_TEXT = Wskaø katalog :
+IDCANCEL = Anuluj
+
+[DlgMisc]
+IDC_APPLY = Zastosuj
+IDC_APPLYALL = Zastosuj wszystkim
+IDC_TSHARPEN = Wyostrzenie
+IDC_REDUCENOISE = Redukcja szumu
+IDC_TSMOOTH = Rozmycie
+
+[DlgRenFolder]
+IDC_APPLY = Zastosuj
+IDC_REN_TLOCATION = Lokalizacja :
+IDC_REN_TFOLDER = Katalog :
+IDC_REN_TNEWNAME = Nowa nazwa :
+
+[DlgEdit]
+IDOK = OK
+IDCANCEL = Anuluj
+IDC_UNDO = Cofnij
+
+[DlgJpegQuality]
+IDOK = Zastosuj
+IDCANCEL = Anuluj
+IDC_TQUALITY = JakoúÊ-JPG
+
+[DlgBatchRename]
+IDC_APPLY = Zastosuj :
+IDC_REN_TNEWNAME = Nowa nazwa :
+IDC_REN_TEXT = Rozszerzenie :
+IDC_REN_TSTART = Numer startowy :
+IDC_REN_TDIGIT = Liczba cyfr :
+
+[DlgAlbum0]
+IDC_AL_TEXT1=KtÛre obrazy chcesz wykorzystaÊ?
+IDC_AL_SEL1=Zaznaczone obrazy
+IDC_AL_SEL2=Wszystkie z tego katalogu
+IDC_AL_SEL3=Wszystkie dostÍpne
+
+[DlgAlbum1]
+IDC_SELECTNONE=Odznacz
+IDC_SELECTALL=Zaznacz
+
+[DlgAlbum2]
+IDC_AL_TEXT1=WielkoúÊ obrazu :
+IDC_AL_TEXT3=ObrÛÊ :
+IDC_AL_TEXT4=JasnoúÊ/Korekcja kontrastu :
+IDC_FITALL=Dopasuj wszystkie (rÛwnieø ma≥e)
+
+[DlgAlbum3]
+IDC_TDELAY=OpÛünienie
+IDC_TSECONDS=Sekundy
+IDC_USESOUNDFILE=Plik audio
+IDC_USETRANSITION=Uøywaj efektÛw przejúcia
+IDC_LOOP=Odtwarzaj w pÍtli
+
+[DlgAlbum4]
+IDC_SELECT_TEXT=ProszÍ spis wydania :
+IDC_AL_TEXT=Nazwa pliku :
+
+[DlgAlbum5]
+IDC_JPEG_TEXT=JakoúÊ-JPEG :
+IDC_JPEGTEXT1=Niska
+IDC_JPEGTEXT2=Wysoka
+
+[DlgAlbum6]
+IDC_STOP=Stop
+IDC_CREATE=UtwÛrz
+
+[DlgIptc1]
+IDC_TFILENAME = Nazwa pliku:
+IDC_TTYPE = Typ :
+IDC_TDIM = Rozmiar :
+IDC_TDEPTH = Kolory :
+IDC_TPIXELS = Piksele
+IDC_TINFO = Informacje
+IDC_LOAD = Wczytaj
+IDC_SAVE = Zapisz
+IDC_CLEAR = WyczyúÊ
+
+[DlgIptc2]
+IDC_TBYLINE = ImiÍ autora
+IDC_TBYLINET = Nazwisko autora
+IDC_TCREDIT = Prawa obrazu
+IDC_TSOURCE = èrÛd≥o
+IDC_TCOPYRIGHT = Copyright
+IDC_TSTATUS = Stan prac
+IDC_TPRIORITY = Priorytet
+
+[DlgIptc3]
+IDC_TCAPTION = Opis
+IDC_TCAPTIONW = Autor opisu
+IDC_THEADLINE = Nag≥Ûwek
+IDC_TINSTR = WskazÛwki
+
+[DlgIptc4]
+IDC_KEYADD = Dodaj
+IDC_KEYDEL = UsuÒ
+
+[DlgIptc5]
+IDC_TCAT = Kategoria (max. 3 znaki)
+IDC_TSUPCAT = Pe≥na nazwa
+IDC_SCATADD = Dodaj
+IDC_SCATDEL = UsuÒ
+
+[DlgIptc6]
+IDC_TOBJECTN = Nazwa obiektu
+IDC_TCREATED = Utworzono
+IDC_TCITY = Miasto
+IDC_TSUBLOCATION = Region
+IDC_TSTATE = Stan/Prowincja
+IDC_TCOUNTRY = Kraj
+IDC_TCCODE = Kod kraju
+IDC_TORIGINALREF = Adnotacja
+IDC_TODAY = Dzisiaj
+
+[DlgIptcList]
+IDC_APPLY = Zapisz
+IDC_LOAD = Wczytaj
+IDC_IPTCDEL = WyczyúÊ
+
+[DlgIrda]
+IDC_IR_TEXT = OdbiÛr przez port IrDA (ProtokÛ≥-OBEX)\nUruchom wysy≥anie na innym urzπdzeniu.
+IDCANCEL = Anuluj
+
+[DlgIrda2]
+IDC_IR_TEXT = Wysy≥anie przez port IrDA (ProtokÛ≥-OBEX)\nUruchom odbiÛr na innym urzπdzeniu.
+IDCANCEL = Anuluj
+
+[DlgSearch]
+IDC_SCH_TFOLDER = W katalogu :
+IDC_SCH_TFILENAME = Nazwa zawiera:
+IDC_SCH_TFILESIZE = Rozmiar:
+IDC_SCH_TFILETYPE = Typ:
+IDC_SCH_SUBFOLDER = Przeszukuj podkatalogi
+IDC_APPLY = Szukaj
+
+[String]
+
+IDS_CAP_AFFICH =           Widok
+IDS_CAP_TOOLS =            NarzÍdzia
+
+IDS_NAME =                 Nazwa
+IDS_PROPERTIES =           W≥aúciwoúci
+IDS_TYPE =                 Typ
+IDS_SIZE =                 Rozmiar
+IDS_DATE =                 Data
+IDS_BYTES =                BajtÛw
+IDS_KB =                   KB
+IDS_MB =                   MB
+IDS_GB =                   GB
+IDS_ERROR_LOADING =        B≥πd podczas odczytu %s.
+IDS_ERROR =                B≥πd
+IDS_NEWFOLDER =            Nowy katalog
+IDS_DELETEFOLDER =         Czy usunπÊ katalog ?
+IDS_DELETEFILE =           Czy usunπÊ plik(i) ?
+IDS_TREEROOT =             MÛj Pocket-PC
+
+IDS_COPY1 =                %sSkopiowano z %s
+IDS_COPY2 =                %sSkopiowano (%d) z %s
+IDS_DELREADONLY =          Plik tylko do odczytu. Czy chcesz go usunπÊ?
+IDS_VALUE =                WartoúÊ
+IDS_TAG =                  Znacznik
+IDS_JPEG25 =               25 (bardzo ma≥y)
+IDS_JPEG50 =               50 (úredni)
+IDS_JPEG75 =               75 (normalny)
+IDS_JPEG100 =              100 (duøy)
+IDS_BW =                   Czarno/Bia≥y
+IDS_16COLS =               16 KolorÛw
+IDS_256COLS =              256 KolorÛw
+IDS_EMAIL_SUBJECT =        Plik z XnView Pocket
+
+IDM_SLIDESHOW =            Pokaz slajdÛw
+IDM_VIEW =                 Widok
+IDM_DELETE =               UsuÒ
+IDM_PROP =                 Informacje
+
+IDS_16M =                  24-Bity
+IDS_COMP1 =                1 (ma≥y)
+IDS_COMP7 =                7 (normalny)
+IDS_COMP9 =                9 (duøy)
+IDS_CROP =                 Przytnij
+IDS_FORMAT =               Format
+IDS_FOLDER =               Katalog
+IDS_PROBLEM_SAVING =       B≥πd podczas zapisu!
+IDS_CROP_OK =              Obraz %s zosta≥ przyciÍty i zapisany jako %s.
+
+IDS_EXISTS =               Plik istnieje, czy chcesz go zastπpiÊ?
+IDS_FITSCREEN =            Dopasuj do ekranu
+IDS_USERSIZE =             Rozmiar uøytkownika
+IDS_RESIZE_OK =            Obraz %s zosta≥ dopasowany i zapisany jako %s.
+IDS_INFO_WIDTH =           Szer. %d
+IDS_INFO_HEIGHT =          Wys. %d
+IDS_RESIZE =               ZmieÒ rozmiar
+IDS_240_ =                 240 x - Pikseli
+IDS_240_180 =              240 x 180 Pikseli
+IDS_640_480 =              640 x 480 Pikseli
+IDS_800_600 =              800 x 600 Pikseli
+IDS_1024_768 =             1024 x 768 Pikseli
+IDS_320_240 =              320 x 240 Pikseli
+IDS_240_320 =              240 x 320 Pikseli
+IDS_480_640 =              480 x 640 Pikseli
+IDS_160_120 =              120 x 160 pikseli (MMS)
+IDS_ADJUST =               Dostosuj
+IDS_ADJUST_OK =            Obraz %s zosta≥ dostosowany i zapisany jako %s.
+IDS_INFOS =                Informacje
+IDS_CONVERT_OK =           Obraz %s zosta≥ przekonwertowany i zapisany jako %s.
+
+IDS_EMAIL_BODY =           Wyslano z XnView Pocket. Informacje na http://www.XnView.com
+IDS_ORIGINAL_SIZE =        Rozmiar orygina≥u
+IDS_ORIGINAL_FORMAT =      Format orygina≥u
+IDS_JPEG_LOWQUALITY =      JPEG (niska jakoúÊ)
+IDS_JPEG_NORMALQUALITY =   JPEG (normalna jakoúÊ)
+IDS_JPEG_HIGHQUALITY =     JPEG (wysoka jakoúÊ)
+IDS_ROTATE_OK =            Obraz %s zosta≥ obrÛcony i zapisany jako %s.
+IDS_ROTATE =               ObrÛÊ
+IDS_CAPTURE =              PrzechwyÊ
+IDS_CAPTURE_OK =           Obraz zosta≥ przechwycony i zapisany jako %s%s.
+IDS_GENERAL =              G≥Ûwne
+IDS_SLIDESHOW =            Pokaz slajdÛw
+IDS_BROWSER =              Przeglπdarka
+IDS_VIEWER =               Widok
+
+IDS_FAVORITES =            Ulubione
+
+IDS_OPEN =                 OtwÛrz
+IDS_DELETE_MODIFY =        UsuÒ/Edytuj
+IDS_FAVORITESENTRY1 =      Ulubione...
+IDS_FAVORITESENTRY2 =      Ostatnie/Ulubione...
+IDS_ASSOCIATIONS =         Skojarzenia
+IDS_SOUNDFILENAME =        Nazwa pliku audio
+IDS_EXEFILENAME =          Nazwa pliku EXE
+IDS_THUMBNAIL =            Miniaturki
+IDS_LIST =                 Lista
+IDS_DETAIL =               SzczegÛ≥y
+IDS_STRIP =                Taúma
+IDS_LASTMODE =             Ostatnio uøywany tryb
+IDS_ERROR_MEMORY =         B≥πd pamiÍci
+
+IDS_REBOOT =               Musisz zrestartowaÊ XnView Pocket aby zmiany odnios≥y skutek.
+
+IDS_BRIGHTNESS =           JasnoúÊ
+IDS_CONTRAST =             Kontrast
+IDS_GAMMA =                Gamma
+IDS_RED =					Czerwony
+IDS_GREEN =					Zielony
+IDS_BLUE =					Niebieski
+
+IDS_SAVERESULT =          Czy chcesz zachowaÊ wprowadzone zmiany?
+
+IDS_NO_ROTATE =				Nie zmieniaj
+IDS_NO_BRIGHTNESS =			Nie zmieniaj
+IDS_AUTO_BRIGHTNESS =		Automatycznie dostosuj jasnoúÊ i kontrast
+IDS_ROTATE_LEFT =			ObrÛÊ w lewo (gdy konieczne)
+IDS_ROTATE_RIGHT =			ObrÛÊ w prawo (gdy konieczne)
+
+IDS_ALBUM =					Album
+IDS_ALBUM_EXISTS =			Album istnieje. Czy chcesz go zastπpiÊ?
+
+IDS_THUMB_HUGE =			Wielkie
+IDS_THUMB_LARGE =			Duøe
+IDS_THUMB_NORMAL =			Normalne
+IDS_THUMB_SMALL =			Ma≥e
+IDS_THUMB_TINY =			Malutkie
+
+IDS_WIZARD1 =				Przeglπdaj\nkatalog
+IDS_WIZARD2 =				OtwÛrz\nalbum
+IDS_WIZARD3 =				UtwÛrz\nalbum
+IDS_WIZARD4 =				UtwÛrz\npokaz
+IDS_WIZARD5 =				Karta\npamiÍci
+IDS_WIZARD6 =				Opcje
+
+IDS_BUTTONS =				Przyciski
+IDS_BUTTON =				Przycisk
+IDS_ASSIGNMENT =			Przypisanie
+IDS_NONE =					Brak
+IDS_NEXTIMAGE =				NastÍpny obraz
+IDS_PREVIMAGE =				Poprzedni obraz
+IDS_FULLSCREEN =			Pe≥ny ekran
+IDS_ZOOMIN =				PowiÍkszenie
+IDS_ZOOMOUT =				Zmniejszenie
+IDS_KEYUP =					W gÛrÍ
+IDS_KEYDOWN =				W dÛ≥
+IDS_KEYLEFT =				W lewo
+IDS_KEYRIGHT =				W prawo
+IDS_KEYRETURN =				OK
+
+IDS_CAPTION =				Opis
+IDS_CREDIT =				Prawa
+IDS_KEYWORD =				S≥owo kluczowe
+IDS_CATEGORY =				Kategoria
+IDS_ORIGIN =				èrÛd≥o
+IDS_FILE =					Plik
+IDS_IPTC_0 =				0 : Brak
+IDS_IPTC_1 =				1 : Wysoki
+IDS_IPTC_5 =				5 : Normalny
+IDS_IPTC_8 =				8 : Niski
+IDS_IPTCQUESTION =			ZapisaÊ dane IPTC ?
+
+IDS_SEARCHDEV =				Szukam urzπdzenia: #%d
+
+IDS_IGNORED =				Dowolny
+IDS_JPEG_FILES =			Pliki JPEG (*.jpg)
+IDS_GIF_FILES =				Pliki GIF (*.gif)
+IDS_BMP_FILES =				Pliki BMP (*.bmp)
+IDS_PNG_FILES =				Pliki PNG (*.png)
+IDS_TGA_FILES =				Pliki TARGA (*.tga)
+IDS_FOUND_FILES =				Znaleziono %d plikÛw...
+IDS_SHOW_FILES =				Czy chcesz przejrzeÊ wyszukane pliki?

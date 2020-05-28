@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<resources>
+<!-- page 01 -->
+<resource class="view" title="Handledning: Välkommen" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="subtitlelarge" x="15" y="10" width="450" height="120">Välkommen till handledningen till Navman</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="40" width="450" height="120">Denna handledning presenterar den grundläggande användningen av Navman för dig, inklusive hur du navigerar till ditt resmål.</displayable>
+	<displayable class="checkbox" rel="startup show tutorial" x="15" y="140" width="450" height="75" value="Visa handledningen vid uppstart"/>
+	<displayable class="label" textstyle="caution" x="290" y="188" width="450" height="120">Peka för att fortsätta</displayable>
+	<displayable class="image" src="tutorial_arrow" x="365" y="210" />
+</displayables>
+</resource>
+<!-- page 02 -->
+<resource class="view" title="GPS" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_gps_status" x="404" y="20" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="390" height="120">Din Navman tar emot Global Positioning System- (GPS-) signaler via en inbyggd antenn.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="79" width="450" height="120">För att ta emot en stark signal, se till att din Navman har fri sikt mot himlen.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="125" width="450" height="120">För att visa skärmen GPS Status, peka på kompassen, peka sedan på och håll </displayable>
+	<displayable class="image" src="tutorial_gps" x="190" y="150" />
+	<displayable class="label" textstyle="standard" x="223" y="148" width="20" height="20">.</displayable>
+</displayables>
+</resource>
+<!-- page 03 -->
+<resource class="view" title="Huvudmeny" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_main_menu" x="347" y="10" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="330" height="100">Med huvudmenyn anger du en adress för din resa, söker efter Intressanta platser och anpassar preferenser.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="102" width="450" height="100">Du kommer åt huvudmenyn genom att peka på statuslisten nedtill på skärmen.</displayable>
+</displayables>
+</resource>
+<!-- page 04 -->
+<resource class="view" title="Navigering" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="35" src="tutorial_destination1"/>
+	<displayable class="image" x="347" y="115" src="tutorial_destination2"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="430" height="50">Hur planerar jag min första resa?</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="35" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="35" width="315" height="80">Från huvudmenyn, peka på </displayable>
+	<displayable class="image" x="240" y="37" src="tutorial_address_button"/>
+	<displayable class="label" textstyle="standard" x="30" y="58" width="295" height="120"> (Address).</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="315" height="80">Ange land, stad, gata och husnummer för ditt resmål.</displayable>
+</displayables>
+</resource>
+<!-- page 05 -->
+<resource class="view" title="Navigering" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="10" src="tutorial_destination3"/>
+	<displayable class="image" x="347" y="90" src="tutorial_map_screen1"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="10" width="295" height="80">När du har angett adressen, peka på </displayable>
+	<displayable class="image" x="313" y="15" src="tutorial_go_button"/>
+	<displayable class="label" textstyle="standard" x="30" y="33" width="315" height="80"> (Starta).</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="295" height="80">Din Navman beräknar färdvägen och visar skärmen 3D Map.</displayable>
+</displayables>
+</resource>
+<!-- page 06 -->
+<resource class="view" title="Kartskärmar" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="60">Fem kartskärmar används för att visa färdvägen till ditt resmål.</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="55" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="55" width="415" height="24">3D-karta</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="75" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="75" width="415" height="24">2D-karta</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="95" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="95" width="415" height="24">Trafiköversikt (om tillgängligt)</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="115" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="115" width="415" height="24">Färdvägsöversikt</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="135" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="135" width="310" height="24">Svängning-för-svängning</displayable>
+	<displayable class="image" x="347" y="50" src="tutorial_map_screen2"/>
+	<displayable class="label" textstyle="standard" x="15" y="160" width="450" height="60">För att bläddra genom kartskärmarna, peka på </displayable>
+	<displayable class="image" x="380" y="162" src="tutorial_map_button"/>
+	<displayable class="label" textstyle="standard" x="404" y="160" width="120" height="20">.</displayable>
+</displayables>
+</resource>
+<!-- page 07 -->
+<resource class="view" title="Volymkontroll" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">För att stänga av volymen, peka på kompassen och peka sedan på </displayable>
+	<displayable class="image" src="tutorial_volume1" x="90" y="38" />
+	<displayable class="label" textstyle="standard" x="120" y="33" width="20" height="20">.</displayable>
+	<displayable class="image" src="tutorial_prefs_volume" x="347" y="85" />
+	<displayable class="label" textstyle="standard" x="15" y="55" width="335" height="120">För att justera volymen, peka på och håll </displayable>
+	<displayable class="image" src="tutorial_volume2" x="335" y="58" />
+	<displayable class="label" textstyle="standard" x="15" y="78" width="335" height="120"> för att öppna skärmen Volume preference.  </displayable>
+</displayables>
+</resource>
+<!-- page 08 -->
+<resource class="view" title="Installation" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_install" x="300" y="90" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Positionera din Navman enligt installationsinstruktionerna i Snabbstartsguiden.</displayable>
+</displayables>
+</resource>
+<!-- page 09 -->
+<resource class="view" title="Support" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">En detaljerad användarmanual till din Navman finns på:</displayable>
+	<displayable class="label" textstyle="address" x="15" y="33" width="450" height="120">http://www.navman.com/manuals</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="79" width="450" height="120">För supportinformation, besök: </displayable>
+	<displayable class="label" textstyle="address" x="15" y="102" width="450" height="120">http://support.navman.com</displayable>
+</displayables>
+</resource>
+</resources>

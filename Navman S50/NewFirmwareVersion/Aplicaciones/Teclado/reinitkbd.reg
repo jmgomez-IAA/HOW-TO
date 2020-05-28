@@ -1,0 +1,27 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP]
+
+[HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\TOUCH]
+"DriverName"="touch.dll"
+"CalibrationData"="2020,2033 2718,2772 1318,2776 1350,1308 2704,1310 "
+"MaxCalError"=dword:00000010
+
+[HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\MOUSE]
+"DriverName"="kbdmouse.dll"
+"SysIntr"=dword:0000001b
+"MouseBase"=dword:bf700c00
+"PllBase"=dword:bf700200
+"EnableWake"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\KEYBD]
+"DriverName"="kbdmouse.dll"
+"SysIntr"=dword:00000010
+"KbBase"=dword:bf700a00
+"PllBase"=dword:bf700200
+"CalVKey"=dword:00000000
+"ContLessVKey"=dword:00000000
+"ContMoreVKey"=dword:00000000
+"TaskManVKey"=dword:0000002e
+"EnableWake"=dword:00000001
+"Status"=dword:00000001

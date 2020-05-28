@@ -1,0 +1,3 @@
+CallScript("..\AppInit.mscr",1)
+
+Run( IniRead("..\setup.ini", "Keyboard","JOTKBD"))

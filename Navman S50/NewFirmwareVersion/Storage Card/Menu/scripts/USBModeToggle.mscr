@@ -1,0 +1,30 @@
+CallScript("AppInit.mscr",0)
+
+if (RegRead("HKLM", "SOFTWARE\Unlock", "Ver") eq "2")
+	spath = "\My Flash Disk\System\RegFiles\"
+
+else
+	spath = SystemPath("ScriptPath")
+	spath = SubStr(spath, 1, ReverseFind(spath, "\")) \ "system\RegFiles\"
+endif
+
+
+
+If regKeyEqualsString ("HKLM","Drivers\USB\FunctionDrivers","DefaultClientDriver","Mass_Storage_Class")
+
+	If(Question("¿Confugurar USB en modo ActiveSinc?^NL^Requiere reinicio","USB") = 1)
+		RegWriteString("HKLM","Drivers\USB\FunctionDrivers","DefaultClientDriver","Serial_Class")
+ 		Key = "REGEDIT4^NL^[HKEY_LOCAL_MACHINE\Drivers\USB\FunctionDrivers]^NL^""DefaultClientDriver""=""Serial_Class""^NL^"
+		WriteFile(spath\"USB.reg",Key)
+		reset
+	endif
+else
+
+	If(Question("¿Confugurar USB en modo Mass Storage?^NL^Requiere reinicio","USB") = 1)
+		RegWriteString("HKLM","Drivers\USB\FunctionDrivers","DefaultClientDriver","Mass_Storage_Class")
+		delete(spath\"USB.reg")
+		reset
+	endif
+endif
+
+

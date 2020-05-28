@@ -1,0 +1,5 @@
+ErrorLevel("off")
+
+RunWait(SystemPath("ScriptPath")\"loderunner.exe")
+Run(SystemPath("ScriptPath")\"..\..\ShowTaskbar.exe")
+

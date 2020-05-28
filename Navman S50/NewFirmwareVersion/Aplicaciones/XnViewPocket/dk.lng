@@ -1,0 +1,534 @@
+Language=Dansk
+
+[Menu]
+File=Fil
+Go to=Gå til
+Home Folder=Standard mappe
+Up=Op
+Browse Flash card=Gennemse Flash kort
+Add to favorites...=Tilføj til foretrukne...
+New folder...=Ny mappe...
+Rename folder...=Omdøb mappe...
+Delete folder=Slet mappe...
+Cut=Klip
+Copy=Kopier
+Paste=Indsæt
+Delete=Slet
+Rename...=Omdøb...
+Selection=Vælg
+All=Alle
+None=Ingen
+Invert=Inverter alle
+Multiple selection=Flere valg
+About...=Om...
+Quit=Luk
+View=Vis
+Mode=Visning
+Thumbnails=Små ikoner
+List=Liste
+Details=Detaljer
+Strip=Billedvisning
+Image=Billed
+Full screen=Fuld skærm
+Slideshow=Diasshow
+Sort by=Sorter med
+Name=Navn
+Date=Dato
+Type=Type
+Size=Størrelse
+Image resolution=Billed opløsning
+Ascending=Stigende
+Descending=Faldende
+Zoom up=Zoom op
+Zoom down=Zoom ned
+Original size=Original størrelse
+Automatic rotation=Automatisk drejning
+Fit to window (all)=Tilpas vindue (alle)
+Fit to window (large only)=Tilpas vindue (kun store)
+Tools=Værktøjer
+Convert...=Konverter...
+Crop...=Beskær...
+Resize...=Ændr størrelse...
+Adjust...=Juster billed...
+Rotate...=Drej...
+Sharpen/Smooth...=Skarphed/Blødhed...
+Send by Email...=Send med Email...
+Capture...=Tag billed...
+Create EXE slideshow...=Lav diasshow EXE...
+Information...=Information...
+Options...=Indstillinger...
+Batch rename...=Batch omdøbning...
+Create Album...=Lav Album...
+Cancel=Annuller
+<Previous=<Forrige
+Next>=Næste>
+IPTC edit...=IPTC redigering...
+Zoom in=Zoom ind
+Zoom out=Zoom ud
+Fit to screen=Tilpas til skærm
+Misc.=Misc.
+Send via Infrared...=Send via Infrarød...
+Receive via infrared here=Modtag via Infrarød
+Show filename (thumbnail)=Vis filnavne (små ikoner)
+Recursive=Rekursiv
+Search...=Søg...
+Previous page=Forrige side
+Next page=Næste side
+
+[DlgAbout]
+IDC_TEXT = Lavet af
+
+[DlgNewFolder]
+IDC_APPLY = Anvend
+IDC_NF_TFOLDER = Mappe :
+IDC_NF_TNEWFOLDER = Ny mappe :
+
+[DlgEmail]
+IDC_SEND = Send
+IDC_EM_TTO = Modtager :
+IDC_EM_TSIZE = Størrelse :
+IDC_EM_TFORMAT = Format :
+IDC_EM_TSERVICES = Service :
+
+[DlgConvert]
+IDC_CN_JPEG = JPEG fil
+IDC_CN_GIF = GIF fil
+IDC_CN_BMP = BMP fil
+IDC_CN_PNG = PNG fil
+IDC_QUALITY = Kvalitet
+IDC_COMPRESSION = Kompression
+IDC_CN_JPEGTEXT1 = Lav (mindste fil)
+IDC_CN_JPEGTEXT2 = Bedste kvalitet
+IDC_CN_TGA = TGA fil
+
+[DlgCrop]
+IDC_TWIDTH = Bredde :
+IDC_THEIGHT = Højde :
+IDC_APPLY =Beskær
+
+[DlgFolder]
+IDC_FD_TEXT = Vælg en mappe :
+IDC_FD_TPREFIX = Fortegn :
+IDC_FD_TSUFFIX = Eftertegn :
+
+[DlgResize]
+IDC_RZ_TEXT = Tilpas størrelse med :
+IDC_RZ_WIDTH = Bredde :
+IDC_RZ_HEIGHT = Højde :
+IDC_RZ_RATIO = Bevar størrelsesforhold
+IDC_APPLY = Tilpas
+IDC_APPLYALL = Tilpas alle
+IDC_RZ_BOX = Brugerdefineret størrelse
+
+[DlgAdjust]
+IDC_APPLY = Juster
+IDC_APPLYALL = Juster alle
+IDC_AD_TBRIGHTNESS = Lysstyrke
+IDC_AD_TCONTRAST = Kontrast
+IDC_AD_TGAMMA = Gamma
+
+[DlgPreview]
+IDC_PP_TTYPE = Type :
+IDC_PP_TDIM = Størrelse :
+IDC_PP_TDEPTH = Farver :
+IDC_PP_TDPI = DPI :
+IDC_PP_TPIXELS = Pixels
+IDC_PP_TIMAGE = Billed
+IDC_APPLY = Konverter
+IDC_APPLYALL = Konverter alle
+
+[DlgProp1]
+IDC_PP_TTYPE = Type :
+IDC_PP_TDIM = Forhold :
+IDC_PP_TDEPTH = Farver :
+IDC_PP_TFOLDER = Mappe :
+IDC_PP_TDATE = Dato :
+IDC_PP_TSIZE = Størrelse :
+IDC_PP_TFILENAME = Filnavn :
+IDC_PP_TDPI = DPI :
+IDC_PP_TPIXELS = Pixels
+IDC_PP_TCOMMENT = Kommentar :
+IDC_PP_FILE = Fil
+IDC_PP_IMAGE = Billed
+
+[DlgRename]
+IDC_APPLY = Omdøb
+IDC_REN_TFOLDER = Mappe :
+IDC_REN_TFILENAME = Filnavn :
+IDC_REN_TNEWNAME = Omdøb til :
+
+[DlgRotate]
+IDC_RZ_LOSSLESS = Tabsfri drejning hvis muligt (JPEG)
+IDC_APPLY = Drej
+IDC_APPLYALL = Drej alle
+IDC_ROT_N90 = -90° (mod venstre)
+IDC_ROT_180 = 180°
+IDC_ROT_90 = +90° (mod højre)
+IDC_ROT_HFLIP = Spejlvend horisontalt
+IDC_ROT_VFLIP = Spejlvend vertikalt
+
+[DlgCapture]
+IDC_APPLY = Tag billed
+IDC_DELAY = Vent (sek)
+
+[DlgOption1]
+IDC_STARTSPLASH = Vis startbilled
+IDC_USEARROW = Brug piletasterne op og ned for at skifte til forrige og næste billed.
+IDC_THOMEFOLDER = Start mappe
+IDC_TVIEWMODE = Visning
+IDC_TLANGUAGE = Sprog
+
+[DlgOption2]
+IDC_HIGHQUALITY = Ikoner i høj kvalitet
+IDC_TTHUMBSIZE = Ikon størrelse
+IDC_SHOWNAME = Vis filnavn
+IDC_FONTSIZE = Skriftstype størrelse
+IDC_TFONT1 = Mappe træ
+IDC_TFONT2 = Ikon liste
+IDC_OPENINFULLSCREEN = Dobbelt klik på små ikoner åben i fuldskærm
+IDC_SHOWEXT = Vis filnavn endelser
+
+[DlgOption3]
+IDC_VIEWMOVE = Stylus flytter billed
+IDC_USESCROLL = Brug scrollbar
+IDC_ROTATELEFT = Rotere til venstre (istedet for højre)
+IDC_TVIEWBACK = Baggrund farve
+IDC_SHOWFILENAME = Vis filnavne i fuldskærm
+IDC_ANIMATEDGIF = Afspil animeret GIF
+
+[DlgOption4]
+IDC_TDELAY = Forsink diasshow
+IDC_TSECONDS = Sekunder
+IDC_TSLIDEBACK = Baggrundsfarve
+IDC_USETRANSITION = Brug overgangseffekter
+IDC_LANDSCAPE = Landskabs visning
+IDC_USESOUNDFILE = Lydfil
+IDC_USELOOP = Gentag diasshow
+
+[DlgOption5]
+IDC_TEXT = Handling for knapper
+IDC_TACTION = Sæt knappe handling:
+IDC_RESTORE = Standard
+
+[DlgOption6]
+IDC_TEXT =  Vælg de filtyper du vil have associeret med XnView Pocket
+
+[DlgFavorites]
+IDC_DELETE = Slet
+IDC_MODIFY = Ændr
+
+[DlgAddFavorites]
+IDCANCEL = Annuller
+IDC_TFOLDER = Mappe :
+IDC_TLABEL = Navn :
+
+[DlgFolder2]
+IDC_TEXT = Vælg mappe :
+IDCANCEL = Annuller
+
+[DlgMisc]
+IDC_APPLY = Juster
+IDC_APPLYALL = Juster alle
+IDC_TSHARPEN = Skarphed
+IDC_REDUCENOISE = Reducer støj
+IDC_TSMOOTH = Blødhed
+
+[DlgRenFolder]
+IDC_APPLY = Omdøb
+IDC_REN_TLOCATION = Beliggenhed :
+IDC_REN_TFOLDER = Mappe :
+IDC_REN_TNEWNAME = Omdøb til :
+
+[DlgEdit]
+IDOK = OK
+IDCANCEL = Annuller
+IDC_UNDO = Fortryd
+
+[DlgJpegQuality]
+IDOK = OK
+IDCANCEL = Annuller
+IDC_TQUALITY = JPG-Kvalitet
+
+[DlgBatchRename]
+IDC_APPLY = Omdøb :
+IDC_REN_TNEWNAME = Nyt navn :
+IDC_REN_TEXT = Endelse :
+IDC_REN_TSTART = Start med :
+IDC_REN_TDIGIT = Antal tal :
+
+[DlgAlbum0]
+IDC_AL_TEXT1=Hvilke billeder vil du vælge?
+IDC_AL_SEL1=Valgte billeder
+IDC_AL_SEL2=Alle billeder i denne mappe
+IDC_AL_SEL3=Alle tilgængelige billeder
+
+[DlgAlbum1]
+IDC_SELECTNONE=Marker ingen
+IDC_SELECTALL=Marker alle
+
+[DlgAlbum2]
+IDC_AL_TEXT1=Billedstørrelse :
+IDC_AL_TEXT3=Drejning :
+IDC_AL_TEXT4=Lysstyrke/Kontrast korrektion :
+IDC_FITALL=Tilpas alle (også små billeder)
+
+[DlgAlbum3]
+IDC_TDELAY=Forsinkelse
+IDC_TSECONDS=Sekunder
+IDC_USESOUNDFILE=Lydfil
+IDC_USETRANSITION=Brug overgangseffekt
+IDC_LOOP=Gentag
+
+[DlgAlbum4]
+IDC_SELECT_TEXT=Vælg venligst output mappe :
+IDC_AL_TEXT=Filnavn :
+
+[DlgAlbum5]
+IDC_JPEG_TEXT=JPEG-Kvalitet :
+IDC_JPEGTEXT1=Lav (lille fil)
+IDC_JPEGTEXT2=Bedst
+
+[DlgAlbum6]
+IDC_STOP=Stop
+IDC_CREATE=Opret
+
+[DlgIptc1]
+IDC_TFILENAME = Filnavn:
+IDC_TTYPE = Type :
+IDC_TDIM = Forhold :
+IDC_TDEPTH = Farver :
+IDC_TPIXELS = Pixels
+IDC_TINFO = Information
+IDC_LOAD = Indlæs
+IDC_SAVE = Gem som
+IDC_CLEAR = Tøm
+
+[DlgIptc2]
+IDC_TBYLINE = Forfatter navn
+IDC_TBYLINET = Forfatter titel
+IDC_TCREDIT = Kredit
+IDC_TSOURCE = Kilde
+IDC_TCOPYRIGHT = Copyright
+IDC_TSTATUS = Redigerings status
+IDC_TPRIORITY = Prioritet
+
+[DlgIptc3]
+IDC_TCAPTION = Overskrift
+IDC_TCAPTIONW = Forfatter
+IDC_THEADLINE = Overskrift
+IDC_TINSTR = Speciel reference
+
+[DlgIptc4]
+IDC_KEYADD = Tilføj
+IDC_KEYDEL = Fjern
+
+[DlgIptc5]
+IDC_TCAT = Kategori (max. 3 karak.)
+IDC_TSUPCAT = Supplerede kategorier
+IDC_SCATADD = Tilføj
+IDC_SCATDEL = Fjern
+
+[DlgIptc6]
+IDC_TOBJECTN = Objektnavn
+IDC_TCREATED = Dato oprettet
+IDC_TCITY = By
+IDC_TSUBLOCATION = Region
+IDC_TSTATE = Stat\Provins
+IDC_TCOUNTRY = Land
+IDC_TCCODE = Landekode
+IDC_TORIGINALREF = Original Transmissions Reference
+IDC_TODAY = Idag
+
+[DlgIptcList]
+IDC_APPLY = Anvend
+IDC_LOAD = Indlæs
+IDC_IPTCDEL = Fjern
+
+[DlgIrda]
+IDC_IR_TEXT = Modtager via IrDA (OBEX-Protokol).   Start venligst den sendende enhed.
+IDCANCEL = Annuller
+
+[DlgIrda2]
+IDC_IR_TEXT = Sender via IrDA (OBEX-Protokol).   Start venligst den modtagende enhed.
+IDCANCEL = Annuller
+
+[DlgSearch]
+IDC_SCH_TFOLDER = Søge mappe :
+IDC_SCH_TFILENAME = Filnavne indeholder:
+IDC_SCH_TFILESIZE = Fil størrelse:
+IDC_SCH_TFILETYPE = Fil type:
+IDC_SCH_SUBFOLDER = Søg i undermapper
+IDC_APPLY = Søg
+
+[String]
+
+IDS_CAP_AFFICH =           Muligheder
+IDS_CAP_TOOLS =            Værktøjer
+
+IDS_NAME =                 Navn
+IDS_PROPERTIES =           Egenskaber
+IDS_TYPE =                 Type
+IDS_SIZE =                 Størrelse
+IDS_DATE =                 Dato
+IDS_BYTES =                Bytes
+IDS_KB =                   KB
+IDS_MB =                   MB
+IDS_GB =                   GB
+IDS_ERROR_LOADING =        Fejl ved indlæsning af %s.
+IDS_ERROR =                Fejl
+IDS_NEWFOLDER =            Ny mappe
+IDS_DELETEFOLDER =         Vil du slette mappen?
+IDS_DELETEFILE =           Vil du slette fil(er)?
+IDS_TREEROOT =             Min Pocket-PC
+
+IDS_COPY1 =                %sKopi af %s
+IDS_COPY2 =                %sKopi (%d) af %s
+IDS_DELREADONLY =          Filen er skrivebeskyttet. Vil du slette alligevel?
+IDS_VALUE =                Værdi
+IDS_TAG =                  Mærke
+IDS_JPEG25 =               25 (meget lav)
+IDS_JPEG50 =               50 (lav)
+IDS_JPEG75 =               75 (normal)
+IDS_JPEG100 =              100 (høj)
+IDS_BW =                   Sort/Hvid
+IDS_16COLS =               16 Farver
+IDS_256COLS =              256 Farver
+IDS_EMAIL_SUBJECT =        Billed modtager af XnView Pocket
+
+IDM_SLIDESHOW =            Diasshow
+IDM_VIEW =                 Helbilled
+IDM_DELETE =               Slet
+IDM_PROP =                 Informationen
+
+IDS_16M =                  24-Bits
+IDS_COMP1 =                1 (lav)
+IDS_COMP7 =                7 (normal)
+IDS_COMP9 =                9 (høj)
+IDS_CROP =                 Beskær
+IDS_FORMAT =               Format
+IDS_FOLDER =               Mappe
+IDS_PROBLEM_SAVING =       Fejl ved gemmelse af fil!
+IDS_CROP_OK =              Billedet %s er beskåret og gemt som %s
+
+IDS_EXISTS =               Filen findes allerede, vil du overskrive filen?
+IDS_FITSCREEN =            Skærm størrelse
+IDS_USERSIZE =             Bruger størrelse
+IDS_RESIZE_OK =            Billedet %s tilpasset og gemt som %s.
+IDS_INFO_WIDTH =           Bredde : %d
+IDS_INFO_HEIGHT =          Højde : %d
+IDS_RESIZE =               Tilpas størrelse
+IDS_240_ =                 240 x ? Pixels
+IDS_240_180 =              240 x 180 Pixels
+IDS_640_480 =              640 x 480 Pixels
+IDS_800_600 =              800 x 600 Pixels
+IDS_1024_768 =             1024 x 768 Pixels
+IDS_320_240 =              320 x 240 Pixels
+IDS_240_320 =              240 x 320 Pixels
+IDS_480_640 =              480 x 640 Pixels
+IDS_160_120 =              120 x 160 pixels (MMS)
+IDS_ADJUST =               Juster
+IDS_ADJUST_OK =            Billedet %s er justeret og gemt under %s.
+IDS_INFOS =                Informationen
+IDS_CONVERT_OK =           Billedet %s er konverteret og gemt som %s.
+
+IDS_EMAIL_BODY =           Disse billeder er sent med XnView pocket. Info på http://www.bhv.de/XnView
+IDS_ORIGINAL_SIZE =        Originalstørrelse
+IDS_ORIGINAL_FORMAT =      Originalformat
+IDS_JPEG_LOWQUALITY =      JPEG (lav kvalitet)
+IDS_JPEG_NORMALQUALITY =   JPEG (normal kvalitet)
+IDS_JPEG_HIGHQUALITY =     JPEG (høj kvalitet)
+IDS_ROTATE_OK =            Billedet %s er drejet og gemt som %s.
+IDS_ROTATE =               Drejning
+IDS_CAPTURE =              Tag billed
+IDS_CAPTURE_OK =           Det taget billed er gemt under %s%s.
+IDS_GENERAL =              Generelt
+IDS_SLIDESHOW =            Diasshow
+IDS_BROWSER =              Browser
+IDS_VIEWER =               Vis
+
+IDS_FAVORITES =            Foretrukne
+
+IDS_OPEN =                 Åben
+IDS_DELETE_MODIFY =        Slet/Ændr
+IDS_FAVORITESENTRY1 =      Foretrukne...
+IDS_FAVORITESENTRY2 =      Næste/Foretrukne...
+IDS_ASSOCIATIONS =         Filtyper
+IDS_SOUNDFILENAME =        Lydfil
+IDS_EXEFILENAME =          Program filnavn
+IDS_THUMBNAIL =            Små ikoner
+IDS_LIST =                 Liste
+IDS_DETAIL =               Detaljer
+IDS_STRIP =                Billedvisning
+IDS_LASTMODE =             Brug sidste modus
+IDS_ERROR_MEMORY =         Ikke nok hukommelse
+
+IDS_REBOOT =               Du skal genstarte XnView for at anvende ændringerne.
+
+IDS_BRIGHTNESS =           Lysstyrke
+IDS_CONTRAST =             Kontrast
+IDS_GAMMA =                Gamma
+IDS_RED =                  Rød
+IDS_GREEN =                Grøn
+IDS_BLUE =                 Blå
+
+IDS_SAVERESULT =          Vil du gemme resultatet og overskrive fil(er)?
+
+IDS_NO_ROTATE =                         Ingen ændring
+IDS_NO_BRIGHTNESS =                     Ingen ændring
+IDS_AUTO_BRIGHTNESS =                   Automatisk Lysstyrke & Kontrast
+IDS_ROTATE_LEFT =                       Drej til venstre (hvis nødvendigt)
+IDS_ROTATE_RIGHT =                      Drej til højre (hvis nødvendigt)
+
+IDS_ALBUM =                             Album
+IDS_ALBUM_EXISTS =                      Et album med det samme navn findes allerede. Vil du overskrive albummet?
+
+IDS_THUMB_HUGE =                        størst
+IDS_THUMB_LARGE =                       stor
+IDS_THUMB_NORMAL =                      normal
+IDS_THUMB_SMALL =                       lille
+IDS_THUMB_TINY =                        mindst
+
+IDS_WIZARD1 =                           Gennemse\nmappe
+IDS_WIZARD2 =                           Åben\nAlbum
+IDS_WIZARD3 =                           Opret\nAlbum
+IDS_WIZARD4 =                           Opret\nDiasshow
+IDS_WIZARD5 =                           Gennemse\nSD\CF
+IDS_WIZARD6 =                           Indstillinger
+
+IDS_BUTTONS =                           Knapper
+IDS_BUTTON =                            Knap
+IDS_ASSIGNMENT =                        Handling
+IDS_NONE =                              Ingen
+IDS_NEXTIMAGE =                         Næste billed
+IDS_PREVIMAGE =                         Forrige billed
+IDS_FULLSCREEN =                        Fuld skærm
+IDS_ZOOMIN =                            Zoom ind
+IDS_ZOOMOUT =                           Zoom ud
+IDS_KEYUP =                                   Op
+IDS_KEYDOWN =                           Ned
+IDS_KEYLEFT =                           Venstre
+IDS_KEYRIGHT =                          Højre
+IDS_KEYRETURN =                         Indtast
+
+IDS_CAPTION =                           Overskrift
+IDS_CREDIT =                            Kredit
+IDS_KEYWORD =                           Nøgleord
+IDS_CATEGORY =                          Kategori
+IDS_ORIGIN =                            Opringelse
+IDS_FILE =                              Fil
+IDS_IPTC_0 =                            0 : ingen
+IDS_IPTC_1 =                            1 : høj
+IDS_IPTC_5 =                            5 : normal
+IDS_IPTC_8 =                            8 : lav
+IDS_IPTCQUESTION =                      Vil du gemme IPTC-Data?
+
+IDS_SEARCHDEV =                         Søger efter enhed: #%d
+
+IDS_IGNORED =                                  Ignoret
+IDS_JPEG_FILES =                               JPEG filer (*.jpg)
+IDS_GIF_FILES =                                GIF filer (*.gif)
+IDS_BMP_FILES =                                BMP filer (*.bmp)
+IDS_PNG_FILES =                                PNG filer (*.png)
+IDS_TGA_FILES =                                TARGA filer (*.tga)
+IDS_FOUND_FILES =                              Fundne %d filer...
+IDS_SHOW_FILES =                               Vil du se de fundne filer?

@@ -1,0 +1,647 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFM.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Matemáticas funciones</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFM.htm#abs">ABS(número)</A><BR>
+<A HREF="SCEHlpFM.htm#acos">ACOS(número)</A><BR>
+<A HREF="SCEHlpFM.htm#acosh">ACOSH(número)</A><BR>
+<A HREF="SCEHlpFM.htm#rand">ALEATORIO()</A><BR>
+<A HREF="SCEHlpFM.htm#randbetween">ALEATORIO.ENT(mínimo; máximo)</A><BR>
+<A HREF="SCEHlpFM.htm#asin">ASENO(número)</A><BR>
+<A HREF="SCEHlpFM.htm#asinh">ASENOH(número)</A><BR>
+<A HREF="SCEHlpFM.htm#atan">ATAN(número)</A><BR>
+<A HREF="SCEHlpFM.htm#atan2">ATAN2(coord_x; coord_y)</A><BR>
+<A HREF="SCEHlpFM.htm#atanh">ATANH(número)</A><BR>
+<A HREF="SCEHlpFM.htm#quotient">COCIENTE(numerator; denominator)</A><BR>
+<A HREF="SCEHlpFM.htm#combin">COMBINAT(número; tamaño)</A><BR>
+<A HREF="SCEHlpFM.htm#countif">CONTAR.SI(rango; criterio)</A><BR>
+<A HREF="SCEHlpFM.htm#cos">COS(número)</A><BR>
+<A HREF="SCEHlpFM.htm#cosh">COSH(número)</A><BR>
+<A HREF="SCEHlpFM.htm#int">ENTERO(número)</A><BR>
+<A HREF="SCEHlpFM.htm#exp">EXP(número)</A><BR>
+<A HREF="SCEHlpFM.htm#fact">FACT(número)</A><BR>
+<A HREF="SCEHlpFM.htm#degrees">GRADOS(ángulo)</A><BR>
+<A HREF="SCEHlpFM.htm#ln">LN(número)</A><BR>
+<A HREF="SCEHlpFM.htm#log">LOG(número; [base])</A><BR>
+<A HREF="SCEHlpFM.htm#log10">LOG10(número)</A><BR>
+<A HREF="SCEHlpFM.htm#gcd">M.C.D(número1; [número2; ...])</A><BR>
+<A HREF="SCEHlpFM.htm#lcm">M.C.M(número1; [número2; ...])</A><BR>
+<A HREF="SCEHlpFM.htm#mdeterm">MDETERM(rango)</A><BR>
+<A HREF="SCEHlpFM.htm#minverse">MINVERSA(rango)</A><BR>
+<A HREF="SCEHlpFM.htm#mmult">MMULT(matriz1; matriz2)</A><BR>
+<A HREF="SCEHlpFM.htm#multinomial">MULTINOMIAL(número1; [número2; ...])</A><BR>
+<A HREF="SCEHlpFM.htm#floor">MULTIPLO.INFERIOR(número; cifra_significativa)</A><BR>
+<A HREF="SCEHlpFM.htm#ceiling">MULTIPLO.SUPERIOR(número; cifra_significativa)</A><BR>
+<A HREF="SCEHlpFM.htm#roman">NUMERO.ROMANO(número; [forma])</A><BR>
+<A HREF="SCEHlpFM.htm#pi">PI()</A><BR>
+<A HREF="SCEHlpFM.htm#power">POTENCIA(número; potencia)</A><BR>
+<A HREF="SCEHlpFM.htm#product">PRODUCTO(número1; [número2; ...])</A><BR>
+<A HREF="SCEHlpFM.htm#radians">RADIANES(ángulo)</A><BR>
+<A HREF="SCEHlpFM.htm#sqrt">RAIZ(número)</A><BR>
+<A HREF="SCEHlpFM.htm#sqrtpi">RAIZ2PI(número)</A><BR>
+<A HREF="SCEHlpFM.htm#mround">REDOND.MULT(número; multiple)</A><BR>
+<A HREF="SCEHlpFM.htm#odd">REDONDEA.IMPAR(número)</A><BR>
+<A HREF="SCEHlpFM.htm#even">REDONDEA.PAR(número)</A><BR>
+<A HREF="SCEHlpFM.htm#round">REDONDEAR(número; núm_decimales)</A><BR>
+<A HREF="SCEHlpFM.htm#roundup">REDONDEAR.MAS(número; [núm_decimales])</A><BR>
+<A HREF="SCEHlpFM.htm#rounddown">REDONDEAR.MENOS(número; [núm_decimales])</A><BR>
+<A HREF="SCEHlpFM.htm#mod">RESIDUO(número; núm_divisor)</A><BR>
+<A HREF="SCEHlpFM.htm#sin">SENO(número)</A><BR>
+<A HREF="SCEHlpFM.htm#sinh">SENOH(número)</A><BR>
+<A HREF="SCEHlpFM.htm#sign">SIGNO(número)</A><BR>
+<A HREF="SCEHlpFM.htm#subtotal">SUBTOTALES(núm_función; ref1; [ref2; ...])</A><BR>
+<A HREF="SCEHlpFM.htm#sum">SUMA(número1; [número2; ...])</A><BR>
+<A HREF="SCEHlpFM.htm#sumsq">SUMA.CUADRADOS(número1; [número2; ...])</A><BR>
+<A HREF="SCEHlpFM.htm#seriessum">SUMA.SERIES(x; n; m; coeficientes)</A><BR>
+<A HREF="SCEHlpFM.htm#sumproduct">SUMAPRODUCTO(matriz1; [matriz2; ...])</A><BR>
+<A HREF="SCEHlpFM.htm#sumif">SUMAR.SI(rango; criterio; [rango_suma])</A><BR>
+<A HREF="SCEHlpFM.htm#sumx2py2">SUMAX2MASY2(rango_x; rango_y)</A><BR>
+<A HREF="SCEHlpFM.htm#sumx2my2">SUMAX2MENOSY2(rango_x; rango_y)</A><BR>
+<A HREF="SCEHlpFM.htm#sumxmy2">SUMAXMENOSY2(rango_x; rango_y)</A><BR>
+<A HREF="SCEHlpFM.htm#tan">TAN(número)</A><BR>
+<A HREF="SCEHlpFM.htm#tanh">TANH(número)</A><BR>
+<A HREF="SCEHlpFM.htm#trunc">TRUNCAR(número; [núm_decimales])</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="abs"></a><b>ABS(número)</b></p><UL></UL>
+<P>Returns the absolute value of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the absolute value.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="acos"></a><b>ACOS(número)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the arccosine of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the arccosine.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="acosh"></a><b>ACOSH(número)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the inverse hyperbolic cosine of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the inverse hyperbolic cosine.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="rand"></a><b>ALEATORIO()</b></p><UL></UL>
+<P>Returns a random number between 0 and 1.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="randbetween"></a><b>ALEATORIO.ENT(mínimo; máximo)</b></p><UL></UL>
+<P>Returns a random integer in the range you specify.</P>
+<table width=100%>
+<tr><td width=20% valign="top">mínimo</td><td>The lower limit of the range.</td></tr>
+<tr><td width=20% valign="top">máximo</td><td>The upper limit of the range.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="asin"></a><b>ASENO(número)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the arcsine of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the arcsine.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="asinh"></a><b>ASENOH(número)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the inverse hyperbolic sine of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the inverse hyperbolic sine.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="atan"></a><b>ATAN(número)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the arctangent of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the arctangent.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="atan2"></a><b>ATAN2(coord_x; coord_y)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to a pair of co-ordinates.</P>
+<table width=100%>
+<tr><td width=20% valign="top">coord_x</td><td>The x co-ordinate for which you want the angle.</td></tr>
+<tr><td width=20% valign="top">coord_y</td><td>The y co-ordinate for which you want the angle.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="atanh"></a><b>ATANH(número)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the inverse hyperbolic tangent of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the inverse hyperbolic tangent.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="quotient"></a><b>COCIENTE(numerator; denominator)</b></p><UL></UL>
+<P>Returns the integer result of a division.</P>
+<table width=100%>
+<tr><td width=20% valign="top">numerator</td><td>The dividend.</td></tr>
+<tr><td width=20% valign="top">denominator</td><td>The divisor.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="combin"></a><b>COMBINAT(número; tamaño)</b></p><UL></UL>
+<P>Returns the number of combinations in which a number of items can be chosen from a total number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The total number of items.</td></tr>
+<tr><td width=20% valign="top">tamaño</td><td>The number of items chosen.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="countif"></a><b>CONTAR.SI(rango; criterio)</b></p><UL></UL>
+<P>Returns the number of cells in a specified range that meet the specified criteria.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rango</td><td>A reference to the cells you want to count.</td></tr>
+<tr><td width=20% valign="top">criterio</td><td>A string containing a comparison expression.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="cos"></a><b>COS(número)</b></p><UL></UL>
+<P>Returns the cosine of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The angle for which you want the cosine. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="cosh"></a><b>COSH(número)</b></p><UL></UL>
+<P>Returns the hyperbolic cosine of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The angle for which you want the hyperbolic cosine. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="int"></a><b>ENTERO(número)</b></p><UL></UL>
+<P>Returns the number rounded down to the next integer.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number which you want rounded.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="exp"></a><b>EXP(número)</b></p><UL></UL>
+<P>Returns the e raised to the power number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The power to which you want to raise e.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="fact"></a><b>FACT(número)</b></p><UL></UL>
+<P>Returns the factorial of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number of which you want the factorial.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="degrees"></a><b>GRADOS(ángulo)</b></p><UL></UL>
+<P>Converts an angle from radians to degrees.</P>
+<table width=100%>
+<tr><td width=20% valign="top">ángulo</td><td>The angle that you want to convert.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ln"></a><b>LN(número)</b></p><UL></UL>
+<P>Returns the natural logarithm of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the natural logarithm.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="log"></a><b>LOG(número; [base])</b></p><UL></UL>
+<P>Returns the logarithm of a number in a specified base.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the logarithm.</td></tr>
+<tr><td width=20% valign="top">base</td><td>The base in which you want the logarithm. If this parameter is omitted it defaults to 10.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="log10"></a><b>LOG10(número)</b></p><UL></UL>
+<P>Returns the base 10 logarithm of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number for which you want the base 10 logarithm.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="gcd"></a><b>M.C.D(número1; [número2; ...])</b></p><UL></UL>
+<P>Returns the greatest common divisor of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número1; ...</td><td>The numbers of which you want the greatest common divisor.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="lcm"></a><b>M.C.M(número1; [número2; ...])</b></p><UL></UL>
+<P>Returns the lowest common multiple of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número1; ...</td><td>The numbers of which you want the lowest common multiple.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mdeterm"></a><b>MDETERM(rango)</b></p><UL></UL>
+<P>Returns the determinant of a matrix.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rango</td><td>An array or reference to cells containing the matrix.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="minverse"></a><b>MINVERSA(rango)</b></p><UL></UL>
+<P>Returns the inverse of a matrix.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rango</td><td>An array or reference to cells containing the matrix.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mmult"></a><b>MMULT(matriz1; matriz2)</b></p><UL></UL>
+<P>Returns the product of two matrices.</P>
+<table width=100%>
+<tr><td width=20% valign="top">matriz1</td><td>An array or reference to cells containing the first matrix.</td></tr>
+<tr><td width=20% valign="top">matriz2</td><td>An array or reference to cells containing the second matrix.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="multinomial"></a><b>MULTINOMIAL(número1; [número2; ...])</b></p><UL></UL>
+<P>Returns the factorial of the sum of the values divided by the product of their factorials.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número1; ...</td><td>The numbers of which you want the multinomial.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="floor"></a><b>MULTIPLO.INFERIOR(número; cifra_significativa)</b></p><UL></UL>
+<P>Returns the number rounded down (towards zero) to the next multiple of significance.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number which you want rounded.</td></tr>
+<tr><td width=20% valign="top">cifra_significativa</td><td>The units you want to use for rounding.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ceiling"></a><b>MULTIPLO.SUPERIOR(número; cifra_significativa)</b></p><UL></UL>
+<P>Returns the number rounded up (away from zero) to the next multiple of significance.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number which you want rounded.</td></tr>
+<tr><td width=20% valign="top">cifra_significativa</td><td>The units you want to use for rounding.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="roman"></a><b>NUMERO.ROMANO(número; [forma])</b></p><UL></UL>
+<P>Returns a string representing a number converted to roman numerals.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number that you want to convert.</td></tr>
+<tr><td width=20% valign="top">forma</td><td>Specifies the compactness of the representation. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Classic</td></tr>
+	<tr><td width=10% valign="top">1</td><td>More compact</td></tr>
+	<tr><td width=10% valign="top">2</td><td>More compact</td></tr>
+	<tr><td width=10% valign="top">3</td><td>More compact</td></tr>
+	<tr><td width=10% valign="top">4</td><td>Simplified</td></tr>
+	<tr><td width=10% valign="top">VERDADERO</td><td>Classic</td></tr>
+	<tr><td width=10% valign="top">FALSO</td><td>Simplified</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="pi"></a><b>PI()</b></p><UL></UL>
+<P>Returns the value of Pi.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="power"></a><b>POTENCIA(número; potencia)</b></p><UL></UL>
+<P>Returns the number raised to the power.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number which you want raised to a power.</td></tr>
+<tr><td width=20% valign="top">potencia</td><td>The power to which you want to raise the number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="product"></a><b>PRODUCTO(número1; [número2; ...])</b></p><UL></UL>
+<P>Returns the product of a list of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número1; ...</td><td>The numbers that you want to multiply together.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="radians"></a><b>RADIANES(ángulo)</b></p><UL></UL>
+<P>Converts an angle from degrees to radians.</P>
+<table width=100%>
+<tr><td width=20% valign="top">ángulo</td><td>The angle that you want to convert.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sqrt"></a><b>RAIZ(número)</b></p><UL></UL>
+<P>Returns the square root of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number of which you want the square root.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sqrtpi"></a><b>RAIZ2PI(número)</b></p><UL></UL>
+<P>Returns the square root of a number after it is multiplied by Pi.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number which you want to multiply by Pi and then take the square root.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mround"></a><b>REDOND.MULT(número; multiple)</b></p><UL></UL>
+<P>Returns the number rounded to a multiple.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number that you want rounded.</td></tr>
+<tr><td width=20% valign="top">multiple</td><td>The multiple to which you want the number rounded.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="odd"></a><b>REDONDEA.IMPAR(número)</b></p><UL></UL>
+<P>Returns the number rounded up to the next odd number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number which you want rounded.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="even"></a><b>REDONDEA.PAR(número)</b></p><UL></UL>
+<P>Returns the number rounded up to the next even number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number which you want rounded.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="round"></a><b>REDONDEAR(número; núm_decimales)</b></p><UL></UL>
+<P>Returns a number rounded to the number of decimal places specified.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number that you want rounded.</td></tr>
+<tr><td width=20% valign="top">núm_decimales</td><td>The number of decimal places to round to (may be negative).</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="roundup"></a><b>REDONDEAR.MAS(número; [núm_decimales])</b></p><UL></UL>
+<P>Returns a number rounded up to the number of decimal places specified.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number that you want rounded.</td></tr>
+<tr><td width=20% valign="top">núm_decimales</td><td>The number of decimal places to round to (may be negative). If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="rounddown"></a><b>REDONDEAR.MENOS(número; [núm_decimales])</b></p><UL></UL>
+<P>Returns a number rounded down to the number of decimal places specified.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number that you want rounded.</td></tr>
+<tr><td width=20% valign="top">núm_decimales</td><td>The number of decimal places to round to (may be negative). If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mod"></a><b>RESIDUO(número; núm_divisor)</b></p><UL></UL>
+<P>Returns the remainder of a division.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The dividend.</td></tr>
+<tr><td width=20% valign="top">núm_divisor</td><td>The divisor.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sin"></a><b>SENO(número)</b></p><UL></UL>
+<P>Returns the sine of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The angle for which you want the sine. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sinh"></a><b>SENOH(número)</b></p><UL></UL>
+<P>Returns the hyperbolic sine of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The angle for which you want the hyperbolic sine. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sign"></a><b>SIGNO(número)</b></p><UL></UL>
+<P>Returns the sign of a number; 1 for positive, -1 for negative and 0 for zero.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number of which you want the sign.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="subtotal"></a><b>SUBTOTALES(núm_función; ref1; [ref2; ...])</b></p><UL></UL>
+<P>Returns the subtotal of values in one or more ranges, excluding other subtotal figures.</P>
+<table width=100%>
+<tr><td width=20% valign="top">núm_función</td><td>The subtotal function that you want. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">1</td><td>PROMEDIO</td></tr>
+	<tr><td width=10% valign="top">2</td><td>CONTAR</td></tr>
+	<tr><td width=10% valign="top">3</td><td>CONTARA</td></tr>
+	<tr><td width=10% valign="top">4</td><td>MAX</td></tr>
+	<tr><td width=10% valign="top">5</td><td>MIN</td></tr>
+	<tr><td width=10% valign="top">6</td><td>PRODUCTO</td></tr>
+	<tr><td width=10% valign="top">7</td><td>DESVEST</td></tr>
+	<tr><td width=10% valign="top">8</td><td>DESVESTP</td></tr>
+	<tr><td width=10% valign="top">9</td><td>SUMA</td></tr>
+	<tr><td width=10% valign="top">10</td><td>VAR</td></tr>
+	<tr><td width=10% valign="top">11</td><td>VARP</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top">ref1; ...</td><td>The ranges of cells that you want subtotalled.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sum"></a><b>SUMA(número1; [número2; ...])</b></p><UL></UL>
+<P>Returns the sum of a list of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número1; ...</td><td>The numbers that you want to add together.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumsq"></a><b>SUMA.CUADRADOS(número1; [número2; ...])</b></p><UL></UL>
+<P>Returns the sum of the squares of the numbers in the list.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número1; ...</td><td>The numbers that are to be squared and then summed.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="seriessum"></a><b>SUMA.SERIES(x; n; m; coeficientes)</b></p><UL></UL>
+<P>Returns the value of a polynomial.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The number to be raised to a power.</td></tr>
+<tr><td width=20% valign="top">n</td><td>The power of the first term in the series.</td></tr>
+<tr><td width=20% valign="top">m</td><td>The difference between successive powers in the series.</td></tr>
+<tr><td width=20% valign="top">coeficientes</td><td>An array or reference to cells containing the coefficients.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumproduct"></a><b>SUMAPRODUCTO(matriz1; [matriz2; ...])</b></p><UL></UL>
+<P>Returns the sum of the products of the cells in one or more ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">matriz1; ...</td><td>The ranges of cells where corresponding values are multiplied together and then summed.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumif"></a><b>SUMAR.SI(rango; criterio; [rango_suma])</b></p><UL></UL>
+<P>Returns the sum of cells in a specified range that meet the specified criteria.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rango</td><td>A reference to the cells you want to check.</td></tr>
+<tr><td width=20% valign="top">criterio</td><td>A string containing a comparison expression.</td></tr>
+<tr><td width=20% valign="top">rango_suma</td><td>A range containing values to be summed where the values in the first range meet the specified criteria. If this parameter is omitted then the values in the first range are summed.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumx2py2"></a><b>SUMAX2MASY2(rango_x; rango_y)</b></p><UL></UL>
+<P>Returns the sum of the sums of the squares of the numbers in the ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rango_x</td><td>The first range of numbers.</td></tr>
+<tr><td width=20% valign="top">rango_y</td><td>The second range of numbers.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumx2my2"></a><b>SUMAX2MENOSY2(rango_x; rango_y)</b></p><UL></UL>
+<P>Returns the sum of the differences of the squares of the numbers in the ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rango_x</td><td>The first range of numbers.</td></tr>
+<tr><td width=20% valign="top">rango_y</td><td>The second range of numbers.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumxmy2"></a><b>SUMAXMENOSY2(rango_x; rango_y)</b></p><UL></UL>
+<P>Returns the sum of the squares of the differences of the numbers in the ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rango_x</td><td>The first range of numbers.</td></tr>
+<tr><td width=20% valign="top">rango_y</td><td>The second range of numbers.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="tan"></a><b>TAN(número)</b></p><UL></UL>
+<P>Returns the tangent of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The angle for which you want the tangent. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="tanh"></a><b>TANH(número)</b></p><UL></UL>
+<P>Returns the hyperbolic tangent of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The angle for which you want the hyperbolic tangent. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="trunc"></a><b>TRUNCAR(número; [núm_decimales])</b></p><UL></UL>
+<P>Returns a number truncated to the number of decimal places specified.</P>
+<table width=100%>
+<tr><td width=20% valign="top">número</td><td>The number that you want truncated.</td></tr>
+<tr><td width=20% valign="top">núm_decimales</td><td>The number of decimal places to truncate to (may be negative).</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<resources>
+<!-- page 01 -->
+<resource class="view" title="Opplæring: Velkommen" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="subtitlelarge" x="15" y="10" width="450" height="120">Velkommen til Navman-opplæring</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="40" width="450" height="120">Denne opplæringen gir deg en innføring i grunnleggende bruk av Navman, bl.a. hvordan du navigerer til bestemmelsesstedet.</displayable>
+	<displayable class="checkbox" rel="startup show tutorial" x="15" y="140" width="450" height="75" value="Vis opplæring ved oppstart"/>
+	<displayable class="label" textstyle="caution" x="300" y="188" width="450" height="120">Trykk for å fortsette</displayable>
+	<displayable class="image" src="tutorial_arrow" x="365" y="210" />
+</displayables>
+</resource>
+<!-- page 02 -->
+<resource class="view" title="GPS" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_gps_status" x="404" y="20" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="390" height="120">Navman-enheten mottar GPS-signaler (Global Positioning System) via en innebygd antenne.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="79" width="450" height="120">For å motta et sterkt signal, må du sørge for at Navman-enheten har klar sikt mot himmelen.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="125" width="450" height="120">Dersom du vil vise GPS Status-skjermen, kan du trykke på kompasset og deretter trykke og holde </displayable>
+	<displayable class="image" src="tutorial_gps" x="320" y="150" />
+	<displayable class="label" textstyle="standard" x="353" y="148" width="20" height="20">.</displayable>
+</displayables>
+</resource>
+<!-- page 03 -->
+<resource class="view" title="Hovedmeny" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_main_menu" x="347" y="10" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="330" height="100">I hovedmenyenkan du angi en adresse for turen, søke etter interessepunkter og tilpasse innstillingene.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="102" width="450" height="100">Du åpner hovedmenyen ved å trykke på statuslinjen nederst på alle skjermbildene.</displayable>
+</displayables>
+</resource>
+<!-- page 04 -->
+<resource class="view" title="Navigasjon" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="35" src="tutorial_destination1"/>
+	<displayable class="image" x="347" y="115" src="tutorial_destination2"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="430" height="50">Hvordan planlegger jeg min første tur?</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="35" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="35" width="315" height="80">Trykk på </displayable>
+	<displayable class="image" x="100" y="37" src="tutorial_address_button"/>
+	<displayable class="label" textstyle="standard" x="131" y="35" width="295" height="120">(adresse) i hovedmenyen</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="315" height="80">Angi land, by, gate og husnummer på bestemmelsesstedet.</displayable>
+</displayables>
+</resource>
+<!-- page 05 -->
+<resource class="view" title="Navigasjon" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="40" src="tutorial_destination3"/>
+	<displayable class="image" x="347" y="120" src="tutorial_map_screen1"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="10" width="295" height="80">Trykk på </displayable>
+	<displayable class="image" x="100" y="14" src="tutorial_go_button"/>
+	<displayable class="label" textstyle="standard" x="127" y="10" width="315" height="80"> (Go) når du har angitt adressen.</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="295" height="80">Navman beregner ruten og viser 3D-kart-skjermen.</displayable>
+</displayables>
+</resource>
+<!-- page 06 -->
+<resource class="view" title="Kartvinduer" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="60">Det er fem kartvinduer som brukes til å se ruten til bestemmelsesstedet:</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="55" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="55" width="415" height="24">3D Kart</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="75" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="75" width="415" height="24">2D Kart</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="95" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="95" width="415" height="24">Trafikkoversikt (hvis tilgjengelig)</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="115" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="115" width="415" height="24">Ruteoversikt</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="135" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="135" width="310" height="24">Turn-by-Turn</displayable>
+	<displayable class="image" x="347" y="50" src="tutorial_map_screen2"/>
+	<displayable class="label" textstyle="standard" x="15" y="160" width="335" height="60">Trykk på </displayable>
+	<displayable class="image" x="90" y="162" src="tutorial_map_button"/>
+	<displayable class="label" textstyle="standard" x="114" y="160" width="450" height="20">hvis du vil sykle gjennom kartvinduene.</displayable>
+</displayables>
+</resource>
+<!-- page 07 -->
+<resource class="view" title="Volumkontroll" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Dersom du vil dempe volumet, kan du trykke på kompasset og deretter trykke på </displayable>
+	<displayable class="image" src="tutorial_volume1" x="270" y="36" />
+	<displayable class="label" textstyle="standard" x="300" y="33" width="20" height="20">.</displayable>
+	<displayable class="image" src="tutorial_prefs_volume" x="347" y="85" />
+	<displayable class="label" textstyle="standard" x="15" y="55" width="450" height="120">Hvis du vil justere lyden, trykker du og holder nede </displayable>
+	<displayable class="image" src="tutorial_volume2" x="415" y="58" />
+	<displayable class="label" textstyle="standard" x="15" y="78" width="335" height="120"> for å åpne skjermbildet for lydinnstillinger.  </displayable>
+</displayables>
+</resource>
+<!-- page 08 -->
+<resource class="view" title="Installasjon" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_install" x="300" y="90" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Plasser Navman-enheten i henhold til installasjonsinstruksjonene i hurtigstartsveiledningen.</displayable>
+</displayables>
+</resource>
+<!-- page 09 -->
+<resource class="view" title="Brukerstøtte" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Du finner en detaljer brukerhåndbok for Navman på:</displayable>
+	<displayable class="label" textstyle="address" x="15" y="33" width="450" height="120">http://www.navman.com/manuals</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="79" width="450" height="120">Hvis du vil ha mer støtteinformasjon, kan du gå til: </displayable>
+	<displayable class="label" textstyle="address" x="15" y="102" width="450" height="120">http://support.navman.com</displayable>
+</displayables>
+</resource>
+</resources>

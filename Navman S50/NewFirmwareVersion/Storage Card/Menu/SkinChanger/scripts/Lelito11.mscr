@@ -1,0 +1,6 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Lelito 11.wav" )
+CallScript( "SkinChangeWolfCNu.mscr","Lelito11" )
+
+
+

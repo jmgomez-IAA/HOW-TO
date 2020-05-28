@@ -1,0 +1,51 @@
+PAR 3 GOLF HELP
+
+MAIN MENU
+
+New Game - start a new game.
+Resume Game -  resume game from previous position.
+Sound on - turn sound on or off.
+Male player - select male or female player.
+Unlock - enter registration key to unlock trial version.
+
+
+GOLFER VIEW
+
+1 - Club: select club menu.
+4 - Left: aim left.
+6 - Right: aim right.
+5 - Swing: start swing 
+7 - Above: switch to overhead view.
+9 - Exit: return to main menu.
+
+You can operate the menu with the direction keys and center button, the stylus, or type the number directly. 
+
+A swing can also be started with the spacebar or Enter key. A swing can be cancelled with the menu button.
+
+If using a stylus, click left or right of the golfer to aim. Click the golfer to swing.
+
+The golfer's aim is indicated by a tracer that animates over the ground. When the swing begins a force meter appears and shows the current swing force.  Click again to select swing force.  If the force meter gets to the top the swing will be full force but the aim will not be accurate.
+
+The panel at the upper left of the screen shows the current hole number, yards or feet to hole, club selected, and wind speed and direction.  Wind affects your shot so adjust accordingly.
+
+A club is automatically selected based on the distance to the hole. If you would like to pick your own club press the 1 key. The clubs are as follows: 1W-250 (1 wood,  range about 250 yards, loft angle 12 degrees), 3W-230 (15 degrees), 3i-200 (16 degrees), 4i-185 (20 degrees), 5i-170 (24 degrees), 6i-155 (28 degrees), 7i-140 (32 degrees), 8i-125 (36 degrees), 9i-110 (40 degrees), PW-60 (wedge, 60 degrees), PT-100 (putter, range about 100 feet).
+
+If the ball goes out of sight an overhead view appears. The view will switch back to the golfer's view when the ball stops moving.
+
+Additional keyboard commands:
+
+0 - hide the menu. Press again to show the menu. 
+2 - move camera up. 
+8 - move camera down.
+
+OVERHEAD VIEW
+
+1 - In: zoom in closer.
+3 - Out: zoom out.
+2 - Up: pan view up.
+8 - Down: pan view down.
+4 - Left: pan view left.
+6 - Right: pan view right.
+7 - Back: return to golfer view.
+
+Thank you for playing Par 3 Golf.

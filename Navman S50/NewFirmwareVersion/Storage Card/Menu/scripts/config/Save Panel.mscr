@@ -1,0 +1,57 @@
+if (RegRead("HKLM", "SOFTWARE\Unlock", "Ver") eq "2")
+	spath = "\My Flash Disk\System\RegFiles\"
+else
+	spath = SystemPath("ScriptPath")
+	spath = SubStr(spath, 1, ReverseFind(spath, "\"))
+	spath = SubStr(spath, 1, Length(spath) -1) 
+	spath = SubStr(spath, 1, ReverseFind(spath, "\")) \ "system\RegFiles\"
+endif
+
+
+message ("Se va a guardar la configuracion actual","Panel Control")
+
+TmpReg = "REGEDIT4 ^NL^"
+RegFile = SystemPath("ScriptPath")\"TmpReg.reg"
+
+RegKey = "[HKEY_LOCAL_MACHINE\System\GWE]"
+Call("AddKey")
+
+RegKey = "[HKEY_LOCAL_MACHINE\ControlPanel]"
+Call("AddKey")
+
+RegKey = "[HKEY_CURRENT_USER\ControlPanel\Volume]"
+Call("AddKey")
+
+RegKey = "[HKEY_CURRENT_USER\ControlPanel\BackLight]"
+Call("AddKey")
+
+RegKey = "[HKEY_LOCAL_MACHINE\Snd\Event]"
+Call("AddKey")
+
+TmpReg = TmpReg & "[HKEY_CURRENT_USER\ControlPanel\Appearance]^NL^""Current""=""" & regread("HKCU","ControlPanel\Appearance","Current") &"""^NL^^NL^"
+TmpReg = TmpReg & "[HKEY_CURRENT_USER\ControlPanel\Desktop]^NL^""Wallpaper""=""" & regread("HKCU","ControlPanel\Desktop","Wallpaper") &"""^NL^^NL^"
+TmpReg = TmpReg & "[HKEY_LOCAL_MACHINE\Explorer]^NL^""ExpandControlPanel""=dword:"& regread("HKLM","Explorer","ExpandControlPanel") &"^NL^^NL^"
+
+if(RegValueExists("HKLM","SOFTWARE\Microsoft\Clock","SHOW_CLOCK"))
+	TmpReg = TmpReg & "[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Clock]^NL^""SHOW_CLOCK""=dword:"& regread("HKLM","SOFTWARE\Microsoft\Clock","SHOW_CLOCK") &"^NL^^NL^"
+endif
+
+if(RegValueExists("HKLM","SOFTWARE\Microsoft\Shell\OnTop","Default"))
+	TmpReg = TmpReg & "[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shell\OnTop]^NL^@=dword:"& regread("HKLM","SOFTWARE\Microsoft\Shell\OnTop","Default") &"^NL^^NL^"
+endif
+
+if(RegValueExists("HKLM","SOFTWARE\Microsoft\Shell\AutoHide","Default"))
+	TmpReg = TmpReg & "[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shell\AutoHide]^NL^@=dword:"& regread("HKLM","SOFTWARE\Microsoft\Shell\AutoHide","Default") &"^NL^^NL^"
+endif
+
+WriteFile(spath\ "PanelControl.reg",TmpReg, FALSE)
+
+Delete(RegFile)
+#####################################################################################################################################################
+
+sub AddKey
+	RunWait (IniRead("..\setup.ini", "Sys","TaskMgr"),"/regxpkey "& RegFile & " " & RegKey)
+	regContent = ReadFile(RegFile, "unicode-prefix")
+	regContent = Replace(regContent, "Windows Registry Editor Version 5.00", "")
+	TmpReg = TmpReg & regContent
+endsub

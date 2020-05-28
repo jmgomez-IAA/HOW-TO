@@ -1,0 +1,2 @@
+CallScript("..\AppInit.mscr",4)
+Run( IniRead("..\setup.ini", "sys","ActiveSyn_S50"))

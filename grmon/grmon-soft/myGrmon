@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#-----------------
+#Script to configure serial port and connect with grmon
+#Run it with root privilegies
+#-----------------
+
+#Variable definition
+#-----------------
+SERIAL_PORT=/dev/ttyUSB0  # changed to test the new board
+BAUD_RATE=460800
+GRMON_OPTIONS="sudo /opt/grmon/grmon -uart $SERIAL_PORT -baud -u "
+#-----------------
+
+#Message
+echo "-----------------------------"
+echo "run as root or 'sudo myGrmon.sh'"
+echo "-----------------------------"
+
+#Configure serial port
+sudo stty -F $SERIAL_PORT $BAUD_RATE
+
+#Check baudrate
+sudo stty -F $SERIAL_PORT
+
+#Run grmon
+#sudo /opt/grmon/grmon -uart $SERIAL_PORT -baud $BAUD_RATE $GRMON_OPTIONS 
+
+#USB serial port
+#grmon -uart /dev/ttyUSB0 -baud 115200 -freq 25  
+grmon -uart /dev/ttyUSB0 -baud 460800 -freq 25  $1 $2
+
+#End

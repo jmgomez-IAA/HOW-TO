@@ -1,0 +1,4 @@
+CallScript("..\AppInit.mscr",1)
+RegWriteDWord("HKLM", "Drivers\console", "OutputTo",-1)
+RunWait( IniRead("..\setup.ini", "Apps","uBook"))
+RegWriteDWord("HKLM", "Drivers\console", "OutputTo",0)

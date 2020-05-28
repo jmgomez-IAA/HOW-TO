@@ -1,0 +1,5 @@
+Created: 2007-12-24 14:23:44:671875000
+Software: S50 5.10.0021
+Map Data:TA_EU_0704_1411
+Map Region:IB
+Part Num: 565116750008R02                

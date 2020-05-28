@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<resources>
+<!-- page 01 -->
+<resource class="view" title="Opastus: Tervetuloa" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="subtitlelarge" x="15" y="10" width="450" height="120">Tervetuloa Navman-laitteen opastukseen</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="40" width="450" height="120">Seuraavassa tutustutaan Navman-laitteen perustoimintoihin, kuten kohteeseen navigointiin.</displayable>
+	<displayable class="checkbox" rel="startup show tutorial" x="15" y="140" width="450" height="75" value="Näytä opastus käynnistettäessä"/>
+	<displayable class="label" textstyle="caution" x="250" y="188" width="450" height="120">Jatka napauttamalla nuolta</displayable>
+	<displayable class="image" src="tutorial_arrow" x="365" y="210" />
+</displayables>
+</resource>
+<!-- page 02 -->
+<resource class="view" title="GPS" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_gps_status" x="404" y="20" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="390" height="120">Navman-laite vastaanottaa GPS-signaalin sisäänrakennetun antennin avulla.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="79" width="450" height="120">Varmista, että laitteella on esteetön näköyhteys taivaalle, jotta se saa vahvan signaalin.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="125" width="450" height="120">Voit avata GPS-tilan näytön napauttamalla kompassia ja pitämällä sitten </displayable>
+	<displayable class="image" src="tutorial_gps" x="145" y="150" />
+	<displayable class="label" textstyle="standard" x="178" y="148" width="300" height="24">painettuna.</displayable>
+</displayables>
+</resource>
+<!-- page 03 -->
+<resource class="view" title="Päävalikko" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_main_menu" x="347" y="10" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="330" height="100">Päävalikosta pääset antamaan matkasi kohteen osoitteen, etsimään POI-kohteita ja mukauttamaan asetuksia.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="102" width="450" height="100">Saat päävalikon esiin napauttamalla minkä tahansa näytön alareunassa näkyvää tilapalkkia.</displayable>
+</displayables>
+</resource>
+<!-- page 04 -->
+<resource class="view" title="Navigointi" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="35" src="tutorial_destination1"/>
+	<displayable class="image" x="347" y="115" src="tutorial_destination2"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="430" height="50">Miten matka suunnitellaan?</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="35" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="35" width="315" height="80">Napauta päävalikon kohtaa </displayable>
+	<displayable class="image" x="245" y="37" src="tutorial_address_button"/>
+	<displayable class="label" textstyle="standard" x="276" y="35" width="295" height="120">(Osoite).</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="315" height="80">Anna kohdeosoite: maa, kaupunki, katu ja talon numero.</displayable>
+</displayables>
+</resource>
+<!-- page 05 -->
+<resource class="view" title="Navigointi" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="10" src="tutorial_destination3"/>
+	<displayable class="image" x="347" y="90" src="tutorial_map_screen1"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="10" width="295" height="80">Kun olet valmis, napauta </displayable>
+	<displayable class="image" x="228" y="15" src="tutorial_go_button"/>
+	<displayable class="label" textstyle="standard" x="260" y="10" width="315" height="80">(Mene).</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="295" height="80">Navman laskee reitin ja näyttää kolmiulotteisen kartan.</displayable>
+</displayables>
+</resource>
+<!-- page 06 -->
+<resource class="view" title="Karttanäytöt" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="60">Kohteeseen johtavaa reittiä voidaan tarkastella viidellä karttanäytöllä:</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="55" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="55" width="415" height="24">kolmiulotteinen kartta</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="75" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="75" width="415" height="24">kaksiulotteinen kartta</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="95" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="95" width="415" height="24">liikennetilanne (jos saatavissa)</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="115" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="115" width="415" height="24">yleiskuva reitistä</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="135" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="135" width="310" height="24">käännös käännökseltä</displayable>
+	<displayable class="image" x="347" y="50" src="tutorial_map_screen2"/>
+	<displayable class="label" textstyle="standard" x="15" y="160" width="335" height="60">Voit selata karttanäyttöjä napauttamalla </displayable>
+	<displayable class="image" x="335" y="162" src="tutorial_map_button"/>
+	<displayable class="label" textstyle="standard" x="359" y="160" width="120" height="20">	.</displayable>
+</displayables>
+</resource>
+<!-- page 07 -->
+<resource class="view" title="Äänenvoimakkuus" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Voit mykistää äänen napauttamalla kompassia ja napauttamalla sitten </displayable>
+	<displayable class="image" src="tutorial_volume1" x="180" y="35" />
+	<displayable class="label" textstyle="standard" x="210" y="33" width="20" height="20">.</displayable>
+	<displayable class="image" src="tutorial_prefs_volume" x="347" y="85" />
+	<displayable class="label" textstyle="standard" x="15" y="55" width="335" height="120">Voit säätää äänenvoimakkuutta painamalla </displayable>
+	<displayable class="image" src="tutorial_volume2" x="350" y="58" />
+	<displayable class="label" textstyle="standard" x="15" y="78" width="335" height="120">kunnes ääniasetusten näyttö tulee esiin.  </displayable>
+</displayables>
+</resource>
+<!-- page 08 -->
+<resource class="view" title="Asennus" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_install" x="300" y="90" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Asenna Navman pikaoppaan ohjeiden mukaisesti.</displayable>
+</displayables>
+</resource>
+<!-- page 09 -->
+<resource class="view" title="Tuki" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Navman-laitteesi yksityiskohtainen käyttöopas on saatavissa osoiteesta</displayable>
+	<displayable class="label" textstyle="address" x="15" y="56" width="450" height="120">http://www.navman.com/manuals</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="102" width="450" height="120">Tuotetukea on saatavissa osoitteesta </displayable>
+	<displayable class="label" textstyle="address" x="15" y="125" width="450" height="120">http://support.navman.com</displayable>
+</displayables>
+</resource>
+</resources>

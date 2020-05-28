@@ -1,0 +1,4 @@
+CallScript("..\AppInit.mscr",1)
+
+Run( IniRead("..\setup.ini", "apps","ceCalendar") )
+

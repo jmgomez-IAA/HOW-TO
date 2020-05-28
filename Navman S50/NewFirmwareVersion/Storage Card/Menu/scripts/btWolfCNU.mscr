@@ -1,0 +1,2 @@
+
+Run(IniRead("setup.ini", "sys","Mostrar_UI"))

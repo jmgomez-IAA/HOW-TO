@@ -1,0 +1,4 @@
+ErrorLevel("off")
+
+RunWait(SystemPath("ScriptPath")\"mspacman.exe")
+Run(SystemPath("ScriptPath")\"..\..\ShowTaskbar.exe")

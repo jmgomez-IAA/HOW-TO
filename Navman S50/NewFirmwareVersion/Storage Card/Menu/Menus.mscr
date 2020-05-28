@@ -1,0 +1,69 @@
+
+sound=1
+
+if (RegValueExists("HKLM", "SOFTWARE\Menu","Exit"))	
+	if (RegRead("HKLM", "SOFTWARE\Menu", "Exit") = 0)
+		sound=0	
+	endif
+endif
+
+if (ProcExists("PNADesktop.exe"))
+	kill("PNADesktop.exe")
+endif
+
+if (ProcExists("explorer.exe"))
+	kill("explorer.exe")
+	Run("My Flash Disk\Program Files\system\RectDesktop.exe")
+endif
+
+
+Rotate 0
+
+if (RegRead("HKLM", "SOFTWARE\Unlock", "Ver") eq "2")
+	DirSystem = SystemPath("ScriptPath")\"System"
+	if (DirExists(DirSystem))
+ 		If(Question("El Directorio """ & DirSystem & """ No es necesario ^NL^¿Desea Borralo?","Menu") = 1)
+			DelTree(DirSystem)
+		endif
+	endif
+else
+	appinit = SystemPath("ScriptPath")\"Menus.exe"
+	new = "While(not FileExists("""&appinit&"""))^NL^ Sleep(10) ^NL^ EndWhile ^NL^ run("""&appinit&""")"
+	WriteFile("\My Flash Disk\Program Files\Navman\Menus.mscr",new)
+	copy(appinit,"\My Flash Disk\Program Files\Navman\Menus.exe") 	
+	
+	if (RegValueExists("HKLM", "init","Launch80"))
+
+		RegDelete("HKLM", "init", "Launch80")
+	
+		regedit = IniRead("scripts\setup.ini", "Apps","TRE")
+
+		ForEach regFile in files(SystemPath("ScriptPath")\"System\RegFiles\*.reg")
+			RunWait(regedit, "-s " & """" & regFile & """")
+		EndForEach
+
+		RegWriteMultiString("HKLM", "Loader", "SystemPath", Array(SystemPath("ScriptPath")\"System\Dll\"))
+
+		xcopy(SystemPath("ScriptPath")\"System\windows\*.*","\windows",TRUE,TRUE)
+		reset
+	endif
+	RegWriteString("HKLM" , "init" , "Launch99" , "\My Flash Disk\Program Files\Navman\Menus.exe")
+endif
+
+
+if (sound=1) 
+	PlaySound( SystemPath("ScriptPath")\"Sounds\Iniciar_Menu.wav" )
+endif
+
+RegWriteDWord("HKLM", "SOFTWARE\Menu", "Exit",1)
+spath=SystemPath("ScriptPath")
+if ( IniRead(spath\"scripts\setup.ini","sys","AppInit") eq "WolfNCU")
+	Runwait(spath\"WolfNCU.exe")
+	if (RegRead("HKLM", "SOFTWARE\Menu", "Exit") = 1)
+		run(IniRead(spath\"scripts\setup.ini", "sys","AppExit"))
+	endif
+else
+	run(spath\"menu.exe")
+endif
+
+

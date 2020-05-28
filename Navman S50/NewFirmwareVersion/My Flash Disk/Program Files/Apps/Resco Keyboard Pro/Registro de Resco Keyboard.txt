@@ -1,0 +1,25 @@
+
+
+Resco Keyboard
+
+Cambiar Opciones
+
+Panel de control - Input Panel , seleccionando Resco Keyboard
+
+Paso a describirte como mantener el registro de este programa despues de un HardReset
+
+- Es necesario tener un nombre en usuario, accedemos por panel de control Owner y ponemos los datos de usuario que queramos, para que estos datos no se pierdan en el reinicio exportamos la clave HKEY_CURRENT_USER/ControlPanel/Owner a Owner.reg en la carpeta regfiles
+
+Este fichero puede tener datos personales
+
+- Ahora ya podemos pasar a registrar Resco Keyboard con nuestra clave:
+Accedemos a Panel de Control - Resco Keyboard - Opciones- Acerca de - Registrese ahora
+
+Introducimos el codigo de registro por ejm. para usuario "S50" 20924 , damos intro , nos sale la ventana de verificación y aqui nuevamente intro
+
+- RescoKeyboard genera un fichero en el directorio windows llamado "wmtrigger.dat" asi que tenemos que copiar este fichero a "My Flash Disk/System/windows"
+
+y con esto en el siguiente reinicio hardware no tendremos que introducir el codigo de registro
+
+
+

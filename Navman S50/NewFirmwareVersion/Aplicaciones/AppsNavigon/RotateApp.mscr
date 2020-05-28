@@ -1,0 +1,10 @@
+
+if (ProcExists("PNADesktop.exe"))
+	kill("PNADesktop.exe")
+	Runwait("My Flash Disk\Program Files\system\ceLaunch.exe","-d -r:"&argv[1]&"-e:/"&argv[2]&"/")
+	Run( "PNADesktop.exe" )
+else
+	Runwait("My Flash Disk\Program Files\system\ceLaunch.exe","-d -r:"&argv[1]&"-e:/"&argv[2]&"/")
+endif
+
+

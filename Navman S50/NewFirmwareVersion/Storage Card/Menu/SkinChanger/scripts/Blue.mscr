@@ -1,0 +1,5 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Blue.wav" )
+CallScript( "SkinChanger.mscr","Blue" )
+
+

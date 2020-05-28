@@ -1,0 +1,5 @@
+HKEY_CURRENT_USER|Software\Tchart\GPS Speedo|BackColour|REG_DWORD|16777215
+HKEY_CURRENT_USER|Software\Tchart\GPS Speedo|TextColour|REG_DWORD|0
+HKEY_CURRENT_USER|Software\Tchart\GPS Speedo|Units|REG_DWORD|0
+HKEY_CURRENT_USER|Software\Tchart\GPS Speedo|COM|REG_DWORD|2
+HKEY_CURRENT_USER|Software\Tchart\GPS Speedo|Baud|REG_DWORD|4800

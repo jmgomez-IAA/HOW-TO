@@ -1,0 +1,9 @@
+CallScript("..\AppInit.mscr",1)
+
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","xPosition",0)
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","yPosition",0)
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","ShowBar",1)
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","ShowMuteMe",0)
+RegWriteDWord("HKCU", "Software\SnoopSoft\BananaPC","Size",1)
+
+Run(IniRead("..\setup.ini", "Taskbar","BananaPC"))

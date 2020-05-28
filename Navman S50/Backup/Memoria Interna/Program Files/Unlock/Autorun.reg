@@ -1,0 +1,68 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\ControlPanel\Desktop]
+"Wallpaper"=""
+
+[HKEY_CURRENT_USER\ControlPanel\Volume]
+"Volume"=dword:f
+
+[HKEY_LOCAL_MACHINE\nls\overrides]
+"S2359"=""
+"S1159"=""
+"STime"=":"
+"ITLZr"=dword:00000001
+"ITime"=dword:00000001
+"STFmt"="HH:mm:ss"
+
+[HKEY_LOCAL_MACHINE\Time]
+"TimeZoneInformation"=hex:\
+  c4,ff,ff,ff,57,00,2e,00,20,00,45,00,75,00,72,00,6f,00,70,00,65,00,20,00,53,\
+  00,74,00,61,00,6e,00,64,00,61,00,72,00,64,00,20,00,54,00,69,00,6d,00,65,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,0a,00,00,00,05,\
+  00,03,00,00,00,00,00,00,00,00,00,00,00,57,00,2e,00,20,00,45,00,75,00,72,00,\
+  6f,00,70,00,65,00,20,00,44,00,61,00,79,00,6c,00,69,00,67,00,68,00,74,00,20,\
+  00,54,00,69,00,6d,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,03,00,00,00,05,00,02,00,00,00,00,00,00,00,c4,ff,ff,ff
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Clock]
+"ShowDSTUI"=dword:00000001
+"AutoDST"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\GedSoft\FileManCE2]
+"Splitter"="314"
+"StatusBar"="5"
+"LastPanel"="0"
+"FontSize"="9"
+"FontName"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\GedSoft\FileManCE2\0]
+"Grid"="0"
+"System"="8"
+"Hidden"="8"
+"ColumnWidth0"="110"
+"ColumnWidth1"="68"
+"ColumnWidth2"="132"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\GedSoft\FileManCE2\1]
+"Grid"="0"
+"System"="8"
+"Hidden"="8"
+"ColumnWidth0"="110"
+"ColumnWidth1"="68"
+"ColumnWidth2"="132"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\GedSoft\FileManCE2\Colors]
+"Color0"="16777215"
+"Color1"="0"
+"Color2"="8404992"
+"Color3"="16776960"
+
+[HKEY_LOCAL_MACHINE\System\Explorer\Shell Folders]
+"My Documents"="\Storage Card"
+
+[HKEY_LOCAL_MACHINE\System\Explorer\Shell Folders]
+"Program Files"="\Storage Card\Program Files"
+
+[HKEY_LOCAL_MACHINE\System\Explorer\Shell Folders]
+"Application Data"="\Storage Card" 
+

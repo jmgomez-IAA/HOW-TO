@@ -1,0 +1,53 @@
+
+
+	RegWriteString("HKCR", "PocketOutlook.Application\CLSID", "", "{05058F23-20BE-11D2-8F18-0000F87A4335}")
+	RegWriteString("HKCR", "CLSID\{05058F23-20BE-11D2-8F18-0000F87A4335}", "", "PocketOutlook.Application")
+	RegWriteString("HKCR", "CLSID\{05058F23-20BE-11D2-8F18-0000F87A4335}\ProgId", "", "PocketOutlook.Application")
+	RegWriteString("HKCR", "CLSID\{05058F23-20BE-11D2-8F18-0000F87A4335}\InprocServer32", "", "pimstore.dll")
+
+	app = SystemPath("ScriptPath")\"CEAgenda.exe"
+	window_title = "CE Agenda"
+	notreg_window_title = "Not Registered"
+
+	Run(app)
+
+	WaitFor(notreg_window_title, 2)
+	If(WndExists(notreg_window_title))
+		SendOK(notreg_window_title)
+	EndIf
+	
+	While(WndExists(window_title))
+		If(WndExists(notreg_window_title))
+			SendOK(notreg_window_title)
+		EndIf
+		Sleep(500)
+	EndWhile
+
+
+	RegDeleteKey("HKCR", "PocketOutlook.Application", TRUE, TRUE)
+	RegDeleteKey("HKCR", "CLSID\{05058F23-20BE-11D2-8F18-0000F87A4335}", TRUE, TRUE)
+
+
+	databases = Array("Appointments Database", "Tasks Database")
+	Dir_PIM = "\My Flash Disk\system\Pim"
+	backup_tool = "\My Flash Disk\Program Files\system\DatabaseTool.exe"
+		
+	if( Question( "¿Realizar copia seguridad de los datos?","Bases de datos","YesNo" )=0)
+		exit
+	endif
+
+	If(not DirExists(Dir_PIM))
+		MkDir(Dir_PIM)
+	EndIf
+
+	StatusType(ST_MESSAGE)
+	StatusInfo("Copia seguridad PIM")
+
+	ForEach table in array(databases)
+		StatusMessageAppend("Copiando " & table & "...^NL^")
+		RunWait(backup_tool, "/d """ & table & """  " & Dir_PIM\table & ".ced")
+
+	EndForEach
+	
+	StatusType(ST_HIDDEN)
+	StatusClear()

@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.ppt]
+@="pptfile"
+
+[HKEY_CLASSES_ROOT\pptfile]
+@="MS Powerpoint Presentation"
+
+[HKEY_CLASSES_ROOT\pptfile\Shell\Open\Command]
+@="\"\\SD CARD\\FileViewers\\presviewer.exe\" %1"

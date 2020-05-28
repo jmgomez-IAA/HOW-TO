@@ -1,0 +1,9 @@
+CallScript("AppInit.mscr",0)
+
+spath = SystemPath("ScriptPath")
+spath = SubStr(spath, 1, ReverseFind(spath, "\")) 
+
+if (not ProcExists( "MenuLaunch.exe"))
+	Run(spath\"MenuLaunch\MenuLaunch.exe" )
+	sleep(100)
+endif

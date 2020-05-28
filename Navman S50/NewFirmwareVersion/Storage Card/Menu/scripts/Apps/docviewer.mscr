@@ -1,0 +1,4 @@
+CallScript("..\AppInit.mscr",1)
+
+DirApps= IniRead("..\setup.ini", "Dirs","FileViewers")
+Run( DirApps\"docviewer.exe" )

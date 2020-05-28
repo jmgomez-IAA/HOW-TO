@@ -1,0 +1,3 @@
+PlaySound( SystemPath("ScriptPath")\"..\Sounds\Cerrar_Menu.wav")
+Kill("menu.exe")
+Run( IniRead("setup.ini", "sys","AppExit"))

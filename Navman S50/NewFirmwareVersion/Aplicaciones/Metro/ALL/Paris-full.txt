@@ -1,0 +1,17 @@
+             *** WARNING FOR PALM USERS ***
+
+The Paris-full databases CANNOT be installed in main memory
+on PalmOS devices. You must install the files on an external
+memory card, in the *right* directory (/PALM/Programs/Metro).
+
+You can either:
+- Use a card reader on your PC (or a Palm software such as
+CardExport to emulate a card reader);
+- Use the standard QuickInstall and hotsync tools to copy the
+files to the memory card, then use a software such as FileZ
+to move the files to the right folder on the card;
+- Use my "Folder" utility to manage the installation through
+the standard QuickInstall and hotsync tools.
+
+See the user guide for details (guide.html or README.html in
+the root directory of the zip file).

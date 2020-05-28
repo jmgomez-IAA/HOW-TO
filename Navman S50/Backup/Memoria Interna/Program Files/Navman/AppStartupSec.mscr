@@ -1,0 +1,160 @@
+###############################################################################
+#                                                                             #
+#  Navman Unlock                                                              #
+#                                                                             #
+###############################################################################
+
+DeviceFile = SystemPath("ScriptPath") & "\Device.ini"
+
+###############################################################################
+
+if (FileExists(IniRead(DeviceFile, "Dirs", "Install") & "\Install.mscr"))
+
+  Delete(IniRead(DeviceFile, "Dirs", "Install") & "\Install.mscr")
+  Delete(IniRead(DeviceFile, "Dirs", "Install") & "\Install.exe")
+  Delete(IniRead(DeviceFile, "Dirs", "Install") & "\Auto.mscr")
+  Delete(IniRead(DeviceFile, "Dirs", "Install") & "\Auto.exe")
+Message ("Navman desbloqueado.Disfrute", "Felicidades")
+
+endif
+
+###############################################################################
+
+if (RegValueExists("HKLM", "SOFTWARE\Unlock", "StartUpTime"))
+  # Check looping reboots
+  if (TimeStamp() - 30 < RegRead("HKLM", "SOFTWARE\Unlock", "StartUpTime"))
+    Message("Reset ignorado para protegerle de un cuelgue por bucle de Reset, espere unos sg y reseteo de nuevo."\
+      ,"Proteccion")
+  endif
+else
+  # Write path Unlock folder into the registry
+  RegWriteString("HKLM", "SOFTWARE\Unlock", "InstallDir", \
+    IniRead(DeviceFile, "Dirs", "Install"))
+
+
+  if (SystemVersion("Major") = 4)
+    ShellFoldersKey = "Explorer\Shell Folders"
+  else
+    ShellFoldersKey = "System\Explorer\Shell Folders"
+  endif
+
+  # Set "Application Data" folder
+  if (IniRead(DeviceFile, "Dirs", "StorageCard") ne "" and \
+    DirExists(IniRead(DeviceFile, "Dirs", "StorageCard") & "\Application Data"))
+    RegWriteString("HKLM", ShellFoldersKey, "Application Data", \
+      IniRead(DeviceFile, "Dirs", "StorageCard") & "\Application Data"))
+  elseif (IniRead(DeviceFile, "Dirs", "StorageCard") ne "" and \
+    DirExists(IniRead(DeviceFile, "Dirs", "StorageCard")))
+    RegWriteString("HKLM", ShellFoldersKey, "Application Data", \
+      IniRead(DeviceFile, "Dirs", "StorageCard")))
+  elseif (IniRead(DeviceFile, "Dirs", "InternalFlash") ne "")
+    RegWriteString("HKLM", ShellFoldersKey, "Application Data", \
+      IniRead(DeviceFile, "Dirs", "InternalFlash")))
+  endif
+
+  # Set "Program Files" folder
+  if (IniRead(DeviceFile, "Dirs", "StorageCard") ne "" and \
+    DirExists(IniRead(DeviceFile, "Dirs", "StorageCard") & "\Program Files"))
+    RegWriteString("HKLM", ShellFoldersKey, "Program Files", \
+      IniRead(DeviceFile, "Dirs", "StorageCard") & "\Program Files"))
+  elseif (IniRead(DeviceFile, "Dirs", "StorageCard") ne "" and \
+    DirExists(IniRead(DeviceFile, "Dirs", "StorageCard")))
+    RegWriteString("HKLM", ShellFoldersKey, "Program Files", \
+      IniRead(DeviceFile, "Dirs", "StorageCard")))
+  elseif (IniRead(DeviceFile, "Dirs", "InternalFlash") ne "")
+    RegWriteString("HKLM", ShellFoldersKey, "Program Files", \
+      IniRead(DeviceFile, "Dirs", "InternalFlash")))
+  endif
+
+  # Set "My Documents" folder
+  if (IniRead(DeviceFile, "Dirs", "StorageCard") ne "" and \
+    DirExists(IniRead(DeviceFile, "Dirs", "StorageCard") & "\My Documents"))
+    RegWriteString("HKLM", ShellFoldersKey, "My Documents", \
+      IniRead(DeviceFile, "Dirs", "StorageCard") & "\My Documents"))
+  elseif (IniRead(DeviceFile, "Dirs", "StorageCard") ne "" and \
+    DirExists(IniRead(DeviceFile, "Dirs", "StorageCard")))
+    RegWriteString("HKLM", ShellFoldersKey, "My Documents", \
+      IniRead(DeviceFile, "Dirs", "StorageCard")))
+  elseif (IniRead(DeviceFile, "Dirs", "InternalFlash") ne "")
+    RegWriteString("HKLM", ShellFoldersKey, "My Documents", \
+      IniRead(DeviceFile, "Dirs", "InternalFlash")))
+  endif
+
+
+  # Set menu folders
+  RegWriteString("HKLM", ShellFoldersKey, "Programs", \
+    IniRead(DeviceFile, "Dirs", "Install") & "\Programs")
+  RegWriteString("HKLM", ShellFoldersKey, "StartUp", \
+    IniRead(DeviceFile, "Dirs", "Install") & "\StartUp")
+  RegWriteString("HKLM", ShellFoldersKey, "Desktop", \
+    IniRead(DeviceFile, "Dirs", "Install") & "\Desktop")
+
+  # Register "TascalSoft RegEdit"
+  TreProgram = IniRead(DeviceFile, "Dirs", "Install") & "\TRE.exe"
+  RegWriteString("HKCR", ".reg", "", "regfile")
+  RegWriteString("HKCR", "regfile", "", "Registry File")
+  RegWriteString("HKCR", "regfile\DefaultIcon", "", \
+    TreProgram & ",-101")
+  RegWriteString("HKCR", "regfile\Shell\Open\Command", "", \
+    """" & TreProgram & """ ""%1""")
+
+  # Register MortScript
+  RegWriteString("HKCR", ".mortrun", "", "MortScript")
+  RegWriteString("HKCR", ".mscr", "", "MortScript")
+  RegWriteString("HKCR", "MortScript", "", "MortScript")
+  RegWriteString("HKCR", "MortScript\DefaultIcon", "", \
+    IniRead(DeviceFile, "Dirs", "Install") & "\MortScript.exe,-130")
+  RegWriteString("HKCR", "MortScript\Shell\Open\Command", "", \
+    """" & IniRead(DeviceFile, "Dirs", "Install") & "\MortScript.exe"" ""%1""")
+
+
+  # Import Autorun.reg script
+  RegFile = IniRead(DeviceFile, "Dirs", "Install") & "\Autorun.reg"
+  if (FileExists(TreProgram) and FileExists(RegFile))
+    RunWait(TreProgram, "-s """ & RegFile & """")
+  endif
+
+
+
+endif
+
+###############################################################################
+
+
+# Save booting time for loop rebooting protection
+RegWriteDWord("HKLM", "SOFTWARE\Unlock", "StartUpTime", TimeStamp())
+
+###############################################################################
+
+  # Copy programs to the Windows folder
+  XCopy(IniRead(DeviceFile, "Dirs", "Install") & "\Windows\*.*", \
+    "\Windows", True, True);
+
+
+###############################################################################
+
+version=(RegRead("HKLM", "Navman", "Hardware"))
+version=(SubStr(version, 1, ReverseFind(version, "0") ))
+version=(SubStr(version, ReverseFind(version, "S") + 1))
+
+if not (version = "30")
+
+  XCopy(IniRead(DeviceFile, "Dirs", "Storagecard") & "\Program Files\Nav\Oziexplorer\gihobj.dll", \
+    "\Windows", True, True);
+
+endif
+
+# Execute Autorun.lnk program launcher
+ShortcutFile = IniRead(DeviceFile, "Dirs", "Install") & "\Autorun.lnk"
+if (FileExists(ShortcutFile))
+  Split(ReadFile(ShortcutFile), "#", True, Len, TargetFile)
+  TargetFile = SubStr(TargetFile, 2, Length(TargetFile) - 2)
+endif
+if (FileExists(TargetFile))
+  Run(TargetFile)
+elseif (FileExists(IniRead(DeviceFile, "Dirs", "Install") \
+  & "\PNADesktop.exe"))
+  Run(IniRead(DeviceFile, "Dirs", "Install") & "\PNADesktop.exe")
+else
+  Run(IniRead(DeviceFile, "Files", "SmartST"))
+endif

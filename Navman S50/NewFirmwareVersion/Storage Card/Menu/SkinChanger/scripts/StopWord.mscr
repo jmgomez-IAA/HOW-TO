@@ -1,0 +1,5 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Menu Stopword.wav" )
+CallScript( "SkinChanger.mscr","StopWord" )
+
+

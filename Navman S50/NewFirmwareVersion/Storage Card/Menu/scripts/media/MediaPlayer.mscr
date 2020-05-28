@@ -1,0 +1,8 @@
+CallScript("..\AppInit.mscr",4)
+
+
+if (RegKeyExists("HKLM","SOFTWARE\Player") = FALSE)
+	RegWriteDWord("HKLM", "SOFTWARE\Player\PLAT","16",1600082757)
+endif
+
+Run( IniRead("..\setup.ini", "apps","MediaPlayer") )

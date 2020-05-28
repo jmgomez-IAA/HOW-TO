@@ -34,4 +34,9 @@ mount -t cifs \\\\feynman.iaa.es\\nomad  -o username=XXXXX,password=XXXX /media/
 mount -t cifs \\\\feynman.iaa.es\\nomad  -o username=XXXX,password=XXXX,uid=jmgomez,gid=users /media/smbNomad/
 mount -t cifs \\\\feynman.iaa.es\\plato  -o username=XXXX,password=XXXX,uid=jmgomez,gid=users /media/smbNomad/
 
-mount -t cifs \\\\feynman.iaa.es\\nomad  -o username=nomad_iaa,password=XXXXXXX,uid=nomad,gid=users /media/feynman/Plato
+
+Directorio: smb://feynman.iaa.es/nomad
+Usuario: nomad_iaa
+Contraseña: LleCoaA31xEcVScsq8JJVyUB 
+
+mount -t cifs \\\\feynman.iaa.es\\nomad  -o username=nomad_iaa,password=LleCoaA31xEcVScsq8JJVyUB,uid=nomad,gid=users /media/feynman/Plato

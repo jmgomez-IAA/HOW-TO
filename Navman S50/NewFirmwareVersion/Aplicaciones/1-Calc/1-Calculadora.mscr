@@ -1,0 +1,3 @@
+app= SystemPath("ScriptPath")\"1-Calc.exe"
+Run("\My Flash Disk\Program Files\system\ceLaunch.exe","-d -r:90 -e:/"&app&"/")
+

@@ -1,0 +1,4 @@
+CallScript("..\AppInit.mscr",1)
+run(IniRead("..\setup.ini", "Keyboard","Icon") ,"-x:1 -y:250")
+Runwait( IniRead("..\setup.ini", "apps","Explorer2"))
+close("keyboard")

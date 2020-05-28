@@ -1,0 +1,50 @@
+[Pocket WMP Skin File v1.2]
+
+[ Bitmaps ]
+//  <Name>      <File name>     <X,Y>
+//  ------      -----------     -----
+    Background  background.bmp  0,0
+    Disabled    disabled.bmp    0,140
+    Pushed      pushed.bmp      0,140
+    Region      region.bmp      0,140
+    Super       super.bmp       134,140
+//////////////////////////////////////////////////////////////////////////////
+[ Buttons ]
+
+//  <Function>    <Type>      <Location>       <Push Image Src>   <Dis Image Src>       <Hit R,G,B>   <Norm 2 Image Src>  <Push 2 Image Src>
+//  ----------    ------      ----------       ----------------   ---------------       -----------   ------------------  ------------------
+//     Info         PushHit     117,4,62,36      Pushed @ 117,4     Disabled @ 117,4      255,0,0
+     Repeat       ToggleHit   29,153,26,25     Pushed @ 29,13     Disabled @ 29,13      0,0,255
+     Shuffle      ToggleHit   3,153,26,25      Pushed @ 3,13      Disabled @ 3,13       255,0,255
+     Prev         PushHit     87,153,47,25     Pushed @ 87,13     Disabled @ 87,13      0,0,0
+     Next         PushHit     184,153,47,25    Pushed @ 184,13    Disabled @ 184,13     255,255,0
+     Stop         PushHit     60,154,23,23     Pushed @ 60,14     Disabled @ 60,14      0,255,0
+     PlayPause    2PushHit    134,140,50,51    Pushed @ 134,0     Disabled @ 134,0      0,255,255      Super @ 0,0        Super @ 50,0
+     Mute         ToggleHit   232,153,25,25    Pushed @ 232,13    Disabled @ 232,13     255,255,255
+//////////////////////////////////////////////////////////////////////////////
+[ Text ]
+
+//  <Item>       <Location>     <Align>  <Font>          <Color>
+//  ------       ----------     -------  ------          -------
+    Track#       276,61,47,14   Center   Arial,10,N      255,255,255
+    Time         279,114,35,16  Left     Arial,10,N      255,255,255
+    Playlist     172,9,186,20   Center   Arial,10,N      255,255,255
+    Title        9,61,400,23    Left     Arial,10,N      255,255,255
+    Author       9,40,375,20    Left     Arial,10,B      255,255,255
+    Copyright    9,90,139,14    Left     Tahoma,8,N      137,255,22
+
+//
+[ Marquis ]
+
+//  <Location>   <Font>       <Color>      <Text item combinations>
+//  ----------   ------       -------      ------------------------
+    9,114,180,16   Arial,10,N  255,255,255    Bitrate+Frequency, Bitrate, Frequency
+
+//////////////////////////////////////////////////////////////////////////////
+[ Trackbars ]
+
+// <Function>  <Location>     <Dis Image Src>  <Thumb Image Src>  <Thumb Size>
+// ----------  ----------     ---------------  -----------------  ------------
+   Volume      258,159,57,12  Background @ 258,159 Volume.bmp  12,12
+   Seek        7,133,308,9    Background @ 7,133   Seek.bmp    16,9
+ 

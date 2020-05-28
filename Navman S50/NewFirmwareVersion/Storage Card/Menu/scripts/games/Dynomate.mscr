@@ -1,0 +1,5 @@
+
+Errorlevel ("off")
+CallScript("..\AppInit.mscr",3)
+callscript (IniRead("..\setup.ini", "Dirs","Games")\"shell\Dynomate.mscr")
+

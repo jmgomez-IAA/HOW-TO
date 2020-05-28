@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* Stylesheet for the WML documents */
+/* Copyright 2003 Opera Software */
+
+@namespace wml url(http://www.wapforum.org/2001/wml);
+
+wml|wml, wml|template, wml|card, p, br, pre { display: block }
+
+wml|wml {
+  color: black;
+  background: white;
+  padding: 2px;
+}
+
+wml|template {
+  margin: 8px 0;
+  display: block;
+}
+
+wml|timer { display: none }
+
+wml|card {
+  position: deck;
+  text-align: left;
+}
+
+wml|do {
+  padding: 0px 2px;
+  color: ButtonText;
+  margin: 2px;
+  background: ButtonFace;
+  border: 2px outset;
+  white-space: nowrap;
+}
+
+wml|do[type=prev]:before {
+  content: "Previous";
+}
+
+wml|do[type=next]:before {
+  content: "Next";
+}
+
+wml|do[type=accept]:before {
+  content: "Accept";
+}
+
+wml|do[type=options]:before {
+  content: "Options";
+}
+
+wml|do[label]:before {
+  content: attr(label);
+  font-style: normal;
+}
+
+a, wml|go, wml|anchor {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: purple;
+}
+
+wml|go, wml|anchor { display: inline }
+
+wml|onevent[type="onenterforward"] wml|go:before {
+  content: "Please press forward";
+  text-decoration: blink;
+}
+
+small {
+  font-size: smaller;
+}
+
+p {
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+p:first-child { margin-top: 0; }
+p, p[align=left] { text-align: left }
+p[align=center] { text-align: center }
+p[align=right] { text-align: right }
+
+strong, b { font-weight: bold }
+i, em { font-style: none }
+u { text-decoration: underline }
+big { font-size: larger }
+pre { white-space: pre }
+
+table { display: table }
+tr { display: table-row }
+td { display: table-cell }
+
+fieldset { display: block } 
+
+

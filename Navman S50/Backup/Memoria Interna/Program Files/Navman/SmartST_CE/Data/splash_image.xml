@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<resources>
+	<resource name="splash_screen" class="image" transparent="true" src="ui\splash.png" />
+	<resource name="map_loading" class="image" transparent="true" src="ui\maploading.png" />
+	<resource name="loading_progress" class="image" transparent="true" src="ui\loadingprogress.png" />
+	<resource name="loading_progress_bg" class="image" transparent="true" src="ui\loadingprogress_bg.png" />
+</resources>

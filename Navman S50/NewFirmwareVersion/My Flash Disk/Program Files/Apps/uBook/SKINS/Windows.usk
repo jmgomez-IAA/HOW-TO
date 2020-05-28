@@ -1,0 +1,139 @@
+[options]
+TEXT_COLOR=0,0,0
+BCK_COLOR=255,255,255
+LINK_COLOR=32,64,224
+SELECT_COLOR=0,128,128
+HIGH_COLOR=0,255,0
+SEPARATOR_COLOR=192,192,192
+SEARCH_COLOR=255,128,128
+3DL_COLOR=64,64,64
+3DB_COLOR=64,64,64
+3DR_COLOR=164,164,164
+3DT_COLOR=164,164,164
+TwoColumns="One","Two","Columns",0
+Wide="Wide","Narrow","Columns",0
+
+[skin]
+FLAGS=CLIENT
+MIN=240,320
+
+;**** Tags
+LEFT="× "
+UP="Ù "
+FLEFT="×ª"
+PDIV=" / "
+RIGHT=" Ø"
+DOWN=" Ú"
+FRIGHT="ªØ"
+PRIGHT=" ½"
+TEXT="g"
+WAIT="«««"
+
+
+ZONE=MnStatic,STATIC,SIDE_3D+SIDE_T+SIDE_B+SIDE_L+SIDE_R
+BACK=224,224,224
+
+ZONE=MnBook,MENUBOOK,SIDE_3D+SIDE_IN+SIDE_T+SIDE_B+SIDE_L+SIDE_R
+FONT=Symbols,4,NORMAL
+LABEL=" ± "
+POS=2,ch-h-2
+
+ZONE=MnMarks,MENUMARKS,SIDE_3D+SIDE_IN+SIDE_T+SIDE_B+SIDE_L+SIDE_R
+FONT=Symbols,4,NORMAL
+LABEL=" a "
+POS=cw-2-w,ch-h-2
+
+ZONE=MnStatic,STATIC
+POS=0,ch-MnBook.h-4
+SIZE=cw,MnBook.h+4
+
+ZONE=MnSection,MENUSECTION,SIDE_3D+SIDE_IN+SIDE_T+SIDE_B
+FONT=Symbols,4,NORMAL+CENTER,2
+BACK=224,224,224
+LABEL="«« 9999 / 9999 »»"
+POS=(cw-w)/2,ch-h-2
+
+ZONE=MnBack,BACK,SIDE_3D+SIDE_IN+SIDE_T+SIDE_B+SIDE_L+SIDE_R
+FONT=Symbols,4,NORMAL,2
+BACK=224,224,224
+LABEL=" Ã "
+POS=MnBook.x+MnBook.w,ch-MnBook.h-2
+
+ZONE=MnForward,FORWARD,SIDE_3D+SIDE_IN+SIDE_T+SIDE_B+SIDE_L+SIDE_R
+FONT=Symbols,4,NORMAL,2
+BACK=224,224,224
+LABEL=" Ä "
+POS=MnMarks.x-w,ch-MnBook.h-2
+
+Zone=PgPrev,PREVPAGE,SIDE_3D+SIDE_IN+SIDE_T+SIDE_B+SIDE_L
+POS=MnBack.x+MnBack.w,ch-MnBook.h-2
+SIZE=MnSection.x-x,MnSection.h
+
+Zone=PgNext,NEXTPAGE,SIDE_3D+SIDE_IN+SIDE_T+SIDE_B+SIDE_R
+POS=MnSection.x+MnSection.w,ch-MnBook.h-2
+SIZE=MnForward.x-x,MnSection.h
+
+IF=Wide=0
+
+IF=TwoColumns=0
+ZONE=PgPage,PAGE
+SIZE=cw-8,ch-MnStatic.h-4
+POS=4,2
+ELSE
+ZONE=PgPage1,PAGE
+SIZE=cw/2-8,ch-MnStatic.h-4
+POS=4,2
+
+ZONE=PgPage2,PAGE
+SIZE=cw/2-8,ch-MnStatic.h-4
+POS=cw/2+4,2
+ENDIF
+
+ELSE
+
+IF=TwoColumns=0
+ZONE=PgPage,PAGE
+SIZE=cw-cw/8,ch-MnStatic.h-ch/32
+POS=cw/16,ch/64
+ELSE
+ZONE=PgPage1,PAGE
+SIZE=cw/2-cw/16,ch-MnStatic.h-ch/32
+POS=cw/32,ch/64
+
+ZONE=PgPage2,PAGE
+SIZE=cw/2-cw/16,ch-MnStatic.h-ch/32
+POS=cw/2+cw/32,ch/64
+ENDIF
+
+ENDIF
+
+ZONE=PgCover,COVER
+SIZE=cw,ch-MnStatic.h
+POS=0,0
+
+
+[msg-skin]
+FLAGS=CLIENT+NOCLEAR
+MIN=240,320
+
+ZONE=MnStatic,STATIC,SIDE_3D+SIDE_T+SIDE_B+SIDE_L+SIDE_R
+BACK=224,224,224
+FONT=Symbols,4,NORMAL
+LABEL=" "
+POS=0,ch-h-4
+SIZE=cw,h+4
+
+ZONE=MnStaticI,STATIC,SIDE_3D+SIDE_IN+SIDE_T+SIDE_B+SIDE_L+SIDE_R
+BACK=224,224,224
+POS=2,ch-MnStatic.h+2
+SIZE=cw-4,MnStatic.h-4
+
+ZONE=PgBack,STATIC
+BACK=224,224,224
+POS=0,0
+SIZE=cw,ch-MnStatic.h
+
+ZONE=PgPage,PAGE,ONPATTERN
+SIZE=cw-cw/16,ch-ch/16
+POS=cw/32,ch/32
+

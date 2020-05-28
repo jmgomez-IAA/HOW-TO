@@ -1,0 +1,2 @@
+CallScript("..\AppInit.mscr",2)
+Run( IniRead("..\setup.ini", "Apps","Gapi") )

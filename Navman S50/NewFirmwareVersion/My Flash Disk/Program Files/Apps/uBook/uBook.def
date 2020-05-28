@@ -1,0 +1,226 @@
+[MAIN]
+LAST_FILE=%EXE%LANG/English.zip/uBook.html
+PGN_PATH=%EXE%PGN
+PF1_PATH=%EXE%PF1
+SKIN_PATH=%EXE%SKINS/
+SKIN_FILE=%EXE%SKINS/2009.usk
+DCT_FILE=%EXE%DICTIONARY/Webster 1913 - Micro.zip
+ALL_FILES=0
+BIG_ENDIAN=0
+MOUSE_DELTA_TIME=1
+CONTRAST_IDX=0
+CONTRASTS=256.000000,8.000000,4.000000
+ORIENTATION=0
+DISPLAY_DEPTH=24
+SHOW_MARKS=1
+SAVE_PAGE_FILES=1
+FONT=0
+FONT_SIZE=3
+HTML_SIZES=5,5,4,3,2,1,1
+HTML_SIZES_MOD=-2,-1,0,1,2
+LAST_FILES_SUBMENU=1
+MAX_FILES=5
+LIBRARY_OPTIONS=1,1,64,96
+LIBRARY_TEMPLATE=Author
+LIBRARY_TEMPLATE=Version
+UNIT_OPTIONS=0
+
+[TOUCH]
+;pattern '=' type code [mod]
+; pattern is a sequence of directions:
+;  1  2  3    note that diagonals between 
+;  4     6    straights are removed (ex. 632 -> 62)
+;  7  8  9
+; type, defines code, is:
+;  x vk_key (0 leading hex)
+;  X vk_key sticky (mainly only X0d is valid)
+;  c char key 
+;  ! menu code
+;  # toggle touch on or off
+; and optionaly, mod can be:
+;  r for repeat, where the key is repeated while the pattern is held
+
+7=x0d
+9=X0d
+1=xc0
+3=x09
+2=x26r
+8=x28r
+4=x25r
+6=x27r
+624=c[
+426=c]
+13=!110
+31=!105
+62486=x1b
+268=#
+
+;----------------------------------------------------------
+[MAIN-SM]
+SMOOTH_FONT=1,3,3,2,1
+FONT=0
+FONT_SIZE=3
+LIBRARY_OPTIONS=1,1,20,30
+LIBRARY_TEMPLATE=Author
+LIBRARY_TEMPLATE=Version
+CLIPBOARD_UNICODE=1
+INDENT_SIZE=-32,-1
+SKIN_SCALE=80
+
+
+[MAIN-M6]
+SMOOTH_FONT=1,3,3,2,1
+FONT=0
+FONT_SIZE=3
+LIBRARY_OPTIONS=1,1,44,66
+LIBRARY_TEMPLATE=Author
+LIBRARY_TEMPLATE=Version
+CLIPBOARD_UNICODE=1
+INDENT_SIZE=-32,-1
+SKIN_SCALE=100
+
+[MAIN-M6_VGA]
+SMOOTH_FONT=1,3,3,2,1
+FONT=0
+FONT_SIZE=3
+LIBRARY_OPTIONS=1,1,64,96
+LIBRARY_TEMPLATE=Author
+LIBRARY_TEMPLATE=Version
+CLIPBOARD_UNICODE=1
+INDENT_SIZE=-32,-1
+SKIN_SCALE=220
+
+
+[MAIN-PPC]
+SMOOTH_FONT=1,3,3,2,1
+FONT=0
+FONT_SIZE=3
+LIBRARY_OPTIONS=1,1,44,66
+LIBRARY_TEMPLATE=Author
+LIBRARY_TEMPLATE=Version
+CLIPBOARD_UNICODE=1
+INDENT_SIZE=-32,-1
+
+
+[MAIN-CYBOOK]
+SMOOTH_FONT=1,3,3,2,1
+FONT=0
+FONT_SIZE=3
+LIBRARY_OPTIONS=1,1,44,66
+LIBRARY_TEMPLATE=Author
+LIBRARY_TEMPLATE=Version
+CLIPBOARD_UNICODE=1
+INDENT_SIZE=-32,-1
+DISPLAY_DEPTH=8
+
+
+[MAIN-HPC]
+SMOOTH_FONT=1,3,3,2,1
+FONT=0
+FONT_SIZE=3
+LIBRARY_OPTIONS=1,1,44,66
+LIBRARY_TEMPLATE=Author
+LIBRARY_TEMPLATE=Version
+CLIPBOARD_UNICODE=1
+INDENT_SIZE=-32,-1
+
+
+[MAIN-PSPC]
+SMOOTH_FONT=1,3,3,2,1
+FONT=0
+FONT_SIZE=3
+LIBRARY_OPTIONS=1,1,44,66
+LIBRARY_TEMPLATE=Author
+LIBRARY_TEMPLATE=Version
+CLIPBOARD_UNICODE=0
+INDENT_SIZE=-32,-1
+
+
+;----------------------------------------------------------
+[FONT]
+;**** Font, base information
+SEQNUM=12
+
+;**** HEIGHT/DIGEX=Extra Large,Large,Medium,Small,Extra Small
+;**** SMOOTH_HEIGHT is Height of Smooth Font Template (see FONT_SMOOTH, FONT=x,x,nnn)
+
+HEIGHT=32,24,20,16,12
+SMOOTH_HEIGHT=64
+DIGEX=0,0,1,1,1
+USE_DIGEX=1
+
+
+;----------------------------------------------------------
+[FONT-SM]
+HEIGHT=18,15,13,12,11
+DIGEX=0,1,1,1,1
+
+
+[FONT-M6]
+HEIGHT=32,24,20,16,12
+
+
+[FONT-M6_VGA]
+HEIGHT=64,52,42,32,20
+DIGEX=0,1,1,1,0
+
+
+[FONT-PPC]
+HEIGHT=20,17,15,14,13
+
+
+[FONT-CYBOOK]
+HEIGHT=20,17,15,14,13
+
+
+[FONT-HPC]
+HEIGHT=20,17,15,14,13
+
+
+[FONT-PSPC]
+HEIGHT=20,17,15,14,13
+
+
+;----------------------------------------------------------
+[FONT_SMOOTH]
+;**** Version with Anti-aliasing ***
+BOLDING=3,3,3,2,2
+SPACING=0,0,0,0,0
+
+;**** FONT=Name,TTF Source,Source Height
+;**** REPEAT/RAMP/STYLE=Normal,Bold,Italic,Bold+Italic
+
+FONT=Times,Times New Roman,64
+REPEAT=0,3,0,3
+RAMP=0,0,5,5
+
+FONT=Arial,Arial,64
+REPEAT=0,3,0,3
+RAMP=0,0,5,5
+
+FONT=Courier,Courier New,64
+REPEAT=0,3,0,3
+RAMP=0,0,5,5
+
+
+[FONT_SHARP]
+;**** Version with no Anti-aliasing ***
+BOLDING=1,1,1,1,1
+SPACING=0,0,0,0,0
+
+FONT=Times,Times New Roman,*
+STYLE=N,N,I,I
+REPEAT=0,2,0,2
+RAMP=0,0,0,0
+
+FONT=Arial,Arial,*
+STYLE=N,N,I,I
+REPEAT=0,2,0,2
+RAMP=0,0,0,0
+
+FONT=Courier,Courier New,*
+STYLE=N,N,I,I
+REPEAT=0,2,0,2
+RAMP=0,0,0,0
+
+

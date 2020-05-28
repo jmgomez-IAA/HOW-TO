@@ -1,0 +1,50 @@
+[Pocket WMP Skin File v1.2]
+
+[ Bitmaps ]
+//  <Name>      <File name>     <X,Y>
+//  ------      -----------     -----
+    Background  background.bmp  0,0
+    Disabled    disabled.bmp    38,162
+    Pushed      pushed.bmp      38,162
+    Region      region.bmp      38,162
+    Super       super.bmp       215,162
+//////////////////////////////////////////////////////////////////////////////
+[ Buttons ]
+
+//  <Function>    <Type>      <Location>       <Push Image Src>   <Dis Image Src>       <Hit R,G,B>   <Norm 2 Image Src>  <Push 2 Image Src>
+//  ----------    ------      ----------       ----------------   ---------------       -----------   ------------------  ------------------
+//     Info         PushHit     117,4,62,36      Pushed @ 117,4     Disabled @ 117,4      255,0,0
+     Repeat       ToggleHit   88,175,27,25     Pushed @ 50,13     Disabled @ 50,13      0,0,255
+     Shuffle      ToggleHit   57,175,27,25     Pushed @ 19,13     Disabled @ 19,13      255,0,255
+     Prev         PushHit     168,175,47,25    Pushed @ 130,13    Disabled @ 130,13     0,0,0
+     Next         PushHit     265,175,47,25    Pushed @ 227,13    Disabled @ 227,13     255,255,0
+     Stop         PushHit     135,176,23,23    Pushed @ 97,14     Disabled @ 97,14      0,255,0
+     PlayPause    2PushHit    215,162,50,51    Pushed @ 177,0     Disabled @ 177,0      0,255,255     Super @ 0,0         Super @ 50,0
+     Mute         ToggleHit   324,175,25,25    Pushed @ 286,13    Disabled @ 286,13     255,255,255
+//////////////////////////////////////////////////////////////////////////////
+[ Text ]
+
+//  <Item>       <Location>     <Align>  <Font>          <Color>
+//  ------       ----------     -------  ------          -------
+    Track#       436,61,47,14   Center   Arial,10,N      255,255,255
+    Time         350,61,35,16   Center   Arial,10,N      255,255,255
+    Playlist     332,9,186,20   Center   Arial,10,N      255,255,255
+    Title        11,61,400,23   Left     Arial,10,N      255,255,255
+    Author       11,40,375,20   Left     Arial,10,B      255,255,255
+    Copyright    247,61,139,14  Center   Tahoma,8,N      137,255,22
+
+//
+[ Marquis ]
+
+//  <Location>   <Font>       <Color>      <Text item combinations>
+//  ----------   ------       -------      ------------------------
+    355,135,180,16   Arial,10,N  255,255,255    Bitrate+Frequency, Bitrate, Frequency
+
+//////////////////////////////////////////////////////////////////////////////
+[ Trackbars ]
+
+// <Function>  <Location>     <Dis Image Src>  <Thumb Image Src>  <Thumb Size>
+// ----------  ----------     ---------------  -----------------  ------------
+   Volume      358,181,72,12  Background @ 358,181 Volume.bmp  12,12
+   Seek        7,155,469,9    Background @ 7,155   Seek.bmp    16,9
+ 

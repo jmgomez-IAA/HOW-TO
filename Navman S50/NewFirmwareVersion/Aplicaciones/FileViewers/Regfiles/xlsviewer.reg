@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.xls]
+@="xlsfile"
+
+[HKEY_CLASSES_ROOT\xlsfile]
+@="MS Excel Document"
+
+[HKEY_CLASSES_ROOT\xlsfile\Shell\Open\Command]
+@="\"\\SD CARD\\FileViewers\\xls.exe\" %1"

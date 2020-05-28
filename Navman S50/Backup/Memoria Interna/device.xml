@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<device> <kernel><version>1.00.0020</version></kernel><bootloader><version /></bootloader><hardware><type>S50</type><version>1</version><id>100000000004C530080156454E55535F</id></hardware><processor><type>ARM</type><level>ARM
+version 4</level><revision>00000000</revision></processor><os><version>00050000</version></os><memory><size>0x3cb8000</size></memory></device>

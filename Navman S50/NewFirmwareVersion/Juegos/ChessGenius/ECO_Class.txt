@@ -1,0 +1,243 @@
+A00Irregular openings
+A01Nimzovich-Larsen attack
+A03Bird's opening
+A06Reti opening
+A08Reti: King's Indian attack
+A09Reti opening
+A10English opening
+A12English: Caro-Kann defensive system
+A13English opening
+A14English: Neo-Catalan declined
+A15English, Anglo-Indian defense
+A17English opening
+A18English: Mikenas-Carls
+A19English: Mikenas-Carls, Sicilian
+A24English opening
+A26English: Sicilian reversed
+A27English: three knights system
+A29English: four knights
+A30English: symmetrical
+A31English: symmetrical, Benoni formation
+A38English: symmetrical
+A39English: symmetrical, main line
+A42Queen's pawn
+A44Old Benoni defence
+A48Queen's pawn game
+A49King's Indian: fianchetto
+A50Queen's pawn game
+A51Budapest defence declined
+A52Budapest defence
+A53Old Indian defence
+A54Old Indian: Ukrainian
+A55Old Indian: main line
+A56Benoni defence
+A57Benko gambit
+A58Benko gambit accepted
+A59Benko gambit
+A64Benoni defence
+A69Benoni
+A79Benoni: classical
+A80Dutch
+A86Dutch defence
+A89Dutch: Leningrad, main
+A92Dutch defence
+A93Dutch: stonewall, Botwinnik
+A95Dutch: stonewall
+A96Dutch: classical
+A99Dutch: Ilyin-Genevsky
+B00King's pawn opening
+B01Scandinavian defence
+B03Alekhine's defence
+B05Alekhine's defence: modern
+B06Robatsch (modern) defence
+B07Pirc defence
+B08Pirc: classical (two knights)
+B09Pirc: Austrian attack
+B10Caro-Kann defence
+B11Caro-Kann: two knights
+B12Caro-Kann defence
+B13Caro-Kann: exchange
+B14Caro-Kann: Panov-Botvinnik
+B15Caro-Kann defence
+B16Caro-Kann: Bronstein-Larsen
+B17Caro-Kann: Steinitz
+B19Caro-Kann: classical
+B20Sicilian defence
+B21Sicilian: Grand Prix attack
+B22Sicilian: Alapin's
+B26Sicilian: closed
+B27Sicilian defence
+B28Sicilian: O'Kelly
+B29Sicilian: Nimzovich-Rubinstein
+B33Sicilian defence
+B39Sicilian: accelerated fianchetto
+B40Sicilian defence
+B43Sicilian: Kan
+B44Sicilian defence
+B49Sicilian: Taimanov
+B50Sicilian
+B52Sicilian: Canal-Sokolsky
+B53Sicilian, Chekhover
+B54Sicilian
+B55Sicilian: Prins, Venice attack
+B56Sicilian
+B57Sicilian: Sozin
+B58Sicilian: classical
+B59Sicilian: Boleslavsky
+B69Sicilian: Richter-Rauzer
+B74Sicilian: dragon
+B79Sicilian: dragon, Yugoslav
+B85Sicilian: Scheveningen
+B86Sicilian: Sozin attack
+B89Sicilian: Sozin
+B99Sicilian: Najdorf
+C00French defence
+C01French: exchange
+C02French: advance
+C03French: Tarrasch
+C04French: Tarrasch, Guimard
+C06French: Tarrasch, closed
+C09French: Tarrasch, open
+C10French: Paulsen
+C11French defence
+C12French: MacCutcheon
+C14French: classical
+C15French: Winawer (Nimzovich)
+C19French: Winawer, advance
+C20King's pawn game
+C22Centre game
+C23Bishop's opening
+C24Bishop's opening: Berlin defence
+C25Vienna game
+C26Vienna: Falkbeer
+C28Vienna game
+C29Vienna gambit
+C30King's gambit
+C31KGD: Falkbeer counter-gambit
+C32KGD: Falkbeer
+C33King's gambit accepted
+C34King's knight's gambit
+C35KGA: Cunningham defence
+C36KGA: Abbazia defence
+C38KGA: Quaade gambit
+C39King's knight's gambit
+C40King's knight opening
+C41Philidor's defence
+C42Petrov's defence
+C43Petrov: modern (Steinitz) attack
+C44King's pawn game
+C45Scotch game
+C46Three knights game
+C47Four knights: Scotch
+C48Four knights: Spanish
+C49Four knights: double Ruy Lopez
+C50King's pawn game
+C51Evans gambit declined
+C52Evans gambit
+C54Giuoco Piano
+C59Two knights defence
+C60Ruy Lopez (Spanish opening)
+C61Ruy Lopez: Bird's defence
+C62Ruy Lopez: old Steinitz defence
+C63Ruy Lopez: Schliemann defence
+C64Ruy Lopez: classical (Cordel) defence
+C66Ruy Lopez: Berlin defence
+C67Ruy Lopez: Berlin defence, open
+C69Ruy Lopez: exchange
+C70Ruy Lopez
+C76Ruy Lopez: modern Steinitz defence
+C77Ruy Lopez: Morphy defence
+C78Ruy Lopez
+C79Ruy Lopez: Steinitz defence deferred
+C80Ruy Lopez: open (Tarrasch) defence
+C81Ruy Lopez: open, Howell attack
+C82Ruy Lopez: open
+C83Ruy Lopez: open, classical defence
+C84Ruy Lopez: closed defence
+C85Ruy Lopez: Exchange doubly deferred
+C87Ruy Lopez: Worrall attack
+C88Ruy Lopez: closed
+C89Ruy Lopez: Marshall counter-attack
+C92Ruy Lopez: closed
+C93Ruy Lopez: closed, Smyslov defence
+C99Ruy Lopez: closed, Breyer
+D00Queen's pawn game
+D01Richter-Veresov attack
+D02Queen's pawn game
+D03Torre attack (Tartakower)
+D05Queen's pawn game
+D06Queen's Gambit
+D07QGD: Chigorin defence
+D09QGD: Albin counter-gambit
+D10QGD Slav defence
+D12QGD Slav
+D14QGD Slav: exchange
+D15QGD Slav
+D16QGD Slav accepted: Alapin
+D17QGD Slav: Czech defence
+D19QGD Slav: Dutch
+D21Queen's gambit accepted
+D22QGA: Alekhine defence
+D26Queen's gambit accepted
+D29QGA: classical
+D31Queen's gambit declined
+D34QGD: Tarrasch defence
+D35QGD: 3...Nf6
+D36QGD: exchange, positional line
+D37QGD: 4.Nf3
+D38QGD: Ragozin
+D39QGD: Ragozin, Vienna
+D42QGD: Semi-Tarrasch
+D49QGD semi-Slav
+D53QGD
+D54QGD: Anti-neo-orthodox
+D55QGD
+D57QGD: Lasker defence
+D59QGD: Tartakower (Makagonov-Bondarevsky)
+D69QGD: Orthodox defence
+D79Neo-Gruenfeld
+D84Gruenfeld defence
+D85Gruenfeld: exchange
+D86Gruenfeld: exchange, classical
+D93Gruenfeld: exchange, Spassky
+D99Gruenfeld
+E00Queen's pawn game
+E01Catalan: closed
+E02Catalan: open
+E03Catalan: open, Alekhine
+E04Catalan: open
+E05Catalan: open, classical
+E09Catalan: closed
+E10Queen's pawn game
+E11Bogo-Indian defence
+E12Queen's Indian defence
+E13Queen's Indian: main line
+E15Queen's Indian
+E16Queen's Indian: Capablanca
+E17Queen's Indian
+E19Queen's Indian: old main line
+E20Nimzo-Indian defence
+E21Nimzo-Indian: three knights
+E23Nimzo-Indian: Spielmann
+E29Nimzo-Indian: Saemisch
+E31Nimzo-Indian: Leningrad
+E33Nimzo-Indian: classical
+E37Nimzo-Indian: classical, Noa
+E38Nimzo-Indian: classical
+E39Nimzo-Indian: classical, Pirc
+E41Nimzo-Indian
+E42Nimzo-Indian (Rubinstein)
+E44Nimzo-Indian: Fischer
+E59Nimzo-Indian
+E61King's Indian defence
+E62King's Indian: fianchetto
+E63King's Indian: fianchetto, Panno
+E66King's Indian: fianchetto, Yugoslav
+E69King's Indian: fianchetto
+E73King's Indian
+E75King's Indian: Averbakh
+E79King's Indian: Four pawns attack
+E89King's Indian: Saemisch
+E91King's Indian
+E93King's Indian: classical
+E99King's Indian: orthodox

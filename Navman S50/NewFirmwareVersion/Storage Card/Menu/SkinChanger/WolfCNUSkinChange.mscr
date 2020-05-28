@@ -1,0 +1,8 @@
+spath = SystemPath("ScriptPath")
+spath = SubStr(spath, 1, ReverseFind(spath, "\")) 
+
+RegWriteDWord("HKLM", "SOFTWARE\Menu", "Exit",0)
+kill("WolfNCU.exe")
+Run(SystemPath("ScriptPath")\"SkinChange.exe")
+
+

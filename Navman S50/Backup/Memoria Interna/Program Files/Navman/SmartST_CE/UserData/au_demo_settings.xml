@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preferences Settings -->
+<propertybag>
+	<property name="route allow dc u-turn" value="false"></property>
+	<property name="route prefer carriageway u-turn" value="0"></property>	
+	<property name="12hr clock format" value="true"></property>	
+	<property name="volume" value="100"></property>
+</propertybag>
+
+

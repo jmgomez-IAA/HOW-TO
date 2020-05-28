@@ -1,0 +1,6 @@
+Errorlevel ("off")
+CallScript("..\AppInit.mscr",3)
+Run(IniRead("..\setup.ini", "Keyboard","Icon"),"-x:2 -y:250")
+RunWait(IniRead("..\setup.ini", "Dirs","Games")\"Par3Golf\par3golfwm.exe")
+close("keyboard")
+ 

@@ -1,0 +1,6 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Menu Top Speed.wav" )
+CallScript( "SkinChangeWolfCNu.mscr","Top Speed" )
+
+
+

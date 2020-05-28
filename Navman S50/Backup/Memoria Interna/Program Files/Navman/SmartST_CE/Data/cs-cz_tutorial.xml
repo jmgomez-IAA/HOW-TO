@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<resources>
+<!-- page 01 -->
+<resource class="view" title="Kurz: Vítejte" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="subtitlelarge" x="15" y="10" width="450" height="120">Vítejte v kurzu produktu Navman</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="40" width="450" height="120">V tomto kurzu se seznámíte se základními operacemi produktu Navman, například s navigací do cíle cesty.</displayable>
+	<displayable class="checkbox" rel="startup show tutorial" x="15" y="140" width="450" height="75" value="Zobrazit kurz při inicializaci"/>
+	<displayable class="label" textstyle="caution" x="300" y="188" width="450" height="120">Pokračujte klepnutím.</displayable>
+	<displayable class="image" src="tutorial_arrow" x="365" y="210" />
+</displayables>
+</resource>
+<!-- page 02 -->
+<resource class="view" title="GPS" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_gps_status" x="404" y="20" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="390" height="120">Přístroj Navman přijímá signály systému GPS (Global Positioning System) pomocí vestavné antény.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="79" width="450" height="120">Chcete-li přijímat silný signál, ujistěte se, že přístroj Navman není nijak zakrytý.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="125" width="450" height="120">Chcete-li zobrazit obrazovku Stav GPS, klepněte na kompas a pak klepněte na ikonu </displayable>
+	<displayable class="image" src="tutorial_gps" x="265" y="150" />
+	<displayable class="label" textstyle="standard" x="298" y="148" width="300" height="24">a podržte ji.</displayable>
+</displayables>
+</resource>
+<!-- page 03 -->
+<resource class="view" title="Hlavní nabídka" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_main_menu" x="347" y="10" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="330" height="100">V hlavní nabídce můžete zadávat adresu cíle aktuální cesty, můžete vyhledávat Místa zájmu a můžete upravovat předvolby zařízení.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="102" width="450" height="100">Hlavní nabídku zobrazíte klepnutím na stavový řádek v dolní části obrazovky.</displayable>
+</displayables>
+</resource>
+<!-- page 04 -->
+<resource class="view" title="Navigace" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="35" src="tutorial_destination1"/>
+	<displayable class="image" x="347" y="115" src="tutorial_destination2"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="430" height="50">Jak naplánovat první cestu?</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="35" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="35" width="315" height="80">V hlavní nabídce klepněte na ikonu </displayable>
+	<displayable class="image" x="30" y="59" src="tutorial_address_button"/>
+	<displayable class="label" textstyle="standard" x="62" y="58" width="295" height="120"> (Adresa).</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="315" height="80">Zadejte název země, města, ulice a číslo domu pro požadovaný cíl cesty.</displayable>
+</displayables>
+</resource>
+<!-- page 05 -->
+<resource class="view" title="Navigace" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="10" src="tutorial_destination3"/>
+	<displayable class="image" x="347" y="90" src="tutorial_map_screen1"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="10" width="295" height="80">Po zadání adresy klepněte na ikonu </displayable>
+	<displayable class="image" x="302" y="14" src="tutorial_go_button"/>
+	<displayable class="label" textstyle="standard" x="30" y="33" width="315" height="80"> (Přejít).</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="295" height="80">Zařízení Navman spočítá cestu a zobrazí obrazovku Mapa 3D.</displayable>
+</displayables>
+</resource>
+<!-- page 06 -->
+<resource class="view" title="Obrazovky mapy" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="60">Trasu k cíli cesty můžete zobrazit pomocí následujících pěti obrazovek mapy:</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="55" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="55" width="415" height="24">Mapa 3D</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="75" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="75" width="415" height="24">Mapa 2D</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="95" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="95" width="415" height="24">Přehled provozu (pokud je dostupný)</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="115" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="115" width="415" height="24">Přehled trasy</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="135" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="135" width="310" height="24">obrazovka Turn-by-Turn™ </displayable>
+	<displayable class="image" x="347" y="50" src="tutorial_map_screen2"/>
+	<displayable class="label" textstyle="standard" x="15" y="160" width="450" height="60">Mezi těmito obrazovkami můžete přepínat klepnutím na ikonu </displayable>
+	<displayable class="image" x="60" y="184" src="tutorial_map_button"/>
+	<displayable class="label" textstyle="standard" x="84" y="183" width="120" height="20">.</displayable>
+</displayables>
+</resource>
+<!-- page 07 -->
+<resource class="view" title="Ovládání hlasitosti" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Chcete-li ztlumit zvuk, klepněte na kompas a pak klepněte na ikonu </displayable>
+	<displayable class="image" src="tutorial_volume1" x="85" y="35" />
+	<displayable class="label" textstyle="standard" x="115" y="33" width="20" height="20">.</displayable>
+	<displayable class="image" src="tutorial_prefs_volume" x="347" y="55" />
+	<displayable class="label" textstyle="standard" x="15" y="55" width="335" height="120">Chcete-li upravit hlasitost, klepněte a podržte ikonu </displayable>
+	<displayable class="image" src="tutorial_volume2" x="123" y="81" />
+	<displayable class="label" textstyle="standard" x="15" y="101" width="335" height="120"> a zobrazte obrazovku předvoleb Hlasitost.  </displayable>
+</displayables>
+</resource>
+<!-- page 08 -->
+<resource class="view" title="Instalace" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_install" x="300" y="90" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Zařízení Navman umístěte podle pokynů k instalaci ve Stručné úvodní příručce.</displayable>
+</displayables>
+</resource>
+<!-- page 09 -->
+<resource class="view" title="Podpora" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Podrobná uživatelská příručka pro zařízení Navman je k dispozici na následující webové adrese:</displayable>
+	<displayable class="label" textstyle="address" x="15" y="56" width="450" height="120">http://www.navman.com/manuals</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="102" width="450" height="120">Informace o podpoře získáte na následující webové adrese: </displayable>
+	<displayable class="label" textstyle="address" x="15" y="148" width="450" height="120">http://support.navman.com</displayable>
+</displayables>
+</resource>
+</resources>

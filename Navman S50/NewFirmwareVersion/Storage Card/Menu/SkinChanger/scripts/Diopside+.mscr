@@ -1,0 +1,6 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Diopside+.wav" )
+CallScript( "SkinChangeWolfCNu.mscr","Diopside+" )
+
+
+

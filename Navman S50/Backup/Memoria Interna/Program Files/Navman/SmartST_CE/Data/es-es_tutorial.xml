@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<resources>
+<!-- page 01 -->
+<resource class="view" title="Asistente: Bienvenido" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="subtitlelarge" x="15" y="10" width="450" height="120">Bienvenido al Asistente de Navman</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="40" width="450" height="120">Le mostrará el funcionamiento básico de Navman, incluida la forma de desplazarse a su destino.</displayable>
+	<displayable class="checkbox" rel="startup show tutorial" x="15" y="140" width="450" height="75" value="Mostrar el asistente al inicio"/>
+	<displayable class="label" textstyle="caution" x="280" y="188" width="450" height="120">Toque para continuar</displayable>
+	<displayable class="image" src="tutorial_arrow" x="365" y="210" />
+</displayables>
+</resource>
+<!-- page 02 -->
+<resource class="view" title="GPS" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_gps_status" x="404" y="20" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="390" height="120">Su dispositivo Navman recibe señales GPS (Global Positioning System, Sistema global de navegación) mediante una antena integrada.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="79" width="450" height="120">Para recibir una buena señal, asegúrese de que su Navman tenga una visión despejada del cielo.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="125" width="450" height="120">Para ver la pantalla Estado del GPS, pulse la brújula y después mantenga pulsado </displayable>
+	<displayable class="image" src="tutorial_gps" x="225" y="150" />
+	<displayable class="label" textstyle="standard" x="258" y="148" width="20" height="20">.</displayable>
+</displayables>
+</resource>
+<!-- page 03 -->
+<resource class="view" title="Menú principal" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_main_menu" x="347" y="10" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="330" height="100">El menú principal le permite introducir una dirección de su viaje, buscar puntos de interés y personalizar preferencias.</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="102" width="450" height="100">Puede acceder al menú principal pulsando la barra de estado en la parte inferior de cualquier pantalla.</displayable>
+</displayables>
+</resource>
+<!-- page 04 -->
+<resource class="view" title="Navegación" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="35" src="tutorial_destination1"/>
+	<displayable class="image" x="347" y="115" src="tutorial_destination2"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="430" height="50">Planificación del primer viaje</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="35" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="35" width="315" height="80">Desde el menú principal, pulse </displayable>
+	<displayable class="image" x="280" y="37" src="tutorial_address_button"/>
+	<displayable class="label" textstyle="standard" x="30" y="58" width="295" height="120">(Dirección).</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="315" height="80">Introduzca el país, la ciudad, la calle y el número de calle del destino.</displayable>
+</displayables>
+</resource>
+<!-- page 05 -->
+<resource class="view" title="Navegación" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" x="347" y="10" src="tutorial_destination3"/>
+	<displayable class="image" x="347" y="90" src="tutorial_map_screen1"/>
+	<displayable class="label" textstyle="standardbold" x="15" y="8" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="10" width="295" height="80">Cuando haya introducido la dirección, pulse </displayable>
+	<displayable class="image" x="80" y="37" src="tutorial_go_button"/>
+	<displayable class="label" textstyle="standard" x="107" y="33" width="315" height="80"> (Ir).</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="83" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="30" y="85" width="295" height="80">Su Navman calculará la ruta y mostrará la pantalla Mapa 3D.</displayable>
+</displayables>
+</resource>
+<!-- page 06 -->
+<resource class="view" title="Pantallas de mapas" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="60">Son cinco las pantallas de mapa que se utilizan para ver la ruta hasta su destino:</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="55" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="55" width="415" height="24">Mapa 3D</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="75" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="75" width="415" height="24">Mapa 2D</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="95" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="95" width="415" height="24">Información general del tráfico (si está disponible)</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="115" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="115" width="415" height="24">Descripción general de la ruta</displayable>
+	<displayable class="label" textstyle="standardbold" x="15" y="135" width="20" height="20">•</displayable>
+	<displayable class="label" textstyle="standard" x="35" y="135" width="310" height="24">Giro a giro</displayable>
+	<displayable class="image" x="347" y="150" src="tutorial_map_screen2"/>
+	<displayable class="label" textstyle="standard" x="15" y="160" width="335" height="60">Para mostrar las distintas pantallas de mapas, pulse </displayable>
+	<displayable class="image" x="120" y="184" src="tutorial_map_button"/>
+	<displayable class="label" textstyle="standard" x="144" y="183" width="120" height="20">.</displayable>
+</displayables>
+</resource>
+<!-- page 07 -->
+<resource class="view" title="Control de volumen" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Para silenciar el volumen, pulse la brújula y, a continuación, pulse </displayable>
+	<displayable class="image" src="tutorial_volume1" x="165" y="35" />
+	<displayable class="label" textstyle="standard" x="195" y="33" width="20" height="20">.</displayable>
+	<displayable class="image" src="tutorial_prefs_volume" x="347" y="90" />
+	<displayable class="label" textstyle="standard" x="15" y="56" width="335" height="120">Para ajustar el volumen, mantenga pulsado </displayable>
+	<displayable class="image" src="tutorial_volume2" x="350" y="58" />
+	<displayable class="label" textstyle="standard" x="15" y="79" width="335" height="120"> para acceder a la pantalla de preferencias de volumen.  </displayable>
+</displayables>
+</resource>
+<!-- page 08 -->
+<resource class="view" title="Instalación" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="image" src="tutorial_install" x="300" y="90" />
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">Coloque su Navman de acuerdo con las instrucciones de instalación en la Guía de inicio rápido.</displayable>
+</displayables>
+</resource>
+<!-- page 09 -->
+<resource class="view" title="Soporte" backbutton="true" forwardbutton="true">
+<displayables>
+	<displayable class="label" textstyle="standard" x="15" y="10" width="450" height="120">El Manual del usuario detallado correspondiente a su Navman se encuentra disponible en:</displayable>
+	<displayable class="label" textstyle="address" x="15" y="56" width="450" height="120">http://www.navman.com/manuals</displayable>
+	<displayable class="label" textstyle="standard" x="15" y="102" width="450" height="120">Para obtener información de soporte, visite: </displayable>
+	<displayable class="label" textstyle="address" x="15" y="125" width="450" height="120">http://support.navman.com</displayable>
+</displayables>
+</resource>
+</resources>

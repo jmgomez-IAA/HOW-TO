@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.doc]
+@="docfile"
+
+[HKEY_CLASSES_ROOT\docfile]
+@="MS Word Document"
+
+[HKEY_CLASSES_ROOT\docfile\Shell\Open\Command]
+@="\"\\SD CARD\\FileViewers\\docviewer.exe\" %1"

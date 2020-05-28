@@ -1,0 +1,29 @@
+# 0 systema
+# 1 Aplicaciones
+# 2 Config
+# 3 Juegos
+# 4 Multi Media
+# 5 Navegadores
+# 6 Claxon
+# 7 Acelerar
+
+Switch(argv[1])
+Case(0)
+	PlaySound( SystemPath("ScriptPath")\"..\Sounds\General.wav" )
+Case(1)
+	PlaySound( SystemPath("ScriptPath")\"..\Sounds\General.wav" )
+Case(2)
+	PlaySound( SystemPath("ScriptPath")\"..\Sounds\General.wav" )
+Case(3)
+	PlaySound( SystemPath("ScriptPath")\"..\Sounds\Juegos.wav" )
+Case(4)
+	PlaySound( SystemPath("ScriptPath")\"..\Sounds\Multimedia.wav" )
+Case(5)
+	PlaySound( SystemPath("ScriptPath")\"..\Sounds\Motor.wav" )
+Case(6)
+	PlaySound( SystemPath("ScriptPath")\"..\Sounds\Claxon.wav" )
+Case(7)
+	PlaySound( SystemPath("ScriptPath")\"..\Sounds\Acelerar.wav" )
+	Exit
+EndSwitch
+

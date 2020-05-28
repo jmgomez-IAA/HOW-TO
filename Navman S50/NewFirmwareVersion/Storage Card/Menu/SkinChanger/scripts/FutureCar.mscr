@@ -1,0 +1,5 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Futurecar.wav" )
+CallScript( "SkinChanger.mscr","FutureCar" )
+
+

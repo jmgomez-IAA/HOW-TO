@@ -1,0 +1,6 @@
+ 
+/usr/local/microsemi/Linux_Licensing_Daemon/lmgrd -c /usr/local/microsemi/License.dat -l /usr/local/microsemi/License.log
+
+
+export LM_LICENSE_FILE=1702@udit76
+export SNPSLMD_LICENSE_FILE=1702@udit76

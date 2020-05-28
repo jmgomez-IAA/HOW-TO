@@ -1,0 +1,2 @@
+CallScript("..\AppInit.mscr",4)
+Run( IniRead("..\setup.ini", "sys","USB_On_Off"))

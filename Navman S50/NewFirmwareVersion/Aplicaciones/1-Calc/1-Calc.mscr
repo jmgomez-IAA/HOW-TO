@@ -1,0 +1,6 @@
+CallScript("..\AppInit.mscr",1)
+
+app= IniRead("..\setup.ini", "Apps","1-Calc.mscr")
+
+Run("My Flash Disk\Program Files\system\ceLaunch.exe","-d -r:90 -e:/"&app&"/")
+

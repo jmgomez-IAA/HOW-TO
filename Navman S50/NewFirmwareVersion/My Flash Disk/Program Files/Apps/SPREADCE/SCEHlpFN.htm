@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFN.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>DDE/Externas funciones</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<a href="SCEHlpFN.htm#call">LLAMAR(módulo; procedimiento; tipo; [argumento1; ...])</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="call"></a><b>LLAMAR(módulo; procedimiento; tipo; [argumento1; ...])</b></p><UL></UL>
+<P>Returns a value from an external function.</P>
+<table width=100%>
+<tr><td width=20% valign="top">módulo</td><td>The name of the DLL that contains the function.</td></tr>
+<tr><td width=20% valign="top">procedimiento</td><td>The name of the function.</td></tr>
+<tr><td width=20% valign="top">tipo</td><td>A string specifying the result type and the argument types. Each type is represented by a single character. The possible character values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">A</td><td>Logical, passed by value</td></tr>
+	<tr><td width=10% valign="top">B</td><td>Double, passed by value</td></tr>
+	<tr><td width=10% valign="top">C</td><td>Null-terminated string, passed by reference</td></tr>
+	<tr><td width=10% valign="top">D</td><td>Byte-counted string, passed by reference</td></tr>
+	<tr><td width=10% valign="top">E</td><td>Double, passed by reference</td></tr>
+	<tr><td width=10% valign="top">F</td><td>Null-terminated string, passed by reference</td></tr>
+	<tr><td width=10% valign="top">G</td><td>Byte-counted string, passed by reference</td></tr>
+	<tr><td width=10% valign="top">H</td><td>Unsigned short integer, passed by value</td></tr>
+	<tr><td width=10% valign="top">I</td><td>Signed short integer, passed by value</td></tr>
+	<tr><td width=10% valign="top">J</td><td>Signed long integer, passed by value</td></tr>
+	<tr><td width=10% valign="top">K</td><td>Array, passed by reference</td></tr>
+	<tr><td width=10% valign="top">L</td><td>Logical, passed by reference</td></tr>
+	<tr><td width=10% valign="top">M</td><td>Signed short integer, passed by reference</td></tr>
+	<tr><td width=10% valign="top">N</td><td>Signed long integer, passed by reference</td></tr>
+	<tr><td width=10% valign="top">O</td><td>Array, passed by reference</td></tr>
+	<tr><td width=10% valign="top">P</td><td>OPER structure, passed by reference</td></tr>
+	<tr><td width=10% valign="top">R</td><td>XLOPER structure, passed by reference</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top">argumento1; ...</td><td>The arguments to pass to the function.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

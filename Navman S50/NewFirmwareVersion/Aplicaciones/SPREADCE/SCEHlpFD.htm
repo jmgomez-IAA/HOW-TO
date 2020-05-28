@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFD.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Base De Datos funciones</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFD.htm#dcount">BDCONTAR(base_de_datos; [nombre_de_campo]; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dcounta">BDCONTARA(base_de_datos; [nombre_de_campo]; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dstdev">BDDESVEST(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dstdevp">BDDESVESTP(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dget">BDEXTRAER(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dmax">BDMAX(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dmin">BDMIN(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dproduct">BDPRODUCTO(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#daverage">BDPROMEDIO(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dsum">BDSUMA(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dvar">BDVAR(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<A HREF="SCEHlpFD.htm#dvarp">BDVARP(base_de_datos; nombre_de_campo; criterios)</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dcount"></a><b>BDCONTAR(base_de_datos, [nombre_de_campo], criterios)</b></p><UL></UL>
+<P>Returns the count of the number of rows in the database that meet the selection criteria and where the specified field contains a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values that you want to count. If this parameter is omitted then the function will return the number of database rows that meet the selection criteria.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dcounta"></a><b>BDCONTARA(base_de_datos, [nombre_de_campo], criterios)</b></p><UL></UL>
+<P>Returns the count of the number of rows in the database that meet the selection criteria and where the specified field is not blank.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values that you want to count. If this parameter is omitted then the function will return the number of database rows that meet the selection criteria.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dstdev"></a><b>BDDESVEST(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the standard deviation (based on a population sample) of the values of a specified field in a database range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values of which you want to find the standard deviation.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dstdevp"></a><b>BDDESVESTP(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the standard deviation (based on the entire population) of the values of a specified field in a database range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values of which you want to find the standard deviation.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dget"></a><b>BDEXTRAER(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the value of a specified field from the row in the database range that meets the selection criteria. There should be one and only one row that meets the selection criteria. If no rows meet the criteria then the error #¡VALOR! is returned. If more than one row meets the criteria then the error #¡NUM! is returned.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the value that you want to retrieve.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dmax"></a><b>BDMAX(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the maximum of the values of a specified field in a database range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values of which you want to find the maximum.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dmin"></a><b>BDMIN(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the minimum of the values of a specified field in a database range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values of which you want to find the minimum.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dproduct"></a><b>BDPRODUCTO(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the product of the values of a specified field in a database range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values that you want to multiply together.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="daverage"></a><b>BDPROMEDIO(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the average of the values of a specified field in a database range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values of which you want to find the average.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dsum"></a><b>BDSUMA(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the sum of the values of a specified field in a database range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values of which you want to find the sum.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dvar"></a><b>BDVAR(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the variance (based on a population sample) of the values of a specified field in a database range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values of which you want to find the variance.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dvarp"></a><b>BDVARP(base_de_datos, nombre_de_campo, criterios)</b></p><UL></UL>
+<P>Returns the variance (based on the entire population) of the values of a specified field in a database range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">base_de_datos</td><td>A reference to the cells that contain the database (including the column headings). It is usually easiest to use a defined name for this.</td></tr>
+<tr><td width=20% valign="top">nombre_de_campo</td><td>The column number or column heading name of the values of which you want to find the variance.</td></tr>
+<tr><td width=20% valign="top">criterios</td><td>A reference to cells that contain the criteria that you want to use when selecting records from the database to process. You can specify the same range as used for the base_de_datos parameter if you want to select all the rows.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

@@ -1,0 +1,2 @@
+CallScript("..\AppInit.mscr",2)
+RunWait( IniRead("..\setup.ini", "sys","Battery_Info"))

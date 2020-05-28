@@ -1,0 +1,5 @@
+CallScript("..\AppInit.mscr",1)
+Rotate(90)
+Runwait(IniRead("..\setup.ini", "Apps","TouchNotes"))
+Rotate(0)
+

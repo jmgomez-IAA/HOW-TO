@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFT.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Fecha & Hora funciones</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFT.htm#now">AHORA()</A><BR>
+<A HREF="SCEHlpFT.htm#year">AÑO(núm_de_serie)</A><BR>
+<A HREF="SCEHlpFT.htm#day">DIA(núm_de_serie)</A><BR>
+<A HREF="SCEHlpFT.htm#workday">DIA.LAB(fecha_inicial; días; [días_de_fiesta])</A><BR>
+<A HREF="SCEHlpFT.htm#networkdays">DIAS.LAB(fecha_inicial; fecha_final; [días_de_fiesta])</A><BR>
+<A HREF="SCEHlpFT.htm#days360">DIAS360(fecha_inicial; fecha_final; [método])</A><BR>
+<A HREF="SCEHlpFT.htm#weekday">DIASEM(núm_de_serie; [tipo])</A><BR>
+<A HREF="SCEHlpFT.htm#date">FECHA(año; mes; día)</A><BR>
+<A HREF="SCEHlpFT.htm#edate">FECHA.MES(fecha_inicial; meses)</A><BR>
+<A HREF="SCEHlpFT.htm#datevalue">FECHANUMERO(texto_de_fecha)</A><BR>
+<A HREF="SCEHlpFT.htm#eomonth">FIN.MES(fecha_inicial; meses)</A><BR>
+<A HREF="SCEHlpFT.htm#yearfrac">FRAC.AÑO(fecha_inicial; fecha_final; [basis])</A><BR>
+<A HREF="SCEHlpFT.htm#hour">HORA(núm_de_serie)</A><BR>
+<A HREF="SCEHlpFT.htm#timevalue">HORANUMERO(texto_de_hora)</A><BR>
+<A HREF="SCEHlpFT.htm#today">HOY()</A><BR>
+<A HREF="SCEHlpFT.htm#month">MES(núm_de_serie)</A><BR>
+<A HREF="SCEHlpFT.htm#minute">MINUTO(núm_de_serie)</A><BR>
+<A HREF="SCEHlpFT.htm#time">NSHORA(hora; minuto; segundo)</A><BR>
+<A HREF="SCEHlpFT.htm#weeknum">NUM.DE.SEMANA(núm_de_serie; [tipo])</A><BR>
+<A HREF="SCEHlpFT.htm#second">SEGUNDO(núm_de_serie)</A><BR>
+<A HREF="SCEHlpFT.htm#datedif">SIFECHA(fecha1; fecha2; units)</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="now"></a><b>AHORA()</b></p><UL></UL>
+<P>Returns the serial number corresponding to the current date and time.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="year"></a><b>AÑO(núm_de_serie)</b></p><UL></UL>
+<P>Returns the year number (greater than or equal to 1900) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">núm_de_serie</td><td>The date/time value from which you want to extract the year number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="day"></a><b>DIA(núm_de_serie)</b></p><UL></UL>
+<P>Returns the day number (between 1 and 31) from the specified date value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">núm_de_serie</td><td>The date value from which you want to extract the day number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="workday"></a><b>DIA.LAB(fecha_inicial; días; [días_de_fiesta])</b></p><UL></UL>
+<P>Returns the working day that is the start date plus or minus a number of working days (weekdays), excluding any holidays.</P>
+<table width=100%>
+<tr><td width=20% valign="top">fecha_inicial</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">días</td><td>The number of working days to add or subtract.</td></tr>
+<tr><td width=20% valign="top">días_de_fiesta</td><td>A date or array of dates or a reference to a list of dates that are to be treated as non-working days.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="networkdays"></a><b>DIAS.LAB(fecha_inicial; fecha_final; [días_de_fiesta])</b></p><UL></UL>
+<P>Returns the number of working days (weekdays) between the start and end dates, excluding any holidays.</P>
+<table width=100%>
+<tr><td width=20% valign="top">fecha_inicial</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">fecha_final</td><td>The 'to' date.</td></tr>
+<tr><td width=20% valign="top">días_de_fiesta</td><td>A date or array of dates or a reference to a list of dates that are to be treated as non-working days.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="days360"></a><b>DIAS360(fecha_inicial; fecha_final; [método])</b></p><UL></UL>
+<P>Returns the number of days between two dates using a 360-day year (30 day months).</P>
+<table width=100%>
+<tr><td width=20% valign="top">fecha_inicial</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">fecha_final</td><td>The 'to' date.</td></tr>
+<tr><td width=20% valign="top">método</td><td>Indicates how to deal with end dates that are the 31<SUP>st</SUP> of the month (the start date will always be moved from the 31<SUP>st</SUP> to the 30<SUP>th</SUP>). The options are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSO</td><td>US (NASD) method (if start date is less than the 30th then set end date to 1st of next month, else set end date to 30th).</td></tr>
+	<tr><td width=10% valign="top">VERDADERO</td><td>European method (end date moved form 31st to 30th).</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to FALSO.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="weekday"></a><b>DIASEM(núm_de_serie; [tipo])</b></p><UL></UL>
+<P>Returns a number representing the day of the week of a given date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">núm_de_serie</td><td>The date/time value from which you want the day of the week.</td></tr>
+<tr><td width=20% valign="top">tipo</td><td>The range of values returned and what they represent. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">1</td><td>From 1 to 7, where 1 = Domingo and 7 = Sábado.</td></tr>
+	<tr><td width=10% valign="top">2</td><td>From 1 to 7, where 1 = Lunes and 7 = Domingo.</td></tr>
+	<tr><td width=10% valign="top">3</td><td>From 0 to 6, where 0 = Lunes and 6 = Domingo.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="date"></a><b>FECHA(año; mes; día)</b></p><UL></UL>
+<P>Returns the date value corresponding to a specified year, month and day. Note that only dates from 1900 onwards can be used.</P>
+<table width=100%>
+<tr><td width=20% valign="top">año</td><td>The year number. If you enter a number less than 1900 then 1900 will be added to the value.</td></tr>
+<tr><td width=20% valign="top">mes</td><td>The month number. Preferably between 1 and 12.</td></tr>
+<tr><td width=20% valign="top">día</td><td>The day number. Preferably between 1 and 31.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="edate"></a><b>FECHA.MES(fecha_inicial; meses)</b></p><UL></UL>
+<P>Returns the date that is the start date plus or minus a number of months.</P>
+<table width=100%>
+<tr><td width=20% valign="top">fecha_inicial</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">meses</td><td>The number of months to be added or subtracted.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="datevalue"></a><b>FECHANUMERO(texto_de_fecha)</b></p><UL></UL>
+<P>Returns the date value that corresponds to a date in text form. Note that only dates from 1900 onwards can be used. You should not need to use this function, as dates are automatically converted from text to date values when they are used in formulas.</P>
+<table width=100%>
+<tr><td width=20% valign="top">texto_de_fecha</td><td>The date that you want to convert. It can contain date separators and/or a month name. If only the day and month is supplied then the year will default to the current year.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="eomonth"></a><b>FIN.MES(fecha_inicial; meses)</b></p><UL></UL>
+<P>Returns the date that is the last day of the month calculated from the start date plus or minus a number of months.</P>
+<table width=100%>
+<tr><td width=20% valign="top">fecha_inicial</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">meses</td><td>The number of months to be added or subtracted.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="yearfrac"></a><b>FRAC.AÑO(fecha_inicial; fecha_final; [basis])</b></p><UL></UL>
+<P>Returns the fraction of a year represented by the difference between two dates.</P>
+<table width=100%>
+<tr><td width=20% valign="top">fecha_inicial</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">fecha_final</td><td>The 'to' date.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="hour"></a><b>HORA(núm_de_serie)</b></p><UL></UL>
+<P>Returns the hour number (between 0 and 23) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">núm_de_serie</td><td>The date/time value from which you want to extract the hour number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="timevalue"></a><b>HORANUMERO(texto_de_hora)</b></p><UL></UL>
+<P>Returns the time value that corresponds to a time in text form. You should not need to use this function, as times are automatically converted from text to time values when they are used in formulas.</P>
+<table width=100%>
+<tr><td width=20% valign="top">texto_de_hora</td><td>The time that you want to convert. It can contain time separators and/or AM/PM designators. If seconds or minutes and seconds are not specified then they will default to zero.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="today"></a><b>HOY()</b></p><UL></UL>
+<P>Returns the serial number corresponding to the current date.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="month"></a><b>MES(núm_de_serie)</b></p><UL></UL>
+<P>Returns the month number (between 1 and 12) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">núm_de_serie</td><td>The date/time value from which you want to extract the month number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="minute"></a><b>MINUTO(núm_de_serie)</b></p><UL></UL>
+<P>Returns the minute number (between 0 and 59) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">núm_de_serie</td><td>The date/time value from which you want to extract the minute number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="time"></a><b>NSHORA(hora; minuto; segundo)</b></p><UL></UL>
+<P>Returns the serial number corresponding to a specified hour, minute and second.</P>
+<table width=100%>
+<tr><td width=20% valign="top">hora</td><td>The hour number. Preferably between 0 and 23.</td></tr>
+<tr><td width=20% valign="top">minuto</td><td>The minute number. Preferably between 0 and 59.</td></tr>
+<tr><td width=20% valign="top">segundo</td><td>The second number. Preferably between 0 and 59.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="weeknum"></a><b>NUM.DE.SEMANA(núm_de_serie; [tipo])</b></p><UL></UL>
+<P>Returns the week of the year of a given date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">núm_de_serie</td><td>The date/time value from which you want the week number.</td></tr>
+<tr><td width=20% valign="top">tipo</td><td>The method used to calculate the week number. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>International Standard (ISO) week numbers. Weeks begin on Lunes. Week 1 is the first week where 4 or more days are in the specified year.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Microsoft week numbers. Weeks begin on Domingo. Week 1 is the week that contains January 1<SUP>st</SUP>.</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Microsoft week numbers. Weeks begin on Lunes. Week 1 is the week that contains January 1<SUP>st</SUP>.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="second"></a><b>SEGUNDO(núm_de_serie)</b></p><UL></UL>
+<P>Returns the second number (between 0 and 59) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">núm_de_serie</td><td>The date/time value from which you want to extract the second number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="datedif"></a><b>SIFECHA(fecha1; fecha2; units)</b></p><UL></UL>
+<P>Returns the difference between two dates in the units that you specify.</P>
+<table width=100%>
+<tr><td width=20% valign="top">fecha1</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">fecha2</td><td>The 'to' date. This should be greater than or equal to the 'from' date.</td></tr>
+<tr><td width=20% valign="top">units</td><td>The units in which you want the difference expressed. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">"y"</td><td>The difference in years.</td></tr>
+	<tr><td width=10% valign="top">"m"</td><td>The difference in months.</td></tr>
+	<tr><td width=10% valign="top">"d"</td><td>The difference in days.</td></tr>
+	<tr><td width=10% valign="top">"ym"</td><td>The difference in months, dropping any whole years (the result will always be between 0 and 11).</td></tr>
+	<tr><td width=10% valign="top">"yd"</td><td>The difference in days, dropping any whole years (the result will always be between 0 and 365).</td></tr>
+	<tr><td width=10% valign="top">"md"</td><td>The difference in days, dropping any whole months (the result will always be between 0 and 30).</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

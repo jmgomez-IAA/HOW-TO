@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.pdf]
+@="pdffile"
+
+[HKEY_CLASSES_ROOT\pdffile]
+@="Adobe PDF Document"
+
+[HKEY_CLASSES_ROOT\pdffile\Shell\Open\Command]
+@="\"\\SD CARD\\FileViewers\\pdfviewer.exe\" %1"

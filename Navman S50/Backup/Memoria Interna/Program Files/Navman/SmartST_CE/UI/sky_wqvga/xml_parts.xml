@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<resources>
+	<resource name="title" class="textstyle" value="Trebuchet MS;18;400;0;0;255;255"/>
+	<resource name="subtitlelarge" class="textstyle" value="Trebuchet MS;20;550;0;157;149;88"/>
+	<resource name="subtitle" class="textstyle" value="Trebuchet MS;17;700;0;157;149;88"/>
+	<resource name="subtitlesmall" class="textstyle" value="Trebuchet MS;15;700;0;157;149;88"/>
+	<resource name="standardsmall" class="textstyle" value="Trebuchet MS;15;400;0;0;0;0"/>
+	<resource name="standard" class="textstyle" value="Trebuchet MS;17;400;0;0;0;0"/>
+	<resource name="standardbold" class="textstyle" value="Trebuchet MS;17;700;0;0;0;0"/>
+	<resource name="standarditalic" class="textstyle" value="Trebuchet MS;17;550;1;0;0;0"/>
+	<resource name="standardlarge" class="textstyle" value="Trebuchet MS;18;700;0;0;0;0" />
+	<resource name="caution" class="textstyle" value="Trebuchet MS;17;550;0;255;66;0"/>
+	<resource name="address" class="textstyle" value="Trebuchet MS;17;550;0;125;149;183"/>
+	<resource name="checkbox" class="textstyle" value="Trebuchet MS;20;400;0;0;0;0"/>
+	<resource name="tutorial_address_button" class="image" transparent="true" src="ui\tutorial_address_button.png"/>
+	<resource name="tutorial_arrow" class="image" transparent="true" src="ui\tutorial_arrow.png"/>
+	<resource name="tutorial_compass1" class="image" transparent="true" src="ui\tutorial_compass.png"/>
+	<resource name="tutorial_compass2" class="image" transparent="true" src="ui\tutorial_compass.png"/>
+	<resource name="tutorial_destination1" class="image" transparent="true" src="ui\tutorial_destination1.png"/>
+	<resource name="tutorial_destination2" class="image" transparent="true" src="ui\tutorial_destination2.png"/>
+	<resource name="tutorial_destination3" class="image" transparent="true" src="ui\tutorial_destination3.png"/>
+	<resource name="tutorial_go_button" class="image" transparent="true" src="ui\tutorial_go_button.png"/>
+	<resource name="tutorial_gps" class="image" transparent="true" src="ui\tutorial_gps.png"/>
+	<resource name="tutorial_gps_status" class="image" transparent="true" src="ui\tutorial_gps_status.png"/>
+	<resource name="tutorial_install" class="image" transparent="true" src="ui\tutorial_install.png"/>
+	<resource name="tutorial_main_menu" class="image" transparent="true" src="ui\tutorial_main_menu.png"/>
+	<resource name="tutorial_map_button" class="image" transparent="true" src="ui\tutorial_map_button.png"/>
+	<resource name="tutorial_map_screen1" class="image" transparent="true" src="ui\tutorial_map_screen.png"/>
+	<resource name="tutorial_map_screen2" class="image" transparent="true" src="ui\tutorial_map_screen.png"/>
+	<resource name="tutorial_prefs_volume" class="image" transparent="true" src="ui\tutorial_prefs_volume.png"/>
+	<resource name="tutorial_volume1" class="image" transparent="true" src="ui\tutorial_volume.png"/>
+	<resource name="tutorial_volume2" class="image" transparent="true" src="ui\tutorial_volume.png"/>
+	<resource name="about_smartstlogo" class="image" transparent="true" src="ui\sky_wqvga\SmartSTLOGO_30x31.png" />
+</resources>

@@ -1,0 +1,6 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Menu Hospitalario.wav" )
+CallScript( "SkinChanger.mscr","Hospitalario" )
+
+
+

@@ -1,0 +1,17 @@
+CallScript("AppInit.mscr",0)
+	SetChoiceEntryFormat(40,24)
+	choice("Nivel de Sonido","Seleccione nivel de Sonido","Apagado","Minimo","Medio","Maximo")
+	case 1
+		Volume = 0
+        case 2
+		Volume = 50
+	case 3
+		Volume = 150
+	case 4
+		Volume = 255
+	case 0
+		Exit
+	EndChoice
+
+	
+	run("\My Flash Disk\Program Files\system\SetVolume.exe","-s:"&Volume)

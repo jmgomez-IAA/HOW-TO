@@ -1,0 +1,6 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Disney.wav" )
+CallScript( "SkinChangeWolfCNu.mscr","Disney" )
+
+
+

@@ -1,0 +1,2 @@
+
+CallScript("RotateApp.mscr",90,SystemPath("ScriptPath")\ "..\Dynomate\Dynomate.EXE" )

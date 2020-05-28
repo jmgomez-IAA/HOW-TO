@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<countries>
+  <country>
+    <map>AU07*.map</map>
+    <name>Australia, New South Wales</name>
+    <continent>OC</continent>
+    <settings>au_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>16 Day St</name>
+      <lat>-3388458</lat>
+      <long>15115563</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>Darling St</name>
+      <lat>-3385650</lat>
+      <long>15117805</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>BE02*.map</map>
+    <name>België - Belgique</name>
+    <continent>EU</continent>
+    <settings>be_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>R. de Belgrade 66 (Belgradostraat)</name>
+      <lat>5082906</lat>
+      <long>433101</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>Borreveldlaan 50</name>
+      <lat>5089078</lat>
+      <long>447304</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>CA07*.map</map>
+    <name>Canada, Montreal</name>
+    <continent>NA</continent>
+    <settings>ca_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>909 Boul Romeo Vachon N</name>
+      <lat>4545695</lat>
+      <long>-7374735</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>1070 Av Lajoie</name>
+      <lat>4552314</lat>
+      <long>-7360855</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>CA08*.map</map>
+    <name>Canada, Toronto</name>
+    <continent>NA</continent>
+    <settings>ca_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>22 Bayfield Cres</name>
+      <lat>4367901</lat>
+      <long>-7935605</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>40 Brunswick Ave</name>
+      <lat>4365884</lat>
+      <long>-7940462</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>DK02*.map</map>
+    <name>Danmark</name>
+    <continent>EU</continent>
+    <settings>dk_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>Rævegade 15</name>
+      <lat>5568765</lat>
+      <long>1258781</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>Galionsvej</name>
+      <lat>5568031</lat>
+      <long>1260149</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>DE09*.map</map>
+    <name>Deutschland</name>
+    <continent>EU</continent>
+    <settings>de_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>Theresienstraße 21</name>
+      <lat>4814767</lat>
+      <long>1172605</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>Mottlstraße 29</name>
+      <lat>4816990</lat>
+      <long>1158096</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>ES08*.map</map>
+    <name>España</name>
+    <continent>EU</continent>
+    <settings>es_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>c/ de Jacometrezo, 3</name>
+      <lat>4042019</lat>
+      <long>-370750</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>Ave de Los Andes, 5</name>
+      <lat>4029542</lat>
+      <long>-378863</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>FR0C*.map</map>
+    <name>France</name>
+    <continent>EU</continent>
+    <settings>fr_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>104 Rte de l'Empereur (D180)</name>
+      <lat>4886516</lat>
+      <long>217884</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>4 Ave Foch</name>
+      <lat>4887362</lat>
+      <long>229222</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>IT0I*.map</map>
+    <name>Italia</name>
+    <continent>EU</continent>
+    <settings>it_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>P.za Duca d'Aosta</name>
+      <lat>4548445</lat>
+      <long>920304</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>Vl Giacomo Matteotti 1 (SP199)</name>
+      <lat>4553701</lat>
+      <long>919819</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>NL02*.map</map>
+    <name>Nederland</name>
+    <continent>EU</continent>
+    <settings>nl_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>Apollolaan 142</name>
+      <lat>5235076</lat>
+      <long>487253</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>De Goede Ree</name>
+      <lat>5231082</lat>
+      <long>481112</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>NZ00*.map</map>
+    <name>New Zealand, Auckland</name>
+    <continent>OC</continent>
+    <settings>nz_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>73 Queen St</name>
+      <lat>-3684534</lat>
+      <long>17476639</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>19 Averill Ave</name>
+      <lat>-3685107</lat>
+      <long>17484201</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>NZ00*.map</map>
+    <name>New Zealand, Canterbury</name>
+    <continent>OC</continent>
+    <settings>nz_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>62 Cathedral Sq</name>
+      <lat>-4353047</lat>
+      <long>17263706</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>1076 Lower Styx Rd</name>
+      <lat>-4340104</lat>
+      <long>17269558</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>PT02*.map</map>
+    <name>Portugal</name>
+    <continent>EU</continent>
+    <settings>pt_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>Ave da Liberdade 268</name>
+      <lat>3872465</lat>
+      <long>-914902</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>Ave Cidade do Porto</name>
+      <lat>3876958</lat>
+      <long>-912398</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>CH02*.map</map>
+    <name>Schweiz - Suisse - Svizzera</name>
+    <continent>EU</continent>
+    <settings>ch_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>Bahnhofplatz 7</name>
+      <lat>4737698</lat>
+      <long>853977</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>Bahnhofstrasse 58</name>
+      <lat>4737311</lat>
+      <long>853831</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>SE04*.map</map>
+    <name>Sverige</name>
+    <continent>EU</continent>
+    <settings>se_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>Tjärhovsgatan 16</name>
+      <lat>5931513</lat>
+      <long>1807596</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>Parkvägen 5</name>
+      <lat>5936277</lat>
+      <long>1799445</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>UK0Q*.map</map>
+    <name>United Kingdom</name>
+    <continent>EU</continent>
+    <settings>uk_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>18 Woodroyd Gdns</name>
+      <lat>5116504</lat>
+      <long>-17174</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>13 Yardley St</name>
+      <lat>5083525</lat>
+      <long>-13709</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>US33*.map</map>
+    <name>USA, California</name>
+    <continent>NA</continent>
+    <settings>us_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>372 Paularino Ave E</name>
+      <lat>3367867</lat>
+      <long>-11787236</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>1152 W Magic Way</name>
+      <lat>3381263</lat>
+      <long>-11792597</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>US2J*.map</map>
+    <name>USA, Florida</name>
+    <continent>NA</continent>
+    <settings>us_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>1629 NE 122nd St (Sgt Lynette Hodge St)</name>
+      <lat>2588849</lat>
+      <long>-8016489</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>2151 NE 163rd St (FL-826)</name>
+      <lat>2592612</lat>
+      <long>-8015692</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>US2M*.map</map>
+    <name>USA, Illinois</name>
+    <continent>NA</continent>
+    <settings>us_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>3475 W Waveland Ave</name>
+      <lat>4194836</lat>
+      <long>-8771480</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>3601 N Talman Ave (Frazier Thomas Pl)</name>
+      <lat>4194670</lat>
+      <long>-8769489</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>US1C*.map</map>
+    <name>USA, Massachusetts</name>
+    <continent>NA</continent>
+    <settings>us_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>2 Arlington St</name>
+      <lat>4235178</lat>
+      <long>-7115236</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>19 North Sq</name>
+      <lat>4236375</lat>
+      <long>-7105351</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>US32*.map</map>
+    <name>USA, Texas</name>
+    <continent>NA</continent>
+    <settings>us_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>819 SW 37th St</name>
+      <lat>2941756</lat>
+      <long>-9857591</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>1127 Alamo St</name>
+      <lat>2935783</lat>
+      <long>-9887533</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+  <country>
+    <map>US24*.map</map>
+    <name>USA, Washington</name>
+    <continent>NA</continent>
+    <settings>us_demo_settings.xml</settings>
+    <start_location class="Location">
+      <name>1929 2nd Ave</name>
+      <lat>4761116</lat>
+      <long>-12234084</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </start_location>
+    <destination class="Location">
+      <name>381 Broad St</name>
+      <lat>4761935</lat>
+      <long>-12234937</long>
+      <heading>-1</heading>
+      <type>road</type>
+    </destination>
+  </country>
+</countries>

@@ -1,0 +1,6 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Ladrabugas Inferno.wav" )
+CallScript( "SkinChangeWolfCNu.mscr","Ladrabugas Inferno" )
+
+
+

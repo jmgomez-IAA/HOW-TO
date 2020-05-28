@@ -1,0 +1,10 @@
+	spath = SystemPath("ScriptPath")
+	spath = SubStr(spath, 1, ReverseFind(spath, "\")) 
+	pathFondos = spath & "Fondos\Texturas\"
+	Fondo = SelectFile( "Archivo",FALsE,"*.bmp","Selecciona el Fondo",pathFondos)
+
+	if(length(Fondo))
+		copy(Fondo,SystemPath("ScriptPath")\"Backgrounds\Background.bmp",TRUE)
+		Kill("menu.exe")
+		run(spath\"menu.exe")
+	endif

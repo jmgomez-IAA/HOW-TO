@@ -1,0 +1,2282 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\bluetooth]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\bluetooth\device]
+"HSchannel"=dword:0000001d
+"HFchannel"=dword:0000001c
+"SYNCMLchannel"=dword:0000000a
+"FTPchannel"=dword:0000000b
+"NOKIAchannel"=dword:0000000c
+"SPPchannel"=dword:00000000
+"DUNchannel"=dword:00000002
+"device"="0021083b9e50"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Phonelink]
+"Show"="0"
+"CloseWindow"="0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\DownloadJAVA]
+"JAVAMaxSize"="64"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\Video]
+"Video_RM"="1"
+"Video_MP4"="1"
+"Video_MPG"="0"
+"Video_MOV"="0"
+"Video_AVI"="0"
+"Video_ASF"="0"
+"Video_3GP"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\Ringtone]
+"RingTone_WAV"="1"
+"RingTone_AMR"="1"
+"RingTone_Mono"="1"
+"RingTone_MP3"="1"
+"RingTone_MMF"="0"
+"RingTone_MIDI"="1"
+"MaxFileSize"="10"
+"Filename_len"="100"
+"Polyphonic"="4"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\Photo]
+"Photo_PNG"="1"
+"Photo_BMP"="1"
+"Photo_WBMP"="1"
+"Photo_GIF"="1"
+"Photo_JPEG"="1"
+"Filename_len"="100"
+"MaxFileSize"="10"
+"MaxWidth"="320"
+"MaxHight"="240"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\MMS]
+"TEXT_UTF16"="0"
+"TEXT_UTF8"="1"
+"TEXT_Unicode"="0"
+"RingTone_WAV"="0"
+"RingTone_AMR"="0"
+"RingTone_MP3"="0"
+"RingTone_MMF"="0"
+"RingTone_MIDI"="1"
+"Photo_PNG"="1"
+"Photo_BMP"="1"
+"Photo_WBMP"="1"
+"Photo_GIF"="1"
+"Photo_JPEG"="1"
+"MaxContacts"="10"
+"ToCCMaxBytes"="48"
+"SubjectMaxBytes"="27"
+"TextMaxBytes"="45"
+"RingToneMaxSize"="100"
+"PhotoMaxSize"="100"
+"PhotoMaxH"="240"
+"PhotoMaxW"="320"
+"MMSMaxSlidesNum"="10"
+"MMSMaxSize"="100"
+"TotalNumber"="15"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\SMS]
+"METotalNumber"="150"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\Todolist]
+"TotalNumber"="30"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\Memo]
+"MemoMaxSize"="0"
+"TotalNumber"="0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\ToDo]
+"PriorityLow"="3"
+"PriorityNormal"="2"
+"PriorityHigh"="1"
+"ToDoType1"="1"
+"Title"="0"
+"SupportType"="1"
+"TotalNumber"="250"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\Calendar]
+"CharType"="2"
+"CalendarType3"="5"
+"CalendarType2"="4"
+"CalendarType1"="3"
+"Location"="0"
+"Title"="0"
+"SupportType"="3"
+"TotalNumber"="250"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\PhoneBook]
+"Son"="0"
+"Couple"="0"
+"Group"="5"
+"Note"="60"
+"Country"="0"
+"Home_zip"="0"
+"Home_state"="0"
+"Home_city"="0"
+"Home_street"="0"
+"Office_zip"="0"
+"Office_state"="0"
+"Office_city"="0"
+"Office_street"="0"
+"Company"="0"
+"Postal_Address"="60"
+"Division"="0"
+"Rington"="0"
+"HomePage"="60"
+"email_2"="0"
+"email_1"="0"
+"Title"="0"
+"business_number_1"="0"
+"business_number"="0"
+"mobilephone_number"="0"
+"Other_fax"="0"
+"Home_fax"="0"
+"Office_fax"="48"
+"Mobile_phone"="0"
+"BBCall"="0"
+"Catalog"="0"
+"Office_number_1"="0"
+"Home_number_1"="0"
+"email"="60"
+"Home_number"="48"
+"mobile_number"="48"
+"Office_number"="48"
+"General_number"="48"
+"LastName"="0"
+"FirstName"="50"
+"TotalNumber"="500"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\Function]
+"CallLog"="0"
+"SMS_Get"="0"
+"DircetSMS"="0"
+"PhotoManager"="0"
+"GPRS"="1"
+"DownloadJava"="0"
+"BackupRestore"="0"
+"Sync"="1"
+"Mail"="0"
+"Todolist"="1"
+"Memo"="0"
+"Calendar"="1"
+"PhoneBook"="1"
+"Video"="0"
+"Ringtone"="1"
+"Photo"="1"
+"EMS"="0"
+"SMS"="1"
+"MMS"="0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\Cable_PID_VID]
+"VID"=""
+"PID"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\ConnectMode]
+"DKU5"="0"
+"Bluetooth"="0"
+"InfraRed"="0"
+"DLR3"="1"
+"DAU9P"="0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\INIVersion]
+"Release Date"="20041108"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Profile\Nokia_N73.ini\MobileInfo]
+"SubScreenW"="0"
+"SubScreenH"="0"
+"ScreenW"="128"
+"ScreenH"="128"
+"ShareMem"="3684"
+"Name"="Nokia6260"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE W880i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO RAZR V6]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-X630]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-X680]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\LG KG800]
+"HF"="hfat115200"
+"File_SystemComport"="FTPCOM"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="ftpat115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6300]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 5200]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO RIZR Z3]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO KRZR K1]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia N71]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia N72]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D828E]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K790c]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\HFPHONE]
+"HF"="hfat115200"
+"SMSComport"="HFCOM"
+"phonebookComport"="HFCOM"
+"File_SystemComport"="FTPCOM"
+"todo"="hfat115200"
+"calendar"="hfat115200"
+"File_System"="ftpat115200"
+"SMS"="hfat115200"
+"PhoneBook"="hfat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K510c]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SANYO SCP-6600]
+"HF"="hfat115200"
+"SMSComport"="HFCOM"
+"phonebookComport"="HFCOM"
+"File_SystemComport"="FTPCOM"
+"todo"="hfat115200"
+"calendar"="hfat115200"
+"File_System"="ftpat115200"
+"SMS"="hfat115200"
+"PhoneBook"="hfat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SANYO M1]
+"HF"="hfat115200"
+"SMSComport"="HFCOM"
+"phonebookComport"="HFCOM"
+"File_SystemComport"="FTPCOM"
+"todo"="hfat115200"
+"calendar"="hfat115200"
+"File_System"="ftpat115200"
+"SMS"="hfat115200"
+"PhoneBook"="hfat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SANYO SCP-8400]
+"HF"="hfat115200"
+"SMSComport"="HFCOM"
+"phonebookComport"="HFCOM"
+"File_SystemComport"="FTPCOM"
+"todo"="hfat115200"
+"calendar"="hfat115200"
+"File_System"="ftpat115200"
+"SMS"="hfat115200"
+"PhoneBook"="hfat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V3r]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V3ie]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\ATPHONE]
+"HF"="hfat115200"
+"File_SystemComport"="FTPCOM"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="ftpat115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE W950i]
+"File_SystemComport"="FTPCOM"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="ftpat115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6151]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE W850i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D838]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E908]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 5500]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 5300]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE Z610i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D908]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-X820]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6233]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia E61]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K618i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6288]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia N93]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K610i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Toshiba TS30]
+"File_SystemComport"="FTPCOM"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="ftpat115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E900]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D900]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia N73]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6131]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-T809]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-T509]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D407]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D807]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K800i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE W300i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE Z520a]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6255i]
+"mainComport"="SPPCOM"
+"SMSComport"="DUNCOM"
+"main"="phonetblue"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="at115200"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6268]
+"mainComport"="SPPCOM"
+"SMSComport"="DUNCOM"
+"main"="phonetblue"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="at115200"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO E2]
+"File_SystemComport"="FTPCOM"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="ftpat115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia N80]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia N91]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6125]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE W700i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D800]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE W810i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 3250]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6280]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6103]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SIEMENS SL75]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-P858]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO RAZR V3x]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MTK Mobile Phone]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V3i]
+"HF"="hfat115200PhoneBook=at115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO E1070]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO E770]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Panasonic X800]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\LG G262]
+"HF"="hfat115200"
+"File_SystemComport"="FTPCOM"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="ftpat115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Sharp 903SH]
+"HF"="hfat115200"
+"main"="phoneat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Sharp SX813]
+"HF"="hfat115200"
+"main"="phoneat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG Z-Series]
+"HF"="hfat115200"
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D608]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E758]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO PEBL U6]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO L7]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V361]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 7370]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 9300]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K700C]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE T628]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO L6]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE W900i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6270]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E760]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6111]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia N70]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia N90]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V547]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E530]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E730]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D600]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SIEMENS CX75]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE W550i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAGEM myX6-2]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V360]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E648]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 8800]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K608i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Sharp GXT300]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Sharp GXT25]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Sharp GXT15]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E720]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E568]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E628]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-E738]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE T637]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D508]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SAMSUNG SGH-D500]
+"todo"="at460800"
+"calendar"="at460800"
+"File_System"="at460800"
+"SMS"="at460800"
+"PhoneBook"="at460800"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V551]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE W800i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K600i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE V608i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE V600i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE D750i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K750i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V600i]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE P910i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE V800]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO E1000]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V550]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V525]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V3]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V635]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V620]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V600]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V501]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V500]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO V80]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="ftpat115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO E550]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO E1]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\MOTO E398]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="ftpat115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SIEMENS M75]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SIEMENS SK65]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SIEMENS S6C]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SIEMENS S55]
+"HF"="hfat115200"
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 8910i]
+"HF"="hfat115200"
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 8910]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 7600]
+"HF"="hfat115200"
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 7280]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6822]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6820]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6810]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6310]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="at"
+"PhoneBook"="at"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6230i]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6230]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6021]
+"mainComport"="DUNCOM"
+"main"="phoneat115200"
+"todo"="phonetblue"
+"calendar"="phonetblue"
+"File_System"="phonetblue"
+"SMS"="phonetblue"
+"PhoneBook"="phonetblue"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 7710]
+"HF"="hfat115200"
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6682]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6681]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6680]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 3230]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6670]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6630]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 7610]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\Nokia 6260]
+"SyncComport"="SYNCMLCOM"
+"ToDoComport"="SYNCMLCOM"
+"CalendarComport"="SYNCMLCOM"
+"PhonebookComport"="SYNCMLCOM"
+"SMSComport"="DUNCOM"
+"sync"="syncmlat115200"
+"ToDo"="syncmlat115200"
+"calendar"="syncmlat115200"
+"File_System"="at115200"
+"SMS"="phoneat115200"
+"PhoneBook"="syncmlat115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE P900]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE T39]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE T68]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE Z1010]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE Z600]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE T630]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE T616]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE T610]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE Z520i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE K700i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE S710a]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Protocol.ini\SE S700i]
+"todo"="at115200"
+"calendar"="at115200"
+"File_System"="at115200"
+"SMS"="at115200"
+"PhoneBook"="at115200"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Setting]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Setting\Phone]
+"bConnect"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\Setting\BT]
+"bON"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N91.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N91.ini\Phonebook_Notes]
+"ReferenceTO"="SyncTable_Nokia 3250.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N91.ini\Phonebook_OTEXP]
+"ReferenceTO"="SyncTable_Nokia 3250.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N91.ini\Phonebook_OT]
+"ReferenceTO"="SyncTable_Nokia 3250.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N91.ini\Phonebook]
+"SIM_PhoneNumber"="PBK_Number_General"
+"MobileSupportType34"="PBK_Text_Custom3"
+"MobileSupportType33"="PBK_Text_Custom2"
+"MobileSupportType32"="PBK_Text_Custom1"
+"MobileSupportType31"="PBK_Number_VideoCall_Work"
+"MobileSupportType30"="PBK_Number_VideoCall_Home"
+"MobileSupportType29"="PBK_Number_VideoCall"
+"MobileSupportType28"="PBK_Text_Suffix"
+"MobileSupportType27"="PBK_Text_Title"
+"MobileSupportType26"="PBK_Text_Nickname"
+"MobileSupportType25"="PBK_Date"
+"MobileSupportType24"="PBK_Text_Note"
+"MobileSupportType23"="PBK_Text_Postal_Work"
+"MobileSupportType22"="PBK_Text_Postal_Home"
+"MobileSupportType21"="PBK_Text_Postal"
+"MobileSupportType20"="PBK_Text_URL_Work"
+"MobileSupportType19"="PBK_Text_URL_Home"
+"MobileSupportType18"="PBK_Text_URL"
+"MobileSupportType17"="PBK_Text_Email_Work"
+"MobileSupportType16"="PBK_Text_Email_Home"
+"MobileSupportType15"="PBK_Text_Email"
+"MobileSupportType14"="PBK_Text_JobTitle"
+"MobileSupportType13"="PBK_Number_Pager"
+"MobileSupportType12"="PBK_Number_Fax_Work"
+"MobileSupportType11"="PBK_Number_Fax_Home"
+"MobileSupportType10"="PBK_Number_Fax"
+"MobileSupportType9"="PBK_Number_Mobile_Work"
+"MobileSupportType8"="PBK_Number_Mobile_Home"
+"MobileSupportType7"="PBK_Number_Mobile"
+"MobileSupportType6"="PBK_Number_Work"
+"MobileSupportType5"="PBK_Number_Home"
+"MobileSupportType4"="PBK_Number_General"
+"MobileSupportType3"="PBK_Text_Company"
+"MobileSupportType2"="PBK_Text_FirstName"
+"MobileSupportType1"="PBK_Text_LastName"
+"MobileSupportTypeCount"="34"
+"AddressItemCount"="7"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N91.ini\Task]
+"ReferenceTO"="SyncTable_Nokia 3250.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N91.ini\Calendar]
+"ReferenceTO"="SyncTable_NokiaS60.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N73.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N73.ini\Phonebook_Notes]
+"ReferenceTO"="SyncTable_Nokia 3250.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N73.ini\Phonebook_OTEXP]
+"ReferenceTO"="SyncTable_Nokia 3250.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N73.ini\Phonebook_OT]
+"ReferenceTO"="SyncTable_Nokia 3250.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N73.ini\Phonebook]
+"ReferenceTO"="SyncTable_Nokia N91.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N73.ini\Task]
+"ReferenceTO"="SyncTable_Nokia 3250.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\MSOT\SyncTable_Nokia N73.ini\Calendar]
+"ReferenceTO"="SyncTable_NokiaS60.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\ProgDlg.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\ProgDlg.ini\progress]
+"rect"="8,49,324,16"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\ProgDlg.ini\cancel]
+"BtnName"=""
+"textAlign"="1"
+"rect"="341,43,54,21"
+"image"="public\\cancel.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\ProgDlg.ini\button_font]
+"font_color_gray"="177,177,177"
+"font_color_hover"="11,17,83"
+"font_color_down"="11,17,83"
+"font_color_normal"="11,17,83"
+"font_size"="12"
+"font_name"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\ProgDlg.ini\st_text]
+"font_color_gray"="255,255,255"
+"font_color_normal"="255,255,255"
+"font_size"="12"
+"rect"="8,14,388,35"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\ProgDlg.ini\panel]
+"color"="150,160,180"
+"brush"="150,160,180"
+"rect"="0,0,404,100"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\info.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\info.ini\Info_layout_btn1]
+"font_color_normal"="0,0,0"
+"StatusIndex"="-1,0,0,-1"
+"BtnName"="OK"
+"rcText"="0, 5, 194, 26"
+"TextId"="10000"
+"textAlign"="2"
+"rect"="142, 190,198,40"
+"image"="PhoneManager\\Search button.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\info.ini\Info_layout]
+"image"="public\\infobg2.png"
+"rect"="0,30,480,242"
+"BtnCount"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\info.ini\Title_layout]
+"file"="public\\title.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\info.ini\Static2]
+"TextId"="24001"
+"font_color_gray"="96,79,142"
+"font_color_normal"="0,0,0"
+"font_size"="18"
+"rect"="20,35, 460, 180"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\info.ini\Static1]
+"textAlign"="2"
+"TextId"="24000"
+"font_color_gray"="96,79,142"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"rect"="0,0, 480, 30"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\info.ini\Static]
+"count"="2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\info.ini\button_font]
+"font_color_gray"="144,150,187"
+"font_color_hover"="0,120,255"
+"font_color_down"="255,255,255"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"font_name"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\info.ini\panel]
+"Cursorpoint"="470,10"
+"rect"="0,0,480,272"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini\Info_layout_btn1]
+"font_color_normal"="0,0,0"
+"StatusIndex"="-1,0,0,-1"
+"BtnName"="OK"
+"rcText"="0, 5, 194, 26"
+"TextId"="21006"
+"textAlign"="2"
+"rect"="142, 190,198,40"
+"image"="PhoneManager\\Search button.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini\Info_layout]
+"image"="public\\infobg2.png"
+"rect"="0,30,480,242"
+"BtnCount"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini\Title_layout]
+"file"="public\\title.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini\Static3]
+"textAlign"="2"
+"TextId"="21003"
+"font_color_gray"="96,79,142"
+"font_color_normal"="0,0,0"
+"font_size"="20"
+"rect"="20,140, 460, 30"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini\Static2]
+"TextId"="21002"
+"font_color_gray"="96,79,142"
+"font_color_normal"="0,0,0"
+"font_size"="18"
+"rect"="20,35, 460, 100"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini\Static1]
+"textAlign"="2"
+"TextId"="21001"
+"font_color_gray"="96,79,142"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"rect"="0,0, 480, 30"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini\Static]
+"count"="3"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini\button_font]
+"font_color_gray"="144,150,187"
+"font_color_hover"="0,120,255"
+"font_color_down"="255,255,255"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"font_name"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Pair.ini\panel]
+"Cursorpoint"="470,10"
+"rect"="0,0,480,272"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\Status_layout_btn3]
+"StatusIndex"="-1,0,0,-1"
+"BtnName"="search"
+"textAlign"="1"
+"rect"="0, 0, 42,38"
+"image"="PhoneManager\\Search.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\Status_layout_btn2]
+"StatusIndex"="-1,0,0,-1"
+"BtnName"="pagedn"
+"textAlign"="1"
+"rect"="438, 0, 42,38"
+"image"="public\\next.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\Status_layout_btn1]
+"StatusIndex"="-1,0,0,-1"
+"BtnName"="pageup"
+"textAlign"="1"
+"rect"="395, 0, 42,38"
+"image"="public\\last.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\Status_layout]
+"image"="PhoneManager\\Search status bar.png"
+"rect"="0,234,480,38"
+"BtnCount"="3"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\Button_layout]
+"file"="public\\databtn.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\Title_layout]
+"file"="public\\title.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\st_PageCount]
+"textAlign"="2"
+"font_color_gray"="96,79,142"
+"font_color_normal"="0,0,0"
+"font_size"="18"
+"rect"="308,240, 79, 27"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\st_Title]
+"textAlign"="2"
+"TextId"="20000"
+"font_color_gray"="96,79,142"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"rect"="0,0, 480, 30"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\button_font]
+"font_color_gray"="144,150,187"
+"font_color_hover"="255,255,255"
+"font_color_down"="255,255,255"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"font_name"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\panel.ini\panel]
+"Cursorpoint"="470,10"
+"rect"="0,0,480,272"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Search.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Search.ini\Info_layout_btn1]
+"font_color_normal"="0,0,0"
+"StatusIndex"="-1,0,0,-1"
+"BtnName"="OK"
+"rcText"="0, 5, 194, 26"
+"TextId"="10000"
+"textAlign"="2"
+"rect"="142, 190,198,40"
+"image"="PhoneManager\\Search button.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Search.ini\Info_layout]
+"image"="public\\infobg2.png"
+"rect"="0,30,480,242"
+"BtnCount"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Search.ini\Title_layout]
+"file"="public\\title.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Search.ini\Static2]
+"TextId"="22002"
+"font_color_gray"="96,79,142"
+"font_color_normal"="0,0,0"
+"font_size"="18"
+"rect"="20,35, 460, 180"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Search.ini\Static1]
+"textAlign"="2"
+"TextId"="22001"
+"font_color_gray"="96,79,142"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"rect"="0,0, 480, 30"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Search.ini\Static]
+"count"="2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Search.ini\button_font]
+"font_color_gray"="144,150,187"
+"font_color_hover"="0,120,255"
+"font_color_down"="255,255,255"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"font_name"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\PhoneManager\Search.ini\panel]
+"Cursorpoint"="470,10"
+"rect"="0,0,480,272"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\font.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\font.ini\Font]
+"font_size"="12"
+"facename"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\databtn.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\databtn.ini\layout_btn5]
+"StatusIndex"="0,1,1,-1"
+"BtnName"="data"
+"textAlign"="1"
+"rcText"="32, 0, 419, 35"
+"rect"="12, 163, 456,35"
+"image"="PhoneManager\\Button.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\databtn.ini\layout_btn4]
+"StatusIndex"="0,1,1,-1"
+"BtnName"="data"
+"textAlign"="1"
+"rcText"="32, 0, 419, 35"
+"rect"="12, 124, 456,35"
+"image"="PhoneManager\\Button.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\databtn.ini\layout_btn3]
+"StatusIndex"="0,1,1,-1"
+"BtnName"="data"
+"textAlign"="1"
+"rcText"="32, 0, 419, 35"
+"rect"="12, 85, 456,35"
+"image"="PhoneManager\\Button.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\databtn.ini\layout_btn2]
+"StatusIndex"="0,1,1,-1"
+"BtnName"="data"
+"textAlign"="1"
+"rcText"="32, 0, 419, 35"
+"rect"="12, 46, 456,35"
+"image"="PhoneManager\\Button.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\databtn.ini\layout_btn1]
+"StatusIndex"="0,1,1,-1"
+"BtnName"="data"
+"textAlign"="1"
+"rcText"="32, 0, 419, 35"
+"rect"="12, 7, 456,35"
+"image"="PhoneManager\\Button.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\databtn.ini\button_font]
+"font_color_gray"="144,150,187"
+"font_color_hover"="0,0,0"
+"font_color_down"="0,0,0"
+"font_color_normal"="0,0,0"
+"font_size"="18"
+"font_name"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\databtn.ini\layout]
+"image"="public\\PB_BG.png"
+"rect"="0,30,480,204"
+"BtnCount"="5"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\title.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\title.ini\layout_btn1]
+"StatusIndex"="-1,0,0,-1"
+"BtnName"="exit"
+"rect"="0, 0, 47,30"
+"image"="public\\back_main.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\public\title.ini\layout]
+"image"="public\\back_title.png"
+"rect"="0,0,480,30"
+"BtnCount"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\status.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\status.ini\layout]
+"image"="mainskin\\setup status bar.png"
+"rect"="0,234,480,38"
+"BtnCount"="0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\btn_layout_btn6]
+"rcText"="0, 67, 163, 21"
+"TextId"="30011"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="BT"
+"rect"="321, 106,159,98"
+"image"="mainskin\\setup exit.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\btn_layout_btn5]
+"rcText"="0, 67, 163, 21"
+"TextId"="30009"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="Connect"
+"Toggle"="1"
+"rect"="163, 106,158,98"
+"image"="mainskin\\setup connect.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\btn_layout_btn4]
+"rcText"="0, 67, 163, 21"
+"TextId"="30008"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="HFSet"
+"rect"="0, 106,163,98"
+"image"="mainskin\\setup HF.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\btn_layout_btn3]
+"rcText"="0, 67, 163, 21"
+"TextId"="30007"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="PhoneManager"
+"rect"="321, 8, 159,98"
+"image"="mainskin\\setup search phone.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\btn_layout_btn2]
+"rcText"="0, 67, 163, 21"
+"TextId"="30001"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="SMSSet"
+"rect"="163, 8,158,98"
+"image"="mainskin\\setup msn.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\btn_layout_btn1]
+"rcText"="0, 67, 163, 21"
+"TextId"="30000"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="PhonebookSet"
+"rect"="0, 8,163,98"
+"image"="mainskin\\setup phonebook.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\btn_layout]
+"image"="mainskin\\setup UI.png"
+"rect"="0,30,480,204"
+"BtnCount"="6"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\Status_layout]
+"file"="mainskin\\status.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\Title_layout]
+"file"="public\\title.ini"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\st_Mobile]
+"font_type"="0"
+"textAlign"="2"
+"font_color_gray"="96,79,142"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"rect"="0,240,480,30"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\st_Title]
+"font_type"="0"
+"textAlign"="2"
+"TextId"="26000"
+"font_color_gray"="96,79,142"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"rect"="0,0, 480, 30"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\button_font]
+"font_type"="1"
+"font_color_gray"="255,255,255"
+"font_color_hover"="255,255,255"
+"font_color_down"="255,255,255"
+"font_color_normal"="255,255,255"
+"font_size"="16"
+"font_name"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\setting.ini\panel]
+"Cursorpoint"="470,10"
+"rect"="0,0,480,272"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\btn_layout_btn6]
+"rcText"="0, 81, 159, 24"
+"TextId"="30006"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="Setting"
+"rect"="320, 121,159,115"
+"image"="mainskin\\setup.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\btn_layout_btn5]
+"rcText"="0, 81, 159, 24"
+"TextId"="30004"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"Toggle"="1"
+"BtnName"="HF"
+"rect"="161, 121,159,115"
+"image"="mainskin\\bluetooth.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\btn_layout_btn4]
+"rcText"="0, 81, 159, 24"
+"TextId"="30003"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="dialpad"
+"Toggle"="1"
+"rect"="2, 121,159,115"
+"image"="mainskin\\data link.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\btn_layout_btn3]
+"rcText"="0, 81, 159, 24"
+"TextId"="30002"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="callLog"
+"rect"="320, 6,159,115"
+"image"="mainskin\\file.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\btn_layout_btn2]
+"rcText"="0, 81, 159, 24"
+"TextId"="30001"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="sms"
+"rect"="161, 6,159,115"
+"image"="mainskin\\sms.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\btn_layout_btn1]
+"rcText"="0, 81, 159, 24"
+"TextId"="30000"
+"textAlign"="2"
+"StatusIndex"="-1,0,0,1"
+"BtnName"="Phonebook"
+"rect"="2, 6,159,115"
+"image"="mainskin\\phonebook.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\btn_layout]
+"image"="mainskin\\main UI_up.png"
+"rect"="0,30,480,242"
+"BtnCount"="6"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\title_layout_btn1]
+"StatusIndex"="-1,0,0,-1"
+"BtnName"="exit"
+"rect"="0, 0, 47,30"
+"image"="public\\back_main.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\title_layout]
+"image"="public\\back_title.png"
+"rect"="0,0,480,30"
+"BtnCount"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\st_Title]
+"font_type"="0"
+"textAlign"="2"
+"TextId"="15000"
+"font_color_gray"="96,79,142"
+"font_color_normal"="255,255,255"
+"font_size"="18"
+"rect"="0,0, 480, 30"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\button_font]
+"font_type"="1"
+"font_color_gray"="255,255,255"
+"font_color_hover"="255,255,255"
+"font_color_down"="255,255,255"
+"font_color_normal"="255,255,255"
+"font_size"="16"
+"font_name"="Tahoma"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\skin\default\Mainskin\panel.ini\panel]
+"Cursorpoint"="470,10"
+"rect"="0,0,480,272"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\mobile_setting.ini]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\mobile_setting.ini\Disk]
+"TempPath"="\\My Flash Disk\\Temp"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\mobile_setting.ini\GPRS]
+"DeviceName"="Bluetooth DUN on %s"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\mobile_setting.ini\COM]
+"DefaultCOM"="COM3"
+"HSCOM"="COM7"
+"SPPCOM"="COM3"
+"DUNCOM"="COM1"
+"SYNCMLCOM"="COM4"
+"FTPCOM"="COM5"
+"HFCOM"="COM6"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT\Applicaton\mobile_setting.ini\mobile]
+"connect_mode"="phoneat115200"
+"port"="COM1"
+"displayname"="Nokia N73"
+"ConnectType"="1"
+"IMEI"="353546029073777"
+"name"="Nokia N73"
+"phone"="N73"
+"company"="1"
+"ShowUI"="1"
+

@@ -1,0 +1,44 @@
+CallScript("AppInit.mscr",0)
+
+if (RegRead("HKLM", "SOFTWARE\Unlock", "Ver") eq "2")
+	spath = "\My Flash Disk\System\RegFiles\"
+
+else
+	spath = SystemPath("ScriptPath")
+	spath = SubStr(spath, 1, ReverseFind(spath, "\")) \ "system\RegFiles\"
+endif
+
+
+if (FileExists(spath\"ANWSOFT.REG"))
+
+	If(Question("¿Desea Borrar la Configuración del teléfono?","Configuración Teléfono") = 1)
+		delete(spath\"ANWSOFT.REG")
+		delete(spath\"bluetooth.reg")
+		message("Realice un Reset Hardware, configure el teléfono y ejecute de nuevo este programa para guardar la configuración","Teléfono")
+	endif
+
+else
+	If(Question("¿Desea Guardar la Configuración del teléfono?","Configuración Teléfono") = 1)
+		taskmgr = IniRead("setup.ini", "Sys","TaskMgr")
+		
+		RegFile = spath\"ANWSOFT.REG"
+		RegKey = "[HKEY_LOCAL_MACHINE\SOFTWARE\ANWSOFT]"
+		Call("ExportKey")
+
+		RegFile = spath\"bluetooth.reg"
+		RegKey = "[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\bluetooth]"
+		Call("ExportKey")
+
+
+	endif
+endif
+
+
+sub ExportKey
+
+	RunWait (taskmgr, "/regxpkey "& RegFile & " " & RegKey)
+	regContent = ReadFile(RegFile, "unicode-prefix")
+	regContent = Replace(regContent, "Windows Registry Editor Version 5.00", "REGEDIT4")
+	WriteFile(RegFile, RegContent, FALSE)
+
+endsub

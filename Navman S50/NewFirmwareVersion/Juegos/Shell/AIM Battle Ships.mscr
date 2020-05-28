@@ -1,0 +1,4 @@
+
+CallScript("RotateApp.mscr",90,SystemPath("ScriptPath")\ "..\AIM Battle Ships\BattleShips.exe" )
+
+

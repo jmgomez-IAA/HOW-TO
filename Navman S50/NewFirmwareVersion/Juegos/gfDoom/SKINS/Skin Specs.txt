@@ -1,0 +1,168 @@
+SKIN SPECS for gfDoom.
+
+This file contains the information you will need to create and modify the skins for gfDoom.
+
+A skin is compimised from two files. doomskin.bmp and doomskin.txt.
+
+IMPORTANT: You are strongly advised NOT to edit the default skin. If you try to specify a skin that does not work (with the -skin command line paramter) gfDoom will try to fall back onto the default skin. If you want to edit this skin, create a copy and only overwrite default skin when you are sure that it will work properly.
+
+SPECIFYING A SKIN:
+Skins are selected using the following command line paramter:
+gfDoom.exe -skin (name)
+
+Eg: gfDoom.exe -skin keyboard
+
+will try to load the keyboard skin.
+
+The name is taken from the name of the directory it is in.
+
+
+DIRECTORY STRUCTURE:
+
+Put any skins in the 'skins' directory. The skins folder will be in the same location as the gfDoom.exe. Put 'doomskin.txt' and 'doomskin.bmp' in a folder in the 'skins' folder. This folder name will be the name of the skin used in the -skin command line parmeter.
+
+
+BITMAP FORMAT:
+doomskin.bmp must be a 256 color bitmap. (not RLE)
+
+SKIN SCRIPT:
+
+The control configuration of gfDoom can be customised by editing the doomskin.txt file in a skin.
+
+The following commands can be used:
+
+*************************************************************************************************
+
+SCREEN_OFFSET (pixels)
+
+This will offset the game screen vertically in pixels, allowing for a taskbar at the top of the screen. This must be a whole number between 0 and 160.
+
+Eg: SCREEN_OFFSET 26
+
+This will move the game screen down 26 pixels.
+
+*************************************************************************************************
+
+BUTTON (x1) (x2) (y1) (y2) (action)
+
+This allows you add on-screen buttons. x1,x2,y1,y2 form a rectangle and action is what you want the button to do. The rectangle is 'exclusive' so the corner pixels are not included in the button.
+The action parmeter can either be a ASCII character code (eg: 13 for 'Enter') or an action command. (eg: FIRE to shoot weapon) (See below)
+
+Eg: BUTTON 10 20 100 125 OPEN
+
+*************************************************************************************************
+
+TPAD (x1) (x2) (y1) (y2)
+
+This allows you to set the size and position of the trackpad, an area on screen that allows movement with the stylus. x1,x2,y1,y2 form a rectangle which is the area of the trackpad in pixels. This rectangle is 'exclusive' so the corner pixels are not included.
+
+Eg: TPAD 20 300 200 220
+
+*************************************************************************************************
+
+TPAD_SENSITIVITY (sensitivity)
+
+This sets the sensitivity of the trackpad for both the X and Y axis. Set any whole number between 0-255. 32 is the default.
+
+Eg: TPAD_SENSITIVITY 32
+
+
+*************************************************************************************************
+
+TPAD_X (sensitivity)
+
+This sets the sensitivity of the trackpad in the X axis. Set any whole number between 0-255. 32 is the default.
+
+Eg: TPAD_X 32
+
+*************************************************************************************************
+
+TPAD_Y (sensitivity)
+
+This sets the sensitivity of the trackpad in the Y axis. Set any whole number between 0-255. 32 is the default.
+
+Eg: TPAD_Y 32
+
+*************************************************************************************************
+
+LEFT_HANDED (boolean)
+
+This will set whether the landscape mode is left or right handed. (ie: device rotated 90 or 270 degrees) Must be 1 for true or 0 for false. (right handed)
+0 is the default.
+
+Eg: LEFT_HANDED 1
+
+*************************************************************************************************
+
+GXHWBUTTON (gxbutton) (action)
+
+This allows you to map a hardware button to a game action.
+'gxbutton' must be one of the following:
+
+VK_UP
+VK_DOWN
+VK_LEFT
+VK_RIGHT
+VK_A
+VK_B
+VK_C
+VK_START
+
+The action parmeter can be an ACSII charactor code (eg: 13 for 'Enter') or an action command. (eg: FIRE to shoot weapon) (See below)
+
+Eg: GXHWBUTTON VK_A 13
+Eg: GXHWBUTTON VK_START PAUSE
+
+
+*************************************************************************************************
+
+VKHWBUTTON (code_in) (action)
+
+This command allows you set an action for any key code that the system receives. This means that if your device has more than 3 hardware buttons, you can map them to an action too. You will need to know the key code for that button.
+
+The action parmeter can be an ACSII charactor code (eg: 13 for 'Enter') or an action command. (eg: FIRE to shoot weapon) (See below)
+
+Eg: VKHWBUTTON 114 13
+Eg: VKHWBUTTON 114 OPEN
+
+
+*************************************************************************************************
+
+ACTION KEYS
+
+Some commands allow the use of the following in their parmeters, they all relate to in-game actions STR_LEFT and STR_RIGHT are strafe left and strafe right respectively:
+
+
+FIRE
+STRAFE
+STR_LEFT
+STR_RIGHT
+UP
+DOWN
+LEFT
+RIGHT
++SCREEN
+-SCREEN
+QUIT
+END_GAME
+MESSAGES
+SCREEN_SIZE
+SOUND
+GAMMA
+QUICK_SAVE
+QUICK_LOAD
+OPEN
+RUN
+AUTOMAP
+PAUSE
+AM_MARK
+AM_FOLLOW
+AM_CLEAR
+AM_FULLMAP
+WEAPON_1
+WEAPON_2
+WEAPON_3
+WEAPON_4
+WEAPON_5
+WEAPON_6
+WEAPON_7

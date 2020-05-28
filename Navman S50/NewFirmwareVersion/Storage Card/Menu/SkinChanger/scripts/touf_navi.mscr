@@ -1,0 +1,6 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Menu Touf Navi.wav" )
+CallScript( "SkinChangeWolfCNu.mscr","touf_navi" )
+
+
+

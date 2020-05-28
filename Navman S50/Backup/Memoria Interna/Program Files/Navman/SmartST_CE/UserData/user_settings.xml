@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<propertybag> <property name="mute" value="false" /><property
+name="display day hues" value="true" /><property name="unit system"
+value="METRIC" /><property name="tripmeter distance" value="648" /><property
+name="tripmeter max speed" value="14705" /><property
+name="tripmeter time" value="499" /><property
+name="tripmeter stationary time" value="340" /><property name="language"
+value="es-ES" /><property name="voice scheme locale" value="es" /><property
+name="voice scheme gender" value="m" /><property name="voice scheme type"
+value="natural" /><property name="voice scheme source" value="es_m_5.dat" /><property
+name="12hr clock format" value="false" /><property name="speed limit"
+value="100" /><property name="startup show tutorial" value="false" /><property
+name="display etaspinner colour" value="blue" /><property
+name="mileage in progress" value="false" /><property
+name="last known longitude" value="-98261" /><property
+name="last known latitude" value="3760586" /><property
+name="startup show language select" value="false" /><property
+name="screen brightness" value="7" /><property name="gps mode" value="0" /><property
+name="volume" value="40" /><property name="display mien options" value="" /><property
+name="show warning on gps lost" value="false" /></propertybag>

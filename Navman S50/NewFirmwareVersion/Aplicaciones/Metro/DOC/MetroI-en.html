@@ -1,0 +1,785 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="description" content="'Métro' zone in 'Tatami et Bouts de Ficelle': Public transport route calculation on Palm &amp; PocketPC.">
+<meta name="keywords" content="métro, subway, metro, tramway, bus, paris, londres, london, new-york, new york, tokyo, route, palm, pilot, pocketpc">
+<script language="JavaScript" src="scripts/metro.js"></script>
+<link href="./styles/metro.css" type="text/css" rel="stylesheet">
+<link rel="SHORTCUT ICON" href="Images/metro.ico" />
+<title>Métro</title>
+</head>
+
+<body>
+
+<div align="center"><center>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" valign="middle" width="150">
+        <script><!--
+          // Google ad (except if local)
+          if (document.location.href.indexOf('http') >= 0)
+          {
+              google_ad_client = "pub-8217233623025364";
+          //  google_alternate_color = "FFFFFF";
+              google_ad_width = 125;
+              google_ad_height = 125;
+              google_ad_format = "125x125_as";
+              google_ad_type = "text_image";
+              google_ad_channel ="0094668821";
+              google_page_url = document.location;
+              google_color_border = "000000";
+              google_color_bg = "FFEEEE";
+              google_color_link = "990000";
+              google_color_url = "990000";
+              google_color_text = "000000";
+          }
+        // -->
+        </script>
+        <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"
+        type="text/javascript"></script></td>
+        <td align="center"><font size="7"><b>Métro&nbsp;<img
+        src="Images/metrox.gif" class="middle" width="56"
+        height="44"></b></font><br>
+        <font size="5"><b>Installation</b></font></td>
+        <td align="right" valign="middle" width="150">
+        <script><!--
+          // Google ad (except if local)
+          if (document.location.href.indexOf('http') >= 0)
+          {
+              google_ad_client = "pub-8217233623025364";
+          //  google_alternate_color = "FFFFFF";
+              google_ad_width = 125;
+              google_ad_height = 125;
+              google_ad_format = "125x125_as";
+              google_ad_type = "text_image";
+              google_ad_channel ="0094668821";
+              google_page_url = document.location;
+              google_color_border = "000000";
+              google_color_bg = "FFEEEE";
+              google_color_link = "990000";
+              google_color_url = "990000";
+              google_color_text = "000000";
+          }
+        // -->
+        </script>
+        <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"
+        type="text/javascript"></script></td>
+    </tr>
+</table>
+</center></div>
+
+<hr>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+bgcolor="#FFCCCC">
+  <tr>
+    <td width="100%" nowrap><font size="5"><b>Download</b></font></td>
+  </tr>
+</table>
+<p>You first have to download the package containing the program and the city
+files: see <a href="MetroA-en.html">home page</a>.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+bgcolor="#FFCCCC">
+  <tr>
+    <td width="100%" nowrap><font size="5"><b>Compatibility</b></font></td>
+  </tr>
+</table>
+
+<h3>Palm</h3>
+<p><strong>Métro&nbsp;<img src="Images/metro.gif" align="top" width="23" height="22"></strong>
+is compatible with all PDAs running <strong>PalmOS 2.0 or greater </strong>(devices
+from Palm/PalmOne, Handspring, Handera, Sony, ...). The software is not
+compatible with the original Pilot 1000 &amp; Pilot 5000.</p>
+<p><strong>Métro&nbsp;<img src="Images/metro.gif" align="top" width="23" height="22"></strong>
+is optimized for devices running PalmOS 5.x (almost all recent models) and
+offers a much faster engine on these PDAs (all calculations are nearly
+instantaneous). It is also optimized for high resolution screens on recent
+PalmOne and Sony devices: it makes full use of the 320x320 or 320x480
+resolutions those machines offer, including the 480x320 landscape mode.<br>
+<em>Note: for 320x480 mode on the PalmOne Tungsten T3, additional files are
+required (see </em><a href="MetroA-en.html"><em>home page</em></a><em>).</em></p>
+
+<h3>PocketPC</h3>
+<p><strong>Métro&nbsp;<img src="Images/metro.gif" align="top" width="23" height="22"></strong>
+is compatible with PDAs (either &quot;Pocket PC&quot; or &quot;Handheld PC&quot;
+format) running Microsoft® operating systems <strong>Windows CE</strong>
+(versions 2.01, 2.11 &amp; 3.0), <strong>Windows Mobile for PocketPC</strong>
+(versions 2000, 2002, 2003, 2003 SE &amp; 2005, including "Phone Edition" i.e.
+Smartphones WITH a touch screen) and <strong>Windows Mobile 6
+Professional</strong>: devices from Compaq, HP, Qtek, HTC, Toshiba, Siemens,
+Casio...</p>
+
+<h3>MS Smartphone</h3>
+<p><strong>Métro&nbsp;<img src="Images/metro.gif" align="top" width="23" height="22"></strong>
+is compatible with all phones running Microsoft® Smartphone system.</p>
+<p>For these smartphones, please read the "readme" file included
+in the corresponding zip file, for installation instructions.</p>
+<!-- <p><font color="red"><b>!!!</b></font> Be careful to use the
+right version of the program for your Windows Mobile smartphone:
+some have the "Windows Mobile for PocketPC Phone Edition" system
+(which require our "PocketPC" version of MetrO) and others have
+the "Windows Mobile for Smartphone" system (for whose this
+version of MetrO is the right one). Unpredictable behaviors
+may occur if you install the wrong version.
+<font color="red"><b>!!!</b></font></p> -->
+
+<h3>Symbian</h3>
+<p><strong>Métro&nbsp;<img src="Images/metro.gif" align="top" width="23" height="22"></strong>
+is compatible with all phones running Symbian UIQ (SonyEricsson P800 &amp; P900,
+Motorola A920 &amp; A925, ...), Symbian Series 60 (Nokia and others), Symbian
+Series 80 (Nokia and others) or Nokia Series 90.</p>
+<p>For these smartphones, please read the "readme" file included
+in the corresponding zip file, for installation instructions.<p>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+bgcolor="#FFCCCC">
+  <tr>
+    <td width="100%" nowrap><font size="5"><b>Unzip</b></font></td>
+  </tr>
+</table>
+<p>You should now extract fhe files from the package to your desktop computer.
+You can use one of the many tools available: <strong>WinZip</strong> for Windows
+or <strong>StuffIt Expander</strong> for Macintosh (strongly recommended, other
+tools may corrupt the files).</p>
+<p>The included files are:</p>
+<div align="center">
+  <center>
+  <table border="1" cellpadding="0" cellspacing="0" width="600">
+    <tr>
+      <td align="center" valign="top" width="120" bgcolor="#C0C0C0"><strong>
+      Programs &amp; Directories</strong></td>
+      <td align="center" valign="top" bgcolor="#C0C0C0"><strong>Notes</strong></td>
+    </tr>
+    <tr>
+      <td valign="top" width="120"><font size="2"><code>metro-fr.prc</code></font></td>
+      <td valign="top"><font size="2">PalmOS program in french</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-en.prc</code></font></td>
+      <td><font size="2">PalmOS program in english</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-de.prc</code></font></td>
+      <td><font size="2">PalmOS program in german</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-nl.prc</code></font></td>
+      <td><font size="2">PalmOS program in dutch</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-sp.prc</code></font></td>
+      <td><font size="2">PalmOS program in spanish</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-it.prc</code></font></td>
+      <td><font size="2">PalmOS program in italian</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-pt.prc</code></font></td>
+      <td><font size="2">PalmOS program in portuguese</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-se.prc</code></font></td>
+      <td><font size="2">PalmOS program in swedish</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-da.prc</code></font></td>
+      <td><font size="2">PalmOS program in danish</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-fi.prc</code></font></td>
+      <td><font size="2">PalmOS program in finnish</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-no.prc</code></font></td>
+      <td><font size="2">PalmOS program in norwegian</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-vn.prc</code></font></td>
+      <td><font size="2">PalmOS program in vietnamese</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-id.prc</code></font></td>
+      <td><font size="2">PalmOS program in indonesian</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-eu.prc</code></font></td>
+      <td><font size="2">PalmOS program in basque</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-ca.prc</code></font></td>
+      <td><font size="2">PalmOS program in catalan</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-co.prc</code></font></td>
+      <td><font size="2">PalmOS program in corsican</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-hr.prc</code></font></td>
+      <td><font size="2">PalmOS program in croatian</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-hu.prc</code></font></td>
+      <td><font size="2">PalmOS program in hungarian</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-ro.prc</code></font></td>
+      <td><font size="2">PalmOS program in romanian</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-ms.prc</code></font></td>
+      <td><font size="2">PalmOS program in malay</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>metro-ph.prc</code></font></td>
+      <td><font size="2">PalmOS program in filipino (not complete)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-jp.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in japanese</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-big5.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in chinese (Big5), to
+      use with <strong>CJKOS</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-gb.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in chinese (GB), to use
+      with <strong>CJKOS</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-kr.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in korean, to use with
+      <strong>CJKOS</strong> or <strong>Hantip</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-cz.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in czech (Windows
+      encoding), to use with a czech extension (<strong>PiLoc</strong> or
+      equivalent)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-sk.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in slovak (Windows
+      encoding), to use with a slovak extension (<strong>PiLoc</strong> or
+      equivalent)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-sl.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in slovenian (Windows
+      encoding), to use with a slovenian extension (<strong>PiLoc</strong>
+      or equivalent)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-gr.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in greek, to use with
+      <strong>PiLoc</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-pl.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in polish, to use with
+      <strong>PiLoc</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-et.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in estonian, to use with
+      <strong>PiLoc</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-ru.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in russian, to use with
+      <strong>CyrHack</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-bg.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in bulgarian, to use with
+      <strong>CyrHack</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-mk.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in macedonian, to use with
+      <strong>InterType</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-sr.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in serbian, to use with
+      <strong>InterType</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-th.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in thaï, to use with a
+      thaï extension</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-tr.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in turkish, to use with
+      <strong>PiLoc</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-he.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in hebrew, to use with
+      <strong>Hebrew Support</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>metro-ar.prc</code></font></td>
+      <td><font color="#0000FF" size="2">PalmOS program in arabic, to use with
+      <strong>Piloc</strong> or equivalent</font></td>
+    </tr>
+    <tr>
+      <td><font size="2"><code>Windows/*</code></font></td>
+      <td><font size="2">Installer & programs for <strong>Windows
+      Mobile</strong> (for PocketPC or SmartPhone), select the
+      right one for your device (see below)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>README.html</code></font></td>
+      <td><font size="2">Access to the <strong>software documentation</strong></font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>doc/*</code></font></td>
+      <td><font size="2">Documentation files</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>all/*.pdb</code></font></td>
+      <td><font size="2">Complete city files with accented characters (<strong>recommended
+      for most users</strong>)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font size="2"><code>nordic/*.pdb</code></font></td>
+      <td><font size="2">Danish, finnish, norvegian &amp; swedish networks with
+      local sort order (to use only on PalmOS with <strong>SortingHack</strong>)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>en/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Complete city files in pure ASCII
+      format (no accents), recommended for Palm users with non-roman character
+      sets</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>unicode/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Unicode version of the &quot;non-roman&quot;
+      databases. <strong>Only for Windows Mobile & Symbian</strong> devices
+      (require a compatible font)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>cz/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Czech versions of some cities (to use
+      with <strong>PiLoc</strong> or equivalent on Palm)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>sk/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Slovak versions of some cities (to use
+      with <strong>PiLoc</strong> or equivalent on Palm)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>hu/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Magyar (Hungarian) versions of some
+      cities (to use with <strong>PiLoc</strong> or equivalent on Palm)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>sr/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Serbian versions of some cities (to
+      use with <strong>PiLoc</strong> or equivalent on Palm)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>gr/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Greek versions of some cities (to use
+      with <strong>PiLoc</strong> or equivalent on Palm)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>ru/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Cyrillic versions of the russian cities
+      (to use with <strong>CyrHack</strong> or equivalent on Palm).</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>kr/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Korean versions of some cities (to use
+      with <strong>CJKOS</strong> or <strong>Hantip</strong> or equivalent on
+      Palm)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>big5/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Chinese (Big5) version of some cities
+      (to use with <strong>CJKOS</strong> or equivalent on Palm)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>gb/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Chinese (GB) version of some cities (to
+      use with <strong>CJKOS</strong> or equivalent on Palm)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>jp/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Japanese version of some cities (to use
+      with <strong>CJKOS</strong> or equivalent on Palm)</font></td>
+    </tr>
+    <tr>
+      <td width="120"><font color="#0000FF" size="2"><code>th/*.pdb</code></font></td>
+      <td><font color="#0000FF" size="2">Thai version of some cities (to use
+      with <strong>ThaiHack</strong> or équivalent on Palm)</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p><font color="#0000FF">Lines in blue denote files and directories available
+only in the &quot;non-roman&quot; package (<code>metro-int.zip</code>). The english
+program for Palm and the PocketPC versions are present in both packages.</font></p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+bgcolor="#FFCCCC">
+  <tr>
+    <td width="100%" nowrap><font size="5"><b>Installation</b></font></td>
+  </tr>
+</table>
+<h3>PalmOS devices (Palm, Sony, Handera, Handspring,&nbsp;...)</h3>
+<ul>
+  <li>Select your language file in the list above (example&nbsp;: <code>metro-en.prc</code>
+  for the english version). <strong>Install only one of the program files!</strong></li>
+  <li>Select the cities you want to use in the correct directory (<code>/all</code>
+  in most cases). <strong>You have to install at least one city!</strong></li>
+  <li>Install the selected files (program and cities) on your device (use the
+  install tool or the &quot;desktop doftware&quot; that came with your PDA or just
+  double-click on each file).</li>
+  <li>If your device has a <strong>memory extension card</strong>, you can install
+  the cities there (only in the <code><strong>/PALM/Programs/metro</strong></code>
+  directory, that you may create using a tool like
+  <a href="http://www.nosleep.net/">FileZ</a>) to save main memory.</li>
+  <li>Synchronize your device to actually install the files.</li>
+  <li>The <img src="Images/metro.gif" align="absmiddle" width="23" height="22">
+  icon is now available on your Palm: &quot;tap&quot; on it to launch the program. On
+  first use, you'll be asked to select the city to use.</li>
+</ul>
+<p><b>Installation on a memory card</b>: if you have a memory card
+extension, you may install the
+<font size="4"><strong>Métro&nbsp;<img src="Images/metro.gif" align="top"
+width="23" height="22"></strong></font> files there, following these
+guidelines:</p>
+<ul>
+  <li>For the program (<code>metro-xx.prc</code> file):
+  just select the "Extension card" destination in the "Quick Install"
+  tool (coming with Palm Desktop). <em>The installation of the program
+  on a memory card is not recommended.</em></li>
+  <li>For the cities (<code>xxx.pdb</code> files): the program finds
+  the cities only if they are present in a specific directory on your
+  card. <b>In order to install the files in their proper location</b>,
+  you have several options:
+  <ul>
+    <li>Install the files in main memory (with the Quick Install tool),
+    then use the "transfer" option in
+    <font size="4"><strong>Métro&nbsp;<img src="Images/metro.gif"
+    align="top" width="23" height="22"></strong></font> to move them
+    on the card (see the <a href="MetroM-en.html"><strong>user
+    guide</strong></a>).
+    <em>DO NOT ATTEMPT THIS FOR "LARGE" FILES (such as Paris-full or
+    NewYork-works).</em></li>
+    <li>Install my <a
+    href="http://palm.nanika.net/Folder-en.html"><strong>Folder</strong></a>
+    utility on your Palm. It will take care of moving the files where
+    they belong after a Quick Install on the memory card.</li>
+    <li>Install the files on the memory card with the Quick Install
+    tool (selecting the "Extension card" destination) then manually
+    move the files to the <code><strong>/PALM/Programs/metro</strong></code>
+    directory with an utility such as
+    <a href="http://www.nosleep.net/">FileZ</a>.</li>
+    <li>Use a memory card reader (or a software like CardExport) then,
+    from your PC, copy the files to the
+    <code><strong>/PALM/Programs/metro</strong></code> directory
+    on your card.</li>
+  </ul></li>
+</ul></p>
+
+<h3>Windows Mobile PocketPC & Smartphone devices (Compaq, HP, Qtek, HTC,
+Siemens, Toshiba, Casio,&nbsp;...)</h3>
+<ul>
+  <li><u>On your desktop PC</u>, run the <strong>setup.exe</strong> program in
+  the <code>Windows</code> directory to install the program on your device.</li>
+  <li>Select the cities you want to use in the correct directory (<code>/all</code>
+  in most cases). <strong>You have to install at least one city!</strong></li>
+  <li>Click on the &quot;My Computer&quot; icon</li>
+  <li>Among the available drives, open the one labelled &quot;Mobile Device&quot;</li>
+  <li>There you can see your device's directories and files</li>
+  <li>Copy and the cities selected above in a folder of your choice</li>
+  <li><u>On your device</u>, click on the <font size="4"><strong>Métro&nbsp;<img
+  src="Images/metro.gif" align="top" width="23" height="22"></strong></font>
+  shortcut, select your language in &quot;Preferences&quot; in the &quot;Options&quot;
+  menu</li>
+  <li>Select &quot;Network&quot; in the &quot;Options&quot; menu to choose the city
+  you want to use</li>
+</ul>
+<p>You may also install the program manually instead of using the setup program
+(and you will have to if you have a WinCE 2.0 or 2.01 device, see at the end of
+the table): </p>
+<ul>
+  <li><em>Select the right cabinet (.cab) file for your PocketPC device in the
+  table below</em></li>
+  <li>On your desktop PC, click on the &quot;My Computer&quot; icon</li>
+  <li>Among the available drives, open the one labelled &quot;Mobile Device&quot;</li>
+  <li>There you can see your device's directories and files</li>
+  <li>If the file for your device is a .cab:</li><ul>
+  <li>Copy the selected .cab file in a folder of your choice</li>
+  <li>Back on your PDA, open the Explorer, navigate to the directory where you
+  copied the file</li>
+  <li>Click on the file, the program will install and a shortcut will be created</li></ul>
+  <li>If the file for your device is an .exe, copy that in the program directory:
+  it will directly run Métro (you may also create a shortcut as needed)</li>
+</ul>
+<div align="center">
+  <center>
+  <table border="1" cellpadding="0" cellspacing="0" width="600">
+    <tr>
+      <td align="center" width="320" bgcolor="#C0C0C0"><strong>Device</strong></td>
+      <td align="center" width="180" bgcolor="#C0C0C0"><strong>Program to use</strong></td>
+      <td align="center" width="70" bgcolor="#C0C0C0"><strong>OS</strong></td>
+      <td align="center" width="30" bgcolor="#C0C0C0"><strong>CPU</strong></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">All <strong>Windows Mobile for
+      Smartphone</strong> and <strong>Windows Mobile 6 Standard</strong>
+      devices (i.e. smartphones WITHOUT a touch screen)</font></td>
+      <td width="180"><font size="2"><code>MetroSP.armv4.cab</code></font></td>
+      <td align="center" width="70"><font size="2">Windows Mobile for
+      Smartphone</font></td>
+      <td align="center" width="30"><font size="2">ARM</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Compaq iPaq H19xx, H21xx, H31xx, H36xx,
+      H38xx, H39xx, H41xx, H5xxx, ... Series</font></td>
+      <td rowspan="8" width="180"><font size="2"><code>metro.arm300_pspc.cab</code></font></td>
+      <td align="center" rowspan="8" width="70"><font size="2">Windows Mobile for
+      PocketPC<br> <br>Windows CE 3.0</font></td>
+      <td align="center" rowspan="8" width="30"><font size="2">ARM</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Palmax @migo-600c</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Toshiba Genio e330, e550, e740</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">HP 560 series</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Mitsubishi Trium Mondo</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">O2 xda</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Dell Axim PocketPC</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">All <strong>PocketPC 2002</strong>,
+      <strong>PocketPC 2003</strong>, <strong>PocketPC 2003 SE</strong>,
+      <strong>Windows Mobile 2005 for PocketPC</strong> devices
+      (including Phone Edition i.e. smartphones WITH a touch screen) and
+      <strong>Windows Mobile 6 Professional</strong></font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2"><b>PND</b> (Portable Navigation Devices)
+      with Windows CE .Net 4.2 & 5 or later & 320x240 screen</font></td>
+      <td width="180"><font size="2"><code>MetroARMWCE.exe</code><code><strong>
+      *</strong></code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 4.2<br>Win CE 5</font></td>
+      <td align="center" width="30"><font size="2">ARM</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">HPC HP Jornada 700 Series</font></td>
+      <td rowspan="2" width="180"><font size="2"><code>metro.arm300_hpc2000.cab</code><code><strong>
+      *</strong></code></font></td>
+      <td align="center" rowspan="2" width="70"><font size="2">Win CE 3.0</font></td>
+      <td align="center" rowspan="2" width="30"><font size="2">ARM</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Siemens SIMpad SL4 (also under Deutsche
+      Telekom and Swisscom labels)</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">HPC HP Jornada 820</font></td>
+      <td width="180"><font size="2"><code>metro.arm211_hpcpro.cab </code><code>
+      <strong>*</strong></code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 2.11</font></td>
+      <td align="center" width="30"><font size="2">ARM</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">NEC Type Mobile Pro 790</font></td>
+      <td width="180"><font size="2"><code>metro.mips300_hpc2000.cab</code><code><strong>
+      *</strong></code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 3.0</font></td>
+      <td align="center" width="30"><font size="2">MIPS</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Casio Cassiopeia E-115, E-125, E-125G,
+      EM-500, EM-505G, EM-505F, EM-505I, EM-505S, EM-750</font></td>
+      <td rowspan="3" width="180"><font size="2"><code>metro.mips300_pspc.cab</code></font></td>
+      <td align="center" rowspan="3" width="70"><font size="2">Win CE 3.0</font></td>
+      <td align="center" rowspan="3" width="30"><font size="2">MIPS</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Compaq Aero 1550</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Siemens SX45</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Casio Cassiopeia E-10, E-11, E15, E-100,
+      E-105</font></td>
+      <td rowspan="2" width="180"><font size="2"><code>metro.mips211_pspc.cab
+      </code><code><strong>*</strong></code></font></td>
+      <td align="center" rowspan="2" width="70"><font size="2">Win CE 2.11</font></td>
+      <td align="center" rowspan="2" width="30"><font size="2">MIPS</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Compaq Aero 2164, 2130</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">?</font></td>
+      <td width="180"><font size="2"><code>metro.mips211_hpcpro.cab</code><code><strong>
+      *</strong></code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 2.11</font></td>
+      <td align="center" width="30"><font size="2">MIPS</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Philips Nino</font></td>
+      <td width="180"><font size="2"><code>metro.mips201UNKNOWN.exe </code>
+      <code><strong>*</strong></code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 2.01</font></td>
+      <td align="center" width="30"><font size="2">MIPS</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Philips Vélo 500</font></td>
+      <td rowspan="3" width="180"><font size="2"><code>metro.mips200UNKNOWN.exe
+      </code><code><strong>*</strong></code></font></td>
+      <td align="center" rowspan="3" width="70"><font size="2">Win CE 2.00</font></td>
+      <td align="center" rowspan="3" width="30"><font size="2">MIPS</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Sharp HC-4600</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Compaq C-series 800</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">HP Jornada 520, 540 Series</font></td>
+      <td width="180"><font size="2"><code>metro.sh3300_pspc.cab</code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 3.0</font></td>
+      <td align="center" width="30"><font size="2">SH3</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">?</font></td>
+      <td width="180"><font size="2"><code>metro.sh3211_pspc.cab </code><code>
+      <strong>*</strong></code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 2.11</font></td>
+      <td align="center" width="30"><font size="2">SH3</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">HPC HP Jornada 680</font></td>
+      <td width="180"><font size="2"><code>metro.sh3211_hpcpro.cab </code><code>
+      <strong>*</strong></code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 2.11</font></td>
+      <td align="center" width="30"><font size="2">SH3</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">?</font></td>
+      <td width="180"><font size="2"><code>metro.sh3201UNKNOWN.exe </code><code>
+      <strong>*</strong></code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 2.01</font></td>
+      <td align="center" width="30"><font size="2">SH3</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">?</font></td>
+      <td width="180"><font size="2"><code>metro.sh3200UNKNOWN.exe </code><code>
+      <strong>*</strong></code></font></td>
+      <td align="center" width="70"><font size="2">Win CE 2.00</font></td>
+      <td align="center" width="30"><font size="2">SH3</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Hitachi EPlate</font></td>
+      <td rowspan="2" width="180"><font size="2"><code>metro.sh4211_hpcpro.cab
+      </code><code><strong>*</strong></code></font></td>
+      <td align="center" rowspan="2" width="70"><font size="2">Win CE 2.11</font></td>
+      <td align="center" rowspan="2" width="30"><font size="2">SH4</font></td>
+    </tr>
+    <tr>
+      <td width="320"><font size="2">Compaq Aero 8000</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p align="center"><font size="2"><code><em><strong>* </strong></em></code><em>
+<strong>Download the Windows CE 2.0 / 2.01 / 2.11 / HPC / PND versions </strong></em>
+</font><a href="http://download.nanika.net/metroce200.zip"><font size="2"><em>
+<strong>here</strong></em></font></a><font size="2"><em><br>
+(the CE 2.0 versions are exe files that you must copy on your device)<br>
+Contact </em></font><a href="target"
+onclick="return setTarget2(this, 'fvancaen');"><font size="2"><em>Frank</em></font></a><font
+size="2"><em> if your device processor or OS is not listed</em></font></p>
+
+<h3>Symbian (Nokia, SonyEricsson, ...)</h3>
+<ul><li>Be sure you <a href="MetroA-en.html">downloaded</a> the right
+package for your phone. If you don't know which system your device is
+running (s60, s80, s90 or UIQ), check this
+<a href="http://www.symbian.com/phones/index.html">page</a>.</li>
+<li>Copy the .sis (or .sisx) file in the metro package to your phone
+(transfer it using the utility provided by the manufacturer or via
+infrared or bluetooth)</li>
+<li>Run the .sis installation on your phone (see the user guide for more
+information)</li></ul>
+<p>If you receive a <b>security alert</b> when installing (because the software
+is not "signed"), enter the "Tools" program and select "Parameters"
+under "Options". In the "Install software" windows, turn off the "Signed only"
+option. You should now be able to install the program.<br><i>The exact location
+of these options may depend on your configuration: see your phone user guide for
+details.</i></p>
+<p>The Symbian packages contain only a sample of the databases (for major cities).
+If you want to install other cities, download the full package (metro.zip)
+and copy your choice of .pdb files to your phone.</p>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+bgcolor="#FFCCCC">
+  <tr>
+    <td width="100%" nowrap><font size="5"><b>Update</b></font></td>
+  </tr>
+</table>
+<p>Except when stated otherwise (see &quot;Attention&quot; below), there are no special
+precautions to take when upgrading your version of the program or the city
+files: just overwrite the previous files and you're done.</p>
+<p><font color="#FF0000" size="4"><strong><blink>Attention!</blink></strong></font><strong>
+The city databases from versions older than 4.2.0 cannot be used with new
+releases</strong>. If you have an older version of the program on your device,
+you should <strong>delete it along with all its files</strong> before installing
+the new one.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+bgcolor="#FFCCCC">
+  <tr>
+    <td width="100%" nowrap><font size="5"><b>User guide</b></font></td>
+  </tr>
+</table>
+<p>If you've never used <font size="4"><strong>Métro&nbsp;<img
+src="Images/metro.gif" align="top" width="23" height="22"></strong></font>
+before, you should now <a href="MetroM-en.html"><strong>read the user guide</strong></a>.
+<strong>Please READ IT before asking a question!</strong></p>
+<hr>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="5" cellspacing="0">
+    <tr>
+      <td align="center"><a href="target"
+      onclick="return setTarget(this, 'metro');"><img src="Images/mail.gif"
+      border="0" width="30" height="22"><br>
+      <font size="1"><em>mail</em></font></a></td>
+      <td align="center"><font size="2"><em>Copyright Kinevia SARL © 1997-2008.
+      All rights reserved.<br>
+      Last update by Patrice BERNARD on 11/09/2008</em></font></td>
+      <td align="center"><a href="index-en.html" target="_top">
+      <img src="Images/home.gif" border="0" width="30" height="28"></a><a
+      href="index-en.html" target="_top"><br>
+      <font size="1"><em>Métro...</em></font></a></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<script src="scripts/urchin.js" type="text/javascript"></script>
+</body>
+</html>

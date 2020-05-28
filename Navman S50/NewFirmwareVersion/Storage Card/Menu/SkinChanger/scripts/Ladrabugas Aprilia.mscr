@@ -1,0 +1,6 @@
+ErrorLevel("off")
+PlaySound( "\Storage Card\menu\Sounds\Ladrabugas Aprilia.wav" )
+CallScript( "SkinChangeWolfCNu.mscr","Ladrabugas Aprilia" )
+
+
+

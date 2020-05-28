@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- page 01 -->
+	<resource class="view" title="Tutoriel: Bienvenue" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="label" textstyle="subtitlelarge" x="16" y="15" width="300" height="120">
+			Bienvenue au tutoriel de Navman
+			</displayable>
+			<displayable class="label" textstyle="standard" x="16" y="43" width="290" height="120">
+			Ce tutoriel vous présente le fonctionnement de base de votre Navman, y compris comment naviguer jusqu'à destination.
+			</displayable>
+			<displayable class="label" textstyle="caution" x="170" y="175" width="430" height="120">
+			###Tap to continue
+			</displayable>
+			<displayable class="image" x="245" y="195" src="tutorial_arrow"/>
+			<displayable class="checkbox" rel="startup show tutorial" x="25" y="155" width="280" height="30" value="Show tutorial on startup"/>
+		</displayables>
+	</resource>
+	<!-- page 02 -->
+	<resource class="view" title="GPS" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="205" y="10" src="tutorial_satelite"/>
+			<displayable class="label" textstyle="standard" x="16" y="15" width="204" height="60">
+			Votre Navman reçoit des signaux GPS grâce à un e antenne GPS intégrée. 
+			</displayable>
+			<displayable class="label" textstyle="standard" x="16" y="95" width="294" height="120">
+			Pour recevoir un signal GPS fort, veillez à ce que votre Navman soit à l'extérieur ou dans un véhicule situé à l'extérieur, et qu'il ait une vue dégagée du ciel.
+			</displayable>
+		</displayables>
+	</resource>
+	<!-- page 03 -->
+	<resource class="view" title="État du GPS" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="190" y="15" src="tutorial_gps_status"/>
+			<displayable class="label" textstyle="standard" x="16" y="15" width="170" height="60">
+			Pour afficher l'écran GPS Status (État du GPS, touchez : 
+			</displayable>
+			<displayable class="image" x="80" y="65" src="tutorial_compass"/>
+			<displayable class="label" textstyle="standard" x="16" y="110" width="294" height="40">
+			Puis, touchez et maintenez enfoncé : 
+			</displayable>
+			<displayable class="image" x="80" y="140" src="tutorial_gps"/>
+		</displayables>
+	</resource>
+	<!-- page 04 -->
+	<resource class="view" title="Préférences" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="190" y="15" src="tutorial_prefs_menu"/>
+			<displayable class="label" textstyle="standard" x="16" y="15" width="170" height="60">
+			Pour afficher le menu Preferences, appuyez sur :
+			</displayable>
+			<displayable class="image" x="80" y="65" src="tutorial_hardware_button2"/>
+			<displayable class="label" textstyle="standard" x="16" y="115" width="294" height="80">
+			Utilisez le menu Preferences pour sélectionner vos options d'acheminement, de langue et d'affichage.
+			</displayable>
+		</displayables>
+	</resource>
+	<!-- page 05 -->
+	<resource class="view" title="Menu Go To (Aller à)" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="190" y="15" src="tutorial_goto_menu"/>
+			<displayable class="label" textstyle="standard" x="16" y="15" width="170" height="60">
+			Pour afficher le menu Go To (Aller à), appuyez sur :
+			</displayable>
+			<displayable class="image" x="80" y="65" src="tutorial_hardware_button3"/>
+			<displayable class="label" textstyle="standardsmall" x="16" y="115" width="294" height="80">
+			À partir du menu Go To (Aller à), vous pouvez naviguer jusqu'à My Home (Ma maison), une adresse, un emplacement de répertoire, un emplacement récent, une photo NavPix ou planigier un trajet à escales multiples.
+			</displayable>
+		</displayables>
+	</resource>
+	<!-- page 06 -->
+	<resource class="view" title="Navigation" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="190" y="15" src="tutorial_destination1"/>
+			<displayable class="label" textstyle="subtitlelarge" x="16" y="15" width="170" height="45">
+			Exemple : Naviguer jusqu'à une adresse
+			</displayable>
+			<displayable class="label" textstyle="standardbold" x="16" y="65" width="20" height="20">
+			a)
+			</displayable>
+			<displayable class="label" textstyle="standard" x="36" y="65" width="150" height="80">
+			À partir du menu Go To (Aller à), touchez           .  
+			</displayable>
+			<displayable class="image" x="110" y="85" src="tutorial_address_button"/>
+			<displayable class="label" textstyle="standard" x="16" y="125" width="294" height="80">
+			L'écran Destination Search (Recherche de destination) s'affiche.
+			</displayable>
+		</displayables>
+	</resource>
+	<!-- page 07 -->
+	<resource class="view" title="Navigation" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="190" y="15" src="tutorial_destination2"/>
+			<displayable class="label" textstyle="standardbold" x="16" y="15" width="20" height="20">
+			b)
+			</displayable>
+			<displayable class="label" textstyle="standard" x="36" y="15" width="150" height="80">
+			Touchez Street to search (Rue à trouver) pour indiquer votre rue de destination.
+			</displayable>
+			<displayable class="label" textstyle="standard" x="16" y="115" width="294" height="80">
+			Conseil : Pour raffiner la recherche, cherchez d'abord la zone ou la ville de la rue.
+			</displayable>
+		</displayables>
+	</resource>
+	<!-- page 08 -->
+	<resource class="view" title="Navigation" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="190" y="15" src="tutorial_keyboard"/>
+			<displayable class="label" textstyle="standardbold" x="16" y="15" width="20" height="20">
+			c)
+			</displayable>
+			<displayable class="label" textstyle="standard" x="36" y="15" width="150" height="80">
+			Utilisez l'écran Keyboard (Clavier) pour entrer le nom de la rue. 
+			</displayable>
+			<displayable class="label" textstyle="standard" x="16" y="115" width="294" height="80">
+			Touchez le bon résultat au haut de l'écran.
+			</displayable>
+		</displayables>
+	</resource>
+	<!-- page 09 -->
+	<resource class="view" title="Navigation" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="190" y="15" src="tutorial_destination3"/>
+			<displayable class="label" textstyle="standardbold" x="16" y="15" width="20" height="20">
+			d)
+			</displayable>
+			<displayable class="label" textstyle="standard" x="36" y="15" width="150" height="80">
+			Entrez un numéro civique ou allez au centre de la rue.
+			</displayable>
+		</displayables>
+	</resource>
+	<!-- page 10 -->
+	<resource class="view" title="Navigation" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="190" y="15" src="tutorial_preview"/>
+			<displayable class="label" textstyle="standardbold" x="16" y="15" width="20" height="20">
+			e)
+			</displayable>
+			<displayable class="label" textstyle="standard" x="36" y="15" width="150" height="80">
+			Touchez Go (Aller). 
+			</displayable>
+			<displayable class="label" textstyle="standard" x="16" y="115" width="294" height="80">
+			Votre Navman calculera l'itinéraire jusqu'à votre destination et affichera l'écran 3D Map (Carte 3D).
+			</displayable>
+		</displayables>
+	</resource>
+	<!-- page 11 -->
+	<resource class="view" title="Écrans de carte" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="label" textstyle="standardsmall" x="16" y="15" width="294" height="60">
+			Il existe quatre écrans de carte utilisés pour afficher l'itinéraire jusqu'à votre destination :
+			</displayable>
+			<displayable class="label" textstyle="standardbold" x="20" y="65" width="20" height="20">•</displayable>
+			<displayable class="label" textstyle="standard" x="36" y="65" width="150" height="20">
+			3D Map (Carte 3D)
+			</displayable>
+			<displayable class="label" textstyle="standardbold" x="20" y="85" width="20" height="20">•</displayable>
+			<displayable class="label" textstyle="standard" x="36" y="85" width="150" height="20">
+			2D Map (Carte 2D)
+			</displayable>
+			<displayable class="label" textstyle="standardbold" x="20" y="105" width="20" height="20">•</displayable>
+			<displayable class="label" textstyle="standard" x="36" y="105" width="150" height="20">
+			Next Turn (Tournant suivant)
+			</displayable>
+			<displayable class="label" textstyle="standardbold" x="20" y="125" width="20" height="20">•</displayable>
+			<displayable class="label" textstyle="standard" x="36" y="125" width="150" height="20">
+			Turn List (Liste des tournants)
+			</displayable>
+			<displayable class="image" x="190" y="60" src="tutorial_map_screen"/>
+			<displayable class="label" textstyle="standard" x="16" y="155" width="294" height="60">
+			Pour passer d'un écran de carte à l'autre, appuyez sur : 
+			</displayable>
+			<displayable class="image" x="150" y="180" src="tutorial_hardware_button1"/>
+		</displayables>
+	</resource>
+	<!-- page 12 -->
+	<resource class="view" title="Menu Map (Carte)" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="image" x="190" y="12" src="tutorial_map_menu"/>
+			<displayable class="label" textstyle="standard" x="16" y="15" width="170" height="60">
+			Pour afficher le menu Map (Carte), touchez et tenez un point sur la carte. 
+			</displayable>
+			<displayable class="label" textstyle="standard" x="16" y="100" width="294" height="100">
+			Le menu Map (Carte) vous permet d'accéder à une variété de fonctions de navigation, y compris naviguer jusqu'au point sélectionné, faire un détour autour d'un point et bien plus.
+			</displayable>
+		</displayables>
+	</resource>
+	<!-- page 13 -->
+	<resource class="view" title="Soutien" backbutton="true" forwardbutton="true">
+		<displayables>
+			<displayable class="label" textstyle="subtitlesmall" x="16" y="15" width="294" height="20">
+			Guide d'installation embarqué
+			</displayable>
+			<displayable class="label" textstyle="standardsmall" x="16" y="35" width="294" height="60">
+			Pour obtenir des instructions sur l'installation de votre Navman dans un véhicule, consultez le guide d'installation embarqué illustré.
+			</displayable>
+			<displayable class="label" textstyle="subtitlesmall" x="16" y="95" width="294" height="20">
+			Manuel de l'utilisateur
+			</displayable>
+			<displayable class="label" textstyle="standardsmall" x="16" y="105" width="294" height="60">
+			Consultez le manuel de l'utilisateur pour obtenir des informations détaillées sur l'utilisation de votre Navman.
+			</displayable>
+			<displayable class="label" textstyle="subtitlesmall" x="16" y="158" width="294" height="40">
+			Pour obtenir plus d'informations, visitez :
+			</displayable>
+			<displayable class="image" x="50" y="190" src="tutorial_website"/>
+		</displayables>
+	</resource>
+</resources>
