@@ -1,0 +1,102 @@
+Source : https://hostpresto.com/community/tutorials/how-to-install-jekyll-on-centos-7/
+==========================================================================
+
+
+Get the keys for a secure instalation:
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+$]# gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+gpg: solicitando clave D39DC0E3 de hkp servidor keys.gnupg.net
+gpg: solicitando clave 39499BDB de hkp servidor keys.gnupg.net
+gpg: clave D39DC0E3: "Michal Papis (RVM signing) <mpapis@gmail.com>" 21 firmas nuevas
+gpg: clave 39499BDB: clave pública "Piotr Kuczynski <piotr.kuczynski@gmail.com>" importada
+gpg: no se encuentran claves absolutamente fiables
+gpg: Cantidad total procesada: 2
+gpg:               importadas: 1  (RSA: 1)
+gpg:               nuevas firmas: 21
+
+Install rvm
+
+$]# curl -sSL https://get.rvm.io | bash -s stable
+Downloading https://github.com/rvm/rvm/archive/1.29.3.tar.gz
+Downloading https://github.com/rvm/rvm/releases/download/1.29.3/1.29.3.tar.gz.asc
+gpg: Firmado el dom 10 sep 2017 22:59:21 CEST usando clave RSA ID BF04FF17
+gpg: Firma correcta de "Michal Papis (RVM signing) <mpapis@gmail.com>"
+gpg:                 alias "Michal Papis <michal.papis@toptal.com>"
+gpg:                 alias "[jpeg image of size 5015]"
+gpg: ATENCIÓN: ¡Esta clave no está certificada por una firma de confianza!
+gpg:           No hay indicios de que la firma pertenezca al propietario.
+Huellas dactilares de la clave primaria: 409B 6B17 96C2 7546 2A17  0311 3804 BB82 D39D C0E3
+     Huella de subclave: 62C9 E5F4 DA30 0D94 AC36  166B E206 C29F BF04 FF17
+GPG verified '/usr/local/rvm/archives/rvm-1.29.3.tgz'
+Creating group 'rvm'
+
+Installing RVM to /usr/local/rvm/
+Installation of RVM in /usr/local/rvm/ is almost complete:
+
+  * First you need to add all users that will be using rvm to 'rvm' group,
+    and logout - login again, anyone using rvm will be operating with `umask u=rwx,g=rwx,o=rx`.
+
+  * To start using RVM you need to run `source /etc/profile.d/rvm.sh`
+    in all your open shell windows, in rare cases you need to reopen all shell windows.
+
+Add user to group rvm.
+$]# usermod -a -G rvm jmgomez
+
+Initially rvm is no recognized, so we have to run 
+$]# source /etc/profile.d/rvm.sh
+
+Now, install Ruby (Version 2.4.1):
+$]# rvm install ruby 
+
+Install of ruby-2.4.1 - #complete 
+Ruby was built without documentation, to build it run: rvm docs generate-ri
+
+$]# rvm --default use ruby
+Using /usr/local/rvm/gems/ruby-2.4.1
+
+Now you can install Jekyll and bundler gems using the following command.
+$]# gem install jekyll bundler
+
+Let's check the installation
+****************************************************************
+$]# mkdir -p /path_to/test_dir/example
+$]# cd  /path_to/test_dir/example
+
+$]# jekyll build	<= Create a new jekyll blog.
+$]# jekyll new .	<= Install deps. Install new blog on current dir.
+
+$]# bundle install
+$]# bundle exec jekyll serve --detach
+
+#Any dependencies fail, use bundle install
+
+$]# bundle exec jekyll serve --detach
+Configuration file: /srv/share/Workspace/Produccion/Projects/aa/_config.yml
+            Source: /srv/share/Workspace/Produccion/Projects/aa
+       Destination: /srv/share/Workspace/Produccion/Projects/aa/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.267 seconds.
+ Auto-regeneration: disabled when running server detached.
+    Server address: http://127.0.0.1:4000/
+Server detached with pid '26675'. Run `pkill -f jekyll' or `kill -9 26675' to stop the server.
+
+Now we can check in our browser, http://127.0.0.1:4000/
+
+
+$]# pkill -f jekyll
+
+
+
+Realmente necesitamos crear un usuario para nuestro sitio jekyll??
+useradd jekyll 
+cd /home/jekyll
+
+
+Ingenierong!!!
+****************************************************************
+
+
+
+

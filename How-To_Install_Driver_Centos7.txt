@@ -1,0 +1,28 @@
+
+Dmesg
+
+[18462.452377] usb 3-13.3: New USB device found, idVendor=1825, idProduct=1014
+[18462.452380] usb 3-13.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[18462.452382] usb 3-13.3: Product: SpaceWire Brick
+[18462.452384] usb 3-13.3: Manufacturer: STAR Dundee
+[18724.624626] usb 3-13.3: reset high-speed USB device number 11 using xhci_hcd
+[18724.709744] usbcore: registered new interface driver SpaceWireU
+
+$]# lsusb
+
+Bus 003 Device 011: ID 1825:1014  
+
+Build the Module:
+$]# cd SpaceWire/Bin/spw_usb_driver_v2.69
+$]# cd install
+$]# ./build_driver.sh
+$]#
+$]# modprobe spacewire_usb
+
+
+cp spacewire_usb 
+
+cp 99-spwusb.rules /etc/udev/rules.d/
+
+
+

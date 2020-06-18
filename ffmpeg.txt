@@ -1,0 +1,6 @@
+ 
+Change mp3 size
+ffmpeg -i old.mp3 -acodec libmp3lame -ac 2 -ab 64k -ar 44100 new.mp3 
+
+Download clip from internet
+ffmpeg -i "http://82.96.17.2/cdn/_definst_/smil:e8e126fdd7c51ec3d56eed2492cc775e/k2qz341k.smil/chunklist_w1951867854_b2048000.m3u8 -c copy video.ts

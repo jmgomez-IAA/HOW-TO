@@ -1,0 +1,114 @@
+
+pacman -S deluge
+systemctl enable deluged.service deluge-web.service
+systemctl start deluged.service deluge-web.service
+
+192.168.2.169:58846
+
+Para acceder: http://192.168.2.169:8112/
+
+The default password for the web interface is 'deluge'
+PassWord: nintendo
+
+Setting up HTTPS (Importante entrar siempre con https:// si se pone conexion segura.
+====================
+
+Most of these instructions are from the Arch Wiki but I will provide them here for convenience. 
+Before setting up HTTPS, we need to stop the Web UI:
+
+# systemctl stop deluge-web.service
+
+Then we need to generate new certificates in "/srv/deluge/.config/deluge/ssl/":
+
+# cd /srv/deluge/.config/deluge/ssl/
+# openssl req -new -x509 -nodes -out deluge.cert.pem -keyout deluge.key.pem
+
+Now edit "/srv/deluge/.config/deluge/web.conf" and change the pkey and cert configuration 
+directives to use your new self-signed certificates and also enable SSL:
+
+# nano /srv/deluge/.config/deluge/web.conf
+
+...
+"pkey": "ssl/deluge.key.pem",
+...
+"cert": "ssl/deluge.cert.pem",
+...
+"https": true,
+
+Setting up the Web UI port
+
+This last step is a bit weird, but it happened to me that with SSL enabled 
+I would only get a blank page for the Web UI. 
+According to the Deluge forums a simple fix is to change the port from 8112 to 8110. 
+
+This can also be set in the Web UI configuration file:
+
+# nano /srv/deluge/.config/deluge/web.conf
+
+...
+"port": 8110,
+...
+
+Now the Web UI can be restarted:
+
+# systemctl start deluge-web.service
+
+It will be accessible at https://192.168.1.123:8110. 
+Another stupid "gotcha" here is to make sure you type in the 
+****************************************
+"https://" in the browser's address bar. 
+****************************************
+If there is an autocomplete for the address in your history and you do not do this the Web UI 
+will appear inaccessible because it is trying to connect over standard HTTP. Stupid, yes. 
+Happens, yes.
+
+
+Eliminar la pregunta de conectar cada vez q se arranca
+=========================================================
+Before modifying anything, stop the Deluge services:
+
+Code: Select all
+    # systemctl stop deluged.service deluge-web.service
+
+
+Edit web.conf and find the line "default_daemon": "",. Add your host address between the 
+quotation marks at the end:
+
+Code: Select all
+    # nano /srv/deluge/.config/deluge/web.conf
+
+    ...
+    "default_daemon": "127.0.0.1:58846",
+
+
+Reboot. If everything is working well, you should be able to access the WebUI directly 
+without logging into the device. In that case, you're done. Happy torrenting!
+
+
+
+Potential issues
+
+- If you've made sure you followed this guide properly, and you're still getting 
+prompted by the Connection Manager after rebooting, stop the Deluge services and 
+check the default_daemon line in web.conf again. If it's back to its default state, 
+add the host address back in again, save, then run:
+
+Code: Select all
+    chmod 444 /srv/deluge/.config/deluge/web.conf
+
+Restart the Deluge services.
+
+- You may run into a "permission denied" error when starting a torrent if Deluge doesn't 
+have write access to the download location. Try adding the user 'deluge' to the group 'root' 
+by running:
+
+Code: Select all
+    # usermod -aG root deluge
+
+
+Then make 'deluge' the owner of your download location:
+
+Code: Select all
+    chown deluge:root -R /srv/deluge/Downloads
+
+Reboot.

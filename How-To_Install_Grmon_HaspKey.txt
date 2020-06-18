@@ -1,0 +1,21 @@
+Install Grmon HASP Key
+=======================
+
+GRMON is licensed using a HASP HL USB hardware key. 
+HASP HL license drivers can be downloaded from from the Safenet site.
+
+
+HASP HL license Drivers
+https://sentinelcustomer.gemalto.com/sentineldownloads/?s=&c=End+User&p=HASP+HL&o=all&t=Runtime+%26+Device+Driver&l=all
+
+$]# ls
+Sentinel_LDK_RedHat_and_SuSE_RPM_Run-time_Installer.tar.gz
+
+$]# tar zxvf Sentinel_LDK_RedHat_and_SuSE_RPM_Run-time_Installer.tar.gz
+
+
+$]# links readme.html
+
+$]# yum install aksusbd-7.60-1.i386.rpm
+
+

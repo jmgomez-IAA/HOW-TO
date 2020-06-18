@@ -1,0 +1,28 @@
+
+Systemd-networkd uses *.network files.
+
+Suponiendo que seamos root.
+1.- Comprobar que el servicio networkd esta activo
+systemctl status systemd-networkd
+
+2.- Modificar el fichero de configuracion
+
+    nano /etc/systemd/network/eth0.network
+
+    [Match]
+    Name=eth0
+
+    [Network]
+    Address=192.168.1.8/24
+    Gateway=192.168.1.1
+    DNS=8.8.8.8
+    DNS=8.8.4.4
+
+3.- Ver si esta activo netctl y en ese caso desabilitarlo.
+systemctl list-unit-files
+systemctl disable netctl@eth0.service
+
+5.- Activar el systemd-networkd.
+systemctl enable systemd-networkd.
+
+
